@@ -1,0 +1,81 @@
+import 'package:PiliPure/common/widgets/flutter/refresh_indicator.dart';
+import 'package:PiliPure/common/widgets/loading_widget/http_error.dart';
+import 'package:PiliPure/common/widgets/scaffold/simple_scaffold.dart';
+import 'package:PiliPure/common/widgets/video_card/video_card_h.dart';
+import 'package:PiliPure/common/widgets/view_sliver_safe_area.dart';
+import 'package:PiliPure/http/loading_state.dart';
+import 'package:PiliPure/models/common/video/source_type.dart';
+import 'package:PiliPure/models/model_hot_video_item.dart';
+import 'package:PiliPure/pages/popular_precious/controller.dart';
+import 'package:PiliPure/utils/grid.dart';
+import 'package:PiliPure/utils/page_utils.dart';
+import 'package:get/get.dart';
+import 'package:material_ui/material_ui.dart';
+
+class PopularPreciousPage extends StatefulWidget {
+  const PopularPreciousPage({super.key});
+
+  @override
+  State<PopularPreciousPage> createState() => _PopularPreciousPageState();
+}
+
+class _PopularPreciousPageState extends State<PopularPreciousPage>
+    with GridMixin {
+  final _controller = Get.put(PopularPreciousController());
+
+  @override
+  Widget build(BuildContext context) {
+    return SimpleScaffold(
+      appBar: AppBar(title: const Text('入站必刷')),
+      body: refreshIndicator(
+        onRefresh: _controller.onRefresh,
+        child: CustomScrollView(
+          physics: const AlwaysScrollableScrollPhysics(),
+          slivers: [
+            ViewSliverSafeArea(
+              sliver: Obx(() => _buildBody(_controller.loadingState.value)),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildBody(LoadingState<List<HotVideoItemModel>?> value) {
+    switch (value) {
+      case Loading():
+        return gridSkeleton;
+      case Success<List<HotVideoItemModel>?>(:final response):
+        return SliverGrid.builder(
+          gridDelegate: gridDelegate,
+          itemCount: response!.length,
+          itemBuilder: (context, index) {
+            final item = response[index];
+            return VideoCardH(
+              videoItem: item,
+              onTap: () {
+                PageUtils.toVideoPage(
+                  bvid: item.bvid,
+                  cid: item.cid!,
+                  dimension: item.dimension,
+                  extraArguments: {
+                    'sourceType': SourceType.playlist,
+                    'favTitle': '入站必刷',
+                    'mediaId': _controller.mediaId,
+                    'desc': true,
+                    'oid': item.aid,
+                    'isContinuePlaying': index != 0,
+                  },
+                );
+              },
+            );
+          },
+        );
+      case Error(:final errMsg):
+        return HttpError(
+          errMsg: errMsg,
+          onReload: _controller.onReload,
+        );
+    }
+  }
+}

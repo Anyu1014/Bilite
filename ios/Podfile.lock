@@ -1,0 +1,67 @@
+PODS:
+  - Flutter (1.0.0)
+  - flutter_inappwebview_ios (0.0.1):
+    - Flutter
+    - flutter_inappwebview_ios/Core (= 0.0.1)
+    - OrderedSet (~> 6.0.3)
+  - flutter_inappwebview_ios/Core (0.0.1):
+    - Flutter
+    - OrderedSet (~> 6.0.3)
+  - gt3_flutter_plugin (0.0.9):
+    - Flutter
+    - GT3Captcha-iOS
+  - GT3Captcha-iOS (0.15.9)
+  - live_photo_maker (0.0.3):
+    - Flutter
+  - media_kit_libs_ios_video (1.0.4):
+    - Flutter
+  - media_kit_native_event_loop (1.0.0):
+    - Flutter
+  - media_kit_video (0.0.1):
+    - Flutter
+  - OrderedSet (6.0.3)
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - flutter_inappwebview_ios (from `.symlinks/plugins/flutter_inappwebview_ios/ios`)
+  - gt3_flutter_plugin (from `.symlinks/plugins/gt3_flutter_plugin/ios`)
+  - live_photo_maker (from `.symlinks/plugins/live_photo_maker/ios`)
+  - media_kit_libs_ios_video (from `.symlinks/plugins/media_kit_libs_ios_video/ios`)
+  - media_kit_native_event_loop (from `.symlinks/plugins/media_kit_native_event_loop/ios`)
+  - media_kit_video (from `.symlinks/plugins/media_kit_video/ios`)
+
+SPEC REPOS:
+  trunk:
+    - GT3Captcha-iOS
+    - OrderedSet
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  flutter_inappwebview_ios:
+    :path: ".symlinks/plugins/flutter_inappwebview_ios/ios"
+  gt3_flutter_plugin:
+    :path: ".symlinks/plugins/gt3_flutter_plugin/ios"
+  live_photo_maker:
+    :path: ".symlinks/plugins/live_photo_maker/ios"
+  media_kit_libs_ios_video:
+    :path: ".symlinks/plugins/media_kit_libs_ios_video/ios"
+  media_kit_native_event_loop:
+    :path: ".symlinks/plugins/media_kit_native_event_loop/ios"
+  media_kit_video:
+    :path: ".symlinks/plugins/media_kit_video/ios"
+
+SPEC CHECKSUMS:
+  Flutter: 71a624a5bc0c04062bf19101d501e466baf2fb47
+  flutter_inappwebview_ios: 6f63631e2c62a7c350263b13fa5427aedefe81d4
+  gt3_flutter_plugin: 5bd2c08d3c19cbb6ee3b08f4358439e54c8ab2ee
+  GT3Captcha-iOS: aeb6fed2e8594099821430a89208679e5a55b740
+  live_photo_maker: 7d57bfc70a120b4673c10871f354f4b1b6fde5fd
+  media_kit_libs_ios_video: a5fe24bc7875ccd6378a0978c13185e1344651c1
+  media_kit_native_event_loop: e6b2ab20cf0746eb1c33be961fcf79667304fa2a
+  media_kit_video: 5da63f157170e5bf303bf85453b7ef6971218a2e
+  OrderedSet: e539b66b644ff081c73a262d24ad552a69be3a94
+
+PODFILE CHECKSUM: a9d0d1f65b2b442eb9f86352de863e6ec9d7c80f
+
+COCOAPODS: 1.17.0

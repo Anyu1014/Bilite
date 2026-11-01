@@ -1,0 +1,2 @@
+-keep class com.pilipure.app.AndroidHelper { public *; }
+-keep class com.pilipure.app.AndroidHelper$ToDart { public *; }

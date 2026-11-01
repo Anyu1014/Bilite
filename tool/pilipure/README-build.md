@@ -14,9 +14,7 @@ PiliPlus/
 ├── make_icons.py            # 由一张 2048x2048 原图生成 Android/iOS 全部图标尺寸
 ├── assets_src/              # 图标源图（pilipure_icon_source.jpg）
 ├── out/                     # 最终产物
-│   ├── PiliPure-android-2.2.0-arm64-v8a.apk        (25M)
-│   ├── PiliPure-android-2.2.0-armeabi-v7a.apk      (25M)
-│   ├── PiliPure-android-2.2.0-x86_64.apk           (25M)
+│   ├── PiliPure-1.0.apk                             (25M，仅 arm64-v8a)
 │   └── PiliPure_ios_2.2.0+1.ipa                    (25M, ad-hoc 签名)
 └── preview/                 # 安卓模拟器运行截图
 ```
@@ -58,7 +56,7 @@ source /Users/y/toolchains/env.sh
 
 # Android
 bash ../port_build.sh android
-flutter build apk --release --split-per-abi --dart-define-from-file=pili_release.json --no-pub
+flutter build apk --release --split-per-abi   # 只取 arm64-v8a 那一个
 
 # iOS（必须先打 iOS 补丁集，Flutter 仓库会被 git reset --hard 重置）
 export PATH="$HOME/.gem/ruby/2.6.0/bin:$PATH"

@@ -1,5 +1,5 @@
-import 'package:PiliPure/models/model_owner.dart';
-import 'package:PiliPure/models/model_video.dart';
+import 'package:bilite/models/model_owner.dart';
+import 'package:bilite/models/model_video.dart';
 
 abstract class BaseRcmdVideoItemModel extends BaseVideoItemModel {
   String? goto;

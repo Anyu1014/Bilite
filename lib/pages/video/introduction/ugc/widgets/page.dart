@@ -1,9 +1,9 @@
-import 'package:PiliPure/common/assets.dart';
-import 'package:PiliPure/models_new/video/video_detail/episode.dart';
-import 'package:PiliPure/models_new/video/video_detail/page.dart';
-import 'package:PiliPure/pages/video/introduction/ugc/controller.dart';
-import 'package:PiliPure/utils/extension/num_ext.dart';
-import 'package:PiliPure/utils/scroll_offset_helper.dart';
+import 'package:bilite/common/assets.dart';
+import 'package:bilite/models_new/video/video_detail/episode.dart';
+import 'package:bilite/models_new/video/video_detail/page.dart';
+import 'package:bilite/pages/video/introduction/ugc/controller.dart';
+import 'package:bilite/utils/extension/num_ext.dart';
+import 'package:bilite/utils/scroll_offset_helper.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:material_ui/material_ui.dart';
 

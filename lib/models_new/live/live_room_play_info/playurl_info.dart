@@ -1,4 +1,4 @@
-import 'package:PiliPure/models_new/live/live_room_play_info/playurl.dart';
+import 'package:bilite/models_new/live/live_room_play_info/playurl.dart';
 
 class PlayurlInfo {
   Playurl? playurl;

@@ -1,5 +1,5 @@
-import 'package:PiliPure/models_new/space/space/list.dart';
-import 'package:PiliPure/models_new/space/space_article/item.dart';
+import 'package:bilite/models_new/space/space/list.dart';
+import 'package:bilite/models_new/space/space_article/item.dart';
 
 class Article {
   int? count;

@@ -1,5 +1,5 @@
-import 'package:PiliPure/plugin/pl_player/controller.dart';
-import 'package:PiliPure/plugin/pl_player/models/play_status.dart';
+import 'package:bilite/plugin/pl_player/controller.dart';
+import 'package:bilite/plugin/pl_player/models/play_status.dart';
 import 'package:audio_session/audio_session.dart';
 
 class AudioSessionHandler {

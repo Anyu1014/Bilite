@@ -1,11 +1,11 @@
-import 'package:PiliPure/common/assets.dart';
-import 'package:PiliPure/common/style.dart';
-import 'package:PiliPure/common/widgets/extra_hittest_stack.dart';
-import 'package:PiliPure/common/widgets/image/network_img_layer.dart';
-import 'package:PiliPure/models/common/avatar_badge_type.dart';
-import 'package:PiliPure/models/common/image_type.dart';
-import 'package:PiliPure/utils/page_utils.dart';
-import 'package:PiliPure/utils/storage_pref.dart';
+import 'package:bilite/common/assets.dart';
+import 'package:bilite/common/style.dart';
+import 'package:bilite/common/widgets/extra_hittest_stack.dart';
+import 'package:bilite/common/widgets/image/network_img_layer.dart';
+import 'package:bilite/models/common/avatar_badge_type.dart';
+import 'package:bilite/models/common/image_type.dart';
+import 'package:bilite/utils/page_utils.dart';
+import 'package:bilite/utils/storage_pref.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:material_ui/material_ui.dart';
 

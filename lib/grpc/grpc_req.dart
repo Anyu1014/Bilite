@@ -1,10 +1,10 @@
 import 'dart:convert';
 import 'dart:typed_data';
 
-import 'package:PiliPure/grpc/bilibili/rpc.pb.dart';
-import 'package:PiliPure/http/constants.dart';
-import 'package:PiliPure/http/init.dart';
-import 'package:PiliPure/http/loading_state.dart';
+import 'package:bilite/grpc/bilibili/rpc.pb.dart';
+import 'package:bilite/http/constants.dart';
+import 'package:bilite/http/init.dart';
+import 'package:bilite/http/loading_state.dart';
 import 'package:archive/archive.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart' show kDebugMode, compute;

@@ -1,15 +1,15 @@
 import 'dart:collection';
 import 'dart:io' show File;
 
-import 'package:PiliPure/grpc/bilibili/community/service/dm/v1.pb.dart';
-import 'package:PiliPure/grpc/dm.dart';
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/plugin/pl_player/controller.dart';
-import 'package:PiliPure/plugin/pl_player/models/data_source.dart';
-import 'package:PiliPure/utils/accounts.dart';
-import 'package:PiliPure/utils/danmaku_utils.dart';
-import 'package:PiliPure/utils/path_utils.dart';
-import 'package:PiliPure/utils/utils.dart';
+import 'package:bilite/grpc/bilibili/community/service/dm/v1.pb.dart';
+import 'package:bilite/grpc/dm.dart';
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/plugin/pl_player/controller.dart';
+import 'package:bilite/plugin/pl_player/models/data_source.dart';
+import 'package:bilite/utils/accounts.dart';
+import 'package:bilite/utils/danmaku_utils.dart';
+import 'package:bilite/utils/path_utils.dart';
+import 'package:bilite/utils/utils.dart';
 import 'package:path/path.dart' as path;
 
 class PlDanmakuController {

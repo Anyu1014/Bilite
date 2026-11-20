@@ -1,17 +1,17 @@
-import 'package:PiliPure/common/style.dart';
-import 'package:PiliPure/common/widgets/badge.dart';
-import 'package:PiliPure/common/widgets/image/image_save.dart';
-import 'package:PiliPure/common/widgets/image/network_img_layer.dart';
-import 'package:PiliPure/common/widgets/stat/stat.dart';
-import 'package:PiliPure/common/widgets/video_card/video_card_v.dart';
-import 'package:PiliPure/http/search.dart';
-import 'package:PiliPure/models/common/badge_type.dart';
-import 'package:PiliPure/models/common/stat_type.dart';
-import 'package:PiliPure/models_new/member/coin_like_arc/item.dart';
-import 'package:PiliPure/utils/date_utils.dart';
-import 'package:PiliPure/utils/duration_utils.dart';
-import 'package:PiliPure/utils/page_utils.dart';
-import 'package:PiliPure/utils/platform_utils.dart';
+import 'package:bilite/common/style.dart';
+import 'package:bilite/common/widgets/badge.dart';
+import 'package:bilite/common/widgets/image/image_save.dart';
+import 'package:bilite/common/widgets/image/network_img_layer.dart';
+import 'package:bilite/common/widgets/stat/stat.dart';
+import 'package:bilite/common/widgets/video_card/video_card_v.dart';
+import 'package:bilite/http/search.dart';
+import 'package:bilite/models/common/badge_type.dart';
+import 'package:bilite/models/common/stat_type.dart';
+import 'package:bilite/models_new/member/coin_like_arc/item.dart';
+import 'package:bilite/utils/date_utils.dart';
+import 'package:bilite/utils/duration_utils.dart';
+import 'package:bilite/utils/page_utils.dart';
+import 'package:bilite/utils/platform_utils.dart';
 import 'package:material_ui/material_ui.dart';
 
 class MemberCoinLikeItem extends StatelessWidget {

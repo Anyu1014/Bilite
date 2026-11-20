@@ -1,10 +1,10 @@
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/http/member.dart';
-import 'package:PiliPure/models/common/member/archive_order_type_web.dart';
-import 'package:PiliPure/models_new/member/search_archive/data.dart';
-import 'package:PiliPure/models_new/member/search_archive/slist.dart';
-import 'package:PiliPure/models_new/member/search_archive/vlist.dart';
-import 'package:PiliPure/pages/member_video_web/base/controller.dart';
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/http/member.dart';
+import 'package:bilite/models/common/member/archive_order_type_web.dart';
+import 'package:bilite/models_new/member/search_archive/data.dart';
+import 'package:bilite/models_new/member/search_archive/slist.dart';
+import 'package:bilite/models_new/member/search_archive/vlist.dart';
+import 'package:bilite/pages/member_video_web/base/controller.dart';
 import 'package:get/get.dart';
 
 class MemberVideoWebCtr

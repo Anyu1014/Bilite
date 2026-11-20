@@ -1,14 +1,14 @@
 import 'dart:async';
 
-import 'package:PiliPure/common/widgets/scroll_physics.dart' show ReloadMixin;
-import 'package:PiliPure/http/dynamics.dart';
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/http/reply.dart';
-import 'package:PiliPure/models/dynamics/result.dart';
-import 'package:PiliPure/models_new/dynamic/dyn_mention/item.dart';
-import 'package:PiliPure/pages/common/dyn/common_dyn_controller.dart';
-import 'package:PiliPure/pages/common/reply/reply_controller.dart';
-import 'package:PiliPure/utils/id_utils.dart';
+import 'package:bilite/common/widgets/scroll_physics.dart' show ReloadMixin;
+import 'package:bilite/http/dynamics.dart';
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/http/reply.dart';
+import 'package:bilite/models/dynamics/result.dart';
+import 'package:bilite/models_new/dynamic/dyn_mention/item.dart';
+import 'package:bilite/pages/common/dyn/common_dyn_controller.dart';
+import 'package:bilite/pages/common/reply/reply_controller.dart';
+import 'package:bilite/utils/id_utils.dart';
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 import 'package:get/get.dart';
 

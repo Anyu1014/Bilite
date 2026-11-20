@@ -1,7 +1,7 @@
 import 'dart:async';
 
-import 'package:PiliPure/models/user/info.dart';
-import 'package:PiliPure/utils/storage_pref.dart';
+import 'package:bilite/models/user/info.dart';
+import 'package:bilite/utils/storage_pref.dart';
 import 'package:get/get.dart';
 
 class AccountService extends GetxService {

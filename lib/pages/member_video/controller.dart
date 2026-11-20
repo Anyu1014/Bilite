@@ -1,22 +1,22 @@
-import 'package:PiliPure/common/widgets/flutter/refresh_indicator.dart'
+import 'package:bilite/common/widgets/flutter/refresh_indicator.dart'
     show RefreshIndicatorState;
-import 'package:PiliPure/common/widgets/scroll_physics.dart' show ReloadMixin;
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/http/member.dart';
-import 'package:PiliPure/http/search.dart';
-import 'package:PiliPure/models/common/member/archive_order_type_app.dart';
-import 'package:PiliPure/models/common/member/archive_sort_type_app.dart';
-import 'package:PiliPure/models/common/member/contribute_type.dart';
-import 'package:PiliPure/models/common/video/source_type.dart';
-import 'package:PiliPure/models_new/space/space_archive/data.dart';
-import 'package:PiliPure/models_new/space/space_archive/episodic_button.dart';
-import 'package:PiliPure/models_new/space/space_archive/item.dart';
-import 'package:PiliPure/pages/common/common_list_controller.dart';
-import 'package:PiliPure/pages/member/controller.dart';
-import 'package:PiliPure/utils/extension/dimension_ext.dart';
-import 'package:PiliPure/utils/extension/iterable_ext.dart';
-import 'package:PiliPure/utils/id_utils.dart';
-import 'package:PiliPure/utils/page_utils.dart';
+import 'package:bilite/common/widgets/scroll_physics.dart' show ReloadMixin;
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/http/member.dart';
+import 'package:bilite/http/search.dart';
+import 'package:bilite/models/common/member/archive_order_type_app.dart';
+import 'package:bilite/models/common/member/archive_sort_type_app.dart';
+import 'package:bilite/models/common/member/contribute_type.dart';
+import 'package:bilite/models/common/video/source_type.dart';
+import 'package:bilite/models_new/space/space_archive/data.dart';
+import 'package:bilite/models_new/space/space_archive/episodic_button.dart';
+import 'package:bilite/models_new/space/space_archive/item.dart';
+import 'package:bilite/pages/common/common_list_controller.dart';
+import 'package:bilite/pages/member/controller.dart';
+import 'package:bilite/utils/extension/dimension_ext.dart';
+import 'package:bilite/utils/extension/iterable_ext.dart';
+import 'package:bilite/utils/id_utils.dart';
+import 'package:bilite/utils/page_utils.dart';
 import 'package:flutter/widgets.dart' show GlobalKey;
 import 'package:get/get.dart';
 

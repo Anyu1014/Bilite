@@ -1,4 +1,4 @@
-import 'package:PiliPure/models/dynamics/eva3_user.dart';
+import 'package:bilite/models/dynamics/eva3_user.dart';
 
 class Eva3Toy {
   Eva3ToyInfo? info;

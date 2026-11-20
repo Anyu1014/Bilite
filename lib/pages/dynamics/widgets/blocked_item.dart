@@ -1,5 +1,5 @@
-import 'package:PiliPure/models/dynamics/result.dart' show ModuleBlocked;
-import 'package:PiliPure/pages/article/widgets/opus_content.dart'
+import 'package:bilite/models/dynamics/result.dart' show ModuleBlocked;
+import 'package:bilite/pages/article/widgets/opus_content.dart'
     show moduleBlockedItem;
 import 'package:material_ui/material_ui.dart';
 

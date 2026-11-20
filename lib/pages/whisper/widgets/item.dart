@@ -1,23 +1,23 @@
 import 'dart:convert';
 
-import 'package:PiliPure/common/assets.dart';
-import 'package:PiliPure/common/widgets/badge.dart';
-import 'package:PiliPure/common/widgets/glass.dart';
-import 'package:PiliPure/common/widgets/dialog/dialog.dart';
-import 'package:PiliPure/common/widgets/dialog/simple_dialog_option.dart';
-import 'package:PiliPure/common/widgets/flutter/list_tile.dart';
-import 'package:PiliPure/common/widgets/pendant_avatar.dart';
-import 'package:PiliPure/grpc/bilibili/app/im/v1.pb.dart'
+import 'package:bilite/common/assets.dart';
+import 'package:bilite/common/widgets/badge.dart';
+import 'package:bilite/common/widgets/glass.dart';
+import 'package:bilite/common/widgets/dialog/dialog.dart';
+import 'package:bilite/common/widgets/dialog/simple_dialog_option.dart';
+import 'package:bilite/common/widgets/flutter/list_tile.dart';
+import 'package:bilite/common/widgets/pendant_avatar.dart';
+import 'package:bilite/grpc/bilibili/app/im/v1.pb.dart'
     show Session, SessionId, SessionPageType;
-import 'package:PiliPure/grpc/im.dart';
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/http/msg.dart';
-import 'package:PiliPure/pages/whisper_secondary/view.dart';
-import 'package:PiliPure/utils/date_utils.dart';
-import 'package:PiliPure/utils/extension/num_ext.dart';
-import 'package:PiliPure/utils/extension/theme_ext.dart';
-import 'package:PiliPure/utils/page_utils.dart';
-import 'package:PiliPure/utils/platform_utils.dart';
+import 'package:bilite/grpc/im.dart';
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/http/msg.dart';
+import 'package:bilite/pages/whisper_secondary/view.dart';
+import 'package:bilite/utils/date_utils.dart';
+import 'package:bilite/utils/extension/num_ext.dart';
+import 'package:bilite/utils/extension/theme_ext.dart';
+import 'package:bilite/utils/page_utils.dart';
+import 'package:bilite/utils/platform_utils.dart';
 import 'package:fixnum/fixnum.dart';
 import 'package:flutter/foundation.dart' show kDebugMode;
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';

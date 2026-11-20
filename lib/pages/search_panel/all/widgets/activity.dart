@@ -1,9 +1,9 @@
-import 'package:PiliPure/common/widgets/badge.dart';
-import 'package:PiliPure/common/widgets/image/image_save.dart';
-import 'package:PiliPure/common/widgets/image/network_img_layer.dart';
-import 'package:PiliPure/models/search/result.dart';
-import 'package:PiliPure/utils/app_scheme.dart';
-import 'package:PiliPure/utils/platform_utils.dart';
+import 'package:bilite/common/widgets/badge.dart';
+import 'package:bilite/common/widgets/image/image_save.dart';
+import 'package:bilite/common/widgets/image/network_img_layer.dart';
+import 'package:bilite/models/search/result.dart';
+import 'package:bilite/utils/app_scheme.dart';
+import 'package:bilite/utils/platform_utils.dart';
 import 'package:material_ui/material_ui.dart';
 
 class SearchActivityItem extends StatelessWidget {

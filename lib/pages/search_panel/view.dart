@@ -1,9 +1,9 @@
-import 'package:PiliPure/common/widgets/flutter/refresh_indicator.dart';
-import 'package:PiliPure/common/widgets/loading_widget/http_error.dart';
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/models/common/search/search_type.dart';
-import 'package:PiliPure/models/search/result.dart';
-import 'package:PiliPure/pages/search_panel/controller.dart';
+import 'package:bilite/common/widgets/flutter/refresh_indicator.dart';
+import 'package:bilite/common/widgets/loading_widget/http_error.dart';
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/models/common/search/search_type.dart';
+import 'package:bilite/models/search/result.dart';
+import 'package:bilite/pages/search_panel/controller.dart';
 import 'package:get/get.dart';
 import 'package:material_ui/material_ui.dart';
 

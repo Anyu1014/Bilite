@@ -1,74 +1,73 @@
 import 'dart:io' show Platform;
 import 'dart:math';
 
-import 'package:PiliPure/common/assets.dart';
-import 'package:PiliPure/common/style.dart';
-import 'package:PiliPure/common/widgets/custom_icon.dart';
-import 'package:PiliPure/common/widgets/flutter/pop_scope.dart';
-import 'package:PiliPure/common/widgets/image/network_img_layer.dart';
-import 'package:PiliPure/common/widgets/keep_alive_wrapper.dart';
-import 'package:PiliPure/common/widgets/route_aware_mixin.dart';
-import 'package:PiliPure/common/widgets/scaffold/mini_scaffold.dart';
-import 'package:PiliPure/common/widgets/scaffold/simple_scaffold.dart';
-import 'package:PiliPure/common/widgets/scroll_behavior.dart'
+import 'package:bilite/common/assets.dart';
+import 'package:bilite/common/style.dart';
+import 'package:bilite/common/widgets/glass.dart';
+import 'package:bilite/common/widgets/custom_icon.dart';
+import 'package:bilite/common/widgets/flutter/pop_scope.dart';
+import 'package:bilite/common/widgets/image/network_img_layer.dart';
+import 'package:bilite/common/widgets/keep_alive_wrapper.dart';
+import 'package:bilite/common/widgets/route_aware_mixin.dart';
+import 'package:bilite/common/widgets/scaffold/mini_scaffold.dart';
+import 'package:bilite/common/widgets/scaffold/simple_scaffold.dart';
+import 'package:bilite/common/widgets/scroll_behavior.dart'
     show NoOverscrollIndicator;
-import 'package:PiliPure/common/widgets/scroll_physics.dart'
+import 'package:bilite/common/widgets/scroll_physics.dart'
     show tabBarView, platformAlwaysClampingPhysics, platformClampingPhysics;
-import 'package:PiliPure/common/widgets/simple_app_bar.dart';
-import 'package:PiliPure/common/widgets/sliver/video_header.dart';
-import 'package:PiliPure/common/widgets/svg/play_icon.dart';
-import 'package:PiliPure/models/common/episode_panel_type.dart';
-import 'package:PiliPure/models/common/pgc_episode_type.dart';
-import 'package:PiliPure/models_new/pgc/pgc_info_model/result.dart';
-import 'package:PiliPure/models_new/video/video_tag/data.dart';
-import 'package:PiliPure/pages/common/common_intro_controller.dart';
-import 'package:PiliPure/pages/danmaku/view.dart';
-import 'package:PiliPure/pages/episode_panel/view.dart';
-import 'package:PiliPure/pages/video/ai_conclusion/view.dart';
-import 'package:PiliPure/pages/video/controller.dart';
-import 'package:PiliPure/pages/video/introduction/local/controller.dart';
-import 'package:PiliPure/pages/video/introduction/local/view.dart';
-import 'package:PiliPure/pages/video/introduction/pgc/controller.dart';
-import 'package:PiliPure/pages/video/introduction/pgc/view.dart';
-import 'package:PiliPure/pages/video/introduction/pgc/widgets/intro_detail.dart';
-import 'package:PiliPure/pages/video/introduction/pgc/widgets/season.dart'
-    as pgc;
-import 'package:PiliPure/pages/video/introduction/ugc/controller.dart';
-import 'package:PiliPure/pages/video/introduction/ugc/view.dart';
-import 'package:PiliPure/pages/video/introduction/ugc/widgets/page.dart';
-import 'package:PiliPure/pages/video/introduction/ugc/widgets/season.dart'
-    as ugc;
-import 'package:PiliPure/pages/video/member/controller.dart';
-import 'package:PiliPure/pages/video/member/view.dart';
-import 'package:PiliPure/pages/video/related/view.dart';
-import 'package:PiliPure/pages/video/reply/controller.dart';
-import 'package:PiliPure/pages/video/reply/view.dart';
-import 'package:PiliPure/pages/video/view_point/view.dart';
-import 'package:PiliPure/pages/video/widgets/header_control.dart';
-import 'package:PiliPure/pages/video/widgets/intro_layout.dart';
-import 'package:PiliPure/pages/video/widgets/player_focus.dart';
-import 'package:PiliPure/plugin/pl_player/controller.dart';
-import 'package:PiliPure/plugin/pl_player/models/fullscreen_mode.dart';
-import 'package:PiliPure/plugin/pl_player/models/play_repeat.dart';
-import 'package:PiliPure/plugin/pl_player/models/play_status.dart';
-import 'package:PiliPure/plugin/pl_player/utils/fullscreen.dart';
-import 'package:PiliPure/plugin/pl_player/view/view.dart';
-import 'package:PiliPure/services/service_locator.dart';
-import 'package:PiliPure/services/shutdown_timer_service.dart'
+import 'package:bilite/common/widgets/simple_app_bar.dart';
+import 'package:bilite/common/widgets/sliver/video_header.dart';
+import 'package:bilite/common/widgets/svg/play_icon.dart';
+import 'package:bilite/models/common/episode_panel_type.dart';
+import 'package:bilite/models/common/pgc_episode_type.dart';
+import 'package:bilite/models_new/pgc/pgc_info_model/result.dart';
+import 'package:bilite/models_new/video/video_tag/data.dart';
+import 'package:bilite/pages/common/common_intro_controller.dart';
+import 'package:bilite/pages/danmaku/view.dart';
+import 'package:bilite/pages/episode_panel/view.dart';
+import 'package:bilite/pages/video/ai_conclusion/view.dart';
+import 'package:bilite/pages/video/controller.dart';
+import 'package:bilite/pages/video/introduction/local/controller.dart';
+import 'package:bilite/pages/video/introduction/local/view.dart';
+import 'package:bilite/pages/video/introduction/pgc/controller.dart';
+import 'package:bilite/pages/video/introduction/pgc/view.dart';
+import 'package:bilite/pages/video/introduction/pgc/widgets/intro_detail.dart';
+import 'package:bilite/pages/video/introduction/pgc/widgets/season.dart' as pgc;
+import 'package:bilite/pages/video/introduction/ugc/controller.dart';
+import 'package:bilite/pages/video/introduction/ugc/view.dart';
+import 'package:bilite/pages/video/introduction/ugc/widgets/page.dart';
+import 'package:bilite/pages/video/introduction/ugc/widgets/season.dart' as ugc;
+import 'package:bilite/pages/video/member/controller.dart';
+import 'package:bilite/pages/video/member/view.dart';
+import 'package:bilite/pages/video/related/view.dart';
+import 'package:bilite/pages/video/reply/controller.dart';
+import 'package:bilite/pages/video/reply/view.dart';
+import 'package:bilite/pages/video/view_point/view.dart';
+import 'package:bilite/pages/video/widgets/header_control.dart';
+import 'package:bilite/pages/video/widgets/intro_layout.dart';
+import 'package:bilite/pages/video/widgets/player_focus.dart';
+import 'package:bilite/plugin/pl_player/controller.dart';
+import 'package:bilite/plugin/pl_player/models/fullscreen_mode.dart';
+import 'package:bilite/plugin/pl_player/models/play_repeat.dart';
+import 'package:bilite/plugin/pl_player/models/play_status.dart';
+import 'package:bilite/plugin/pl_player/utils/fullscreen.dart';
+import 'package:bilite/plugin/pl_player/view/view.dart';
+import 'package:bilite/services/service_locator.dart';
+import 'package:bilite/services/shutdown_timer_service.dart'
     show shutdownTimerService;
-import 'package:PiliPure/utils/accounts.dart';
-import 'package:PiliPure/utils/android/bindings.g.dart';
-import 'package:PiliPure/utils/extension/scroll_controller_ext.dart';
-import 'package:PiliPure/utils/extension/theme_ext.dart';
-import 'package:PiliPure/utils/image_utils.dart';
-import 'package:PiliPure/utils/max_screen_size.dart';
-import 'package:PiliPure/utils/mobile_observer.dart';
-import 'package:PiliPure/utils/num_utils.dart';
-import 'package:PiliPure/utils/page_utils.dart';
-import 'package:PiliPure/utils/platform_utils.dart';
-import 'package:PiliPure/utils/storage.dart';
-import 'package:PiliPure/utils/storage_key.dart';
-import 'package:PiliPure/utils/theme_utils.dart';
+import 'package:bilite/utils/accounts.dart';
+import 'package:bilite/utils/android/bindings.g.dart';
+import 'package:bilite/utils/extension/scroll_controller_ext.dart';
+import 'package:bilite/utils/extension/theme_ext.dart';
+import 'package:bilite/utils/image_utils.dart';
+import 'package:bilite/utils/max_screen_size.dart';
+import 'package:bilite/utils/mobile_observer.dart';
+import 'package:bilite/utils/num_utils.dart';
+import 'package:bilite/utils/page_utils.dart';
+import 'package:bilite/utils/platform_utils.dart';
+import 'package:bilite/utils/storage.dart';
+import 'package:bilite/utils/storage_key.dart';
+import 'package:bilite/utils/theme_utils.dart';
 import 'package:extended_nested_scroll_view/extended_nested_scroll_view.dart';
 import 'package:flutter/foundation.dart' show kDebugMode, clampDouble;
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
@@ -1154,7 +1153,7 @@ class _VideoDetailPageVState extends State<VideoDetailPageV>
     return const SizedBox.shrink();
   });
 
-  Widget _moreBtn(Color color, {List<Shadow>? shadows}) => PopupMenuButton(
+  Widget _moreBtn(Color color, {List<Shadow>? shadows}) => GlassPopupMenuButton(
     icon: Icon(
       size: 22,
       Icons.more_vert,

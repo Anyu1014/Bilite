@@ -1,4 +1,4 @@
-import 'package:PiliPure/utils/extension/selectable_region_ext.dart';
+import 'package:bilite/utils/extension/selectable_region_ext.dart';
 import 'package:material_ui/material_ui.dart';
 
 class SelectionText extends StatelessWidget {

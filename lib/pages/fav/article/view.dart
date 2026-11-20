@@ -1,11 +1,11 @@
-import 'package:PiliPure/common/widgets/dialog/dialog.dart';
-import 'package:PiliPure/common/widgets/flutter/refresh_indicator.dart';
-import 'package:PiliPure/common/widgets/loading_widget/http_error.dart';
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/models_new/fav/fav_article/item.dart';
-import 'package:PiliPure/pages/fav/article/controller.dart';
-import 'package:PiliPure/pages/fav/article/widget/item.dart';
-import 'package:PiliPure/utils/grid.dart';
+import 'package:bilite/common/widgets/dialog/dialog.dart';
+import 'package:bilite/common/widgets/flutter/refresh_indicator.dart';
+import 'package:bilite/common/widgets/loading_widget/http_error.dart';
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/models_new/fav/fav_article/item.dart';
+import 'package:bilite/pages/fav/article/controller.dart';
+import 'package:bilite/pages/fav/article/widget/item.dart';
+import 'package:bilite/utils/grid.dart';
 import 'package:get/get.dart';
 import 'package:material_ui/material_ui.dart';
 

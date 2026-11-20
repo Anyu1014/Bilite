@@ -2,9 +2,9 @@ import 'dart:convert';
 import 'dart:io' show Platform;
 import 'dart:ui';
 
-import 'package:PiliPure/utils/android/bindings.g.dart';
-import 'package:PiliPure/utils/device_utils.dart';
-import 'package:PiliPure/utils/page_utils.dart';
+import 'package:bilite/utils/android/bindings.g.dart';
+import 'package:bilite/utils/device_utils.dart';
+import 'package:bilite/utils/page_utils.dart';
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 import 'package:jni/jni.dart';
 

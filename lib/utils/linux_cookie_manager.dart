@@ -1,8 +1,8 @@
 import 'dart:convert' show jsonEncode;
 import 'dart:io' show Cookie, Platform;
 
-import 'package:PiliPure/utils/accounts.dart';
-import 'package:PiliPure/utils/accounts/account.dart';
+import 'package:bilite/utils/accounts.dart';
+import 'package:bilite/utils/accounts/account.dart';
 import 'package:flutter/foundation.dart' show debugPrint, kDebugMode;
 import 'package:webview_all_linux/webview_all_linux.dart';
 

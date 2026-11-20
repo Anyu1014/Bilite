@@ -17,10 +17,10 @@
 
 import 'dart:math' as math;
 
-import 'package:PiliPure/common/widgets/gesture/horizontal_drag_gesture_recognizer.dart'
+import 'package:bilite/common/widgets/gesture/horizontal_drag_gesture_recognizer.dart'
     show touchSlopH;
-import 'package:PiliPure/common/widgets/gesture/image_horizontal_drag_gesture_recognizer.dart';
-import 'package:PiliPure/utils/extension/num_ext.dart';
+import 'package:bilite/common/widgets/gesture/image_horizontal_drag_gesture_recognizer.dart';
+import 'package:bilite/utils/extension/num_ext.dart';
 import 'package:flutter/foundation.dart' show clampDouble;
 import 'package:flutter/gestures.dart'
     show

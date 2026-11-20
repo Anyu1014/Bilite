@@ -1,12 +1,12 @@
-import 'package:PiliPure/models_new/download/bili_download_entry_info.dart';
-import 'package:PiliPure/models_new/video/video_detail/episode.dart';
-import 'package:PiliPure/models_new/video/video_detail/stat_detail.dart';
-import 'package:PiliPure/pages/common/common_intro_controller.dart';
-import 'package:PiliPure/pages/download/download/controller.dart';
-import 'package:PiliPure/plugin/pl_player/models/play_repeat.dart';
-import 'package:PiliPure/services/service_locator.dart';
-import 'package:PiliPure/utils/platform_utils.dart';
-import 'package:PiliPure/utils/scroll_offset_helper.dart';
+import 'package:bilite/models_new/download/bili_download_entry_info.dart';
+import 'package:bilite/models_new/video/video_detail/episode.dart';
+import 'package:bilite/models_new/video/video_detail/stat_detail.dart';
+import 'package:bilite/pages/common/common_intro_controller.dart';
+import 'package:bilite/pages/download/download/controller.dart';
+import 'package:bilite/plugin/pl_player/models/play_repeat.dart';
+import 'package:bilite/services/service_locator.dart';
+import 'package:bilite/utils/platform_utils.dart';
+import 'package:bilite/utils/scroll_offset_helper.dart';
 import 'package:extended_nested_scroll_view/extended_nested_scroll_view.dart'
     show ExtendedNestedScrollController;
 import 'package:flutter/foundation.dart' show kDebugMode;

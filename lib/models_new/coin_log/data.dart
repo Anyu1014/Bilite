@@ -1,4 +1,4 @@
-import 'package:PiliPure/models_new/coin_log/list.dart';
+import 'package:bilite/models_new/coin_log/list.dart';
 
 class CoinLogData {
   CoinLogData({this.list});

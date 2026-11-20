@@ -2,7 +2,7 @@
 
 import 'dart:ui';
 
-import 'package:PiliPure/models/common/sponsor_block/action_type.dart';
+import 'package:bilite/models/common/sponsor_block/action_type.dart';
 
 enum SegmentType {
   sponsor(

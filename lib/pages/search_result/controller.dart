@@ -1,4 +1,4 @@
-import 'package:PiliPure/models/common/search/search_type.dart';
+import 'package:bilite/models/common/search/search_type.dart';
 import 'package:get/get.dart';
 
 class SearchResultController extends GetxController {

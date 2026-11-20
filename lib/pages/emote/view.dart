@@ -1,16 +1,16 @@
-import 'package:PiliPure/common/widgets/button/icon_button.dart';
-import 'package:PiliPure/common/widgets/emote_tooltip.dart';
-import 'package:PiliPure/common/widgets/image/network_img_layer.dart';
-import 'package:PiliPure/common/widgets/loading_widget/loading_widget.dart';
-import 'package:PiliPure/common/widgets/scroll_physics.dart'
+import 'package:bilite/common/widgets/button/icon_button.dart';
+import 'package:bilite/common/widgets/emote_tooltip.dart';
+import 'package:bilite/common/widgets/image/network_img_layer.dart';
+import 'package:bilite/common/widgets/loading_widget/loading_widget.dart';
+import 'package:bilite/common/widgets/scroll_physics.dart'
     show tabBarView, platformClampingPhysics;
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/models/common/image_type.dart';
-import 'package:PiliPure/models_new/emote/emote.dart';
-import 'package:PiliPure/models_new/emote/package.dart';
-import 'package:PiliPure/pages/emote/controller.dart';
-import 'package:PiliPure/utils/extension/theme_ext.dart';
-import 'package:PiliPure/utils/theme_utils.dart';
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/models/common/image_type.dart';
+import 'package:bilite/models_new/emote/emote.dart';
+import 'package:bilite/models_new/emote/package.dart';
+import 'package:bilite/pages/emote/controller.dart';
+import 'package:bilite/utils/extension/theme_ext.dart';
+import 'package:bilite/utils/theme_utils.dart';
 import 'package:get/get.dart';
 import 'package:material_ui/material_ui.dart';
 

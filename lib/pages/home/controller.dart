@@ -1,16 +1,16 @@
 import 'dart:async';
 import 'dart:math';
 
-import 'package:PiliPure/http/api.dart';
-import 'package:PiliPure/http/init.dart';
-import 'package:PiliPure/models/common/home_tab_type.dart';
-import 'package:PiliPure/pages/common/common_controller.dart';
-import 'package:PiliPure/pages/main/controller.dart';
-import 'package:PiliPure/services/account_service.dart';
-import 'package:PiliPure/utils/storage.dart';
-import 'package:PiliPure/utils/storage_key.dart';
-import 'package:PiliPure/utils/storage_pref.dart';
-import 'package:PiliPure/utils/wbi_sign.dart';
+import 'package:bilite/http/api.dart';
+import 'package:bilite/http/init.dart';
+import 'package:bilite/models/common/home_tab_type.dart';
+import 'package:bilite/pages/common/common_controller.dart';
+import 'package:bilite/pages/main/controller.dart';
+import 'package:bilite/services/account_service.dart';
+import 'package:bilite/utils/storage.dart';
+import 'package:bilite/utils/storage_key.dart';
+import 'package:bilite/utils/storage_pref.dart';
+import 'package:bilite/utils/wbi_sign.dart';
 import 'package:flutter/foundation.dart' show kDebugMode;
 import 'package:get/get.dart';
 import 'package:material_ui/material_ui.dart';
@@ -73,7 +73,9 @@ class HomeController extends GetxController
     }
 
     tabController = TabController(
-      initialIndex: max(0, this.tabs.indexOf(HomeTabType.rcmd)),
+      // 冷启动落在设置里的「冷启动默认打开板块」，出厂默认「推荐」；
+      // 该板块被用户删掉时回退到第一个
+      initialIndex: max(0, this.tabs.indexOf(Pref.defaultHomeTab)),
       length: this.tabs.length,
       vsync: this,
     );

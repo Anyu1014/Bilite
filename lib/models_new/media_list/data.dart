@@ -1,4 +1,4 @@
-import 'package:PiliPure/models_new/media_list/media_list.dart';
+import 'package:bilite/models_new/media_list/media_list.dart';
 
 class MediaListData {
   List<MediaListItemModel> mediaList;

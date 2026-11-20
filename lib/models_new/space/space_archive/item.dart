@@ -1,8 +1,8 @@
-import 'package:PiliPure/models/model_owner.dart';
-import 'package:PiliPure/models/model_video.dart';
-import 'package:PiliPure/models_new/space/space_archive/badge.dart';
-import 'package:PiliPure/models_new/space/space_archive/history.dart';
-import 'package:PiliPure/models_new/space/space_archive/season.dart';
+import 'package:bilite/models/model_owner.dart';
+import 'package:bilite/models/model_video.dart';
+import 'package:bilite/models_new/space/space_archive/badge.dart';
+import 'package:bilite/models_new/space/space_archive/history.dart';
+import 'package:bilite/models_new/space/space_archive/season.dart';
 
 class SpaceArchiveItem extends BaseSimpleVideoItemModel {
   String? uri;

@@ -1,5 +1,5 @@
-import 'package:PiliPure/models/common/video/base_quality.dart';
-import 'package:PiliPure/models_new/live/live_room_play_info/stream.dart';
+import 'package:bilite/models/common/video/base_quality.dart';
+import 'package:bilite/models_new/live/live_room_play_info/stream.dart';
 
 class Playurl {
   late List<Stream> stream;

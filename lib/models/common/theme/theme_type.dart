@@ -1,4 +1,4 @@
-import 'package:PiliPure/models/common/enum_with_label.dart';
+import 'package:bilite/models/common/enum_with_label.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:material_ui/material_ui.dart';
 

@@ -1,5 +1,5 @@
-import 'package:PiliPure/models_new/space/space_opus/cover.dart';
-import 'package:PiliPure/models_new/space/space_opus/stat.dart';
+import 'package:bilite/models_new/space/space_opus/cover.dart';
+import 'package:bilite/models_new/space/space_opus/stat.dart';
 
 class SpaceOpusItemModel {
   String? content;

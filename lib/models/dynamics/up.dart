@@ -1,5 +1,5 @@
-import 'package:PiliPure/models_new/follow/list.dart';
-import 'package:PiliPure/utils/parse_int.dart';
+import 'package:bilite/models_new/follow/list.dart';
+import 'package:bilite/utils/parse_int.dart';
 
 class FollowUpModel {
   LiveUsers? liveUsers;

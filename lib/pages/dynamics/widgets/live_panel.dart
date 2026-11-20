@@ -1,5 +1,5 @@
-import 'package:PiliPure/common/widgets/image/network_img_layer.dart';
-import 'package:PiliPure/models/dynamics/result.dart';
+import 'package:bilite/common/widgets/image/network_img_layer.dart';
+import 'package:bilite/models/dynamics/result.dart';
 import 'package:material_ui/material_ui.dart';
 
 Widget livePanel(

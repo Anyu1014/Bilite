@@ -1,12 +1,12 @@
-import 'package:PiliPure/common/widgets/appbar/appbar.dart';
-import 'package:PiliPure/common/widgets/flutter/pop_scope.dart';
-import 'package:PiliPure/common/widgets/loading_widget/http_error.dart';
-import 'package:PiliPure/common/widgets/scaffold/simple_scaffold.dart';
-import 'package:PiliPure/common/widgets/view_insets_safe_area.dart';
-import 'package:PiliPure/common/widgets/view_sliver_safe_area.dart';
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/pages/common/multi_select/base.dart';
-import 'package:PiliPure/pages/common/search/common_search_controller.dart';
+import 'package:bilite/common/widgets/appbar/appbar.dart';
+import 'package:bilite/common/widgets/flutter/pop_scope.dart';
+import 'package:bilite/common/widgets/loading_widget/http_error.dart';
+import 'package:bilite/common/widgets/scaffold/simple_scaffold.dart';
+import 'package:bilite/common/widgets/view_insets_safe_area.dart';
+import 'package:bilite/common/widgets/view_sliver_safe_area.dart';
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/pages/common/multi_select/base.dart';
+import 'package:bilite/pages/common/search/common_search_controller.dart';
 import 'package:get/get.dart';
 import 'package:material_ui/material_ui.dart';
 

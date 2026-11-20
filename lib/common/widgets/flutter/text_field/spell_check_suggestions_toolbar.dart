@@ -4,7 +4,7 @@
 
 // ignore_for_file: prefer_initializing_formals
 
-import 'package:PiliPure/common/widgets/flutter/text_field/editable_text.dart';
+import 'package:bilite/common/widgets/flutter/text_field/editable_text.dart';
 import 'package:cupertino_ui/cupertino_ui.dart'
     hide EditableText, EditableTextState;
 import 'package:flutter/scheduler.dart';

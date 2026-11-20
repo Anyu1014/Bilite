@@ -1,6 +1,6 @@
-import 'package:PiliPure/pages/fav/pgc/child_view.dart';
-import 'package:PiliPure/pages/fav/pgc/controller.dart';
-import 'package:PiliPure/utils/extension/scroll_controller_ext.dart';
+import 'package:bilite/pages/fav/pgc/child_view.dart';
+import 'package:bilite/pages/fav/pgc/controller.dart';
+import 'package:bilite/utils/extension/scroll_controller_ext.dart';
 import 'package:get/get.dart';
 import 'package:material_ui/material_ui.dart';
 

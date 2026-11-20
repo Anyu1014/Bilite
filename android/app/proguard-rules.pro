@@ -1,2 +1,2 @@
--keep class com.pilipure.app.AndroidHelper { public *; }
--keep class com.pilipure.app.AndroidHelper$ToDart { public *; }
+-keep class com.bilite.app.AndroidHelper { public *; }
+-keep class com.bilite.app.AndroidHelper$ToDart { public *; }

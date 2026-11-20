@@ -1,5 +1,5 @@
-import 'package:PiliPure/models/model_hot_video_item.dart';
-import 'package:PiliPure/models_new/popular/popular_series_one/config.dart';
+import 'package:bilite/models/model_hot_video_item.dart';
+import 'package:bilite/models_new/popular/popular_series_one/config.dart';
 
 class PopularSeriesOneData {
   PopularSeriesConfig? config;

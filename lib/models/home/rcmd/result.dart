@@ -1,8 +1,8 @@
-import 'package:PiliPure/models/model_rec_video_item.dart';
-import 'package:PiliPure/models/model_video.dart';
-import 'package:PiliPure/utils/id_utils.dart';
-import 'package:PiliPure/utils/num_utils.dart';
-import 'package:PiliPure/utils/parse_string.dart';
+import 'package:bilite/models/model_rec_video_item.dart';
+import 'package:bilite/models/model_video.dart';
+import 'package:bilite/utils/id_utils.dart';
+import 'package:bilite/utils/num_utils.dart';
+import 'package:bilite/utils/parse_string.dart';
 
 class RcmdVideoItemAppModel extends BaseRcmdVideoItemModel {
   int? get id => aid;

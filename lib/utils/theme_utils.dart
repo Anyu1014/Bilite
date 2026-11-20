@@ -1,7 +1,7 @@
-import 'package:PiliPure/common/style.dart';
-import 'package:PiliPure/utils/extension/theme_ext.dart';
-import 'package:PiliPure/utils/font_utils.dart';
-import 'package:PiliPure/utils/storage_pref.dart';
+import 'package:bilite/common/style.dart';
+import 'package:bilite/utils/extension/theme_ext.dart';
+import 'package:bilite/utils/font_utils.dart';
+import 'package:bilite/utils/storage_pref.dart';
 import 'package:cupertino_ui/cupertino_ui.dart' show CupertinoThemeData;
 import 'package:flutter/foundation.dart' show PlatformDispatcher;
 import 'package:material_ui/material_ui.dart';
@@ -12,6 +12,9 @@ abstract final class ThemeUtils {
   static late ThemeData darkTheme;
 
   static late ThemeMode themeMode;
+
+  /// 当前主题是否为原生风格（纯白/纯黑背景），供底栏等自绘组件跟随
+  static bool useNativeBackground = false;
 
   static ThemeData get theme {
     if (themeMode == .dark ||
@@ -31,6 +34,7 @@ abstract final class ThemeUtils {
     required ColorScheme colorScheme,
     required bool isDynamic,
     bool isDark = false,
+    bool nativeBackground = false,
   }) {
     final fontWeight = Pref.appFontWeight;
     final fontFamily = FontUtils.fontFamily;
@@ -165,10 +169,26 @@ abstract final class ThemeUtils {
         },
       ),
     );
+    var themeData = theme;
+    ThemeUtils.useNativeBackground = nativeBackground;
     if (isDark && Pref.isPureBlackTheme) {
-      return darkenTheme(theme);
+      themeData = darkenTheme(themeData);
     }
-    return theme;
+    if (nativeBackground) {
+      themeData = nativeBackgroundTheme(themeData);
+    }
+    return themeData;
+  }
+
+  /// 原生风格：保留调色板配色，只把页面背景换成纯白/纯黑（去掉了背景上的调色滤镜）
+  static ThemeData nativeBackgroundTheme(ThemeData theme) {
+    final background = theme.brightness.isDark ? Colors.black : Colors.white;
+    return theme.copyWith(
+      canvasColor: background,
+      scaffoldBackgroundColor: background,
+      appBarTheme: theme.appBarTheme.copyWith(backgroundColor: background),
+      colorScheme: theme.colorScheme.copyWith(surface: background),
+    );
   }
 
   static ThemeData darkenTheme(ThemeData theme) {

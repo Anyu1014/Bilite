@@ -1,7 +1,7 @@
 import 'dart:io';
 
-import 'package:PiliPure/utils/json_file_handler.dart';
-import 'package:PiliPure/utils/storage_pref.dart';
+import 'package:bilite/utils/json_file_handler.dart';
+import 'package:bilite/utils/storage_pref.dart';
 import 'package:catcher_2/utils/log_printer.dart';
 import 'package:flutter/foundation.dart';
 import 'package:logger/logger.dart';

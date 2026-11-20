@@ -1,8 +1,8 @@
-import 'package:PiliPure/pages/follow_type/follow_same/controller.dart';
-import 'package:PiliPure/pages/follow_type/view.dart';
-import 'package:PiliPure/utils/extension/get_ext.dart';
-import 'package:PiliPure/utils/parse_int.dart';
-import 'package:PiliPure/utils/utils.dart';
+import 'package:bilite/pages/follow_type/follow_same/controller.dart';
+import 'package:bilite/pages/follow_type/view.dart';
+import 'package:bilite/utils/extension/get_ext.dart';
+import 'package:bilite/utils/parse_int.dart';
+import 'package:bilite/utils/utils.dart';
 import 'package:get/get.dart';
 import 'package:material_ui/material_ui.dart';
 

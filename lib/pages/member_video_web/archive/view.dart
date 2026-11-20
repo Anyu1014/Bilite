@@ -1,11 +1,11 @@
-import 'package:PiliPure/common/widgets/self_sized_horizontal_list.dart';
-import 'package:PiliPure/common/widgets/sliver/sliver_pinned_header.dart';
-import 'package:PiliPure/models/common/member/archive_order_type_web.dart';
-import 'package:PiliPure/models_new/member/search_archive/data.dart';
-import 'package:PiliPure/models_new/member/search_archive/vlist.dart';
-import 'package:PiliPure/pages/member_video_web/archive/controller.dart';
-import 'package:PiliPure/pages/member_video_web/base/view.dart';
-import 'package:PiliPure/pages/search/widgets/search_text.dart';
+import 'package:bilite/common/widgets/self_sized_horizontal_list.dart';
+import 'package:bilite/common/widgets/sliver/sliver_pinned_header.dart';
+import 'package:bilite/models/common/member/archive_order_type_web.dart';
+import 'package:bilite/models_new/member/search_archive/data.dart';
+import 'package:bilite/models_new/member/search_archive/vlist.dart';
+import 'package:bilite/pages/member_video_web/archive/controller.dart';
+import 'package:bilite/pages/member_video_web/base/view.dart';
+import 'package:bilite/pages/search/widgets/search_text.dart';
 import 'package:get/get.dart';
 import 'package:material_ui/material_ui.dart';
 

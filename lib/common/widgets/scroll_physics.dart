@@ -1,6 +1,6 @@
-import 'package:PiliPure/common/widgets/gesture/horizontal_drag_gesture_recognizer.dart';
-import 'package:PiliPure/utils/platform_utils.dart';
-import 'package:PiliPure/utils/storage_pref.dart';
+import 'package:bilite/common/widgets/gesture/horizontal_drag_gesture_recognizer.dart';
+import 'package:bilite/utils/platform_utils.dart';
+import 'package:bilite/utils/storage_pref.dart';
 import 'package:material_ui/material_ui.dart';
 
 Widget tabBarView({

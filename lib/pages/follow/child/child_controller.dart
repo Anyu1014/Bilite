@@ -1,11 +1,11 @@
-import 'package:PiliPure/http/follow.dart';
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/http/member.dart';
-import 'package:PiliPure/http/user.dart';
-import 'package:PiliPure/models_new/follow/data.dart';
-import 'package:PiliPure/models_new/follow/list.dart';
-import 'package:PiliPure/pages/common/common_list_controller.dart';
-import 'package:PiliPure/pages/follow/controller.dart';
+import 'package:bilite/http/follow.dart';
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/http/member.dart';
+import 'package:bilite/http/user.dart';
+import 'package:bilite/models_new/follow/data.dart';
+import 'package:bilite/models_new/follow/list.dart';
+import 'package:bilite/pages/common/common_list_controller.dart';
+import 'package:bilite/pages/follow/controller.dart';
 import 'package:get/get.dart';
 
 class FollowChildController

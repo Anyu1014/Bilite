@@ -1,6 +1,6 @@
-import 'package:PiliPure/models_new/upower_rank/level_info.dart';
-import 'package:PiliPure/models_new/upower_rank/rank_info.dart';
-import 'package:PiliPure/utils/extension/iterable_ext.dart';
+import 'package:bilite/models_new/upower_rank/level_info.dart';
+import 'package:bilite/models_new/upower_rank/rank_info.dart';
+import 'package:bilite/utils/extension/iterable_ext.dart';
 
 class UpowerRankData {
   List<UpowerRankInfo>? rankInfo;

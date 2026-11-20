@@ -1,14 +1,14 @@
-import 'package:PiliPure/common/widgets/avatars.dart';
-import 'package:PiliPure/common/widgets/image/image_save.dart';
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/models/dynamics/result.dart';
-import 'package:PiliPure/pages/dynamics/widgets/action_panel.dart';
-import 'package:PiliPure/pages/dynamics/widgets/author_panel.dart';
-import 'package:PiliPure/pages/dynamics/widgets/dyn_content.dart';
-import 'package:PiliPure/pages/dynamics/widgets/interaction.dart';
-import 'package:PiliPure/utils/extension/theme_ext.dart';
-import 'package:PiliPure/utils/page_utils.dart';
-import 'package:PiliPure/utils/platform_utils.dart';
+import 'package:bilite/common/widgets/avatars.dart';
+import 'package:bilite/common/widgets/image/image_save.dart';
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/models/dynamics/result.dart';
+import 'package:bilite/pages/dynamics/widgets/action_panel.dart';
+import 'package:bilite/pages/dynamics/widgets/author_panel.dart';
+import 'package:bilite/pages/dynamics/widgets/dyn_content.dart';
+import 'package:bilite/pages/dynamics/widgets/interaction.dart';
+import 'package:bilite/utils/extension/theme_ext.dart';
+import 'package:bilite/utils/page_utils.dart';
+import 'package:bilite/utils/platform_utils.dart';
 import 'package:material_ui/material_ui.dart';
 
 class DynamicPanel extends StatelessWidget {

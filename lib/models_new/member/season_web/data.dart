@@ -1,5 +1,5 @@
-import 'package:PiliPure/models_new/member/season_web/archive.dart';
-import 'package:PiliPure/models_new/member/season_web/page.dart';
+import 'package:bilite/models_new/member/season_web/archive.dart';
+import 'package:bilite/models_new/member/season_web/page.dart';
 
 class SeasonWebData {
   List<SeasonArchive>? archives;

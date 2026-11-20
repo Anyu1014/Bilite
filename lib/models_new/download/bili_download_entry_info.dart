@@ -1,14 +1,14 @@
-import 'package:PiliPure/common/widgets/badge.dart';
-import 'package:PiliPure/models/common/video/base_quality.dart';
-import 'package:PiliPure/models/common/video/video_type.dart';
-import 'package:PiliPure/models_new/download/download_info.dart';
-import 'package:PiliPure/models_new/sponsor_block/segment_item.dart';
-import 'package:PiliPure/pages/common/multi_select/base.dart'
+import 'package:bilite/common/widgets/badge.dart';
+import 'package:bilite/models/common/video/base_quality.dart';
+import 'package:bilite/models/common/video/video_type.dart';
+import 'package:bilite/models_new/download/download_info.dart';
+import 'package:bilite/models_new/sponsor_block/segment_item.dart';
+import 'package:bilite/pages/common/multi_select/base.dart'
     show MultiSelectData;
-import 'package:PiliPure/utils/page_utils.dart';
-import 'package:PiliPure/utils/path_utils.dart';
-import 'package:PiliPure/utils/platform_utils.dart';
-import 'package:PiliPure/utils/utils.dart';
+import 'package:bilite/utils/page_utils.dart';
+import 'package:bilite/utils/path_utils.dart';
+import 'package:bilite/utils/platform_utils.dart';
+import 'package:bilite/utils/utils.dart';
 import 'package:get/route_manager.dart';
 import 'package:material_ui/material_ui.dart';
 

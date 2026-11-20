@@ -1,16 +1,16 @@
 import 'dart:async';
 
-import 'package:PiliPure/http/dynamics.dart';
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/models/common/dynamic/dynamics_type.dart';
-import 'package:PiliPure/models/dynamics/up.dart';
-import 'package:PiliPure/pages/common/common_data_controller.dart';
-import 'package:PiliPure/pages/dynamics_tab/controller.dart';
-import 'package:PiliPure/services/account_service.dart';
-import 'package:PiliPure/utils/accounts.dart';
-import 'package:PiliPure/utils/extension/scroll_controller_ext.dart';
-import 'package:PiliPure/utils/extension/string_ext.dart';
-import 'package:PiliPure/utils/storage_pref.dart';
+import 'package:bilite/http/dynamics.dart';
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/models/common/dynamic/dynamics_type.dart';
+import 'package:bilite/models/dynamics/up.dart';
+import 'package:bilite/pages/common/common_data_controller.dart';
+import 'package:bilite/pages/dynamics_tab/controller.dart';
+import 'package:bilite/services/account_service.dart';
+import 'package:bilite/utils/accounts.dart';
+import 'package:bilite/utils/extension/scroll_controller_ext.dart';
+import 'package:bilite/utils/extension/string_ext.dart';
+import 'package:bilite/utils/storage_pref.dart';
 import 'package:easy_debounce/easy_throttle.dart';
 import 'package:get/get.dart';
 import 'package:material_ui/material_ui.dart' show TabController;

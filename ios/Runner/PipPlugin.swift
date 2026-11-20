@@ -11,7 +11,7 @@ import UIKit
 /// tracked texture are copied and fed to an `AVSampleBufferDisplayLayer`, which
 /// is used as the PiP content source (iOS 15+).
 final class PipPlugin: NSObject, FlutterPlugin {
-  private static let channelName = "com.pilipure.app/pip"
+  private static let channelName = "com.bilite.app/pip"
 
   static func register(with registrar: FlutterPluginRegistrar) {
     let channel = FlutterMethodChannel(

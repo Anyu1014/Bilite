@@ -1,4 +1,4 @@
-import 'package:PiliPure/models/common/enum_with_label.dart';
+import 'package:bilite/models/common/enum_with_label.dart';
 
 enum MineTabType implements EnumWithLabel {
   favorite('我的收藏'),

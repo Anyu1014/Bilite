@@ -17,26 +17,26 @@
 
 import 'dart:io' show Platform;
 
-import 'package:PiliPure/common/assets.dart';
-import 'package:PiliPure/common/style.dart';
-import 'package:PiliPure/common/widgets/badge.dart';
-import 'package:PiliPure/common/widgets/image/network_img_layer.dart';
-import 'package:PiliPure/common/widgets/image_grid/image_grid_builder.dart';
-import 'package:PiliPure/common/widgets/image_viewer/gallery_viewer.dart';
-import 'package:PiliPure/common/widgets/scaffold/mini_scaffold.dart';
-import 'package:PiliPure/models/common/image_preview_type.dart';
-import 'package:PiliPure/utils/extension/context_ext.dart';
-import 'package:PiliPure/utils/extension/num_ext.dart';
-import 'package:PiliPure/utils/extension/size_ext.dart';
-import 'package:PiliPure/utils/global_data.dart';
-import 'package:PiliPure/utils/image_utils.dart';
-import 'package:PiliPure/utils/page_utils.dart';
-import 'package:PiliPure/utils/platform_utils.dart';
-import 'package:PiliPure/utils/storage_pref.dart';
+import 'package:bilite/common/assets.dart';
+import 'package:bilite/common/style.dart';
+import 'package:bilite/common/widgets/badge.dart';
+import 'package:bilite/common/widgets/image/network_img_layer.dart';
+import 'package:bilite/common/widgets/image_grid/image_grid_builder.dart';
+import 'package:bilite/common/widgets/image_viewer/gallery_viewer.dart';
+import 'package:bilite/common/widgets/scaffold/mini_scaffold.dart';
+import 'package:bilite/models/common/image_preview_type.dart';
+import 'package:bilite/utils/extension/context_ext.dart';
+import 'package:bilite/utils/extension/num_ext.dart';
+import 'package:bilite/utils/extension/size_ext.dart';
+import 'package:bilite/utils/global_data.dart';
+import 'package:bilite/utils/image_utils.dart';
+import 'package:bilite/utils/page_utils.dart';
+import 'package:bilite/utils/platform_utils.dart';
+import 'package:bilite/utils/storage_pref.dart';
 import 'package:flutter/services.dart' show HapticFeedback;
 import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_navigation/src/extension_navigation.dart';
-import 'package:PiliPure/common/widgets/glass.dart';
+import 'package:bilite/common/widgets/glass.dart';
 import 'package:material_ui/material_ui.dart';
 
 class ImageModel {

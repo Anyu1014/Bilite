@@ -1,7 +1,7 @@
-import 'package:PiliPure/common/widgets/custom_icon.dart';
-import 'package:PiliPure/common/widgets/view_insets_safe_area.dart';
-import 'package:PiliPure/http/pgc.dart';
-import 'package:PiliPure/utils/accounts.dart';
+import 'package:bilite/common/widgets/custom_icon.dart';
+import 'package:bilite/common/widgets/view_insets_safe_area.dart';
+import 'package:bilite/http/pgc.dart';
+import 'package:bilite/utils/accounts.dart';
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 import 'package:get/get.dart';
 import 'package:material_ui/material_ui.dart';

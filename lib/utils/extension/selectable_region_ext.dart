@@ -1,6 +1,6 @@
-import 'package:PiliPure/utils/extension/get_ext.dart';
-import 'package:PiliPure/utils/extension/iterable_ext.dart';
-import 'package:PiliPure/utils/page_utils.dart';
+import 'package:bilite/utils/extension/get_ext.dart';
+import 'package:bilite/utils/extension/iterable_ext.dart';
+import 'package:bilite/utils/page_utils.dart';
 import 'package:get/get.dart';
 import 'package:material_ui/material_ui.dart';
 

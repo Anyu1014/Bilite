@@ -1,8 +1,8 @@
-import 'package:PiliPure/models/common/sponsor_block/segment_type.dart';
-import 'package:PiliPure/models/common/sponsor_block/skip_type.dart';
-import 'package:PiliPure/models_new/sponsor_block/segment_item.dart';
-import 'package:PiliPure/pages/sponsor_block/block_mixin.dart';
-import 'package:PiliPure/utils/storage_pref.dart';
+import 'package:bilite/models/common/sponsor_block/segment_type.dart';
+import 'package:bilite/models/common/sponsor_block/skip_type.dart';
+import 'package:bilite/models_new/sponsor_block/segment_item.dart';
+import 'package:bilite/pages/sponsor_block/block_mixin.dart';
+import 'package:bilite/utils/storage_pref.dart';
 
 class SegmentModel implements Comparable<SegmentModel> {
   SegmentModel({

@@ -1,9 +1,9 @@
-import 'package:PiliPure/common/widgets/scroll_physics.dart'
+import 'package:bilite/common/widgets/scroll_physics.dart'
     show platformClampingPhysics;
-import 'package:PiliPure/models/common/super_chat_type.dart';
-import 'package:PiliPure/pages/live_room/controller.dart';
-import 'package:PiliPure/pages/live_room/superchat/superchat_card.dart';
-import 'package:PiliPure/pages/search/controller.dart';
+import 'package:bilite/models/common/super_chat_type.dart';
+import 'package:bilite/pages/live_room/controller.dart';
+import 'package:bilite/pages/live_room/superchat/superchat_card.dart';
+import 'package:bilite/pages/search/controller.dart';
 import 'package:get/get_state_manager/src/rx_flutter/rx_obx_widget.dart';
 import 'package:material_ui/material_ui.dart';
 

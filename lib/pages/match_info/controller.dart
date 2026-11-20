@@ -1,7 +1,7 @@
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/http/match.dart';
-import 'package:PiliPure/models_new/match/match_info/contest.dart';
-import 'package:PiliPure/pages/common/dyn/common_dyn_controller.dart';
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/http/match.dart';
+import 'package:bilite/models_new/match/match_info/contest.dart';
+import 'package:bilite/pages/common/dyn/common_dyn_controller.dart';
 import 'package:get/get.dart';
 
 class MatchInfoController extends CommonDynController {

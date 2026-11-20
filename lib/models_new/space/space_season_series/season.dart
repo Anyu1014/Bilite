@@ -1,4 +1,4 @@
-import 'package:PiliPure/models_new/space/space_season_series/meta.dart';
+import 'package:bilite/models_new/space/space_season_series/meta.dart';
 
 class SpaceSsModel {
   SpaceSsMeta? meta;

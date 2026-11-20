@@ -1,6 +1,6 @@
-import 'package:PiliPure/models/model_video.dart';
-import 'package:PiliPure/models_new/dynamic/dyn_mention/item.dart';
-import 'package:PiliPure/utils/parse_int.dart';
+import 'package:bilite/models/model_video.dart';
+import 'package:bilite/models_new/dynamic/dyn_mention/item.dart';
+import 'package:bilite/utils/parse_int.dart';
 import 'package:hive_ce/hive.dart';
 
 part 'model_owner.g.dart';

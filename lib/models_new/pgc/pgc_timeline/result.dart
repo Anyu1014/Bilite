@@ -1,4 +1,4 @@
-import 'package:PiliPure/models_new/pgc/pgc_timeline/episode.dart';
+import 'package:bilite/models_new/pgc/pgc_timeline/episode.dart';
 
 class TimelineResult {
   String? date;

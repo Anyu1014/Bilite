@@ -1,10 +1,10 @@
-import 'package:PiliPure/common/style.dart';
-import 'package:PiliPure/common/widgets/scaffold/simple_scaffold.dart';
-import 'package:PiliPure/common/widgets/view_insets_safe_area.dart';
-import 'package:PiliPure/pages/webdav/webdav.dart';
-import 'package:PiliPure/utils/storage.dart';
-import 'package:PiliPure/utils/storage_key.dart';
-import 'package:PiliPure/utils/storage_pref.dart';
+import 'package:bilite/common/style.dart';
+import 'package:bilite/common/widgets/scaffold/simple_scaffold.dart';
+import 'package:bilite/common/widgets/view_insets_safe_area.dart';
+import 'package:bilite/pages/webdav/webdav.dart';
+import 'package:bilite/utils/storage.dart';
+import 'package:bilite/utils/storage_key.dart';
+import 'package:bilite/utils/storage_pref.dart';
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 import 'package:material_ui/material_ui.dart';
 

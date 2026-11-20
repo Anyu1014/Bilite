@@ -1,7 +1,7 @@
-import 'package:PiliPure/http/api.dart';
-import 'package:PiliPure/http/init.dart';
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/utils/accounts.dart';
+import 'package:bilite/http/api.dart';
+import 'package:bilite/http/init.dart';
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/utils/accounts.dart';
 import 'package:dio/dio.dart';
 
 abstract final class ValidateHttp {

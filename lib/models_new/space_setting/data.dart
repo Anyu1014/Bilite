@@ -1,4 +1,4 @@
-import 'package:PiliPure/models_new/space_setting/privacy.dart';
+import 'package:bilite/models_new/space_setting/privacy.dart';
 
 class SpaceSettingData {
   Privacy? privacy;

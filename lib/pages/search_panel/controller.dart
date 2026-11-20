@@ -1,15 +1,15 @@
 import 'dart:async' show StreamSubscription, Timer;
 
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/http/search.dart';
-import 'package:PiliPure/models/common/search/article_search_type.dart';
-import 'package:PiliPure/models/common/search/search_type.dart';
-import 'package:PiliPure/models/common/search/user_search_type.dart';
-import 'package:PiliPure/models/common/search/video_search_type.dart';
-import 'package:PiliPure/models/search/result.dart';
-import 'package:PiliPure/pages/common/common_list_controller.dart';
-import 'package:PiliPure/pages/search_result/controller.dart';
-import 'package:PiliPure/utils/extension/scroll_controller_ext.dart';
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/http/search.dart';
+import 'package:bilite/models/common/search/article_search_type.dart';
+import 'package:bilite/models/common/search/search_type.dart';
+import 'package:bilite/models/common/search/user_search_type.dart';
+import 'package:bilite/models/common/search/video_search_type.dart';
+import 'package:bilite/models/search/result.dart';
+import 'package:bilite/pages/common/common_list_controller.dart';
+import 'package:bilite/pages/search_result/controller.dart';
+import 'package:bilite/utils/extension/scroll_controller_ext.dart';
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 import 'package:get/get.dart';
 

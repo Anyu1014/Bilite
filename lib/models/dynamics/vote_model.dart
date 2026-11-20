@@ -1,5 +1,5 @@
-import 'package:PiliPure/utils/extension/iterable_ext.dart';
-import 'package:PiliPure/utils/parse_int.dart';
+import 'package:bilite/utils/extension/iterable_ext.dart';
+import 'package:bilite/utils/parse_int.dart';
 
 class SimpleVoteInfo {
   int? choiceCnt;

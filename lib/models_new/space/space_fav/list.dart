@@ -1,5 +1,5 @@
-import 'package:PiliPure/models/model_owner.dart';
-import 'package:PiliPure/models_new/sub/sub/list.dart';
+import 'package:bilite/models/model_owner.dart';
+import 'package:bilite/models_new/sub/sub/list.dart';
 
 class SpaceFavItemModel extends SubItemModel {
   int? mediaId;

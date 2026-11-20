@@ -1,14 +1,14 @@
 import 'dart:async';
 import 'dart:math';
 
-import 'package:PiliPure/common/widgets/loading_widget/loading_widget.dart';
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/models_new/dynamic/dyn_topic_top/topic_item.dart';
-import 'package:PiliPure/pages/dynamics_select_topic/controller.dart';
-import 'package:PiliPure/pages/dynamics_select_topic/widgets/item.dart';
-import 'package:PiliPure/pages/search/controller.dart' show DebounceStreamState;
-import 'package:PiliPure/utils/extension/context_ext.dart';
-import 'package:PiliPure/utils/extension/scroll_controller_ext.dart';
+import 'package:bilite/common/widgets/loading_widget/loading_widget.dart';
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/models_new/dynamic/dyn_topic_top/topic_item.dart';
+import 'package:bilite/pages/dynamics_select_topic/controller.dart';
+import 'package:bilite/pages/dynamics_select_topic/widgets/item.dart';
+import 'package:bilite/pages/search/controller.dart' show DebounceStreamState;
+import 'package:bilite/utils/extension/context_ext.dart';
+import 'package:bilite/utils/extension/scroll_controller_ext.dart';
 import 'package:get/get.dart';
 import 'package:material_ui/material_ui.dart';
 

@@ -1,10 +1,10 @@
-import 'package:PiliPure/common/style.dart';
-import 'package:PiliPure/common/widgets/image/network_img_layer.dart';
-import 'package:PiliPure/common/widgets/stat/stat.dart';
-import 'package:PiliPure/grpc/bilibili/app/dynamic/v2.pb.dart'
+import 'package:bilite/common/style.dart';
+import 'package:bilite/common/widgets/image/network_img_layer.dart';
+import 'package:bilite/common/widgets/stat/stat.dart';
+import 'package:bilite/grpc/bilibili/app/dynamic/v2.pb.dart'
     show OpusFlowItem;
-import 'package:PiliPure/models/common/stat_type.dart';
-import 'package:PiliPure/utils/page_utils.dart';
+import 'package:bilite/models/common/stat_type.dart';
+import 'package:bilite/utils/page_utils.dart';
 import 'package:flutter/foundation.dart' show clampDouble;
 import 'package:material_ui/material_ui.dart';
 

@@ -1,5 +1,5 @@
-import 'package:PiliPure/models/common/stat_type.dart';
-import 'package:PiliPure/utils/num_utils.dart';
+import 'package:bilite/models/common/stat_type.dart';
+import 'package:bilite/utils/num_utils.dart';
 import 'package:material_ui/material_ui.dart';
 
 class StatWidget extends StatelessWidget {

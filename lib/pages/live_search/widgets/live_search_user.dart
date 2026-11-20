@@ -1,10 +1,10 @@
-import 'package:PiliPure/common/assets.dart';
-import 'package:PiliPure/common/widgets/image/network_img_layer.dart';
-import 'package:PiliPure/models/common/image_type.dart';
-import 'package:PiliPure/models_new/live/live_search/user_item.dart';
-import 'package:PiliPure/utils/extension/num_ext.dart';
-import 'package:PiliPure/utils/num_utils.dart';
-import 'package:PiliPure/utils/page_utils.dart';
+import 'package:bilite/common/assets.dart';
+import 'package:bilite/common/widgets/image/network_img_layer.dart';
+import 'package:bilite/models/common/image_type.dart';
+import 'package:bilite/models_new/live/live_search/user_item.dart';
+import 'package:bilite/utils/extension/num_ext.dart';
+import 'package:bilite/utils/num_utils.dart';
+import 'package:bilite/utils/page_utils.dart';
 import 'package:material_ui/material_ui.dart';
 
 class LiveSearchUserItem extends StatelessWidget {

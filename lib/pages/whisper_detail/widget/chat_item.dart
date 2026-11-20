@@ -1,26 +1,26 @@
 import 'dart:convert';
 import 'dart:math' as math;
 
-import 'package:PiliPure/common/constants.dart';
-import 'package:PiliPure/common/style.dart';
-import 'package:PiliPure/common/widgets/badge.dart';
-import 'package:PiliPure/common/widgets/emote_tooltip.dart';
-import 'package:PiliPure/common/widgets/gesture/tap_gesture_recognizer.dart';
-import 'package:PiliPure/common/widgets/image/network_img_layer.dart';
-import 'package:PiliPure/common/widgets/image_viewer/hero.dart';
-import 'package:PiliPure/common/widgets/selection_text.dart';
-import 'package:PiliPure/grpc/bilibili/im/interfaces/v1.pb.dart'
+import 'package:bilite/common/constants.dart';
+import 'package:bilite/common/style.dart';
+import 'package:bilite/common/widgets/badge.dart';
+import 'package:bilite/common/widgets/emote_tooltip.dart';
+import 'package:bilite/common/widgets/gesture/tap_gesture_recognizer.dart';
+import 'package:bilite/common/widgets/image/network_img_layer.dart';
+import 'package:bilite/common/widgets/image_viewer/hero.dart';
+import 'package:bilite/common/widgets/selection_text.dart';
+import 'package:bilite/grpc/bilibili/im/interfaces/v1.pb.dart'
     show EmotionInfo;
-import 'package:PiliPure/grpc/bilibili/im/type.pb.dart' show Msg, MsgType;
-import 'package:PiliPure/http/search.dart';
-import 'package:PiliPure/models/common/image_preview_type.dart';
-import 'package:PiliPure/utils/app_scheme.dart';
-import 'package:PiliPure/utils/date_utils.dart';
-import 'package:PiliPure/utils/duration_utils.dart';
-import 'package:PiliPure/utils/extension/num_ext.dart';
-import 'package:PiliPure/utils/id_utils.dart';
-import 'package:PiliPure/utils/image_utils.dart';
-import 'package:PiliPure/utils/page_utils.dart';
+import 'package:bilite/grpc/bilibili/im/type.pb.dart' show Msg, MsgType;
+import 'package:bilite/http/search.dart';
+import 'package:bilite/models/common/image_preview_type.dart';
+import 'package:bilite/utils/app_scheme.dart';
+import 'package:bilite/utils/date_utils.dart';
+import 'package:bilite/utils/duration_utils.dart';
+import 'package:bilite/utils/extension/num_ext.dart';
+import 'package:bilite/utils/id_utils.dart';
+import 'package:bilite/utils/image_utils.dart';
+import 'package:bilite/utils/page_utils.dart';
 import 'package:cached_network_image_ce/cached_network_image.dart';
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 import 'package:get/get.dart';

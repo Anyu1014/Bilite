@@ -1,4 +1,4 @@
-import 'package:PiliPure/utils/storage_pref.dart';
+import 'package:bilite/utils/storage_pref.dart';
 import 'package:flutter/foundation.dart' show PlatformDispatcher;
 import 'package:flutter/gestures.dart'
     show

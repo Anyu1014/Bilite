@@ -1,4 +1,4 @@
-import 'package:PiliPure/models_new/member_card_info/card.dart';
+import 'package:bilite/models_new/member_card_info/card.dart';
 
 class MemberCardInfoData {
   Card? card;

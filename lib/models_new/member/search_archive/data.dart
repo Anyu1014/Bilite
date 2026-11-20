@@ -1,5 +1,5 @@
-import 'package:PiliPure/models_new/member/search_archive/list.dart';
-import 'package:PiliPure/models_new/member/search_archive/page.dart';
+import 'package:bilite/models_new/member/search_archive/list.dart';
+import 'package:bilite/models_new/member/search_archive/page.dart';
 
 class SearchArchiveData {
   SearchArchiveList? list;

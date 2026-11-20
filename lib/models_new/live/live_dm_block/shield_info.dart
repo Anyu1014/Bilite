@@ -1,5 +1,5 @@
-import 'package:PiliPure/models_new/live/live_dm_block/shield_user_list.dart';
-import 'package:PiliPure/utils/extension/iterable_ext.dart';
+import 'package:bilite/models_new/live/live_dm_block/shield_user_list.dart';
+import 'package:bilite/utils/extension/iterable_ext.dart';
 
 class ShieldInfo {
   List<ShieldUserList>? shieldUserList;

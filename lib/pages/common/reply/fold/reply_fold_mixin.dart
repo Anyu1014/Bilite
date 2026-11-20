@@ -1,8 +1,8 @@
-import 'package:PiliPure/grpc/bilibili/main/community/reply/v1.pb.dart'
+import 'package:bilite/grpc/bilibili/main/community/reply/v1.pb.dart'
     show FoldCard, MainListReply, MixedCard, ReplyInfo;
-import 'package:PiliPure/grpc/reply.dart';
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/pages/common/reply/reply_controller.dart';
+import 'package:bilite/grpc/reply.dart';
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/pages/common/reply/reply_controller.dart';
 import 'package:collection/collection.dart';
 import 'package:flutter/foundation.dart' show kDebugMode;
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';

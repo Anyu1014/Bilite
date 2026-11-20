@@ -1,4 +1,4 @@
-import 'package:PiliPure/models_new/space/space/item.dart';
+import 'package:bilite/models_new/space/space/item.dart';
 
 class UgcSeason {
   int? count;

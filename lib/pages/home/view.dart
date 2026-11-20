@@ -1,16 +1,16 @@
-import 'package:PiliPure/common/style.dart';
-import 'package:PiliPure/common/widgets/custom_height_widget.dart';
-import 'package:PiliPure/common/widgets/image/network_img_layer.dart';
-import 'package:PiliPure/common/widgets/glass.dart';
-import 'package:PiliPure/common/widgets/home_header_inset.dart';
-import 'package:PiliPure/common/widgets/scroll_physics.dart' show tabBarView;
-import 'package:PiliPure/pages/common/common_page.dart';
-import 'package:PiliPure/pages/home/controller.dart';
-import 'package:PiliPure/pages/main/controller.dart';
-import 'package:PiliPure/pages/mine/controller.dart';
-import 'package:PiliPure/utils/extension/get_ext.dart';
-import 'package:PiliPure/utils/extension/size_ext.dart';
-import 'package:PiliPure/utils/feed_back.dart';
+import 'package:bilite/common/style.dart';
+import 'package:bilite/common/widgets/custom_height_widget.dart';
+import 'package:bilite/common/widgets/image/network_img_layer.dart';
+import 'package:bilite/common/widgets/glass.dart';
+import 'package:bilite/common/widgets/home_header_inset.dart';
+import 'package:bilite/common/widgets/scroll_physics.dart' show tabBarView;
+import 'package:bilite/pages/common/common_page.dart';
+import 'package:bilite/pages/home/controller.dart';
+import 'package:bilite/pages/main/controller.dart';
+import 'package:bilite/pages/mine/controller.dart';
+import 'package:bilite/utils/extension/get_ext.dart';
+import 'package:bilite/utils/extension/size_ext.dart';
+import 'package:bilite/utils/feed_back.dart';
 import 'package:get/get.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:material_ui/material_ui.dart';
@@ -82,11 +82,7 @@ class _HomePageState extends CommonPageState<HomePage>
     final mq = MediaQuery.of(context);
     // 顶栏覆盖层：内容在它下面滚动，玻璃模糊才有对象
     // 首页现在铺满整屏（含状态栏），内容要自己让出状态栏 + 顶栏高度
-    final inset =
-        mq.padding.top +
-        (showAppBar ? Style.topBarHeight : 0.0) +
-        (_homeController.tabs.length > 1 ? 46.0 : 6.0) +
-        4.0; // 玻璃下沿与首行卡片留一点缝
+    final tabsInset = _homeController.tabs.length > 1 ? 46.0 : 6.0;
     final header = GlassSurface(
       borderRadius: 0,
       // 磨砂开启时保持无缝；关闭后给纯色块一条淡灰边
@@ -103,15 +99,32 @@ class _HomePageState extends CommonPageState<HomePage>
     return Stack(
       children: [
         Positioned.fill(
-          child: HomeHeaderInset(
-            value: inset,
-            child: onBuild(
-              tabBarView(
-                controller: _homeController.tabController,
-                children: _homeController.tabs.map((e) => e.page).toList(),
+          // 留白 = 顶栏当前实际高度：顶栏收起（滚动隐藏搜索行）时,
+          // 内容跟着缩进到标签栏下沿，不会在中段空出一条。
+          // 动画时长与 customAppBar 的 AnimatedSize 一致，避免跳变。
+          child: Obx(() {
+            final hidden = _mainController.barOffset != null
+                ? _mainController.barOffset!.value > Style.topBarHeight / 2
+                : !(_homeController.showTopBar?.value ?? true);
+            final target =
+                mq.padding.top +
+                (showAppBar && !hidden ? Style.topBarHeight : 0.0) +
+                tabsInset +
+                4.0; // 玻璃下沿与首行卡片留一点缝
+            return TweenAnimationBuilder<double>(
+              tween: Tween<double>(end: target),
+              duration: const Duration(milliseconds: 260),
+              curve: Curves.easeOutCubic,
+              builder: (context, value, child) =>
+                  HomeHeaderInset(value: value, child: child!),
+              child: onBuild(
+                tabBarView(
+                  controller: _homeController.tabController,
+                  children: _homeController.tabs.map((e) => e.page).toList(),
+                ),
               ),
-            ),
-          ),
+            );
+          }),
         ),
         Positioned(top: 0, left: 0, right: 0, child: header),
       ],
@@ -162,45 +175,59 @@ class _HomePageState extends CommonPageState<HomePage>
   }
 
   Widget searchBar() {
-    const borderRadius = BorderRadius.all(Radius.circular(25));
+    const radius = 25.0;
+    const borderRadius = BorderRadius.all(Radius.circular(radius));
+    // 搜索框沿用 anyu 的标准磨砂玻璃（GlassSurface：底色 + 渐变玻璃环 + 顶部内高光），
+    // 与展开列表、弹窗同一套观感；关闭磨砂时它自己回退成纯色面板。
     return Expanded(
       child: SizedBox(
         height: 44,
-        child: Material(
-          borderRadius: borderRadius,
-          color: _colorScheme.onSecondaryContainer.withValues(alpha: 0.05),
-          child: InkWell(
+        child: GlassSurface(
+          borderRadius: radius,
+          shadow: false,
+          // 只借它的边缘（1.4px 渐变环 + 顶部 1px 内高光），
+          // 底色仍用原来的淡灰填充，避免搜索框在白底顶栏上整块消失；
+          // blurSigma 0：这里不需要二次模糊，顶栏已经磨过一次。
+          blurSigma: 0,
+          surfaceColor: Colors.transparent,
+          child: Material(
+            color: _colorScheme.onSecondaryContainer.withValues(alpha: 0.05),
             borderRadius: borderRadius,
-            splashColor: _colorScheme.primaryContainer.withValues(
-              alpha: 0.3,
-            ),
-            onTap: () => Get.toNamed(
-              '/search',
-              parameters: _homeController.enableSearchWord
-                  ? {'hintText': _homeController.defaultSearch.value}
-                  : null,
-            ),
-            child: Row(
-              children: [
-                const SizedBox(width: 14),
-                Icon(
-                  Icons.search_outlined,
-                  color: _colorScheme.onSecondaryContainer,
-                  semanticLabel: '搜索',
-                ),
-                const SizedBox(width: 10),
-                Expanded(
-                  child: Obx(
-                    () => Text(
-                      _homeController.defaultSearch.value,
-                      maxLines: 1,
-                      overflow: TextOverflow.ellipsis,
-                      style: TextStyle(color: _colorScheme.outline),
+            child: InkWell(
+              borderRadius: borderRadius,
+              splashColor: _colorScheme.primaryContainer.withValues(
+                alpha: 0.3,
+              ),
+              onTap: () => Get.toNamed(
+                '/search',
+                parameters: _homeController.enableSearchWord
+                    ? {'hintText': _homeController.defaultSearch.value}
+                    : null,
+              ),
+              child: SizedBox.expand(
+                child: Row(
+                  children: [
+                    const SizedBox(width: 14),
+                    Icon(
+                      Icons.search_outlined,
+                      color: _colorScheme.onSecondaryContainer,
+                      semanticLabel: '搜索',
                     ),
-                  ),
+                    const SizedBox(width: 10),
+                    Expanded(
+                      child: Obx(
+                        () => Text(
+                          _homeController.defaultSearch.value,
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
+                          style: TextStyle(color: _colorScheme.outline),
+                        ),
+                      ),
+                    ),
+                    const SizedBox(width: 5),
+                  ],
                 ),
-                const SizedBox(width: 5),
-              ],
+              ),
             ),
           ),
         ),

@@ -1,7 +1,7 @@
-import 'package:PiliPure/grpc/bilibili/community/service/dm/v1.pb.dart';
-import 'package:PiliPure/grpc/grpc_req.dart';
-import 'package:PiliPure/grpc/url.dart';
-import 'package:PiliPure/http/loading_state.dart';
+import 'package:bilite/grpc/bilibili/community/service/dm/v1.pb.dart';
+import 'package:bilite/grpc/grpc_req.dart';
+import 'package:bilite/grpc/url.dart';
+import 'package:bilite/http/loading_state.dart';
 import 'package:fixnum/fixnum.dart';
 
 abstract final class DmGrpc {

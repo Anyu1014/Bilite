@@ -1,6 +1,6 @@
 import 'dart:math' as math;
 
-import 'package:PiliPure/common/widgets/sliver/sliver_pinned_header.dart';
+import 'package:bilite/common/widgets/sliver/sliver_pinned_header.dart';
 import 'package:flutter/widgets.dart';
 
 class LiveSliverPinnedHeader extends SliverPinnedHeader {

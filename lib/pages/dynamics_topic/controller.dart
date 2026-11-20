@@ -1,13 +1,13 @@
-import 'package:PiliPure/http/dynamics.dart';
-import 'package:PiliPure/http/fav.dart';
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/models_new/dynamic/dyn_topic_feed/item.dart';
-import 'package:PiliPure/models_new/dynamic/dyn_topic_feed/topic_card_list.dart';
-import 'package:PiliPure/models_new/dynamic/dyn_topic_feed/topic_sort_by_conf.dart';
-import 'package:PiliPure/models_new/dynamic/dyn_topic_top/top_details.dart';
-import 'package:PiliPure/pages/common/common_list_controller.dart';
-import 'package:PiliPure/utils/accounts.dart';
-import 'package:PiliPure/utils/extension/scroll_controller_ext.dart';
+import 'package:bilite/http/dynamics.dart';
+import 'package:bilite/http/fav.dart';
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/models_new/dynamic/dyn_topic_feed/item.dart';
+import 'package:bilite/models_new/dynamic/dyn_topic_feed/topic_card_list.dart';
+import 'package:bilite/models_new/dynamic/dyn_topic_feed/topic_sort_by_conf.dart';
+import 'package:bilite/models_new/dynamic/dyn_topic_top/top_details.dart';
+import 'package:bilite/pages/common/common_list_controller.dart';
+import 'package:bilite/utils/accounts.dart';
+import 'package:bilite/utils/extension/scroll_controller_ext.dart';
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 import 'package:get/get.dart';
 

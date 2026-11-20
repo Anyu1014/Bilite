@@ -1,8 +1,12 @@
+import 'package:bilite/utils/bili_colors.dart';
 import 'package:material_ui/material_ui.dart';
 
 const List<({Color color, String label})> colorThemeTypes = [
-  (color: Color(0xFFFF7299), label: '默认粉'),
-  (color: Color(0xFFFF7299), label: '粉红色'),
+  // 默认亮粉：与昵称（大会员）粉色一致
+  (color: BiliColors.pinkLight, label: '默认亮粉'),
+  // 默认粉：比默认亮粉稍暗一档（同昵称系统暗色粉）
+  (color: BiliColors.pinkDark, label: '默认粉'),
+  (color: Color(0xFF5CB67B), label: '默认绿'),
   (color: Colors.red, label: '红色'),
   (color: Colors.orange, label: '橙色'),
   (color: Colors.amber, label: '琥珀色'),

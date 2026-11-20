@@ -1,4 +1,4 @@
-import 'package:PiliPure/common/widgets/animated_multi_height.dart';
+import 'package:bilite/common/widgets/animated_multi_height.dart';
 import 'package:material_ui/material_ui.dart';
 
 class ExpandablePanel extends StatelessWidget {

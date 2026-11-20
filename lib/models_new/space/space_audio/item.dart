@@ -1,4 +1,4 @@
-import 'package:PiliPure/models_new/space/space_audio/statistic.dart';
+import 'package:bilite/models_new/space/space_audio/statistic.dart';
 
 class SpaceAudioItem {
   int? id;

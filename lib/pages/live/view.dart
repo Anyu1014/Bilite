@@ -1,30 +1,30 @@
-import 'package:PiliPure/common/skeleton/video_card_v.dart';
-import 'package:PiliPure/common/sliver_single_child_delegate.dart';
-import 'package:PiliPure/common/style.dart';
-import 'package:PiliPure/common/widgets/button/icon_button.dart';
-import 'package:PiliPure/common/widgets/button/more_btn.dart';
-import 'package:PiliPure/common/widgets/flutter/refresh_indicator.dart';
-import 'package:PiliPure/common/widgets/image/network_img_layer.dart';
-import 'package:PiliPure/common/widgets/loading_widget/http_error.dart';
-import 'package:PiliPure/common/widgets/pair.dart';
-import 'package:PiliPure/common/widgets/sliver/sliver_pinned_header.dart';
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/models_new/live/live_feed_index/card_data_list_item.dart';
-import 'package:PiliPure/models_new/live/live_feed_index/card_list.dart';
-import 'package:PiliPure/pages/live/controller.dart';
-import 'package:PiliPure/pages/live/widgets/live_item_app.dart';
-import 'package:PiliPure/pages/live/widgets/sliver_pinned_header.dart';
-import 'package:PiliPure/pages/live_area/view.dart';
-import 'package:PiliPure/pages/live_follow/view.dart';
-import 'package:PiliPure/pages/search/widgets/search_text.dart';
-import 'package:PiliPure/utils/extension/theme_ext.dart';
-import 'package:PiliPure/utils/grid.dart';
-import 'package:PiliPure/utils/page_utils.dart';
-import 'package:PiliPure/utils/platform_utils.dart';
-import 'package:PiliPure/utils/theme_utils.dart';
+import 'package:bilite/common/skeleton/video_card_v.dart';
+import 'package:bilite/common/sliver_single_child_delegate.dart';
+import 'package:bilite/common/style.dart';
+import 'package:bilite/common/widgets/button/icon_button.dart';
+import 'package:bilite/common/widgets/button/more_btn.dart';
+import 'package:bilite/common/widgets/flutter/refresh_indicator.dart';
+import 'package:bilite/common/widgets/image/network_img_layer.dart';
+import 'package:bilite/common/widgets/loading_widget/http_error.dart';
+import 'package:bilite/common/widgets/pair.dart';
+import 'package:bilite/common/widgets/sliver/sliver_pinned_header.dart';
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/models_new/live/live_feed_index/card_data_list_item.dart';
+import 'package:bilite/models_new/live/live_feed_index/card_list.dart';
+import 'package:bilite/pages/live/controller.dart';
+import 'package:bilite/pages/live/widgets/live_item_app.dart';
+import 'package:bilite/pages/live/widgets/sliver_pinned_header.dart';
+import 'package:bilite/pages/live_area/view.dart';
+import 'package:bilite/pages/live_follow/view.dart';
+import 'package:bilite/pages/search/widgets/search_text.dart';
+import 'package:bilite/utils/extension/theme_ext.dart';
+import 'package:bilite/utils/grid.dart';
+import 'package:bilite/utils/page_utils.dart';
+import 'package:bilite/utils/platform_utils.dart';
+import 'package:bilite/utils/theme_utils.dart';
 import 'package:get/get.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
-import 'package:PiliPure/common/widgets/home_header_inset.dart';
+import 'package:bilite/common/widgets/home_header_inset.dart';
 import 'package:material_ui/material_ui.dart';
 
 class LivePage extends StatefulWidget {
@@ -58,6 +58,7 @@ class _LivePageState extends State<LivePage>
       margin: const EdgeInsets.symmetric(horizontal: Style.safeSpace),
       decoration: const BoxDecoration(borderRadius: Style.mdRadius),
       child: refreshIndicator(
+        topInset: HomeHeaderInset.of(context),
         onRefresh: controller.onRefresh,
         child: CustomScrollView(
           controller: controller.scrollController,

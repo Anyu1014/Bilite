@@ -1,15 +1,15 @@
 import 'dart:math';
 
-import 'package:PiliPure/common/widgets/flutter/list_tile.dart';
-import 'package:PiliPure/common/widgets/glass.dart';
-import 'package:PiliPure/common/widgets/scaffold/simple_scaffold.dart';
-import 'package:PiliPure/common/widgets/view_safe_area.dart';
-import 'package:PiliPure/pages/setting/widgets/switch_item.dart';
-import 'package:PiliPure/utils/extension/context_ext.dart';
-import 'package:PiliPure/utils/filtering_text.dart';
-import 'package:PiliPure/utils/storage.dart';
-import 'package:PiliPure/utils/storage_key.dart';
-import 'package:PiliPure/utils/storage_pref.dart';
+import 'package:bilite/common/widgets/flutter/list_tile.dart';
+import 'package:bilite/common/widgets/glass.dart';
+import 'package:bilite/common/widgets/scaffold/simple_scaffold.dart';
+import 'package:bilite/common/widgets/view_safe_area.dart';
+import 'package:bilite/pages/setting/widgets/switch_item.dart';
+import 'package:bilite/utils/extension/context_ext.dart';
+import 'package:bilite/utils/filtering_text.dart';
+import 'package:bilite/utils/storage.dart';
+import 'package:bilite/utils/storage_key.dart';
+import 'package:bilite/utils/storage_pref.dart';
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 import 'package:get/get.dart';
 import 'package:hive_ce/hive.dart';

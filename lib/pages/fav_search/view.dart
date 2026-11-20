@@ -1,13 +1,13 @@
-import 'package:PiliPure/models/common/fav_order_type.dart';
-import 'package:PiliPure/models_new/fav/fav_detail/data.dart';
-import 'package:PiliPure/models_new/fav/fav_detail/media.dart';
-import 'package:PiliPure/pages/common/search/common_search_page.dart';
-import 'package:PiliPure/pages/fav_detail/widget/fav_video_card.dart';
-import 'package:PiliPure/pages/fav_search/controller.dart';
-import 'package:PiliPure/utils/accounts.dart';
-import 'package:PiliPure/utils/grid.dart';
-import 'package:PiliPure/utils/request_utils.dart';
-import 'package:PiliPure/utils/utils.dart';
+import 'package:bilite/models/common/fav_order_type.dart';
+import 'package:bilite/models_new/fav/fav_detail/data.dart';
+import 'package:bilite/models_new/fav/fav_detail/media.dart';
+import 'package:bilite/pages/common/search/common_search_page.dart';
+import 'package:bilite/pages/fav_detail/widget/fav_video_card.dart';
+import 'package:bilite/pages/fav_search/controller.dart';
+import 'package:bilite/utils/accounts.dart';
+import 'package:bilite/utils/grid.dart';
+import 'package:bilite/utils/request_utils.dart';
+import 'package:bilite/utils/utils.dart';
 import 'package:get/get.dart';
 import 'package:material_ui/material_ui.dart';
 

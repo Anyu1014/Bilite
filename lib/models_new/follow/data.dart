@@ -1,4 +1,4 @@
-import 'package:PiliPure/models_new/follow/list.dart';
+import 'package:bilite/models_new/follow/list.dart';
 
 class FollowData {
   List<FollowItemModel>? list;

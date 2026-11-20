@@ -1,4 +1,4 @@
-import 'package:PiliPure/models_new/live/live_emote/datum.dart';
+import 'package:bilite/models_new/live/live_emote/datum.dart';
 
 class LiveEmoteData {
   List<LiveEmoteDatum>? data;

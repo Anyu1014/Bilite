@@ -1,9 +1,9 @@
-import 'package:PiliPure/grpc/bilibili/main/community/reply/v1.pb.dart'
+import 'package:bilite/grpc/bilibili/main/community/reply/v1.pb.dart'
     show ReplyInfo;
-import 'package:PiliPure/http/reply.dart';
-import 'package:PiliPure/utils/accounts.dart';
-import 'package:PiliPure/utils/feed_back.dart';
-import 'package:PiliPure/utils/num_utils.dart';
+import 'package:bilite/http/reply.dart';
+import 'package:bilite/utils/accounts.dart';
+import 'package:bilite/utils/feed_back.dart';
+import 'package:bilite/utils/num_utils.dart';
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';

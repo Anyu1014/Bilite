@@ -1,12 +1,12 @@
 import 'dart:math' as math;
 
-import 'package:PiliPure/common/style.dart';
-import 'package:PiliPure/models_new/article/article_view/ops.dart';
-import 'package:PiliPure/pages/article/widgets/sliver_list_ext.dart';
-import 'package:PiliPure/pages/dynamics/widgets/vote.dart';
-import 'package:PiliPure/utils/app_scheme.dart';
-import 'package:PiliPure/utils/extension/num_ext.dart';
-import 'package:PiliPure/utils/image_utils.dart';
+import 'package:bilite/common/style.dart';
+import 'package:bilite/models_new/article/article_view/ops.dart';
+import 'package:bilite/pages/article/widgets/sliver_list_ext.dart';
+import 'package:bilite/pages/dynamics/widgets/vote.dart';
+import 'package:bilite/utils/app_scheme.dart';
+import 'package:bilite/utils/extension/num_ext.dart';
+import 'package:bilite/utils/image_utils.dart';
 import 'package:cached_network_image_ce/cached_network_image.dart';
 import 'package:get/get.dart';
 import 'package:material_ui/material_ui.dart';

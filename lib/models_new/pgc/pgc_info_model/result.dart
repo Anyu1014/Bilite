@@ -1,15 +1,15 @@
-import 'package:PiliPure/models_new/pgc/pgc_info_model/area.dart';
-import 'package:PiliPure/models_new/pgc/pgc_info_model/brief.dart';
-import 'package:PiliPure/models_new/pgc/pgc_info_model/cooperator.dart';
-import 'package:PiliPure/models_new/pgc/pgc_info_model/episode.dart';
-import 'package:PiliPure/models_new/pgc/pgc_info_model/new_ep.dart';
-import 'package:PiliPure/models_new/pgc/pgc_info_model/publish.dart';
-import 'package:PiliPure/models_new/pgc/pgc_info_model/rating.dart';
-import 'package:PiliPure/models_new/pgc/pgc_info_model/season.dart';
-import 'package:PiliPure/models_new/pgc/pgc_info_model/section.dart';
-import 'package:PiliPure/models_new/pgc/pgc_info_model/stat.dart';
-import 'package:PiliPure/models_new/pgc/pgc_info_model/up_info.dart';
-import 'package:PiliPure/models_new/pgc/pgc_info_model/user_status.dart';
+import 'package:bilite/models_new/pgc/pgc_info_model/area.dart';
+import 'package:bilite/models_new/pgc/pgc_info_model/brief.dart';
+import 'package:bilite/models_new/pgc/pgc_info_model/cooperator.dart';
+import 'package:bilite/models_new/pgc/pgc_info_model/episode.dart';
+import 'package:bilite/models_new/pgc/pgc_info_model/new_ep.dart';
+import 'package:bilite/models_new/pgc/pgc_info_model/publish.dart';
+import 'package:bilite/models_new/pgc/pgc_info_model/rating.dart';
+import 'package:bilite/models_new/pgc/pgc_info_model/season.dart';
+import 'package:bilite/models_new/pgc/pgc_info_model/section.dart';
+import 'package:bilite/models_new/pgc/pgc_info_model/stat.dart';
+import 'package:bilite/models_new/pgc/pgc_info_model/up_info.dart';
+import 'package:bilite/models_new/pgc/pgc_info_model/user_status.dart';
 import 'package:collection/collection.dart';
 
 class PgcInfoModel {

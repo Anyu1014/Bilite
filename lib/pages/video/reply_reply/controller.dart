@@ -1,15 +1,15 @@
-import 'package:PiliPure/grpc/bilibili/main/community/reply/v1.pb.dart'
+import 'package:bilite/grpc/bilibili/main/community/reply/v1.pb.dart'
     show ReplyInfo, DetailListReply;
-import 'package:PiliPure/grpc/reply.dart';
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/models/common/reply/reply_sort_type.dart';
-import 'package:PiliPure/models_new/dynamic/dyn_mention/item.dart';
-import 'package:PiliPure/pages/common/publish/publish_route.dart';
-import 'package:PiliPure/pages/common/reply/fold/reply_fold_mixin.dart';
-import 'package:PiliPure/pages/common/reply/reply_controller.dart';
-import 'package:PiliPure/pages/video/reply_new/view.dart';
-import 'package:PiliPure/utils/id_utils.dart';
-import 'package:PiliPure/utils/storage_pref.dart';
+import 'package:bilite/grpc/reply.dart';
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/models/common/reply/reply_sort_type.dart';
+import 'package:bilite/models_new/dynamic/dyn_mention/item.dart';
+import 'package:bilite/pages/common/publish/publish_route.dart';
+import 'package:bilite/pages/common/reply/fold/reply_fold_mixin.dart';
+import 'package:bilite/pages/common/reply/reply_controller.dart';
+import 'package:bilite/pages/video/reply_new/view.dart';
+import 'package:bilite/utils/id_utils.dart';
+import 'package:bilite/utils/storage_pref.dart';
 import 'package:extended_nested_scroll_view/extended_nested_scroll_view.dart';
 import 'package:fixnum/fixnum.dart';
 import 'package:flutter/scheduler.dart';

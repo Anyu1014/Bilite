@@ -1,28 +1,29 @@
 import 'dart:io';
 
-import 'package:PiliPure/common/style.dart';
-import 'package:PiliPure/common/widgets/floating_navigation_bar.dart';
-import 'package:PiliPure/common/widgets/flutter/pop_scope.dart';
-import 'package:PiliPure/common/widgets/image/network_img_layer.dart';
-import 'package:PiliPure/common/widgets/main_layout.dart';
-import 'package:PiliPure/common/widgets/route_aware_mixin.dart';
-import 'package:PiliPure/models/common/nav_bar_config.dart';
-import 'package:PiliPure/pages/home/view.dart';
-import 'package:PiliPure/pages/main/controller.dart';
-import 'package:PiliPure/models/common/collapsed_nav_align.dart';
-import 'package:PiliPure/common/widgets/glass.dart';
-import 'package:PiliPure/pages/main/glass_nav_bar.dart';
-import 'package:PiliPure/utils/android/bindings.g.dart';
-import 'package:PiliPure/utils/app_scheme.dart';
-import 'package:PiliPure/utils/desktop/tray_controller.dart';
-import 'package:PiliPure/utils/desktop/window_controller.dart';
-import 'package:PiliPure/utils/extension/context_ext.dart';
-import 'package:PiliPure/utils/extension/size_ext.dart';
-import 'package:PiliPure/utils/extension/theme_ext.dart';
-import 'package:PiliPure/utils/mobile_observer.dart';
-import 'package:PiliPure/utils/platform_utils.dart';
-import 'package:PiliPure/utils/storage.dart';
-import 'package:PiliPure/utils/storage_pref.dart';
+import 'package:bilite/common/style.dart';
+import 'package:bilite/common/widgets/bottom_bar_frame.dart';
+import 'package:bilite/common/widgets/floating_navigation_bar.dart';
+import 'package:bilite/common/widgets/flutter/pop_scope.dart';
+import 'package:bilite/common/widgets/image/network_img_layer.dart';
+import 'package:bilite/common/widgets/main_layout.dart';
+import 'package:bilite/common/widgets/route_aware_mixin.dart';
+import 'package:bilite/models/common/nav_bar_config.dart';
+import 'package:bilite/pages/home/view.dart';
+import 'package:bilite/pages/main/controller.dart';
+import 'package:bilite/models/common/collapsed_nav_align.dart';
+import 'package:bilite/common/widgets/glass.dart';
+import 'package:bilite/pages/main/glass_nav_bar.dart';
+import 'package:bilite/utils/android/bindings.g.dart';
+import 'package:bilite/utils/app_scheme.dart';
+import 'package:bilite/utils/desktop/tray_controller.dart';
+import 'package:bilite/utils/desktop/window_controller.dart';
+import 'package:bilite/utils/extension/context_ext.dart';
+import 'package:bilite/utils/extension/size_ext.dart';
+import 'package:bilite/utils/extension/theme_ext.dart';
+import 'package:bilite/utils/mobile_observer.dart';
+import 'package:bilite/utils/platform_utils.dart';
+import 'package:bilite/utils/storage.dart';
+import 'package:bilite/utils/storage_pref.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:material_ui/material_ui.dart';
@@ -154,13 +155,18 @@ class _MainAppState extends PopScopeState<MainApp>
     }
   }
 
-  /// 普通底栏（非悬浮）也跟随磨砂玻璃样式：透明底 + 一层 GlassSurface
-  Widget _glassBottomNav(Widget bar) => GlassSurface(
-    borderRadius: 0,
-    // 磨砂开启时无缝，关闭时留一条淡灰边（与顶栏一致）
-    border: GlassPalette.style == GlassStyle.off,
-    shadow: false,
-    child: bar,
+  /// All materials use the same frame as the native floating bar.
+  Widget _glassBottomNav(Widget bar) => BottomBarFrame(
+    width: bottomBarWidth(
+      _mainController.navigationBars.length,
+      showLabel: Pref.floatingNavBarLabel,
+    ),
+    child: GlassSurface(
+      borderRadius: 0,
+      border: GlassPalette.style == GlassStyle.off,
+      shadow: false,
+      child: SizedBox(height: bottomBarHeight, child: bar),
+    ),
   );
 
   Widget? get _bottomNav {
@@ -184,6 +190,21 @@ class _MainAppState extends PopScopeState<MainApp>
               barOffset?.value = 0.0;
               showBottomBar?.value = true;
             },
+            nativeItems: Platform.isIOS && Pref.iosNativeBottomBar
+                ? _mainController.navigationBars
+                      .map(
+                        (e) => <String, Object?>{
+                          'id': e.name,
+                          'label': e.label,
+                          if (e == NavigationBarType.dynamics &&
+                              _mainController.dynCount.value > 0)
+                            'badge': _mainController.dynamicBadgeMode == .number
+                                ? _mainController.dynCount.value.toString()
+                                : '',
+                        },
+                      )
+                      .toList()
+                : null,
             showLabel: Pref.floatingNavBarLabel,
             collapsedAlign: switch (Pref.floatingNavBarAlign) {
               CollapsedNavAlign.left => Alignment.centerLeft,
@@ -205,12 +226,12 @@ class _MainAppState extends PopScopeState<MainApp>
         bottomNav = Obx(
           () => _glassBottomNav(
             NavigationBar(
-              maintainBottomViewPadding: true,
+              height: bottomBarHeight,
               backgroundColor: Colors.transparent,
               elevation: 0,
               surfaceTintColor: Colors.transparent,
               onDestinationSelected: _mainController.setIndex,
-            selectedIndex: _mainController.selectedIndex.value,
+              selectedIndex: _mainController.selectedIndex.value,
               destinations: _mainController.navigationBars
                   .map(
                     (e) => NavigationDestination(
@@ -230,11 +251,11 @@ class _MainAppState extends PopScopeState<MainApp>
               currentIndex: _mainController.selectedIndex.value,
               backgroundColor: Colors.transparent,
               elevation: 0,
-            onTap: _mainController.setIndex,
-            iconSize: 16,
-            selectedFontSize: 12,
-            unselectedFontSize: 12,
-            type: .fixed,
+              onTap: _mainController.setIndex,
+              iconSize: 16,
+              selectedFontSize: 12,
+              unselectedFontSize: 12,
+              type: .fixed,
               items: _mainController.navigationBars
                   .map(
                     (e) => BottomNavigationBarItem(
@@ -367,7 +388,16 @@ class _MainAppState extends PopScopeState<MainApp>
         controller: _mainController.controller,
         physics: const NeverScrollableScrollPhysics(),
         scrollDirection: _mainController.useBottomNav ? .horizontal : .vertical,
-        children: _mainController.navigationBars.map((i) => i.page).toList(),
+        children: _mainController.navigationBars.asMap().entries.map((e) {
+          final page = e.value.page;
+          if (e.key == 0) return page; // 首页自己处理状态栏内边距
+          // 与 PageView 分支保持一致：非首页把内容压到状态栏以下，
+          // 但不额外铺底色/玻璃，所以不会出现分隔带。
+          return Padding(
+            padding: .only(top: _padding.top),
+            child: page,
+          );
+        }).toList(),
       );
     } else {
       child = PageView(
@@ -416,33 +446,9 @@ class _MainAppState extends PopScopeState<MainApp>
       child: MainLayout(
         sideBar: sideBar,
         bottomNav: bottomNav,
-        body: Stack(
-          children: [
-            Padding(padding: padding, child: child),
-            // 状态栏区域同样走磨砂玻璃（首页自己的顶栏已含状态栏，跳过避免双层/接缝）
-            if (_padding.top > 0)
-              Positioned(
-                top: 0,
-                left: 0,
-                right: 0,
-                child: IgnorePointer(
-                  child: Obx(
-                    () => _mainController.selectedIndex.value == 0
-                        ? const SizedBox.shrink()
-                        : SizedBox(
-                            height: _padding.top,
-                            child: GlassSurface(
-                              borderRadius: 0,
-                              border: GlassPalette.style == GlassStyle.off,
-                              shadow: false,
-                              child: SizedBox.expand(),
-                            ),
-                          ),
-                  ),
-                ),
-              ),
-          ],
-        ),
+        // 状态栏区域不再单独铺一层玻璃/底色：非首页的状态栏高度由
+        // Padding 预留，底色就是页面自身背景，避免出现一条分隔带。
+        body: Padding(padding: padding, child: child),
       ),
     );
 

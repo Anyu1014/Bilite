@@ -1,5 +1,5 @@
-import 'package:PiliPure/models_new/history/list.dart';
-import 'package:PiliPure/models_new/history/tab.dart';
+import 'package:bilite/models_new/history/list.dart';
+import 'package:bilite/models_new/history/tab.dart';
 
 class HistoryData {
   List<HistoryTab>? tab;

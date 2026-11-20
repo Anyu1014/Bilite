@@ -1,8 +1,8 @@
-import 'package:PiliPure/common/assets.dart';
-import 'package:PiliPure/models_new/video/video_detail/episode.dart';
-import 'package:PiliPure/models_new/video/video_detail/ugc_season.dart';
-import 'package:PiliPure/pages/video/introduction/ugc/controller.dart';
-import 'package:PiliPure/utils/extension/num_ext.dart';
+import 'package:bilite/common/assets.dart';
+import 'package:bilite/models_new/video/video_detail/episode.dart';
+import 'package:bilite/models_new/video/video_detail/ugc_season.dart';
+import 'package:bilite/pages/video/introduction/ugc/controller.dart';
+import 'package:bilite/utils/extension/num_ext.dart';
 import 'package:material_ui/material_ui.dart';
 
 class SeasonPanel extends StatefulWidget {

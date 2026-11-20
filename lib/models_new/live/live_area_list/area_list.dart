@@ -1,4 +1,4 @@
-import 'package:PiliPure/models_new/live/live_area_list/area_item.dart';
+import 'package:bilite/models_new/live/live_area_list/area_item.dart';
 
 class AreaList {
   String? name;

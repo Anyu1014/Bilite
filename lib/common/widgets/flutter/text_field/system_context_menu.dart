@@ -7,7 +7,7 @@
 /// @docImport 'package:flutter/material.dart';
 library;
 
-import 'package:PiliPure/common/widgets/flutter/text_field/editable_text.dart';
+import 'package:bilite/common/widgets/flutter/text_field/editable_text.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import 'package:material_ui/material_ui.dart'

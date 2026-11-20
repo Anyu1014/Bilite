@@ -1,25 +1,25 @@
 import 'dart:io' show Platform;
 import 'dart:math' as math;
 
-import 'package:PiliPure/common/style.dart';
-import 'package:PiliPure/common/widgets/draggable_sheet/dyn.dart';
-import 'package:PiliPure/common/widgets/marquee.dart';
-import 'package:PiliPure/pages/live_room/controller.dart';
-import 'package:PiliPure/pages/setting/models/play_settings.dart'
+import 'package:bilite/common/style.dart';
+import 'package:bilite/common/widgets/draggable_sheet/dyn.dart';
+import 'package:bilite/common/widgets/marquee.dart';
+import 'package:bilite/pages/live_room/controller.dart';
+import 'package:bilite/pages/setting/models/play_settings.dart'
     show showPlayerVolumeDialog;
-import 'package:PiliPure/pages/video/widgets/header_control.dart';
-import 'package:PiliPure/plugin/pl_player/controller.dart';
-import 'package:PiliPure/plugin/pl_player/widgets/common_btn.dart';
-import 'package:PiliPure/services/shutdown_timer_service.dart'
+import 'package:bilite/pages/video/widgets/header_control.dart';
+import 'package:bilite/plugin/pl_player/controller.dart';
+import 'package:bilite/plugin/pl_player/widgets/common_btn.dart';
+import 'package:bilite/services/shutdown_timer_service.dart'
     show shutdownTimerService;
-import 'package:PiliPure/utils/android/android_helper.dart';
-import 'package:PiliPure/utils/extension/context_ext.dart';
-import 'package:PiliPure/utils/extension/size_ext.dart';
-import 'package:PiliPure/utils/extension/string_ext.dart';
-import 'package:PiliPure/utils/ios/pip_helper.dart';
-import 'package:PiliPure/utils/platform_utils.dart';
-import 'package:PiliPure/utils/storage.dart';
-import 'package:PiliPure/utils/storage_key.dart';
+import 'package:bilite/utils/android/android_helper.dart';
+import 'package:bilite/utils/extension/context_ext.dart';
+import 'package:bilite/utils/extension/size_ext.dart';
+import 'package:bilite/utils/extension/string_ext.dart';
+import 'package:bilite/utils/ios/pip_helper.dart';
+import 'package:bilite/utils/platform_utils.dart';
+import 'package:bilite/utils/storage.dart';
+import 'package:bilite/utils/storage_key.dart';
 import 'package:collection/collection.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';

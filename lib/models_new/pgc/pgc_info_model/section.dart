@@ -1,4 +1,4 @@
-import 'package:PiliPure/models_new/pgc/pgc_info_model/episode.dart';
+import 'package:bilite/models_new/pgc/pgc_info_model/episode.dart';
 
 class Section {
   String? title;

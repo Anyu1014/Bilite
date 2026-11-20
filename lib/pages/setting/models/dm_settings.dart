@@ -1,14 +1,14 @@
 import 'dart:math' show max;
 
-import 'package:PiliPure/common/widgets/custom_icon.dart';
-import 'package:PiliPure/common/widgets/glass.dart';
-import 'package:PiliPure/pages/setting/models/model.dart';
-import 'package:PiliPure/utils/extension/num_ext.dart';
-import 'package:PiliPure/utils/filtering_text.dart';
-import 'package:PiliPure/utils/platform_utils.dart';
-import 'package:PiliPure/utils/storage.dart';
-import 'package:PiliPure/utils/storage_key.dart';
-import 'package:PiliPure/utils/storage_pref.dart';
+import 'package:bilite/common/widgets/custom_icon.dart';
+import 'package:bilite/common/widgets/glass.dart';
+import 'package:bilite/pages/setting/models/model.dart';
+import 'package:bilite/utils/extension/num_ext.dart';
+import 'package:bilite/utils/filtering_text.dart';
+import 'package:bilite/utils/platform_utils.dart';
+import 'package:bilite/utils/storage.dart';
+import 'package:bilite/utils/storage_key.dart';
+import 'package:bilite/utils/storage_pref.dart';
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 import 'package:get/get.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';

@@ -11,6 +11,7 @@ class HomeHeaderInset extends InheritedWidget {
     required super.child,
   });
 
+  /// 当前实际高度（顶栏收起时会变小）
   final double value;
 
   static double of(BuildContext context) =>

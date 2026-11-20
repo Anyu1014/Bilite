@@ -1,4 +1,4 @@
-import 'package:PiliPure/utils/bili_colors.dart';
+import 'package:bilite/utils/bili_colors.dart';
 import 'package:material_ui/material_ui.dart';
 
 enum BadgeType {

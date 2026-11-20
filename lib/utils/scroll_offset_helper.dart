@@ -1,6 +1,6 @@
 import 'dart:math' as math;
 
-import 'package:PiliPure/models_new/video/video_detail/episode.dart' as ugc;
+import 'package:bilite/models_new/video/video_detail/episode.dart' as ugc;
 
 const double _kTopPadding = 7;
 const double _kBottomPadding = 100;

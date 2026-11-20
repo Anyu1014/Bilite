@@ -1,4 +1,4 @@
-import 'package:PiliPure/models_new/video/video_detail/dimension.dart';
+import 'package:bilite/models_new/video/video_detail/dimension.dart';
 
 class PageItem {
   int cid;

@@ -1,10 +1,10 @@
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/http/pgc.dart';
-import 'package:PiliPure/models_new/pgc/pgc_index_condition/data.dart';
-import 'package:PiliPure/models_new/pgc/pgc_index_condition/sort.dart';
-import 'package:PiliPure/models_new/pgc/pgc_index_result/data.dart';
-import 'package:PiliPure/models_new/pgc/pgc_index_result/list.dart';
-import 'package:PiliPure/pages/common/common_list_controller.dart';
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/http/pgc.dart';
+import 'package:bilite/models_new/pgc/pgc_index_condition/data.dart';
+import 'package:bilite/models_new/pgc/pgc_index_condition/sort.dart';
+import 'package:bilite/models_new/pgc/pgc_index_result/data.dart';
+import 'package:bilite/models_new/pgc/pgc_index_result/list.dart';
+import 'package:bilite/pages/common/common_list_controller.dart';
 import 'package:get/get.dart';
 
 class PgcIndexController

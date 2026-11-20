@@ -1,8 +1,8 @@
-import 'package:PiliPure/common/widgets/button/icon_button.dart';
-import 'package:PiliPure/common/widgets/glass.dart';
-import 'package:PiliPure/http/member.dart';
-import 'package:PiliPure/utils/extension/theme_ext.dart';
-import 'package:PiliPure/utils/theme_utils.dart';
+import 'package:bilite/common/widgets/button/icon_button.dart';
+import 'package:bilite/common/widgets/glass.dart';
+import 'package:bilite/http/member.dart';
+import 'package:bilite/utils/extension/theme_ext.dart';
+import 'package:bilite/utils/theme_utils.dart';
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 import 'package:get/get.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';

@@ -1,16 +1,16 @@
 import 'dart:convert';
 
-import 'package:PiliPure/common/widgets/pendant_avatar.dart';
-import 'package:PiliPure/models/common/dynamic/dynamics_type.dart';
-import 'package:PiliPure/models/dynamics/article_content_model.dart';
-import 'package:PiliPure/models/model_avatar.dart';
-import 'package:PiliPure/models/model_owner.dart';
-import 'package:PiliPure/models_new/live/live_feed_index/watched_show.dart';
-import 'package:PiliPure/utils/extension/iterable_ext.dart';
-import 'package:PiliPure/utils/parse_bool.dart';
-import 'package:PiliPure/utils/parse_int.dart';
-import 'package:PiliPure/utils/parse_string.dart';
-import 'package:PiliPure/utils/storage_pref.dart';
+import 'package:bilite/common/widgets/pendant_avatar.dart';
+import 'package:bilite/models/common/dynamic/dynamics_type.dart';
+import 'package:bilite/models/dynamics/article_content_model.dart';
+import 'package:bilite/models/model_avatar.dart';
+import 'package:bilite/models/model_owner.dart';
+import 'package:bilite/models_new/live/live_feed_index/watched_show.dart';
+import 'package:bilite/utils/extension/iterable_ext.dart';
+import 'package:bilite/utils/parse_bool.dart';
+import 'package:bilite/utils/parse_int.dart';
+import 'package:bilite/utils/parse_string.dart';
+import 'package:bilite/utils/storage_pref.dart';
 
 class DynamicsDataModel {
   bool? hasMore;

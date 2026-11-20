@@ -1,10 +1,10 @@
-import 'package:PiliPure/common/widgets/button/icon_button.dart';
-import 'package:PiliPure/pages/video/introduction/ugc/widgets/menu_row.dart';
-import 'package:PiliPure/plugin/pl_player/controller.dart';
-import 'package:PiliPure/plugin/pl_player/utils/danmaku_options.dart';
-import 'package:PiliPure/utils/extension/num_ext.dart';
-import 'package:PiliPure/utils/page_utils.dart';
-import 'package:PiliPure/utils/theme_utils.dart';
+import 'package:bilite/common/widgets/button/icon_button.dart';
+import 'package:bilite/pages/video/introduction/ugc/widgets/menu_row.dart';
+import 'package:bilite/plugin/pl_player/controller.dart';
+import 'package:bilite/plugin/pl_player/utils/danmaku_options.dart';
+import 'package:bilite/utils/extension/num_ext.dart';
+import 'package:bilite/utils/page_utils.dart';
+import 'package:bilite/utils/theme_utils.dart';
 import 'package:get/get.dart';
 import 'package:material_ui/material_ui.dart';
 

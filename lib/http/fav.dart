@@ -1,20 +1,20 @@
-import 'package:PiliPure/common/constants.dart';
-import 'package:PiliPure/http/api.dart';
-import 'package:PiliPure/http/init.dart';
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/models/common/fav_order_type.dart';
-import 'package:PiliPure/models_new/fav/fav_article/data.dart';
-import 'package:PiliPure/models_new/fav/fav_detail/data.dart';
-import 'package:PiliPure/models_new/fav/fav_folder/data.dart';
-import 'package:PiliPure/models_new/fav/fav_folder/list.dart';
-import 'package:PiliPure/models_new/fav/fav_note/list.dart';
-import 'package:PiliPure/models_new/fav/fav_pgc/data.dart';
-import 'package:PiliPure/models_new/fav/fav_topic/data.dart';
-import 'package:PiliPure/models_new/space/space_cheese/data.dart';
-import 'package:PiliPure/models_new/space/space_fav/data.dart';
-import 'package:PiliPure/models_new/sub/sub_detail/data.dart';
-import 'package:PiliPure/utils/accounts.dart';
-import 'package:PiliPure/utils/app_sign.dart';
+import 'package:bilite/common/constants.dart';
+import 'package:bilite/http/api.dart';
+import 'package:bilite/http/init.dart';
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/models/common/fav_order_type.dart';
+import 'package:bilite/models_new/fav/fav_article/data.dart';
+import 'package:bilite/models_new/fav/fav_detail/data.dart';
+import 'package:bilite/models_new/fav/fav_folder/data.dart';
+import 'package:bilite/models_new/fav/fav_folder/list.dart';
+import 'package:bilite/models_new/fav/fav_note/list.dart';
+import 'package:bilite/models_new/fav/fav_pgc/data.dart';
+import 'package:bilite/models_new/fav/fav_topic/data.dart';
+import 'package:bilite/models_new/space/space_cheese/data.dart';
+import 'package:bilite/models_new/space/space_fav/data.dart';
+import 'package:bilite/models_new/sub/sub_detail/data.dart';
+import 'package:bilite/utils/accounts.dart';
+import 'package:bilite/utils/app_sign.dart';
 import 'package:dio/dio.dart';
 
 abstract final class FavHttp {

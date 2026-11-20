@@ -1,47 +1,49 @@
 import 'dart:io';
 
-import 'package:PiliPure/common/widgets/gesture/horizontal_drag_gesture_recognizer.dart'
+import 'package:bilite/common/widgets/gesture/horizontal_drag_gesture_recognizer.dart'
     show deviceTouchSlop;
-import 'package:PiliPure/common/widgets/pair.dart';
-import 'package:PiliPure/http/constants.dart';
-import 'package:PiliPure/models/common/bar_hide_type.dart';
-import 'package:PiliPure/models/common/collapsed_nav_align.dart';
-import 'package:PiliPure/common/widgets/glass.dart';
-import 'package:PiliPure/models/common/dynamic/dynamic_badge_mode.dart';
-import 'package:PiliPure/models/common/dynamic/dynamics_type.dart';
-import 'package:PiliPure/models/common/dynamic/up_panel_position.dart';
-import 'package:PiliPure/models/common/follow_order_type.dart';
-import 'package:PiliPure/models/common/member/tab_type.dart';
-import 'package:PiliPure/models/common/mine_tab_type.dart';
-import 'package:PiliPure/models/common/msg/msg_unread_type.dart';
-import 'package:PiliPure/models/common/nav_bar_config.dart';
-import 'package:PiliPure/models/common/reply/reply_sort_type.dart';
-import 'package:PiliPure/models/common/sponsor_block/segment_type.dart';
-import 'package:PiliPure/models/common/sponsor_block/skip_type.dart';
-import 'package:PiliPure/models/common/super_chat_type.dart';
-import 'package:PiliPure/models/common/super_resolution_type.dart';
-import 'package:PiliPure/models/common/theme/theme_type.dart';
-import 'package:PiliPure/models/common/video/base_quality.dart';
-import 'package:PiliPure/models/common/video/cdn_type.dart';
-import 'package:PiliPure/models/common/video/subtitle_pref_type.dart';
-import 'package:PiliPure/models/common/video/video_decode_type.dart';
-import 'package:PiliPure/models/user/danmaku_rule.dart';
-import 'package:PiliPure/models/user/info.dart';
-import 'package:PiliPure/pages/setting/pages/fullscreen_sc.dart'
+import 'package:bilite/common/widgets/pair.dart';
+import 'package:bilite/http/constants.dart';
+import 'package:bilite/models/common/bar_hide_type.dart';
+import 'package:bilite/models/common/collapsed_nav_align.dart';
+import 'package:bilite/common/widgets/glass.dart';
+import 'package:bilite/models/common/dynamic/dynamic_badge_mode.dart';
+import 'package:bilite/models/common/dynamic/dynamics_type.dart';
+import 'package:bilite/models/common/dynamic/up_panel_position.dart';
+import 'package:bilite/models/common/theme/theme_color_type.dart';
+import 'package:bilite/models/common/follow_order_type.dart';
+import 'package:bilite/models/common/home_tab_type.dart';
+import 'package:bilite/models/common/member/tab_type.dart';
+import 'package:bilite/models/common/mine_tab_type.dart';
+import 'package:bilite/models/common/msg/msg_unread_type.dart';
+import 'package:bilite/models/common/nav_bar_config.dart';
+import 'package:bilite/models/common/reply/reply_sort_type.dart';
+import 'package:bilite/models/common/sponsor_block/segment_type.dart';
+import 'package:bilite/models/common/sponsor_block/skip_type.dart';
+import 'package:bilite/models/common/super_chat_type.dart';
+import 'package:bilite/models/common/super_resolution_type.dart';
+import 'package:bilite/models/common/theme/theme_type.dart';
+import 'package:bilite/models/common/video/base_quality.dart';
+import 'package:bilite/models/common/video/cdn_type.dart';
+import 'package:bilite/models/common/video/subtitle_pref_type.dart';
+import 'package:bilite/models/common/video/video_decode_type.dart';
+import 'package:bilite/models/user/danmaku_rule.dart';
+import 'package:bilite/models/user/info.dart';
+import 'package:bilite/pages/setting/pages/fullscreen_sc.dart'
     show kFullScreenSCWidth;
-import 'package:PiliPure/plugin/pl_player/models/audio_output_type.dart';
-import 'package:PiliPure/plugin/pl_player/models/bottom_progress_behavior.dart';
-import 'package:PiliPure/plugin/pl_player/models/fullscreen_mode.dart';
-import 'package:PiliPure/plugin/pl_player/models/hwdec_type.dart';
-import 'package:PiliPure/plugin/pl_player/models/play_repeat.dart';
-import 'package:PiliPure/utils/device_utils.dart';
-import 'package:PiliPure/utils/extension/iterable_ext.dart';
-import 'package:PiliPure/utils/global_data.dart';
-import 'package:PiliPure/utils/login_utils.dart';
-import 'package:PiliPure/utils/platform_utils.dart';
-import 'package:PiliPure/utils/storage.dart';
-import 'package:PiliPure/utils/storage_key.dart';
-import 'package:PiliPure/utils/utils.dart';
+import 'package:bilite/plugin/pl_player/models/audio_output_type.dart';
+import 'package:bilite/plugin/pl_player/models/bottom_progress_behavior.dart';
+import 'package:bilite/plugin/pl_player/models/fullscreen_mode.dart';
+import 'package:bilite/plugin/pl_player/models/hwdec_type.dart';
+import 'package:bilite/plugin/pl_player/models/play_repeat.dart';
+import 'package:bilite/utils/device_utils.dart';
+import 'package:bilite/utils/extension/iterable_ext.dart';
+import 'package:bilite/utils/global_data.dart';
+import 'package:bilite/utils/login_utils.dart';
+import 'package:bilite/utils/platform_utils.dart';
+import 'package:bilite/utils/storage.dart';
+import 'package:bilite/utils/storage_key.dart';
+import 'package:bilite/utils/utils.dart';
 import 'package:crypto/crypto.dart';
 import 'package:flex_seed_scheme/flex_seed_scheme.dart' show FlexSchemeVariant;
 import 'package:flutter/foundation.dart';
@@ -174,6 +176,18 @@ abstract final class Pref {
           ?.map((index) => MsgUnReadType.values[index])
           .toSet() ??
       MsgUnReadType.values.toSet();
+
+  /// 冷启动时首页默认停在哪个板块（直播/推荐/热门/分区/番剧/影视）。
+  static HomeTabType get defaultHomeTab {
+    final index = _setting.get(
+      SettingBoxKey.defaultHomeTab,
+      defaultValue: HomeTabType.rcmd.index,
+    );
+    if (index is! int || index < 0 || index >= HomeTabType.values.length) {
+      return HomeTabType.rcmd;
+    }
+    return HomeTabType.values[index];
+  }
 
   static NavigationBarType get defaultHomePage =>
       NavigationBarType.values[defaultHomePageIndex];
@@ -349,11 +363,25 @@ abstract final class Pref {
   static int get dynamicPeriod =>
       _setting.get(SettingBoxKey.dynamicPeriod, defaultValue: 5);
 
+  /// 调色板风格：FlexSchemeVariant 的 index；[nativePaletteStyle] 表示原生风格
+  static const int nativePaletteStyle = -1;
+
+  static int get paletteStyleIndex => _setting.get(
+    SettingBoxKey.schemeVariant,
+    defaultValue: FlexSchemeVariant.material3Legacy.index,
+  );
+
+  /// 原生风格：沿用默认调色板配色，只把背景换成纯白/纯黑
+  static bool get isNativePaletteStyle =>
+      paletteStyleIndex == nativePaletteStyle;
+
+  static FlexSchemeVariant variantOfPaletteStyle(int index) =>
+      index >= 0 && index < FlexSchemeVariant.values.length
+      ? FlexSchemeVariant.values[index]
+      : FlexSchemeVariant.material3Legacy;
+
   static FlexSchemeVariant get schemeVariant =>
-      FlexSchemeVariant.values[_setting.get(
-        SettingBoxKey.schemeVariant,
-        defaultValue: FlexSchemeVariant.material3Legacy.index,
-      )];
+      variantOfPaletteStyle(paletteStyleIndex);
 
   static double get danmakuFontScaleFS => _setting.get(
     SettingBoxKey.danmakuFontScaleFS,
@@ -673,7 +701,7 @@ abstract final class Pref {
       _setting.get(SettingBoxKey.enableAutoExit, defaultValue: true);
 
   static bool get autoPlayEnable =>
-      _setting.get(SettingBoxKey.autoPlayEnable, defaultValue: false);
+      _setting.get(SettingBoxKey.autoPlayEnable, defaultValue: true);
 
   static bool get pipNoDanmaku =>
       _setting.get(SettingBoxKey.pipNoDanmaku, defaultValue: false);
@@ -737,9 +765,19 @@ abstract final class Pref {
   static int get customColor =>
       _setting.get(SettingBoxKey.customColor, defaultValue: 0);
 
+  /// 默认风格：默认亮粉 + 首页板块图标蓝色等固定配色，和调色板风格互斥
+  /// 「默认」主题风格；出厂默认开启（默认亮粉 + 蓝色板块图标）
+  static bool get defaultThemeStyle =>
+      _setting.get(SettingBoxKey.defaultThemeStyle, defaultValue: true);
+
+  /// 当前主题色的原始色值（预设色板项或自定义色号），未开动态取色时用作强调色
+  static Color get themeColor =>
+      colorThemeTypes.elementAtOrNull(customColor)?.color ?? Color(customColor);
+
+  /// 动态取色；出厂默认关闭，「默认」风格用固定亮粉
   static bool get dynamicColor =>
       !Platform.isIOS &&
-      _setting.get(SettingBoxKey.dynamicColor, defaultValue: true);
+      _setting.get(SettingBoxKey.dynamicColor, defaultValue: false);
 
   static bool get enableSystemProxy =>
       _setting.get(SettingBoxKey.enableSystemProxy, defaultValue: false);
@@ -877,7 +915,7 @@ abstract final class Pref {
       _setting.get(SettingBoxKey.enableAi, defaultValue: false);
 
   static bool get enableOnlineTotal =>
-      _setting.get(SettingBoxKey.enableOnlineTotal, defaultValue: false);
+      _setting.get(SettingBoxKey.enableOnlineTotal, defaultValue: true);
 
   static bool get autoEnterFullScreen =>
       _setting.get(SettingBoxKey.enableAutoEnter, defaultValue: false);
@@ -1066,8 +1104,17 @@ abstract final class Pref {
   static bool get floatingNavBar =>
       _setting.get(SettingBoxKey.floatingNavBar, defaultValue: true);
 
+  static bool get iosNativeBottomBar =>
+      _setting.get(SettingBoxKey.iosNativeBottomBar, defaultValue: true);
+
   static bool get floatingNavBarLabel =>
       _setting.get(SettingBoxKey.floatingNavBarLabel, defaultValue: false);
+
+  /// 悬浮底栏图标是否跟随主题色；出厂默认跟随主题
+  static bool get floatingNavBarFollowTheme => _setting.get(
+    SettingBoxKey.floatingNavBarFollowTheme,
+    defaultValue: true,
+  );
 
   static GlassStyle get glassStyle {
     final index = _setting.get(
@@ -1089,6 +1136,7 @@ abstract final class Pref {
         ? CollapsedNavAlign.values[index]
         : CollapsedNavAlign.center;
   }
+
 
   static bool get removeSafeArea =>
       _setting.get(SettingBoxKey.removeSafeArea, defaultValue: false);

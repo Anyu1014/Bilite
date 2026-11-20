@@ -1,7 +1,7 @@
-import 'package:PiliPure/common/widgets/loading_widget/http_error.dart';
-import 'package:PiliPure/grpc/bilibili/main/community/reply/v1.pb.dart'
+import 'package:bilite/common/widgets/loading_widget/http_error.dart';
+import 'package:bilite/grpc/bilibili/main/community/reply/v1.pb.dart'
     show FoldCard;
-import 'package:PiliPure/pages/common/reply/fold/reply_fold_mixin.dart';
+import 'package:bilite/pages/common/reply/fold/reply_fold_mixin.dart';
 import 'package:material_ui/material_ui.dart';
 
 mixin ReplyFooterMixin<T extends StatefulWidget, R> on State<T> {

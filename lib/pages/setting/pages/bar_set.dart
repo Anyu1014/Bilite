@@ -1,8 +1,8 @@
-import 'package:PiliPure/common/widgets/pair.dart';
-import 'package:PiliPure/common/widgets/reorder_mixin.dart';
-import 'package:PiliPure/common/widgets/scaffold/simple_scaffold.dart';
-import 'package:PiliPure/models/common/enum_with_label.dart';
-import 'package:PiliPure/utils/storage.dart';
+import 'package:bilite/common/widgets/pair.dart';
+import 'package:bilite/common/widgets/reorder_mixin.dart';
+import 'package:bilite/common/widgets/scaffold/simple_scaffold.dart';
+import 'package:bilite/models/common/enum_with_label.dart';
+import 'package:bilite/utils/storage.dart';
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 import 'package:get/get.dart';
 import 'package:material_ui/material_ui.dart';

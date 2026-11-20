@@ -1,6 +1,6 @@
 import 'dart:math';
 
-import 'package:PiliPure/grpc/bilibili/app/im/v1.pb.dart'
+import 'package:bilite/grpc/bilibili/app/im/v1.pb.dart'
     show SelectItem, Setting, SettingSwitch;
 import 'package:material_ui/material_ui.dart';
 

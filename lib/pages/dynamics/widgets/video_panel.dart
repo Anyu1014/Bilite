@@ -1,11 +1,11 @@
 // 视频or合集
-import 'package:PiliPure/common/style.dart';
-import 'package:PiliPure/common/widgets/badge.dart';
-import 'package:PiliPure/common/widgets/image/network_img_layer.dart';
-import 'package:PiliPure/common/widgets/svg/play_icon.dart';
-import 'package:PiliPure/models/common/badge_type.dart';
-import 'package:PiliPure/models/dynamics/result.dart';
-import 'package:PiliPure/utils/num_utils.dart';
+import 'package:bilite/common/style.dart';
+import 'package:bilite/common/widgets/badge.dart';
+import 'package:bilite/common/widgets/image/network_img_layer.dart';
+import 'package:bilite/common/widgets/svg/play_icon.dart';
+import 'package:bilite/models/common/badge_type.dart';
+import 'package:bilite/models/dynamics/result.dart';
+import 'package:bilite/utils/num_utils.dart';
 import 'package:material_ui/material_ui.dart';
 
 Widget videoSeasonWidget(

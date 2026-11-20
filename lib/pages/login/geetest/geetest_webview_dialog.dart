@@ -1,9 +1,9 @@
 import 'dart:convert' show jsonDecode;
 import 'dart:io' show Platform;
 
-import 'package:PiliPure/http/browser_ua.dart';
-import 'package:PiliPure/main.dart';
-import 'package:PiliPure/plugin/linux_webview.dart';
+import 'package:bilite/http/browser_ua.dart';
+import 'package:bilite/main.dart';
+import 'package:bilite/plugin/linux_webview.dart';
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 import 'package:get/get.dart';
 import 'package:material_ui/material_ui.dart';

@@ -1,15 +1,15 @@
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/http/video.dart';
-import 'package:PiliPure/models/common/account_type.dart';
-import 'package:PiliPure/models/common/video/base_quality.dart';
-import 'package:PiliPure/models/common/video/video_decode_type.dart';
-import 'package:PiliPure/models/common/video/video_type.dart';
-import 'package:PiliPure/models/video/play/url.dart';
-import 'package:PiliPure/models_new/download/bili_download_entry_info.dart';
-import 'package:PiliPure/models_new/download/bili_download_media_file_info.dart';
-import 'package:PiliPure/utils/accounts.dart';
-import 'package:PiliPure/utils/storage_pref.dart';
-import 'package:PiliPure/utils/video_utils.dart';
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/http/video.dart';
+import 'package:bilite/models/common/account_type.dart';
+import 'package:bilite/models/common/video/base_quality.dart';
+import 'package:bilite/models/common/video/video_decode_type.dart';
+import 'package:bilite/models/common/video/video_type.dart';
+import 'package:bilite/models/video/play/url.dart';
+import 'package:bilite/models_new/download/bili_download_entry_info.dart';
+import 'package:bilite/models_new/download/bili_download_media_file_info.dart';
+import 'package:bilite/utils/accounts.dart';
+import 'package:bilite/utils/storage_pref.dart';
+import 'package:bilite/utils/video_utils.dart';
 import 'package:collection/collection.dart';
 
 abstract final class DownloadHttp {

@@ -1,11 +1,11 @@
-import 'package:PiliPure/common/constants.dart';
-import 'package:PiliPure/models/common/account_type.dart';
-import 'package:PiliPure/utils/accounts.dart';
-import 'package:PiliPure/utils/accounts/grpc_headers.dart';
-import 'package:PiliPure/utils/id_utils.dart';
-import 'package:PiliPure/utils/storage.dart';
-import 'package:PiliPure/utils/storage_key.dart';
-import 'package:PiliPure/utils/storage_pref.dart';
+import 'package:bilite/common/constants.dart';
+import 'package:bilite/models/common/account_type.dart';
+import 'package:bilite/utils/accounts.dart';
+import 'package:bilite/utils/accounts/grpc_headers.dart';
+import 'package:bilite/utils/id_utils.dart';
+import 'package:bilite/utils/storage.dart';
+import 'package:bilite/utils/storage_key.dart';
+import 'package:bilite/utils/storage_pref.dart';
 import 'package:cookie_jar/cookie_jar.dart';
 import 'package:hive_ce/hive.dart';
 

@@ -2,17 +2,17 @@ import 'dart:async';
 import 'dart:math' as math;
 import 'dart:math' show max;
 
-import 'package:PiliPure/common/assets.dart';
-import 'package:PiliPure/common/widgets/scroll_physics.dart'
+import 'package:bilite/common/assets.dart';
+import 'package:bilite/common/widgets/scroll_physics.dart'
     show tabBarScrollPhysics;
-import 'package:PiliPure/pages/common/publish/publish_route.dart';
-import 'package:PiliPure/utils/extension/num_ext.dart';
-import 'package:PiliPure/utils/extension/size_ext.dart';
-import 'package:PiliPure/utils/extension/widget_ext.dart';
-import 'package:PiliPure/utils/global_data.dart';
-import 'package:PiliPure/utils/storage.dart';
-import 'package:PiliPure/utils/storage_key.dart';
-import 'package:PiliPure/utils/storage_pref.dart';
+import 'package:bilite/pages/common/publish/publish_route.dart';
+import 'package:bilite/utils/extension/num_ext.dart';
+import 'package:bilite/utils/extension/size_ext.dart';
+import 'package:bilite/utils/extension/widget_ext.dart';
+import 'package:bilite/utils/global_data.dart';
+import 'package:bilite/utils/storage.dart';
+import 'package:bilite/utils/storage_key.dart';
+import 'package:bilite/utils/storage_pref.dart';
 import 'package:get/get.dart';
 import 'package:material_ui/material_ui.dart';
 

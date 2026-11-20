@@ -1,10 +1,10 @@
 import 'dart:async';
 import 'dart:io' show Platform;
 
-import 'package:PiliPure/common/constants.dart';
-import 'package:PiliPure/common/widgets/dialog/simple_dialog_option.dart';
-import 'package:PiliPure/grpc/audio.dart';
-import 'package:PiliPure/grpc/bilibili/app/listener/v1.pb.dart'
+import 'package:bilite/common/constants.dart';
+import 'package:bilite/common/widgets/dialog/simple_dialog_option.dart';
+import 'package:bilite/grpc/audio.dart';
+import 'package:bilite/grpc/bilibili/app/listener/v1.pb.dart'
     show
         DetailItem,
         PlayURLResp,
@@ -14,38 +14,38 @@ import 'package:PiliPure/grpc/bilibili/app/listener/v1.pb.dart'
         ListOrder,
         DashItem,
         ResponseUrl;
-import 'package:PiliPure/http/browser_ua.dart';
-import 'package:PiliPure/http/constants.dart';
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/models/common/audio_normalization.dart';
-import 'package:PiliPure/models/video/play/url.dart' as http_model show Volume;
-import 'package:PiliPure/pages/common/common_intro_controller.dart'
+import 'package:bilite/http/browser_ua.dart';
+import 'package:bilite/http/constants.dart';
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/models/common/audio_normalization.dart';
+import 'package:bilite/models/video/play/url.dart' as http_model show Volume;
+import 'package:bilite/pages/common/common_intro_controller.dart'
     show FavMixin;
-import 'package:PiliPure/pages/dynamics_repost/view.dart';
-import 'package:PiliPure/pages/main_reply/view.dart';
-import 'package:PiliPure/pages/sponsor_block/block_mixin.dart';
-import 'package:PiliPure/pages/video/controller.dart';
-import 'package:PiliPure/pages/video/introduction/ugc/widgets/triple_mixin.dart';
-import 'package:PiliPure/plugin/pl_player/controller.dart';
-import 'package:PiliPure/plugin/pl_player/models/play_repeat.dart';
-import 'package:PiliPure/plugin/pl_player/models/play_status.dart';
-import 'package:PiliPure/services/service_locator.dart';
-import 'package:PiliPure/services/shutdown_timer_service.dart';
-import 'package:PiliPure/utils/accounts.dart';
-import 'package:PiliPure/utils/android/android_helper.dart';
-import 'package:PiliPure/utils/connectivity_utils.dart';
-import 'package:PiliPure/utils/extension/iterable_ext.dart';
-import 'package:PiliPure/utils/extension/num_ext.dart';
-import 'package:PiliPure/utils/global_data.dart';
-import 'package:PiliPure/utils/id_utils.dart';
-import 'package:PiliPure/utils/page_utils.dart';
-import 'package:PiliPure/utils/platform_utils.dart';
-import 'package:PiliPure/utils/share_utils.dart';
-import 'package:PiliPure/utils/storage.dart';
-import 'package:PiliPure/utils/storage_key.dart';
-import 'package:PiliPure/utils/storage_pref.dart';
-import 'package:PiliPure/utils/utils.dart';
-import 'package:PiliPure/utils/video_utils.dart';
+import 'package:bilite/pages/dynamics_repost/view.dart';
+import 'package:bilite/pages/main_reply/view.dart';
+import 'package:bilite/pages/sponsor_block/block_mixin.dart';
+import 'package:bilite/pages/video/controller.dart';
+import 'package:bilite/pages/video/introduction/ugc/widgets/triple_mixin.dart';
+import 'package:bilite/plugin/pl_player/controller.dart';
+import 'package:bilite/plugin/pl_player/models/play_repeat.dart';
+import 'package:bilite/plugin/pl_player/models/play_status.dart';
+import 'package:bilite/services/service_locator.dart';
+import 'package:bilite/services/shutdown_timer_service.dart';
+import 'package:bilite/utils/accounts.dart';
+import 'package:bilite/utils/android/android_helper.dart';
+import 'package:bilite/utils/connectivity_utils.dart';
+import 'package:bilite/utils/extension/iterable_ext.dart';
+import 'package:bilite/utils/extension/num_ext.dart';
+import 'package:bilite/utils/global_data.dart';
+import 'package:bilite/utils/id_utils.dart';
+import 'package:bilite/utils/page_utils.dart';
+import 'package:bilite/utils/platform_utils.dart';
+import 'package:bilite/utils/share_utils.dart';
+import 'package:bilite/utils/storage.dart';
+import 'package:bilite/utils/storage_key.dart';
+import 'package:bilite/utils/storage_pref.dart';
+import 'package:bilite/utils/utils.dart';
+import 'package:bilite/utils/video_utils.dart';
 import 'package:fixnum/fixnum.dart' show Int64;
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 import 'package:get/get.dart';

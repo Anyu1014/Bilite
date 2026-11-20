@@ -1,10 +1,10 @@
-import 'package:PiliPure/common/style.dart';
-import 'package:PiliPure/common/widgets/image/network_img_layer.dart';
-import 'package:PiliPure/common/widgets/select_mask.dart';
-import 'package:PiliPure/models_new/fav/fav_note/list.dart';
-import 'package:PiliPure/pages/fav/note/controller.dart';
-import 'package:PiliPure/utils/page_utils.dart';
-import 'package:PiliPure/utils/platform_utils.dart';
+import 'package:bilite/common/style.dart';
+import 'package:bilite/common/widgets/image/network_img_layer.dart';
+import 'package:bilite/common/widgets/select_mask.dart';
+import 'package:bilite/models_new/fav/fav_note/list.dart';
+import 'package:bilite/pages/fav/note/controller.dart';
+import 'package:bilite/utils/page_utils.dart';
+import 'package:bilite/utils/platform_utils.dart';
 import 'package:material_ui/material_ui.dart';
 
 class FavNoteItem extends StatelessWidget {

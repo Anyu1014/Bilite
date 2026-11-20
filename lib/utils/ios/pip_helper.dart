@@ -1,4 +1,4 @@
-import 'package:PiliPure/plugin/pl_player/controller.dart';
+import 'package:bilite/plugin/pl_player/controller.dart';
 import 'package:flutter/foundation.dart' show kDebugMode, debugPrint;
 import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart' show AppLifecycleState, WidgetsBinding;
@@ -6,7 +6,7 @@ import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 
 /// Picture-in-Picture on iOS, implemented in `ios/Runner/PipPlugin.swift`.
 abstract final class IOSPipHelper {
-  static const _channel = MethodChannel('com.pilipure.app/pip');
+  static const _channel = MethodChannel('com.bilite.app/pip');
 
   static bool isAvailable = false;
 

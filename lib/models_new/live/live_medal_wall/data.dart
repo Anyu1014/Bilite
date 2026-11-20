@@ -1,4 +1,4 @@
-import 'package:PiliPure/models_new/live/live_medal_wall/item.dart';
+import 'package:bilite/models_new/live/live_medal_wall/item.dart';
 
 class MedalWallData {
   List<MedalWallItem>? list;

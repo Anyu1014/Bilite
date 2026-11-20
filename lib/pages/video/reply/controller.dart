@@ -1,15 +1,15 @@
-import 'package:PiliPure/grpc/bilibili/main/community/reply/v1.pb.dart'
+import 'package:bilite/grpc/bilibili/main/community/reply/v1.pb.dart'
     show MainListReply, ReplyInfo;
-import 'package:PiliPure/grpc/reply.dart';
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/models_new/dynamic/dyn_mention/item.dart';
-import 'package:PiliPure/pages/common/reply/fold/reply_fold_mixin.dart';
-import 'package:PiliPure/pages/common/reply/reply_controller.dart';
-import 'package:PiliPure/pages/common/reply/vote/reply_vote_mixin.dart';
-import 'package:PiliPure/pages/video/controller.dart';
-import 'package:PiliPure/pages/video/reply_reply/view.dart';
-import 'package:PiliPure/utils/id_utils.dart';
-import 'package:PiliPure/utils/reply_scheme_helper.dart';
+import 'package:bilite/grpc/reply.dart';
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/models_new/dynamic/dyn_mention/item.dart';
+import 'package:bilite/pages/common/reply/fold/reply_fold_mixin.dart';
+import 'package:bilite/pages/common/reply/reply_controller.dart';
+import 'package:bilite/pages/common/reply/vote/reply_vote_mixin.dart';
+import 'package:bilite/pages/video/controller.dart';
+import 'package:bilite/pages/video/reply_reply/view.dart';
+import 'package:bilite/utils/id_utils.dart';
+import 'package:bilite/utils/reply_scheme_helper.dart';
 import 'package:flutter/foundation.dart' show kDebugMode;
 import 'package:flutter/widgets.dart' show BoxConstraints, WidgetsBinding;
 import 'package:get/get.dart';

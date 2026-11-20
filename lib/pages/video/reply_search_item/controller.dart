@@ -1,7 +1,7 @@
-import 'package:PiliPure/models/common/reply/reply_search_type.dart';
-import 'package:PiliPure/pages/video/reply_search_item/child/controller.dart';
-import 'package:PiliPure/utils/extension/scroll_controller_ext.dart';
-import 'package:PiliPure/utils/utils.dart';
+import 'package:bilite/models/common/reply/reply_search_type.dart';
+import 'package:bilite/pages/video/reply_search_item/child/controller.dart';
+import 'package:bilite/utils/extension/scroll_controller_ext.dart';
+import 'package:bilite/utils/utils.dart';
 import 'package:get/get.dart';
 import 'package:material_ui/material_ui.dart';
 

@@ -1,9 +1,9 @@
 import 'dart:io' show Platform;
 
-import 'package:PiliPure/common/assets.dart';
-import 'package:PiliPure/common/constants.dart';
-import 'package:PiliPure/utils/desktop/window_controller.dart';
-import 'package:PiliPure/utils/storage_pref.dart';
+import 'package:bilite/common/assets.dart';
+import 'package:bilite/common/constants.dart';
+import 'package:bilite/utils/desktop/window_controller.dart';
+import 'package:bilite/utils/storage_pref.dart';
 import 'package:tray_manager/tray_manager.dart' as tray_manager show Image;
 import 'package:tray_manager/tray_manager.dart';
 

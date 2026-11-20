@@ -1,4 +1,4 @@
-import 'package:PiliPure/models_new/space/space_audio/item.dart';
+import 'package:bilite/models_new/space/space_audio/item.dart';
 
 class Audios {
   int? count;

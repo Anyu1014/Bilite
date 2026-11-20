@@ -1,12 +1,12 @@
-import 'package:PiliPure/common/widgets/pendant_avatar.dart';
-import 'package:PiliPure/common/widgets/scaffold/simple_scaffold.dart';
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/models_new/msg/im_user_infos/datum.dart';
-import 'package:PiliPure/models_new/msg/msg_dnd/uid_setting.dart';
-import 'package:PiliPure/models_new/msg/session_ss/data.dart';
-import 'package:PiliPure/pages/whisper_link_setting/controller.dart';
-import 'package:PiliPure/utils/extension/theme_ext.dart';
-import 'package:PiliPure/utils/utils.dart';
+import 'package:bilite/common/widgets/pendant_avatar.dart';
+import 'package:bilite/common/widgets/scaffold/simple_scaffold.dart';
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/models_new/msg/im_user_infos/datum.dart';
+import 'package:bilite/models_new/msg/msg_dnd/uid_setting.dart';
+import 'package:bilite/models_new/msg/session_ss/data.dart';
+import 'package:bilite/pages/whisper_link_setting/controller.dart';
+import 'package:bilite/utils/extension/theme_ext.dart';
+import 'package:bilite/utils/utils.dart';
 import 'package:get/get.dart';
 import 'package:material_ui/material_ui.dart';
 

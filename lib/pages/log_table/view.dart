@@ -1,9 +1,9 @@
-import 'package:PiliPure/common/widgets/loading_widget/http_error.dart';
-import 'package:PiliPure/common/widgets/loading_widget/loading_widget.dart';
-import 'package:PiliPure/common/widgets/scaffold/simple_scaffold.dart';
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/pages/log_table/controller.dart';
-import 'package:PiliPure/utils/extension/widget_ext.dart';
+import 'package:bilite/common/widgets/loading_widget/http_error.dart';
+import 'package:bilite/common/widgets/loading_widget/loading_widget.dart';
+import 'package:bilite/common/widgets/scaffold/simple_scaffold.dart';
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/pages/log_table/controller.dart';
+import 'package:bilite/utils/extension/widget_ext.dart';
 import 'package:get/get.dart';
 import 'package:material_ui/material_ui.dart';
 

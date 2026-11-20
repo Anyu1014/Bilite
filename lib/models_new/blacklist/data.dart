@@ -1,4 +1,4 @@
-import 'package:PiliPure/models_new/blacklist/list.dart';
+import 'package:bilite/models_new/blacklist/list.dart';
 
 class BlackListData {
   List<BlackListItem>? list;

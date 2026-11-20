@@ -1,4 +1,4 @@
-import 'package:PiliPure/common/widgets/gesture/horizontal_drag_gesture_recognizer.dart';
+import 'package:bilite/common/widgets/gesture/horizontal_drag_gesture_recognizer.dart';
 import 'package:flutter/gestures.dart'
     show
         PointerDownEvent,

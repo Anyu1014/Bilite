@@ -1,9 +1,9 @@
-import 'package:PiliPure/models/common/member/archive_sort_type_app.dart';
-import 'package:PiliPure/models/common/member/web_ss_type.dart';
-import 'package:PiliPure/models_new/member/season_web/archive.dart';
-import 'package:PiliPure/models_new/member/season_web/data.dart';
-import 'package:PiliPure/pages/member_video_web/base/view.dart';
-import 'package:PiliPure/pages/member_video_web/season_series/controller.dart';
+import 'package:bilite/models/common/member/archive_sort_type_app.dart';
+import 'package:bilite/models/common/member/web_ss_type.dart';
+import 'package:bilite/models_new/member/season_web/archive.dart';
+import 'package:bilite/models_new/member/season_web/data.dart';
+import 'package:bilite/pages/member_video_web/base/view.dart';
+import 'package:bilite/pages/member_video_web/season_series/controller.dart';
 import 'package:get/get.dart';
 import 'package:material_ui/material_ui.dart';
 

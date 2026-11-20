@@ -1,4 +1,4 @@
-import 'package:PiliPure/pages/setting/widgets/checkbox_num.dart';
+import 'package:bilite/pages/setting/widgets/checkbox_num.dart';
 import 'package:material_ui/material_ui.dart';
 
 class OrderedCheckboxListTile extends StatelessWidget {

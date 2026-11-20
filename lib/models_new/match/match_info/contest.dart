@@ -1,6 +1,6 @@
-import 'package:PiliPure/models_new/match/match_info/season.dart';
-import 'package:PiliPure/models_new/match/match_info/team.dart';
-import 'package:PiliPure/utils/parse_string.dart';
+import 'package:bilite/models_new/match/match_info/season.dart';
+import 'package:bilite/models_new/match/match_info/team.dart';
+import 'package:bilite/utils/parse_string.dart';
 
 class MatchContest {
   int? id;

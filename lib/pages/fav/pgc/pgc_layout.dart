@@ -1,4 +1,4 @@
-import 'package:PiliPure/common/widgets/slotted_layout_helper.dart';
+import 'package:bilite/common/widgets/slotted_layout_helper.dart';
 import 'package:material_ui/material_ui.dart';
 
 enum PgcType { toolbar, body }

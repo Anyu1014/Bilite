@@ -1,6 +1,6 @@
-import 'package:PiliPure/common/widgets/flutter/refresh_indicator.dart'
+import 'package:bilite/common/widgets/flutter/refresh_indicator.dart'
     show displacement, kIndicatorSize;
-import 'package:PiliPure/common/widgets/slotted_layout_helper.dart';
+import 'package:bilite/common/widgets/slotted_layout_helper.dart';
 import 'package:flutter/rendering.dart' show BoxHitTestResult, ClipRectLayer;
 import 'package:material_ui/material_ui.dart' hide RefreshIndicatorStatus;
 
@@ -14,7 +14,11 @@ class RefreshLayout
     required this.position,
     required this.indicator,
     required this.body,
+    this.topInset = 0,
   });
+
+  /// 指示器相对滚动视图顶部的额外下移（首页顶栏是覆盖层，指示器要让到它下面）
+  final double topInset;
 
   final Animation<double> scale;
   final Animation<double> position;
@@ -32,7 +36,11 @@ class RefreshLayout
 
   @override
   RenderRefreshLayout createRenderObject(BuildContext context) {
-    return RenderRefreshLayout(scale: scale, position: position);
+    return RenderRefreshLayout(
+      scale: scale,
+      position: position,
+      topInset: topInset,
+    );
   }
 }
 
@@ -41,6 +49,7 @@ class RenderRefreshLayout extends RenderBox
   RenderRefreshLayout({
     required this.scale,
     required this.position,
+    this.topInset = 0,
   }) {
     scale.addListener(_scaleListener);
     position.addListener(_positionListener);
@@ -49,6 +58,8 @@ class RenderRefreshLayout extends RenderBox
   final Animation<double> scale;
 
   final Animation<double> position;
+
+  final double topInset;
 
   double _heightFactor = 0;
   double get heightFactor => _heightFactor;
@@ -114,6 +125,7 @@ class RenderRefreshLayout extends RenderBox
         (constraints.maxWidth - scaleSize) / 2,
         (kIndicatorSize + displacement) * heightFactor -
             kIndicatorSize +
+            topInset +
             (kIndicatorSize - scaleSize) / 2,
       ),
     );

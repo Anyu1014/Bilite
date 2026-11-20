@@ -1,29 +1,29 @@
 import 'dart:io' show File, HttpException;
 
-import 'package:PiliPure/common/style.dart';
-import 'package:PiliPure/common/widgets/button/icon_button.dart';
-import 'package:PiliPure/common/widgets/button/toolbar_icon_button.dart';
-import 'package:PiliPure/common/widgets/flutter/text_field/controller.dart';
-import 'package:PiliPure/common/widgets/flutter/text_field/text_field.dart';
-import 'package:PiliPure/http/msg.dart';
-import 'package:PiliPure/models/common/image_preview_type.dart';
-import 'package:PiliPure/models/common/publish_panel_type.dart';
-import 'package:PiliPure/models/dynamics/result.dart'
+import 'package:bilite/common/style.dart';
+import 'package:bilite/common/widgets/button/icon_button.dart';
+import 'package:bilite/common/widgets/button/toolbar_icon_button.dart';
+import 'package:bilite/common/widgets/flutter/text_field/controller.dart';
+import 'package:bilite/common/widgets/flutter/text_field/text_field.dart';
+import 'package:bilite/http/msg.dart';
+import 'package:bilite/models/common/image_preview_type.dart';
+import 'package:bilite/models/common/publish_panel_type.dart';
+import 'package:bilite/models/dynamics/result.dart'
     show PicModel, FilePicModel, OpusPicModel;
-import 'package:PiliPure/models_new/dynamic/dyn_mention/item.dart';
-import 'package:PiliPure/models_new/emote/emote.dart' as e;
-import 'package:PiliPure/models_new/live/live_emote/emoticon.dart';
-import 'package:PiliPure/pages/common/publish/common_publish_page.dart';
-import 'package:PiliPure/pages/dynamics_mention/view.dart';
-import 'package:PiliPure/utils/cache_manager.dart';
-import 'package:PiliPure/utils/extension/file_ext.dart';
-import 'package:PiliPure/utils/extension/num_ext.dart';
-import 'package:PiliPure/utils/extension/string_ext.dart';
-import 'package:PiliPure/utils/extension/theme_ext.dart';
-import 'package:PiliPure/utils/feed_back.dart';
-import 'package:PiliPure/utils/image_utils.dart';
-import 'package:PiliPure/utils/page_utils.dart';
-import 'package:PiliPure/utils/platform_utils.dart';
+import 'package:bilite/models_new/dynamic/dyn_mention/item.dart';
+import 'package:bilite/models_new/emote/emote.dart' as e;
+import 'package:bilite/models_new/live/live_emote/emoticon.dart';
+import 'package:bilite/pages/common/publish/common_publish_page.dart';
+import 'package:bilite/pages/dynamics_mention/view.dart';
+import 'package:bilite/utils/cache_manager.dart';
+import 'package:bilite/utils/extension/file_ext.dart';
+import 'package:bilite/utils/extension/num_ext.dart';
+import 'package:bilite/utils/extension/string_ext.dart';
+import 'package:bilite/utils/extension/theme_ext.dart';
+import 'package:bilite/utils/feed_back.dart';
+import 'package:bilite/utils/image_utils.dart';
+import 'package:bilite/utils/page_utils.dart';
+import 'package:bilite/utils/platform_utils.dart';
 import 'package:cached_network_image_ce/cached_network_image.dart'
     hide CacheManager;
 import 'package:dio/dio.dart' show CancelToken;

@@ -1,5 +1,5 @@
-import 'package:PiliPure/pages/setting/widgets/checkbox_num_list_tile.dart';
-import 'package:PiliPure/common/widgets/glass.dart';
+import 'package:bilite/pages/setting/widgets/checkbox_num_list_tile.dart';
+import 'package:bilite/common/widgets/glass.dart';
 import 'package:collection/collection.dart';
 import 'package:get/get.dart';
 import 'package:material_ui/material_ui.dart';

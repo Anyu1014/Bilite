@@ -1,12 +1,12 @@
-import 'package:PiliPure/common/widgets/dialog/simple_dialog_option.dart';
-import 'package:PiliPure/common/widgets/loading_widget/loading_widget.dart';
-import 'package:PiliPure/common/widgets/scaffold/simple_scaffold.dart';
-import 'package:PiliPure/grpc/bilibili/app/im/v1.pb.dart'
+import 'package:bilite/common/widgets/dialog/simple_dialog_option.dart';
+import 'package:bilite/common/widgets/loading_widget/loading_widget.dart';
+import 'package:bilite/common/widgets/scaffold/simple_scaffold.dart';
+import 'package:bilite/grpc/bilibili/app/im/v1.pb.dart'
     show IMSettingType, Setting;
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/pages/whisper_block/view.dart';
-import 'package:PiliPure/pages/whisper_settings/controller.dart';
-import 'package:PiliPure/pages/whisper_settings/widgets/item.dart';
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/pages/whisper_block/view.dart';
+import 'package:bilite/pages/whisper_settings/controller.dart';
+import 'package:bilite/pages/whisper_settings/widgets/item.dart';
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 import 'package:get/get.dart';
 import 'package:material_ui/material_ui.dart';

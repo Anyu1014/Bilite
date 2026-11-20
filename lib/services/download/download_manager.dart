@@ -1,10 +1,10 @@
 import 'dart:async';
 import 'dart:io';
 
-import 'package:PiliPure/http/init.dart';
-import 'package:PiliPure/models_new/download/bili_download_entry_info.dart';
-import 'package:PiliPure/utils/extension/file_ext.dart';
-import 'package:PiliPure/utils/extension/string_ext.dart';
+import 'package:bilite/http/init.dart';
+import 'package:bilite/models_new/download/bili_download_entry_info.dart';
+import 'package:bilite/utils/extension/file_ext.dart';
+import 'package:bilite/utils/extension/string_ext.dart';
 import 'package:dio/dio.dart';
 
 class DownloadManager {

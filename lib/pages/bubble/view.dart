@@ -1,15 +1,15 @@
-import 'package:PiliPure/common/widgets/flutter/list_tile.dart';
-import 'package:PiliPure/common/widgets/flutter/refresh_indicator.dart';
-import 'package:PiliPure/common/widgets/keep_alive_wrapper.dart';
-import 'package:PiliPure/common/widgets/loading_widget/http_error.dart';
-import 'package:PiliPure/common/widgets/loading_widget/loading_widget.dart';
-import 'package:PiliPure/common/widgets/scaffold/simple_scaffold.dart';
-import 'package:PiliPure/common/widgets/scroll_physics.dart' show tabBarView;
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/models_new/bubble/dyn_list.dart';
-import 'package:PiliPure/pages/bubble/controller.dart';
-import 'package:PiliPure/utils/extension/scroll_controller_ext.dart';
-import 'package:PiliPure/utils/grid.dart';
+import 'package:bilite/common/widgets/flutter/list_tile.dart';
+import 'package:bilite/common/widgets/flutter/refresh_indicator.dart';
+import 'package:bilite/common/widgets/keep_alive_wrapper.dart';
+import 'package:bilite/common/widgets/loading_widget/http_error.dart';
+import 'package:bilite/common/widgets/loading_widget/loading_widget.dart';
+import 'package:bilite/common/widgets/scaffold/simple_scaffold.dart';
+import 'package:bilite/common/widgets/scroll_physics.dart' show tabBarView;
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/models_new/bubble/dyn_list.dart';
+import 'package:bilite/pages/bubble/controller.dart';
+import 'package:bilite/utils/extension/scroll_controller_ext.dart';
+import 'package:bilite/utils/grid.dart';
 import 'package:collection/collection.dart';
 import 'package:get/get.dart';
 import 'package:material_ui/material_ui.dart'

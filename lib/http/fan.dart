@@ -1,8 +1,8 @@
-import 'package:PiliPure/http/api.dart';
-import 'package:PiliPure/http/error_msg.dart';
-import 'package:PiliPure/http/init.dart';
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/models_new/follow/data.dart';
+import 'package:bilite/http/api.dart';
+import 'package:bilite/http/error_msg.dart';
+import 'package:bilite/http/init.dart';
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/models_new/follow/data.dart';
 
 abstract final class FanHttp {
   static Future<LoadingState<FollowData>> fans({

@@ -10,9 +10,9 @@ library;
 
 import 'dart:math' as math;
 
-import 'package:PiliPure/common/widgets/flutter/text_field/controller.dart';
-import 'package:PiliPure/common/widgets/flutter/text_field/editable.dart';
-import 'package:PiliPure/common/widgets/flutter/text_field/editable_text.dart';
+import 'package:bilite/common/widgets/flutter/text_field/controller.dart';
+import 'package:bilite/common/widgets/flutter/text_field/editable.dart';
+import 'package:bilite/common/widgets/flutter/text_field/editable_text.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/scheduler.dart';

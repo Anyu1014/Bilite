@@ -1,10 +1,10 @@
-import 'package:PiliPure/common/widgets/pair.dart';
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/http/msg.dart';
-import 'package:PiliPure/models_new/msg/msg_like/data.dart';
-import 'package:PiliPure/models_new/msg/msg_like/item.dart';
-import 'package:PiliPure/pages/common/common_data_controller.dart';
-import 'package:PiliPure/utils/extension/iterable_ext.dart';
+import 'package:bilite/common/widgets/pair.dart';
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/http/msg.dart';
+import 'package:bilite/models_new/msg/msg_like/data.dart';
+import 'package:bilite/models_new/msg/msg_like/item.dart';
+import 'package:bilite/pages/common/common_data_controller.dart';
+import 'package:bilite/utils/extension/iterable_ext.dart';
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 
 class LikeMeController

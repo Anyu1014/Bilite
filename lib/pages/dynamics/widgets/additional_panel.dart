@@ -1,13 +1,13 @@
-import 'package:PiliPure/common/style.dart';
-import 'package:PiliPure/common/widgets/gesture/tap_gesture_recognizer.dart';
-import 'package:PiliPure/common/widgets/image/network_img_layer.dart';
-import 'package:PiliPure/common/widgets/selection_text.dart';
-import 'package:PiliPure/http/dynamics.dart';
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/models/dynamics/result.dart';
-import 'package:PiliPure/pages/dynamics/widgets/vote.dart';
-import 'package:PiliPure/utils/app_scheme.dart';
-import 'package:PiliPure/utils/num_utils.dart';
+import 'package:bilite/common/style.dart';
+import 'package:bilite/common/widgets/gesture/tap_gesture_recognizer.dart';
+import 'package:bilite/common/widgets/image/network_img_layer.dart';
+import 'package:bilite/common/widgets/selection_text.dart';
+import 'package:bilite/http/dynamics.dart';
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/models/dynamics/result.dart';
+import 'package:bilite/pages/dynamics/widgets/vote.dart';
+import 'package:bilite/utils/app_scheme.dart';
+import 'package:bilite/utils/num_utils.dart';
 import 'package:get/get.dart';
 import 'package:material_ui/material_ui.dart';
 

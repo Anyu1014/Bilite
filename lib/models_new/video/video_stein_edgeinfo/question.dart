@@ -1,4 +1,4 @@
-import 'package:PiliPure/models_new/video/video_stein_edgeinfo/choice.dart';
+import 'package:bilite/models_new/video/video_stein_edgeinfo/choice.dart';
 
 class Question {
   List<Choice>? choices;

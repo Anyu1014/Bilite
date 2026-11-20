@@ -1,14 +1,14 @@
-import 'package:PiliPure/http/fav.dart';
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/http/pgc.dart';
-import 'package:PiliPure/models/common/home_tab_type.dart';
-import 'package:PiliPure/models_new/fav/fav_pgc/list.dart';
-import 'package:PiliPure/models_new/pgc/pgc_index_result/list.dart';
-import 'package:PiliPure/models_new/pgc/pgc_timeline/result.dart';
-import 'package:PiliPure/pages/common/common_list_controller.dart';
-import 'package:PiliPure/services/account_service.dart';
-import 'package:PiliPure/utils/extension/scroll_controller_ext.dart';
-import 'package:PiliPure/utils/storage_pref.dart';
+import 'package:bilite/http/fav.dart';
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/http/pgc.dart';
+import 'package:bilite/models/common/home_tab_type.dart';
+import 'package:bilite/models_new/fav/fav_pgc/list.dart';
+import 'package:bilite/models_new/pgc/pgc_index_result/list.dart';
+import 'package:bilite/models_new/pgc/pgc_timeline/result.dart';
+import 'package:bilite/pages/common/common_list_controller.dart';
+import 'package:bilite/services/account_service.dart';
+import 'package:bilite/utils/extension/scroll_controller_ext.dart';
+import 'package:bilite/utils/storage_pref.dart';
 import 'package:flutter/widgets.dart' show ScrollController;
 import 'package:get/get.dart';
 

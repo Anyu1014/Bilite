@@ -3,69 +3,69 @@ import 'dart:io';
 import 'dart:math' as math;
 import 'dart:ui' as ui;
 
-import 'package:PiliPure/common/assets.dart';
-import 'package:PiliPure/common/widgets/glass.dart';
-import 'package:PiliPure/common/constants.dart';
-import 'package:PiliPure/common/style.dart';
-import 'package:PiliPure/common/widgets/cropped_image.dart';
-import 'package:PiliPure/common/widgets/custom_icon.dart';
-import 'package:PiliPure/common/widgets/disabled_icon.dart';
-import 'package:PiliPure/common/widgets/gesture/immediate_tap_gesture_recognizer.dart';
-import 'package:PiliPure/common/widgets/gesture/mouse_interactive_viewer.dart';
-import 'package:PiliPure/common/widgets/gesture/player_gesture_recognizer.dart';
-import 'package:PiliPure/common/widgets/loading_widget.dart';
-import 'package:PiliPure/common/widgets/pair.dart';
-import 'package:PiliPure/common/widgets/player_bar.dart';
-import 'package:PiliPure/common/widgets/progress_bar/audio_video_progress_bar.dart';
-import 'package:PiliPure/common/widgets/progress_bar/segment_progress_bar.dart';
-import 'package:PiliPure/common/widgets/view_safe_area.dart';
-import 'package:PiliPure/models/common/sponsor_block/action_type.dart';
-import 'package:PiliPure/models/common/sponsor_block/post_segment_model.dart';
-import 'package:PiliPure/models/common/sponsor_block/segment_type.dart';
-import 'package:PiliPure/models/common/super_resolution_type.dart';
-import 'package:PiliPure/models/common/video/base_quality.dart';
-import 'package:PiliPure/models/video/play/url.dart';
-import 'package:PiliPure/models_new/video/video_detail/episode.dart' as ugc;
-import 'package:PiliPure/pages/common/common_intro_controller.dart';
-import 'package:PiliPure/pages/danmaku/danmaku_model.dart';
-import 'package:PiliPure/pages/live_room/widgets/bottom_control.dart'
+import 'package:bilite/common/assets.dart';
+import 'package:bilite/common/widgets/glass.dart';
+import 'package:bilite/common/constants.dart';
+import 'package:bilite/common/style.dart';
+import 'package:bilite/common/widgets/cropped_image.dart';
+import 'package:bilite/common/widgets/custom_icon.dart';
+import 'package:bilite/common/widgets/disabled_icon.dart';
+import 'package:bilite/common/widgets/gesture/immediate_tap_gesture_recognizer.dart';
+import 'package:bilite/common/widgets/gesture/mouse_interactive_viewer.dart';
+import 'package:bilite/common/widgets/gesture/player_gesture_recognizer.dart';
+import 'package:bilite/common/widgets/loading_widget.dart';
+import 'package:bilite/common/widgets/pair.dart';
+import 'package:bilite/common/widgets/player_bar.dart';
+import 'package:bilite/common/widgets/progress_bar/audio_video_progress_bar.dart';
+import 'package:bilite/common/widgets/progress_bar/segment_progress_bar.dart';
+import 'package:bilite/common/widgets/view_safe_area.dart';
+import 'package:bilite/models/common/sponsor_block/action_type.dart';
+import 'package:bilite/models/common/sponsor_block/post_segment_model.dart';
+import 'package:bilite/models/common/sponsor_block/segment_type.dart';
+import 'package:bilite/models/common/super_resolution_type.dart';
+import 'package:bilite/models/common/video/base_quality.dart';
+import 'package:bilite/models/video/play/url.dart';
+import 'package:bilite/models_new/video/video_detail/episode.dart' as ugc;
+import 'package:bilite/pages/common/common_intro_controller.dart';
+import 'package:bilite/pages/danmaku/danmaku_model.dart';
+import 'package:bilite/pages/live_room/widgets/bottom_control.dart'
     as live_bottom;
-import 'package:PiliPure/pages/video/controller.dart';
-import 'package:PiliPure/pages/video/introduction/pgc/controller.dart';
-import 'package:PiliPure/pages/video/introduction/ugc/controller.dart';
-import 'package:PiliPure/pages/video/post_panel/popup_menu_text.dart';
-import 'package:PiliPure/pages/video/post_panel/view.dart';
-import 'package:PiliPure/pages/video/widgets/header_control.dart';
-import 'package:PiliPure/plugin/pl_player/controller.dart';
-import 'package:PiliPure/plugin/pl_player/models/bottom_control_type.dart';
-import 'package:PiliPure/plugin/pl_player/models/data_status.dart';
-import 'package:PiliPure/plugin/pl_player/models/double_tap_type.dart';
-import 'package:PiliPure/plugin/pl_player/models/fullscreen_mode.dart';
-import 'package:PiliPure/plugin/pl_player/models/gesture_type.dart';
-import 'package:PiliPure/plugin/pl_player/models/video_fit_type.dart';
-import 'package:PiliPure/plugin/pl_player/widgets/app_bar_ani.dart';
-import 'package:PiliPure/plugin/pl_player/widgets/backward_seek.dart';
-import 'package:PiliPure/plugin/pl_player/widgets/bottom_control.dart';
-import 'package:PiliPure/plugin/pl_player/widgets/common_btn.dart';
-import 'package:PiliPure/plugin/pl_player/widgets/forward_seek.dart';
-import 'package:PiliPure/plugin/pl_player/widgets/mpv_convert_webp.dart';
-import 'package:PiliPure/plugin/pl_player/widgets/play_pause_btn.dart';
-import 'package:PiliPure/utils/android/bindings.g.dart';
-import 'package:PiliPure/utils/cache_manager.dart';
-import 'package:PiliPure/utils/connectivity_utils.dart';
-import 'package:PiliPure/utils/desktop/window_controller.dart';
-import 'package:PiliPure/utils/duration_utils.dart';
-import 'package:PiliPure/utils/extension/num_ext.dart';
-import 'package:PiliPure/utils/extension/theme_ext.dart';
-import 'package:PiliPure/utils/feed_back.dart';
-import 'package:PiliPure/utils/image_utils.dart';
-import 'package:PiliPure/utils/ios/pip_helper.dart';
-import 'package:PiliPure/utils/mobile_observer.dart';
-import 'package:PiliPure/utils/path_utils.dart';
-import 'package:PiliPure/utils/platform_utils.dart';
-import 'package:PiliPure/utils/storage.dart';
-import 'package:PiliPure/utils/storage_key.dart';
-import 'package:PiliPure/utils/utils.dart';
+import 'package:bilite/pages/video/controller.dart';
+import 'package:bilite/pages/video/introduction/pgc/controller.dart';
+import 'package:bilite/pages/video/introduction/ugc/controller.dart';
+import 'package:bilite/pages/video/post_panel/popup_menu_text.dart';
+import 'package:bilite/pages/video/post_panel/view.dart';
+import 'package:bilite/pages/video/widgets/header_control.dart';
+import 'package:bilite/plugin/pl_player/controller.dart';
+import 'package:bilite/plugin/pl_player/models/bottom_control_type.dart';
+import 'package:bilite/plugin/pl_player/models/data_status.dart';
+import 'package:bilite/plugin/pl_player/models/double_tap_type.dart';
+import 'package:bilite/plugin/pl_player/models/fullscreen_mode.dart';
+import 'package:bilite/plugin/pl_player/models/gesture_type.dart';
+import 'package:bilite/plugin/pl_player/models/video_fit_type.dart';
+import 'package:bilite/plugin/pl_player/widgets/app_bar_ani.dart';
+import 'package:bilite/plugin/pl_player/widgets/backward_seek.dart';
+import 'package:bilite/plugin/pl_player/widgets/bottom_control.dart';
+import 'package:bilite/plugin/pl_player/widgets/common_btn.dart';
+import 'package:bilite/plugin/pl_player/widgets/forward_seek.dart';
+import 'package:bilite/plugin/pl_player/widgets/mpv_convert_webp.dart';
+import 'package:bilite/plugin/pl_player/widgets/play_pause_btn.dart';
+import 'package:bilite/utils/android/bindings.g.dart';
+import 'package:bilite/utils/cache_manager.dart';
+import 'package:bilite/utils/connectivity_utils.dart';
+import 'package:bilite/utils/desktop/window_controller.dart';
+import 'package:bilite/utils/duration_utils.dart';
+import 'package:bilite/utils/extension/num_ext.dart';
+import 'package:bilite/utils/extension/theme_ext.dart';
+import 'package:bilite/utils/feed_back.dart';
+import 'package:bilite/utils/image_utils.dart';
+import 'package:bilite/utils/ios/pip_helper.dart';
+import 'package:bilite/utils/mobile_observer.dart';
+import 'package:bilite/utils/path_utils.dart';
+import 'package:bilite/utils/platform_utils.dart';
+import 'package:bilite/utils/storage.dart';
+import 'package:bilite/utils/storage_key.dart';
+import 'package:bilite/utils/utils.dart';
 import 'package:canvas_danmaku/canvas_danmaku.dart';
 import 'package:collection/collection.dart';
 import 'package:easy_debounce/easy_throttle.dart';
@@ -479,7 +479,6 @@ class _PLVideoPlayerState extends State<PLVideoPlayer>
                 child: const Icon(
                   Icons.show_chart,
                   size: 22,
-                  color: Colors.white,
                 ),
               ),
               onTap: () => videoDetailController.showDmTrendChart.value = !show,
@@ -493,11 +492,11 @@ class _PLVideoPlayerState extends State<PLVideoPlayer>
       BottomControlType.superResolution => Obx(
         () {
           final type = plPlayerController.superResolutionType.value;
-          return PopupMenuButton<SuperResolutionType>(
+          return GlassPopupMenuButton<SuperResolutionType>(
+            dark: true,
             tooltip: '超分辨率',
             requestFocus: false,
             initialValue: type,
-            color: Colors.black.withValues(alpha: 0.8),
             itemBuilder: (context) {
               return SuperResolutionType.values
                   .map(
@@ -509,7 +508,6 @@ class _PLVideoPlayerState extends State<PLVideoPlayer>
                       child: Text(
                         type.label,
                         style: const TextStyle(
-                          color: Colors.white,
                           fontSize: 13,
                         ),
                       ),
@@ -541,7 +539,6 @@ class _PLVideoPlayerState extends State<PLVideoPlayer>
                 child: const Icon(
                   CustomIcons.view_headline_rotate_90,
                   size: 22,
-                  color: Colors.white,
                 ),
               ),
               onTap: widget.showViewPoints,
@@ -592,11 +589,11 @@ class _PLVideoPlayerState extends State<PLVideoPlayer>
       BottomControlType.fit => Obx(
         () {
           final fit = plPlayerController.videoFit.value;
-          return PopupMenuButton<VideoFitType>(
+          return GlassPopupMenuButton<VideoFitType>(
+            dark: true,
             tooltip: '画面比例',
             requestFocus: false,
             initialValue: fit,
-            color: Colors.black.withValues(alpha: 0.8),
             itemBuilder: (context) {
               return VideoFitType.values
                   .map(
@@ -608,7 +605,6 @@ class _PLVideoPlayerState extends State<PLVideoPlayer>
                       child: Text(
                         boxFit.desc,
                         style: const TextStyle(
-                          color: Colors.white,
                           fontSize: 13,
                         ),
                       ),
@@ -631,12 +627,12 @@ class _PLVideoPlayerState extends State<PLVideoPlayer>
         () {
           final list = videoDetailController.languages.value;
           if (list != null && list.isNotEmpty) {
-            return PopupMenuButton<String>(
+            return GlassPopupMenuButton<String>(
+              dark: true,
               tooltip: '翻译',
               requestFocus: false,
               initialValue: videoDetailController.currLang.value,
               onSelected: videoDetailController.setLanguage,
-              color: Colors.black.withValues(alpha: 0.8),
               itemBuilder: (context) => [
                 const PopupMenuItem<String>(
                   height: 35,
@@ -663,7 +659,6 @@ class _PLVideoPlayerState extends State<PLVideoPlayer>
                 child: const Icon(
                   Icons.translate,
                   size: 18,
-                  color: Colors.white,
                 ),
               ),
             );
@@ -677,11 +672,11 @@ class _PLVideoPlayerState extends State<PLVideoPlayer>
         () {
           if (videoDetailController.subtitles.isNotEmpty) {
             final val = videoDetailController.vttSubtitlesIndex.value;
-            return PopupMenuButton<int>(
+            return GlassPopupMenuButton<int>(
+              dark: true,
               tooltip: '字幕',
               requestFocus: false,
               initialValue: val,
-              color: Colors.black.withValues(alpha: 0.8),
               itemBuilder: (context) {
                 return [
                   PopupMenuItem<int>(
@@ -691,7 +686,6 @@ class _PLVideoPlayerState extends State<PLVideoPlayer>
                     child: const Text(
                       "关闭字幕",
                       style: TextStyle(
-                        color: Colors.white,
                         fontSize: 13,
                       ),
                     ),
@@ -718,12 +712,10 @@ class _PLVideoPlayerState extends State<PLVideoPlayer>
                     ? const Icon(
                         Icons.closed_caption_off_outlined,
                         size: 22,
-                        color: Colors.white,
                       )
                     : const Icon(
                         Icons.closed_caption_off_rounded,
                         size: 22,
-                        color: Colors.white,
                       ),
               ),
             );
@@ -734,11 +726,11 @@ class _PLVideoPlayerState extends State<PLVideoPlayer>
 
       /// 播放速度
       BottomControlType.speed => Obx(
-        () => PopupMenuButton<double>(
+        () => GlassPopupMenuButton<double>(
+          dark: true,
           tooltip: '倍速',
           requestFocus: false,
           initialValue: plPlayerController.playbackSpeed,
-          color: Colors.black.withValues(alpha: 0.8),
           itemBuilder: (context) {
             return plPlayerController.speedList
                 .map(
@@ -780,11 +772,11 @@ class _PLVideoPlayerState extends State<PLVideoPlayer>
           }
           final videoFormat = videoInfo.supportFormats!;
           final availableQa = videoInfo.dash!.video!.availableVideoQualities;
-          return PopupMenuButton<int>(
+          return GlassPopupMenuButton<int>(
+            dark: true,
             tooltip: '画质',
             requestFocus: false,
             initialValue: currentVideoQa.code,
-            color: Colors.black.withValues(alpha: 0.8),
             itemBuilder: (context) {
               return List.generate(
                 videoFormat.length,
@@ -1400,7 +1392,6 @@ class _PLVideoPlayerState extends State<PLVideoPlayer>
                         () => Text(
                           '${plPlayerController.enableAutoLongPressSpeed ? (plPlayerController.longPressStatus.value ? plPlayerController.lastPlaybackSpeed : plPlayerController.playbackSpeed) * 2 : plPlayerController.longPressSpeed}倍速中',
                           style: const TextStyle(
-                            color: Colors.white,
                             fontSize: 13,
                           ),
                         ),
@@ -1502,7 +1493,6 @@ class _PLVideoPlayerState extends State<PLVideoPlayer>
                               : volume < 0.5
                               ? Icons.volume_down
                               : Icons.volume_up,
-                          color: Colors.white,
                           size: 20.0,
                         ),
                         const SizedBox(width: 2.0),
@@ -1510,7 +1500,6 @@ class _PLVideoPlayerState extends State<PLVideoPlayer>
                           '${(volume * 100.0).round()}%',
                           style: const TextStyle(
                             fontSize: 13.0,
-                            color: Colors.white,
                           ),
                         ),
                       ],
@@ -1551,7 +1540,6 @@ class _PLVideoPlayerState extends State<PLVideoPlayer>
                             : _brightnessValue.value < 2.0 / 3.0
                             ? Icons.brightness_medium
                             : Icons.brightness_high,
-                        color: Colors.white,
                         size: 18.0,
                       ),
                       const SizedBox(width: 2.0),
@@ -1559,7 +1547,6 @@ class _PLVideoPlayerState extends State<PLVideoPlayer>
                         '${(_brightnessValue.value * 100.0).round()}%',
                         style: const TextStyle(
                           fontSize: 13.0,
-                          color: Colors.white,
                         ),
                       ),
                     ],
@@ -1807,12 +1794,10 @@ class _PLVideoPlayerState extends State<PLVideoPlayer>
                                 ? const Icon(
                                     FontAwesomeIcons.lock,
                                     size: 15,
-                                    color: Colors.white,
                                   )
                                 : const Icon(
                                     FontAwesomeIcons.lockOpen,
                                     size: 15,
-                                    color: Colors.white,
                                   ),
                             onTap: () =>
                                 plPlayerController.onLockControl(!controlsLock),
@@ -1847,7 +1832,6 @@ class _PLVideoPlayerState extends State<PLVideoPlayer>
                           icon: const Icon(
                             Icons.photo_camera,
                             size: 20,
-                            color: Colors.white,
                           ),
                           onLongPress:
                               (Platform.isAndroid || kDebugMode) && !isLive
@@ -1886,7 +1870,6 @@ class _PLVideoPlayerState extends State<PLVideoPlayer>
                         height: 25,
                         cacheHeight: 25.cacheSize(context),
                         semanticLabel: "加载中",
-                        color: Colors.white,
                       ),
                       if (plPlayerController.isBuffering.value)
                         Obx(() {
@@ -1895,7 +1878,6 @@ class _PLVideoPlayerState extends State<PLVideoPlayer>
                             return const Text(
                               '加载中...',
                               style: TextStyle(
-                                color: Colors.white,
                                 fontSize: 12,
                               ),
                             );
@@ -1903,7 +1885,6 @@ class _PLVideoPlayerState extends State<PLVideoPlayer>
                           return Text(
                             DurationUtils.formatDuration(buffered),
                             style: const TextStyle(
-                              color: Colors.white,
                               fontSize: 12,
                             ),
                           );
@@ -2292,12 +2273,10 @@ class _PLVideoPlayerState extends State<PLVideoPlayer>
                         ? const Icon(
                             size: 20,
                             CustomIcons.player_dm_tip_like_solid,
-                            color: Colors.white,
                           )
                         : const Icon(
                             size: 20,
                             CustomIcons.player_dm_tip_like,
-                            color: Colors.white,
                           ),
                     onTap: () => HeaderControl.likeDanmaku(
                       extra,
@@ -2312,7 +2291,6 @@ class _PLVideoPlayerState extends State<PLVideoPlayer>
                         extra.like.toString(),
                         style: const TextStyle(
                           fontSize: 10.5,
-                          color: Colors.white,
                         ),
                       ),
                     ),
@@ -2323,7 +2301,6 @@ class _PLVideoPlayerState extends State<PLVideoPlayer>
                 const Icon(
                   size: 19,
                   CustomIcons.player_dm_tip_copy,
-                  color: Colors.white,
                 ),
                 onTap: () => Utils.copyText(item.content.text),
               ),
@@ -2332,7 +2309,6 @@ class _PLVideoPlayerState extends State<PLVideoPlayer>
                   const Icon(
                     size: 20,
                     CustomIcons.player_dm_tip_recall,
-                    color: Colors.white,
                   ),
                   onTap: () => HeaderControl.deleteDanmaku(
                     extra.id,
@@ -2344,7 +2320,6 @@ class _PLVideoPlayerState extends State<PLVideoPlayer>
                   const Icon(
                     size: 20,
                     CustomIcons.player_dm_tip_back,
-                    color: Colors.white,
                   ),
                   onTap: () => HeaderControl.reportDanmaku(
                     context,
@@ -2357,7 +2332,6 @@ class _PLVideoPlayerState extends State<PLVideoPlayer>
                   const Icon(
                     size: 18,
                     Icons.gps_fixed_outlined,
-                    color: Colors.white,
                   ),
                   onTap: () => plPlayerController.seekTo(
                     Duration(seconds: seekOffset),
@@ -2370,7 +2344,6 @@ class _PLVideoPlayerState extends State<PLVideoPlayer>
                 const Icon(
                   size: 20,
                   MdiIcons.accountOutline,
-                  color: Colors.white,
                 ),
                 onTap: () => Get.toNamed('/member?mid=${extra.mid}'),
               ),
@@ -2378,7 +2351,6 @@ class _PLVideoPlayerState extends State<PLVideoPlayer>
                 const Icon(
                   size: 19,
                   CustomIcons.player_dm_tip_copy,
-                  color: Colors.white,
                 ),
                 onTap: () => Utils.copyText(item.content.text),
               ),
@@ -2386,7 +2358,6 @@ class _PLVideoPlayerState extends State<PLVideoPlayer>
                 const Icon(
                   size: 20,
                   CustomIcons.player_dm_tip_back,
-                  color: Colors.white,
                 ),
                 onTap: () => HeaderControl.reportLiveDanmaku(
                   context,

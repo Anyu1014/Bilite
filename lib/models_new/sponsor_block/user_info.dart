@@ -1,5 +1,5 @@
-import 'package:PiliPure/utils/duration_utils.dart';
-import 'package:PiliPure/utils/num_utils.dart';
+import 'package:bilite/utils/duration_utils.dart';
+import 'package:bilite/utils/num_utils.dart';
 
 class UserInfo {
   final int viewCount;

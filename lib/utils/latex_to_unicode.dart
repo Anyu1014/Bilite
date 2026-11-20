@@ -9,7 +9,7 @@
 /// Reference: pylatexenc (https://github.com/phfaist/pylatexenc, MIT).
 library;
 
-import 'package:PiliPure/utils/latex_unicode_data.dart';
+import 'package:bilite/utils/latex_unicode_data.dart';
 
 enum TokenKind { text, cmd, brace, brack, script, amp }
 

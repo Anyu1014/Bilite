@@ -1,4 +1,4 @@
-import 'package:PiliPure/models_new/pgc/pgc_timeline/result.dart';
+import 'package:bilite/models_new/pgc/pgc_timeline/result.dart';
 
 class PgcTimeline {
   List<TimelineResult>? result;

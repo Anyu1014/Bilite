@@ -1,17 +1,17 @@
 import 'dart:convert';
 import 'dart:typed_data';
 
-import 'package:PiliPure/models/model_owner.dart';
-import 'package:PiliPure/models/user/danmaku_rule_adapter.dart';
-import 'package:PiliPure/models/user/info.dart';
-import 'package:PiliPure/utils/accounts.dart';
-import 'package:PiliPure/utils/accounts/account_adapter.dart';
-import 'package:PiliPure/utils/accounts/account_type_adapter.dart';
-import 'package:PiliPure/utils/accounts/cookie_jar_adapter.dart';
-import 'package:PiliPure/utils/path_utils.dart';
-import 'package:PiliPure/utils/set_int_adapter.dart';
-import 'package:PiliPure/utils/storage_pref.dart';
-import 'package:PiliPure/utils/utils.dart';
+import 'package:bilite/models/model_owner.dart';
+import 'package:bilite/models/user/danmaku_rule_adapter.dart';
+import 'package:bilite/models/user/info.dart';
+import 'package:bilite/utils/accounts.dart';
+import 'package:bilite/utils/accounts/account_adapter.dart';
+import 'package:bilite/utils/accounts/account_type_adapter.dart';
+import 'package:bilite/utils/accounts/cookie_jar_adapter.dart';
+import 'package:bilite/utils/path_utils.dart';
+import 'package:bilite/utils/set_int_adapter.dart';
+import 'package:bilite/utils/storage_pref.dart';
+import 'package:bilite/utils/utils.dart';
 import 'package:hive_ce/hive.dart';
 import 'package:path/path.dart' as path;
 

@@ -1,19 +1,19 @@
-import 'package:PiliPure/common/widgets/colored_box_transition.dart';
-import 'package:PiliPure/common/widgets/flutter/text_field/controller.dart';
-import 'package:PiliPure/grpc/bilibili/main/community/reply/v1.pb.dart'
+import 'package:bilite/common/widgets/colored_box_transition.dart';
+import 'package:bilite/common/widgets/flutter/text_field/controller.dart';
+import 'package:bilite/grpc/bilibili/main/community/reply/v1.pb.dart'
     show MainListReply, ReplyInfo, SubjectControl, Mode;
-import 'package:PiliPure/grpc/bilibili/pagination.pb.dart';
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/http/reply.dart';
-import 'package:PiliPure/models/common/reply/reply_sort_type.dart';
-import 'package:PiliPure/models_new/dynamic/dyn_mention/item.dart';
-import 'package:PiliPure/pages/common/common_list_controller.dart';
-import 'package:PiliPure/pages/common/publish/publish_route.dart';
-import 'package:PiliPure/pages/video/reply_new/view.dart';
-import 'package:PiliPure/utils/feed_back.dart';
-import 'package:PiliPure/utils/reply_scheme_helper.dart';
-import 'package:PiliPure/utils/reply_utils.dart';
-import 'package:PiliPure/utils/storage_pref.dart';
+import 'package:bilite/grpc/bilibili/pagination.pb.dart';
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/http/reply.dart';
+import 'package:bilite/models/common/reply/reply_sort_type.dart';
+import 'package:bilite/models_new/dynamic/dyn_mention/item.dart';
+import 'package:bilite/pages/common/common_list_controller.dart';
+import 'package:bilite/pages/common/publish/publish_route.dart';
+import 'package:bilite/pages/video/reply_new/view.dart';
+import 'package:bilite/utils/feed_back.dart';
+import 'package:bilite/utils/reply_scheme_helper.dart';
+import 'package:bilite/utils/reply_utils.dart';
+import 'package:bilite/utils/storage_pref.dart';
 import 'package:collection/collection.dart';
 import 'package:fixnum/fixnum.dart' show Int64;
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';

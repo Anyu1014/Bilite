@@ -1,4 +1,4 @@
-import 'package:PiliPure/http/api.dart';
+import 'package:bilite/http/api.dart';
 
 enum WebSsType {
   season(Api.seasonArchives),

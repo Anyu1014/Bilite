@@ -1,11 +1,11 @@
-import 'package:PiliPure/common/constants.dart';
-import 'package:PiliPure/grpc/bilibili/main/community/reply/v1.pb.dart';
-import 'package:PiliPure/grpc/bilibili/pagination.pb.dart';
-import 'package:PiliPure/grpc/grpc_req.dart';
-import 'package:PiliPure/grpc/url.dart';
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/utils/global_data.dart';
-import 'package:PiliPure/utils/storage_pref.dart';
+import 'package:bilite/common/constants.dart';
+import 'package:bilite/grpc/bilibili/main/community/reply/v1.pb.dart';
+import 'package:bilite/grpc/bilibili/pagination.pb.dart';
+import 'package:bilite/grpc/grpc_req.dart';
+import 'package:bilite/grpc/url.dart';
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/utils/global_data.dart';
+import 'package:bilite/utils/storage_pref.dart';
 import 'package:fixnum/fixnum.dart';
 
 abstract final class ReplyGrpc {

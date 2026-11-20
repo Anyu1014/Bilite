@@ -1,12 +1,12 @@
 import 'dart:async' show Timer;
 import 'dart:io' show Platform;
 
-import 'package:PiliPure/plugin/pl_player/controller.dart';
-import 'package:PiliPure/utils/desktop/tray_controller.dart';
-import 'package:PiliPure/utils/device_utils.dart';
-import 'package:PiliPure/utils/storage.dart';
-import 'package:PiliPure/utils/storage_key.dart';
-import 'package:PiliPure/utils/storage_pref.dart';
+import 'package:bilite/plugin/pl_player/controller.dart';
+import 'package:bilite/utils/desktop/tray_controller.dart';
+import 'package:bilite/utils/device_utils.dart';
+import 'package:bilite/utils/storage.dart';
+import 'package:bilite/utils/storage_key.dart';
+import 'package:bilite/utils/storage_pref.dart';
 import 'package:nativeapi/nativeapi.dart' as nativeapi;
 import 'package:window_manager/window_manager.dart';
 

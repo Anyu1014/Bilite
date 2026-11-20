@@ -1,4 +1,4 @@
-import 'package:PiliPure/utils/extension/theme_ext.dart';
+import 'package:bilite/utils/extension/theme_ext.dart';
 import 'package:material_ui/material_ui.dart';
 
 // ignore: camel_case_types

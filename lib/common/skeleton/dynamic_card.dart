@@ -1,5 +1,5 @@
-import 'package:PiliPure/common/skeleton/skeleton.dart';
-import 'package:PiliPure/utils/global_data.dart';
+import 'package:bilite/common/skeleton/skeleton.dart';
+import 'package:bilite/utils/global_data.dart';
 import 'package:material_ui/material_ui.dart';
 
 class DynamicCardSkeleton extends StatelessWidget {

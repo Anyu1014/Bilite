@@ -1,7 +1,7 @@
-import 'package:PiliPure/common/assets.dart';
-import 'package:PiliPure/models_new/search/search_trending/list.dart';
-import 'package:PiliPure/utils/extension/string_ext.dart';
-import 'package:PiliPure/utils/image_utils.dart';
+import 'package:bilite/common/assets.dart';
+import 'package:bilite/models_new/search/search_trending/list.dart';
+import 'package:bilite/utils/extension/string_ext.dart';
+import 'package:bilite/utils/image_utils.dart';
 import 'package:cached_network_image_ce/cached_network_image.dart';
 import 'package:flutter/rendering.dart'
     show

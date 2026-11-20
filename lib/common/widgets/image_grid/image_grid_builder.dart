@@ -18,8 +18,8 @@
 import 'dart:collection' show HashSet;
 import 'dart:math' as math;
 
-import 'package:PiliPure/common/style.dart';
-import 'package:PiliPure/common/widgets/image_grid/image_grid_view.dart'
+import 'package:bilite/common/style.dart';
+import 'package:bilite/common/widgets/image_grid/image_grid_view.dart'
     show ImageModel;
 import 'package:flutter/foundation.dart' show kDebugMode;
 import 'package:flutter/gestures.dart'

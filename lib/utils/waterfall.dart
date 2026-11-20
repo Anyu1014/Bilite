@@ -1,9 +1,9 @@
-import 'package:PiliPure/common/skeleton/dynamic_card.dart';
-import 'package:PiliPure/common/sliver_single_child_delegate.dart';
-import 'package:PiliPure/common/style.dart';
-import 'package:PiliPure/common/widgets/sliver/sliver_constrained_cross_axis.dart';
-import 'package:PiliPure/utils/global_data.dart';
-import 'package:PiliPure/utils/grid.dart';
+import 'package:bilite/common/skeleton/dynamic_card.dart';
+import 'package:bilite/common/sliver_single_child_delegate.dart';
+import 'package:bilite/common/style.dart';
+import 'package:bilite/common/widgets/sliver/sliver_constrained_cross_axis.dart';
+import 'package:bilite/utils/global_data.dart';
+import 'package:bilite/utils/grid.dart';
 import 'package:flutter/rendering.dart' show SliverConstraints;
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart'
     show SliverSimpleGridDelegate;

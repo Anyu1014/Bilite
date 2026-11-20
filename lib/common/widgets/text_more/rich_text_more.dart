@@ -1,4 +1,4 @@
-import 'package:PiliPure/common/widgets/text_more/paragraph_more.dart';
+import 'package:bilite/common/widgets/text_more/paragraph_more.dart';
 import 'package:material_ui/material_ui.dart';
 
 class RichTextMore extends RichText {

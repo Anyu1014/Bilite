@@ -1,4 +1,4 @@
-import 'package:PiliPure/models_new/pgc/pgc_info_model/user_progress.dart';
+import 'package:bilite/models_new/pgc/pgc_info_model/user_progress.dart';
 
 class UserStatus {
   UserProgress? progress;

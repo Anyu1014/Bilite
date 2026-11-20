@@ -1,15 +1,15 @@
-import 'package:PiliPure/models/common/enum_with_label.dart';
-import 'package:PiliPure/pages/common/common_controller.dart';
-import 'package:PiliPure/pages/hot/controller.dart';
-import 'package:PiliPure/pages/hot/view.dart';
-import 'package:PiliPure/pages/live/controller.dart';
-import 'package:PiliPure/pages/live/view.dart';
-import 'package:PiliPure/pages/pgc/controller.dart';
-import 'package:PiliPure/pages/pgc/view.dart';
-import 'package:PiliPure/pages/rank/controller.dart';
-import 'package:PiliPure/pages/rank/view.dart';
-import 'package:PiliPure/pages/rcmd/controller.dart';
-import 'package:PiliPure/pages/rcmd/view.dart';
+import 'package:bilite/models/common/enum_with_label.dart';
+import 'package:bilite/pages/common/common_controller.dart';
+import 'package:bilite/pages/hot/controller.dart';
+import 'package:bilite/pages/hot/view.dart';
+import 'package:bilite/pages/live/controller.dart';
+import 'package:bilite/pages/live/view.dart';
+import 'package:bilite/pages/pgc/controller.dart';
+import 'package:bilite/pages/pgc/view.dart';
+import 'package:bilite/pages/rank/controller.dart';
+import 'package:bilite/pages/rank/view.dart';
+import 'package:bilite/pages/rcmd/controller.dart';
+import 'package:bilite/pages/rcmd/view.dart';
 import 'package:get/get.dart';
 import 'package:material_ui/material_ui.dart';
 

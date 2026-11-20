@@ -1,4 +1,4 @@
-import 'package:PiliPure/main.dart';
+import 'package:bilite/main.dart';
 import 'package:get/get.dart';
 
 extension GetExt on GetInterface {

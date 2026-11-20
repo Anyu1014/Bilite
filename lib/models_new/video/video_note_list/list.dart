@@ -1,4 +1,4 @@
-import 'package:PiliPure/models_new/video/video_note_list/author.dart';
+import 'package:bilite/models_new/video/video_note_list/author.dart';
 
 class VideoNoteItemModel {
   int? cvid;

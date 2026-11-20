@@ -7,7 +7,7 @@
 /// @docImport 'editable_text.dart';
 library;
 
-import 'package:PiliPure/common/widgets/flutter/text_field/editable_text.dart'
+import 'package:bilite/common/widgets/flutter/text_field/editable_text.dart'
     show EditableTextContextMenuBuilder;
 import 'package:flutter/foundation.dart';
 import 'package:flutter/painting.dart';

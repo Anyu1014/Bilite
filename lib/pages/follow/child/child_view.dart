@@ -1,18 +1,18 @@
 import 'dart:math';
 
-import 'package:PiliPure/common/skeleton/msg_feed_top.dart';
-import 'package:PiliPure/common/sliver_single_child_delegate.dart';
-import 'package:PiliPure/common/widgets/button/more_btn.dart';
-import 'package:PiliPure/common/widgets/flutter/refresh_indicator.dart';
-import 'package:PiliPure/common/widgets/loading_widget/http_error.dart';
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/models_new/follow/list.dart';
-import 'package:PiliPure/pages/follow/child/child_controller.dart';
-import 'package:PiliPure/pages/follow/controller.dart';
-import 'package:PiliPure/pages/follow/widgets/follow_item.dart';
-import 'package:PiliPure/pages/follow_type/follow_same/view.dart';
-import 'package:PiliPure/pages/share/view.dart' show UserModel;
-import 'package:PiliPure/utils/utils.dart';
+import 'package:bilite/common/skeleton/msg_feed_top.dart';
+import 'package:bilite/common/sliver_single_child_delegate.dart';
+import 'package:bilite/common/widgets/button/more_btn.dart';
+import 'package:bilite/common/widgets/flutter/refresh_indicator.dart';
+import 'package:bilite/common/widgets/loading_widget/http_error.dart';
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/models_new/follow/list.dart';
+import 'package:bilite/pages/follow/child/child_controller.dart';
+import 'package:bilite/pages/follow/controller.dart';
+import 'package:bilite/pages/follow/widgets/follow_item.dart';
+import 'package:bilite/pages/follow_type/follow_same/view.dart';
+import 'package:bilite/pages/share/view.dart' show UserModel;
+import 'package:bilite/utils/utils.dart';
 import 'package:get/get.dart';
 import 'package:material_ui/material_ui.dart';
 

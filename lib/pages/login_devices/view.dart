@@ -1,12 +1,12 @@
-import 'package:PiliPure/common/widgets/flutter/list_tile.dart';
-import 'package:PiliPure/common/widgets/flutter/refresh_indicator.dart';
-import 'package:PiliPure/common/widgets/loading_widget/http_error.dart';
-import 'package:PiliPure/common/widgets/scaffold/simple_scaffold.dart';
-import 'package:PiliPure/common/widgets/view_sliver_safe_area.dart';
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/models_new/login_devices/device.dart';
-import 'package:PiliPure/pages/login_devices/controller.dart';
-import 'package:PiliPure/utils/extension/widget_ext.dart';
+import 'package:bilite/common/widgets/flutter/list_tile.dart';
+import 'package:bilite/common/widgets/flutter/refresh_indicator.dart';
+import 'package:bilite/common/widgets/loading_widget/http_error.dart';
+import 'package:bilite/common/widgets/scaffold/simple_scaffold.dart';
+import 'package:bilite/common/widgets/view_sliver_safe_area.dart';
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/models_new/login_devices/device.dart';
+import 'package:bilite/pages/login_devices/controller.dart';
+import 'package:bilite/utils/extension/widget_ext.dart';
 import 'package:get/get.dart';
 import 'package:material_ui/material_ui.dart' hide ListTile;
 

@@ -1,24 +1,26 @@
+import 'package:bilite/common/widgets/bottom_bar_frame.dart';
+
 import 'dart:io' show Platform;
 
-import 'package:PiliPure/common/widgets/animated_height.dart';
-import 'package:PiliPure/common/widgets/glass.dart';
-import 'package:PiliPure/common/widgets/color_palette.dart';
-import 'package:PiliPure/common/widgets/scaffold/simple_scaffold.dart';
-import 'package:PiliPure/main.dart' show MyApp;
-import 'package:PiliPure/models/common/nav_bar_config.dart';
-import 'package:PiliPure/models/common/theme/theme_color_type.dart';
-import 'package:PiliPure/models/common/theme/theme_type.dart';
-import 'package:PiliPure/pages/home/view.dart';
-import 'package:PiliPure/pages/mine/controller.dart';
-import 'package:PiliPure/pages/setting/slide_color_picker.dart';
-import 'package:PiliPure/pages/setting/widgets/popup_item.dart';
-import 'package:PiliPure/pages/setting/widgets/select_dialog.dart';
-import 'package:PiliPure/utils/extension/get_ext.dart';
-import 'package:PiliPure/utils/extension/theme_ext.dart';
-import 'package:PiliPure/utils/storage.dart';
-import 'package:PiliPure/utils/storage_key.dart';
-import 'package:PiliPure/utils/storage_pref.dart';
-import 'package:PiliPure/utils/theme_utils.dart';
+import 'package:bilite/common/widgets/animated_height.dart';
+import 'package:bilite/common/widgets/glass.dart';
+import 'package:bilite/common/widgets/color_palette.dart';
+import 'package:bilite/common/widgets/scaffold/simple_scaffold.dart';
+import 'package:bilite/main.dart' show MyApp;
+import 'package:bilite/models/common/nav_bar_config.dart';
+import 'package:bilite/models/common/theme/theme_color_type.dart';
+import 'package:bilite/models/common/theme/theme_type.dart';
+import 'package:bilite/pages/home/view.dart';
+import 'package:bilite/pages/mine/controller.dart';
+import 'package:bilite/pages/setting/slide_color_picker.dart';
+import 'package:bilite/pages/setting/widgets/popup_item.dart';
+import 'package:bilite/pages/setting/widgets/select_dialog.dart';
+import 'package:bilite/utils/extension/get_ext.dart';
+import 'package:bilite/utils/extension/theme_ext.dart';
+import 'package:bilite/utils/storage.dart';
+import 'package:bilite/utils/storage_key.dart';
+import 'package:bilite/utils/storage_pref.dart';
+import 'package:bilite/utils/theme_utils.dart';
 import 'package:collection/collection.dart';
 import 'package:flex_seed_scheme/flex_seed_scheme.dart';
 import 'package:flutter/foundation.dart' show kReleaseMode;
@@ -45,9 +47,14 @@ class Item {
   bool isExpanded;
 }
 
+/// 调色板风格下拉里显示的名字：原生或 flex_seed_scheme 的变体名
+String _paletteStyleLabel(int index) => index == Pref.nativePaletteStyle
+    ? '原生'
+    : Pref.variantOfPaletteStyle(index).variantName;
+
 class _ColorSelectPageState extends State<ColorSelectPage> {
   final ctr = Get.put(_ColorSelectController());
-  FlexSchemeVariant _dynamicSchemeVariant = Pref.schemeVariant;
+  int _paletteStyle = Pref.paletteStyleIndex;
 
   Future<void> _onChanged([bool? val]) async {
     val ??= !ctr.dynamicColor.value;
@@ -59,6 +66,30 @@ class _ColorSelectPageState extends State<ColorSelectPage> {
     }
     ctr.dynamicColor.value = val;
     await GStorage.setting.put(SettingBoxKey.dynamicColor, val);
+    Get.updateMyAppTheme();
+  }
+
+  /// 退出「默认」风格（选调色板风格或换主题色时调用）
+  Future<void> _cancelDefaultThemeStyle() async {
+    if (!ctr.defaultThemeStyle.value) return;
+    ctr.defaultThemeStyle.value = false;
+    await GStorage.setting.put(SettingBoxKey.defaultThemeStyle, false);
+  }
+
+  Future<void> _onDefaultThemeStyleChanged(bool val) async {
+    ctr.defaultThemeStyle.value = val;
+    await GStorage.setting.put(SettingBoxKey.defaultThemeStyle, val);
+    if (val) {
+      // 默认风格固定用默认亮粉
+      ctr.currentColor.value = 0;
+      await GStorage.setting.put(SettingBoxKey.customColor, 0);
+      // 切回默认时取消调色板风格，回到默认的 Material 3 legacy
+      _paletteStyle = FlexSchemeVariant.material3Legacy.index;
+      await GStorage.setting.put(
+        SettingBoxKey.schemeVariant,
+        _paletteStyle,
+      );
+    }
     Get.updateMyAppTheme();
   }
 
@@ -102,7 +133,11 @@ class _ColorSelectPageState extends State<ColorSelectPage> {
                   Get.find<MineController>().themeType.value = result;
                 } catch (_) {}
                 ctr.themeType.value = result;
-                GStorage.setting.put(SettingBoxKey.themeMode, result.index);
+                // 先落盘再切，MyApp 重建时读到的才是新模式
+                await GStorage.setting.put(
+                  SettingBoxKey.themeMode,
+                  result.index,
+                );
                 Get.changeThemeMode(ThemeUtils.themeMode = result.toThemeMode);
               }
             },
@@ -116,24 +151,48 @@ class _ColorSelectPageState extends State<ColorSelectPage> {
             ),
           ),
           Obx(
-            () => PopupListTile<FlexSchemeVariant>(
-              enabled: !ctr.dynamicColor.value,
-              leading: const Icon(Icons.palette_outlined),
-              title: const Text('调色板风格'),
-              value: () =>
-                  (_dynamicSchemeVariant, _dynamicSchemeVariant.variantName),
-              itemBuilder: (_) => FlexSchemeVariant.values
-                  .map(
-                    (e) => PopupMenuItem(value: e, child: Text(e.variantName)),
-                  )
-                  .toList(),
-              onSelected: (value, setState) {
-                _dynamicSchemeVariant = value;
-                GStorage.setting
-                    .put(SettingBoxKey.schemeVariant, value.index)
-                    .whenComplete(Get.updateMyAppTheme);
-              },
+            () => ListTile(
+              title: const Text('默认'),
+              subtitle: Text(
+                '默认亮粉（与昵称同色）；我的页板块图标蓝色、数值灰色；底栏选中亮粉、未选黑色（选调色板风格即退出）',
+                style: subTitleStyle,
+              ),
+              leading: IgnorePointer(
+                // 单选状态只作展示，点击整行由 ListTile.onTap 处理，避免双重切换
+                child: RadioGroup<bool>(
+                  groupValue: ctr.defaultThemeStyle.value ? true : null,
+                  onChanged: (_) {},
+                  child: const Radio<bool>(
+                    value: true,
+                    materialTapTargetSize: .shrinkWrap,
+                    visualDensity: .new(horizontal: -4, vertical: -4),
+                  ),
+                ),
+              ),
+              onTap: () =>
+                  _onDefaultThemeStyleChanged(!ctr.defaultThemeStyle.value),
             ),
+          ),
+          PopupListTile<int>(
+            leading: const Icon(Icons.palette_outlined),
+            title: const Text('调色板风格'),
+            value: () => (_paletteStyle, _paletteStyleLabel(_paletteStyle)),
+            itemBuilder: (_) => [
+              const PopupMenuItem(
+                value: Pref.nativePaletteStyle,
+                child: Text('原生'),
+              ),
+              for (final e in FlexSchemeVariant.values)
+                PopupMenuItem(value: e.index, child: Text(e.variantName)),
+            ],
+            onSelected: (value, setState) async {
+              _paletteStyle = value;
+              // 选调色板风格即退出「默认」风格
+              await _cancelDefaultThemeStyle();
+              await GStorage.setting.put(SettingBoxKey.schemeVariant, value);
+              Get.updateMyAppTheme();
+              setState();
+            },
           ),
           if (!Platform.isIOS)
             Obx(
@@ -169,15 +228,22 @@ class _ColorSelectPageState extends State<ColorSelectPage> {
           ),
           ExcludeFocus(
             child: IgnorePointer(
-              child: NavigationBar(
-                destinations: NavigationBarType.values
-                    .map(
-                      (item) => NavigationDestination(
-                        icon: item.icon,
-                        label: item.label,
-                      ),
-                    )
-                    .toList(),
+              child: BottomBarFrame(
+                width: bottomBarWidth(
+                  NavigationBarType.values.length,
+                  showLabel: Pref.floatingNavBarLabel,
+                ),
+                child: NavigationBar(
+                  height: bottomBarHeight,
+                  destinations: NavigationBarType.values
+                      .map(
+                        (item) => NavigationDestination(
+                          icon: item.icon,
+                          label: item.label,
+                        ),
+                      )
+                      .toList(),
+                ),
               ),
             ),
           ),
@@ -198,7 +264,7 @@ class _ColorSelectPageState extends State<ColorSelectPage> {
         children: [
           Builder(
             builder: (context) {
-              final isCurr = currentColor > colorThemeTypes.length;
+              final isCurr = currentColor >= colorThemeTypes.length;
               final color = isCurr
                   ? Color(currentColor)
                   : colorThemeTypes[currentColor].color;
@@ -216,6 +282,7 @@ class _ColorSelectPageState extends State<ColorSelectPage> {
                         onChanged: (Color? color) {
                           if (color != null) {
                             final res = color.toARGB32();
+                            _cancelDefaultThemeStyle();
                             ctr.currentColor.value = res;
                             GStorage.setting
                                 .put(SettingBoxKey.customColor, res)
@@ -230,10 +297,13 @@ class _ColorSelectPageState extends State<ColorSelectPage> {
                   spacing: 3,
                   children: [
                     ColorPalette(
-                      colorScheme: color.asColorSchemeSeed(
-                        _dynamicSchemeVariant,
-                        theme.brightness,
-                      ),
+                      // 预览的主色用原色，而不是 M3 派生出来的暗一档
+                      colorScheme: color
+                          .asColorSchemeSeed(
+                            Pref.variantOfPaletteStyle(_paletteStyle),
+                            theme.brightness,
+                          )
+                          .copyWith(primary: color),
                       selected: isCurr,
                     ),
                     Text(
@@ -256,20 +326,23 @@ class _ColorSelectPageState extends State<ColorSelectPage> {
               final isCurr = currentColor == i;
               return GestureDetector(
                 behavior: .opaque,
-                onTap: () {
+                onTap: () async {
+                  await _cancelDefaultThemeStyle();
                   ctr.currentColor.value = i;
-                  GStorage.setting
-                      .put(SettingBoxKey.customColor, i)
-                      .whenComplete(Get.updateMyAppTheme);
+                  await GStorage.setting.put(SettingBoxKey.customColor, i);
+                  Get.updateMyAppTheme();
                 },
                 child: Column(
                   spacing: 3,
                   children: [
                     ColorPalette(
-                      colorScheme: color.asColorSchemeSeed(
-                        _dynamicSchemeVariant,
-                        theme.brightness,
-                      ),
+                      // 预览的主色用原色，而不是 M3 派生出来的暗一档
+                      colorScheme: color
+                          .asColorSchemeSeed(
+                            Pref.variantOfPaletteStyle(_paletteStyle),
+                            theme.brightness,
+                          )
+                          .copyWith(primary: color),
                       selected: isCurr,
                     ),
                     Text(
@@ -292,6 +365,7 @@ class _ColorSelectPageState extends State<ColorSelectPage> {
 
 class _ColorSelectController extends GetxController {
   final RxBool dynamicColor = Pref.dynamicColor.obs;
+  final RxBool defaultThemeStyle = Pref.defaultThemeStyle.obs;
   final RxInt currentColor = Pref.customColor.obs;
   final Rx<ThemeType> themeType = Pref.themeType.obs;
 }

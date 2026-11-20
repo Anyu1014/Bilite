@@ -1,5 +1,5 @@
-import 'package:PiliPure/models_new/live/live_search/room.dart';
-import 'package:PiliPure/models_new/live/live_search/user.dart';
+import 'package:bilite/models_new/live/live_search/room.dart';
+import 'package:bilite/models_new/live/live_search/user.dart';
 
 class LiveSearchData {
   Room? room;

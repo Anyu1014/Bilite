@@ -1,12 +1,12 @@
-import 'package:PiliPure/common/style.dart';
-import 'package:PiliPure/common/widgets/button/icon_button.dart';
-import 'package:PiliPure/common/widgets/image/network_img_layer.dart';
-import 'package:PiliPure/common/widgets/progress_bar/segment_progress_bar.dart';
-import 'package:PiliPure/common/widgets/scaffold/simple_scaffold.dart';
-import 'package:PiliPure/pages/common/slide/common_slide_page.dart';
-import 'package:PiliPure/pages/video/controller.dart';
-import 'package:PiliPure/plugin/pl_player/controller.dart';
-import 'package:PiliPure/utils/duration_utils.dart';
+import 'package:bilite/common/style.dart';
+import 'package:bilite/common/widgets/button/icon_button.dart';
+import 'package:bilite/common/widgets/image/network_img_layer.dart';
+import 'package:bilite/common/widgets/progress_bar/segment_progress_bar.dart';
+import 'package:bilite/common/widgets/scaffold/simple_scaffold.dart';
+import 'package:bilite/pages/common/slide/common_slide_page.dart';
+import 'package:bilite/pages/video/controller.dart';
+import 'package:bilite/plugin/pl_player/controller.dart';
+import 'package:bilite/utils/duration_utils.dart';
 import 'package:get/get.dart';
 import 'package:material_ui/material_ui.dart';
 

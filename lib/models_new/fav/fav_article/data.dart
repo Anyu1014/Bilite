@@ -1,4 +1,4 @@
-import 'package:PiliPure/models_new/fav/fav_article/item.dart';
+import 'package:bilite/models_new/fav/fav_article/item.dart';
 
 class FavArticleData {
   List<FavArticleItemModel>? items;

@@ -1,16 +1,16 @@
 import 'dart:async';
 
-import 'package:PiliPure/common/widgets/dialog/dialog.dart';
-import 'package:PiliPure/common/widgets/dialog/report_member.dart';
-import 'package:PiliPure/grpc/bilibili/app/im/v1.pb.dart';
-import 'package:PiliPure/grpc/im.dart';
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/http/msg.dart';
-import 'package:PiliPure/http/video.dart';
-import 'package:PiliPure/models_new/msg/im_user_infos/datum.dart';
-import 'package:PiliPure/models_new/msg/msg_dnd/uid_setting.dart';
-import 'package:PiliPure/models_new/msg/session_ss/data.dart';
-import 'package:PiliPure/utils/accounts.dart';
+import 'package:bilite/common/widgets/dialog/dialog.dart';
+import 'package:bilite/common/widgets/dialog/report_member.dart';
+import 'package:bilite/grpc/bilibili/app/im/v1.pb.dart';
+import 'package:bilite/grpc/im.dart';
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/http/msg.dart';
+import 'package:bilite/http/video.dart';
+import 'package:bilite/models_new/msg/im_user_infos/datum.dart';
+import 'package:bilite/models_new/msg/msg_dnd/uid_setting.dart';
+import 'package:bilite/models_new/msg/session_ss/data.dart';
+import 'package:bilite/utils/accounts.dart';
 import 'package:fixnum/fixnum.dart';
 import 'package:flutter/widgets.dart' show Text;
 import 'package:get/get.dart';

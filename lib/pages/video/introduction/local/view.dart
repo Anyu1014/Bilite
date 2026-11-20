@@ -1,13 +1,13 @@
 import 'dart:io';
 
-import 'package:PiliPure/common/style.dart';
-import 'package:PiliPure/common/widgets/badge.dart';
-import 'package:PiliPure/common/widgets/image/network_img_layer.dart';
-import 'package:PiliPure/models_new/download/bili_download_entry_info.dart';
-import 'package:PiliPure/pages/video/introduction/local/controller.dart';
-import 'package:PiliPure/utils/duration_utils.dart';
-import 'package:PiliPure/utils/extension/num_ext.dart';
-import 'package:PiliPure/utils/path_utils.dart';
+import 'package:bilite/common/style.dart';
+import 'package:bilite/common/widgets/badge.dart';
+import 'package:bilite/common/widgets/image/network_img_layer.dart';
+import 'package:bilite/models_new/download/bili_download_entry_info.dart';
+import 'package:bilite/pages/video/introduction/local/controller.dart';
+import 'package:bilite/utils/duration_utils.dart';
+import 'package:bilite/utils/extension/num_ext.dart';
+import 'package:bilite/utils/path_utils.dart';
 import 'package:get/get.dart';
 import 'package:material_ui/material_ui.dart';
 import 'package:path/path.dart' as path;

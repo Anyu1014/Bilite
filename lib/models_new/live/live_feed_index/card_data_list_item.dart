@@ -1,6 +1,6 @@
-import 'package:PiliPure/models_new/live/live_feed_index/feedback.dart';
-import 'package:PiliPure/models_new/live/live_feed_index/watched_show.dart';
-import 'package:PiliPure/utils/parse_string.dart';
+import 'package:bilite/models_new/live/live_feed_index/feedback.dart';
+import 'package:bilite/models_new/live/live_feed_index/watched_show.dart';
+import 'package:bilite/utils/parse_string.dart';
 
 class CardLiveItem {
   final int? roomid;

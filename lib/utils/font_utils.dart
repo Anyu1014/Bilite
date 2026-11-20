@@ -3,11 +3,11 @@ import 'dart:io' show File;
 import 'dart:typed_data';
 import 'dart:ui' show loadFontFromList;
 
-import 'package:PiliPure/utils/android/bindings.g.dart';
-import 'package:PiliPure/utils/fontconfig.g.dart';
-import 'package:PiliPure/utils/path_utils.dart';
-import 'package:PiliPure/utils/storage.dart';
-import 'package:PiliPure/utils/storage_key.dart';
+import 'package:bilite/utils/android/bindings.g.dart';
+import 'package:bilite/utils/fontconfig.g.dart';
+import 'package:bilite/utils/path_utils.dart';
+import 'package:bilite/utils/storage.dart';
+import 'package:bilite/utils/storage_key.dart';
 import 'package:ffi/ffi.dart';
 import 'package:file_picker/file_picker.dart';
 import 'package:flutter/foundation.dart'

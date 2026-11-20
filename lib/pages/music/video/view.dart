@@ -1,13 +1,13 @@
-import 'package:PiliPure/common/widgets/flutter/refresh_indicator.dart';
-import 'package:PiliPure/common/widgets/image/network_img_layer.dart';
-import 'package:PiliPure/common/widgets/loading_widget/http_error.dart';
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/models/common/image_type.dart';
-import 'package:PiliPure/models_new/music/bgm_recommend_list.dart';
-import 'package:PiliPure/pages/music/video/controller.dart';
-import 'package:PiliPure/pages/music/widget/music_video_card_h.dart';
-import 'package:PiliPure/utils/extension/get_ext.dart';
-import 'package:PiliPure/utils/grid.dart';
+import 'package:bilite/common/widgets/flutter/refresh_indicator.dart';
+import 'package:bilite/common/widgets/image/network_img_layer.dart';
+import 'package:bilite/common/widgets/loading_widget/http_error.dart';
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/models/common/image_type.dart';
+import 'package:bilite/models_new/music/bgm_recommend_list.dart';
+import 'package:bilite/pages/music/video/controller.dart';
+import 'package:bilite/pages/music/widget/music_video_card_h.dart';
+import 'package:bilite/utils/extension/get_ext.dart';
+import 'package:bilite/utils/grid.dart';
 import 'package:get/get.dart';
 import 'package:material_ui/material_ui.dart';
 

@@ -17,7 +17,7 @@
 
 import 'dart:ui' as ui;
 
-import 'package:PiliPure/utils/extension/iterable_ext.dart';
+import 'package:bilite/utils/extension/iterable_ext.dart';
 import 'package:collection/collection.dart';
 import 'package:flutter/foundation.dart' show listEquals;
 import 'package:flutter/gestures.dart' show TapGestureRecognizer;

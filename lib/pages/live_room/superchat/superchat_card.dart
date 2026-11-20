@@ -1,26 +1,26 @@
 import 'dart:async' show Timer;
 
-import 'package:PiliPure/common/widgets/image/network_img_layer.dart';
-import 'package:PiliPure/common/widgets/selection_text.dart';
-import 'package:PiliPure/models_new/live/live_superchat/item.dart';
-import 'package:PiliPure/pages/member/widget/medal_widget.dart';
-import 'package:PiliPure/utils/app_scheme.dart';
-import 'package:PiliPure/utils/color_utils.dart';
-import 'package:PiliPure/utils/date_utils.dart';
-import 'package:PiliPure/utils/extension/iterable_ext.dart';
-import 'package:PiliPure/utils/extension/selectable_region_ext.dart';
-import 'package:PiliPure/utils/image_utils.dart';
-import 'package:PiliPure/utils/page_utils.dart';
-import 'package:PiliPure/utils/platform_utils.dart';
-import 'package:PiliPure/utils/screenshot.dart';
-import 'package:PiliPure/utils/utils.dart';
+import 'package:bilite/common/widgets/image/network_img_layer.dart';
+import 'package:bilite/common/widgets/selection_text.dart';
+import 'package:bilite/models_new/live/live_superchat/item.dart';
+import 'package:bilite/pages/member/widget/medal_widget.dart';
+import 'package:bilite/utils/app_scheme.dart';
+import 'package:bilite/utils/color_utils.dart';
+import 'package:bilite/utils/date_utils.dart';
+import 'package:bilite/utils/extension/iterable_ext.dart';
+import 'package:bilite/utils/extension/selectable_region_ext.dart';
+import 'package:bilite/utils/image_utils.dart';
+import 'package:bilite/utils/page_utils.dart';
+import 'package:bilite/utils/platform_utils.dart';
+import 'package:bilite/utils/screenshot.dart';
+import 'package:bilite/utils/utils.dart';
 import 'package:cached_network_image_ce/cached_network_image.dart';
 import 'package:flutter/foundation.dart' show kDebugMode;
 import 'package:get/get.dart';
-import 'package:PiliPure/common/widgets/glass.dart';
+import 'package:bilite/common/widgets/glass.dart';
 import 'package:material_ui/material_ui.dart';
 
-part 'package:PiliPure/common/widgets/context_menu/live_menu_helper.dart';
+part 'package:bilite/common/widgets/context_menu/live_menu_helper.dart';
 
 class SuperChatCard extends StatefulWidget {
   const SuperChatCard({

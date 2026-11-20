@@ -1,5 +1,5 @@
-import 'package:PiliPure/models_new/msg/msg_like/latest.dart';
-import 'package:PiliPure/models_new/msg/msg_like/total.dart';
+import 'package:bilite/models_new/msg/msg_like/latest.dart';
+import 'package:bilite/models_new/msg/msg_like/total.dart';
 
 class MsgLikeData {
   Latest? latest;

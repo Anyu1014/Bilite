@@ -1,4 +1,4 @@
-import 'package:PiliPure/models_new/live/live_feed_index/card_data_list_item.dart';
+import 'package:bilite/models_new/live/live_feed_index/card_data_list_item.dart';
 
 class CardDataItem {
   final List<CardLiveItem>? list;

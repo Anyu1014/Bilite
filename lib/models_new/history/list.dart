@@ -1,9 +1,9 @@
-import 'package:PiliPure/common/widgets/badge.dart';
-import 'package:PiliPure/common/widgets/progress_bar/video_progress_indicator.dart';
-import 'package:PiliPure/models_new/history/history.dart';
-import 'package:PiliPure/pages/common/multi_select/base.dart';
-import 'package:PiliPure/utils/duration_utils.dart';
-import 'package:PiliPure/utils/extension/iterable_ext.dart';
+import 'package:bilite/common/widgets/badge.dart';
+import 'package:bilite/common/widgets/progress_bar/video_progress_indicator.dart';
+import 'package:bilite/models_new/history/history.dart';
+import 'package:bilite/pages/common/multi_select/base.dart';
+import 'package:bilite/utils/duration_utils.dart';
+import 'package:bilite/utils/extension/iterable_ext.dart';
 import 'package:material_ui/material_ui.dart'
     show ColorScheme, Widget, Positioned;
 

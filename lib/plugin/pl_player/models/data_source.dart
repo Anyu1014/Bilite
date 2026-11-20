@@ -1,4 +1,4 @@
-import 'package:PiliPure/utils/path_utils.dart';
+import 'package:bilite/utils/path_utils.dart';
 import 'package:path/path.dart' as path;
 
 sealed class DataSource {

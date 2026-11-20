@@ -1,7 +1,7 @@
-import 'package:PiliPure/common/widgets/pendant_avatar.dart';
-import 'package:PiliPure/models/search/result.dart';
-import 'package:PiliPure/utils/bili_utils.dart';
-import 'package:PiliPure/utils/num_utils.dart';
+import 'package:bilite/common/widgets/pendant_avatar.dart';
+import 'package:bilite/models/search/result.dart';
+import 'package:bilite/utils/bili_utils.dart';
+import 'package:bilite/utils/num_utils.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_navigation/src/extension_navigation.dart';
 import 'package:material_ui/material_ui.dart';

@@ -1,5 +1,5 @@
-import 'package:PiliPure/models_new/video/video_detail/dimension.dart';
-import 'package:PiliPure/models_new/video/video_detail/episode.dart'
+import 'package:bilite/models_new/video/video_detail/dimension.dart';
+import 'package:bilite/models_new/video/video_detail/episode.dart'
     show BaseEpisodeItem;
 
 class EpisodeItem extends BaseEpisodeItem {

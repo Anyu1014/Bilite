@@ -1,5 +1,5 @@
-import 'package:PiliPure/pages/common/publish/common_publish_page.dart';
-import 'package:PiliPure/utils/feed_back.dart';
+import 'package:bilite/pages/common/publish/common_publish_page.dart';
+import 'package:bilite/utils/feed_back.dart';
 import 'package:material_ui/material_ui.dart';
 
 abstract class CommonTextPubPage extends CommonPublishPage<String> {

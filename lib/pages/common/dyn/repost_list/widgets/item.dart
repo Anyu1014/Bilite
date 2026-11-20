@@ -1,9 +1,9 @@
-import 'package:PiliPure/common/widgets/emote_tooltip.dart';
-import 'package:PiliPure/common/widgets/gesture/tap_gesture_recognizer.dart';
-import 'package:PiliPure/common/widgets/image/network_img_layer.dart';
-import 'package:PiliPure/common/widgets/image_grid/image_grid_view.dart';
-import 'package:PiliPure/common/widgets/pendant_avatar.dart';
-import 'package:PiliPure/grpc/bilibili/app/dynamic/v2.pb.dart'
+import 'package:bilite/common/widgets/emote_tooltip.dart';
+import 'package:bilite/common/widgets/gesture/tap_gesture_recognizer.dart';
+import 'package:bilite/common/widgets/image/network_img_layer.dart';
+import 'package:bilite/common/widgets/image_grid/image_grid_view.dart';
+import 'package:bilite/common/widgets/pendant_avatar.dart';
+import 'package:bilite/grpc/bilibili/app/dynamic/v2.pb.dart'
     show
         DynamicItem,
         ModuleAuthor,
@@ -11,11 +11,11 @@ import 'package:PiliPure/grpc/bilibili/app/dynamic/v2.pb.dart'
         Description,
         ModuleOpusSummary,
         TextNode;
-import 'package:PiliPure/pages/dynamics/widgets/vote.dart';
-import 'package:PiliPure/utils/app_scheme.dart';
-import 'package:PiliPure/utils/bili_utils.dart';
-import 'package:PiliPure/utils/extension/theme_ext.dart';
-import 'package:PiliPure/utils/page_utils.dart';
+import 'package:bilite/pages/dynamics/widgets/vote.dart';
+import 'package:bilite/utils/app_scheme.dart';
+import 'package:bilite/utils/bili_utils.dart';
+import 'package:bilite/utils/extension/theme_ext.dart';
+import 'package:bilite/utils/page_utils.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_navigation/src/extension_navigation.dart';
 import 'package:material_ui/material_ui.dart';

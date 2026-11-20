@@ -1,18 +1,18 @@
 import 'dart:io' show Platform;
 
-import 'package:PiliPure/common/style.dart';
-import 'package:PiliPure/common/widgets/image/image_save.dart';
-import 'package:PiliPure/common/widgets/image/network_img_layer.dart';
-import 'package:PiliPure/common/widgets/pendant_avatar.dart';
-import 'package:PiliPure/common/widgets/stat/stat.dart';
-import 'package:PiliPure/common/widgets/video_card/video_card_h.dart'
+import 'package:bilite/common/style.dart';
+import 'package:bilite/common/widgets/image/image_save.dart';
+import 'package:bilite/common/widgets/image/network_img_layer.dart';
+import 'package:bilite/common/widgets/pendant_avatar.dart';
+import 'package:bilite/common/widgets/stat/stat.dart';
+import 'package:bilite/common/widgets/video_card/video_card_h.dart'
     show pushVideoH;
-import 'package:PiliPure/models/search/result.dart';
-import 'package:PiliPure/utils/bili_utils.dart';
-import 'package:PiliPure/utils/date_utils.dart';
-import 'package:PiliPure/utils/duration_utils.dart';
-import 'package:PiliPure/utils/num_utils.dart';
-import 'package:PiliPure/utils/platform_utils.dart';
+import 'package:bilite/models/search/result.dart';
+import 'package:bilite/utils/bili_utils.dart';
+import 'package:bilite/utils/date_utils.dart';
+import 'package:bilite/utils/duration_utils.dart';
+import 'package:bilite/utils/num_utils.dart';
+import 'package:bilite/utils/platform_utils.dart';
 import 'package:flutter/services.dart' show HapticFeedback;
 import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_navigation/src/extension_navigation.dart';

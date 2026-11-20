@@ -1,4 +1,4 @@
-import 'package:PiliPure/models_new/video/video_ai_conclusion/outline.dart';
+import 'package:bilite/models_new/video/video_ai_conclusion/outline.dart';
 
 class AiConclusionResult {
   String? summary;

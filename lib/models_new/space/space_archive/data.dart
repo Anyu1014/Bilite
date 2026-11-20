@@ -1,5 +1,5 @@
-import 'package:PiliPure/models_new/space/space_archive/episodic_button.dart';
-import 'package:PiliPure/models_new/space/space_archive/item.dart';
+import 'package:bilite/models_new/space/space_archive/episodic_button.dart';
+import 'package:bilite/models_new/space/space_archive/item.dart';
 
 class SpaceArchiveData {
   EpisodicButton? episodicButton;

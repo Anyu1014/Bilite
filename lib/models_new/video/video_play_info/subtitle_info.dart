@@ -1,4 +1,4 @@
-import 'package:PiliPure/models_new/video/video_play_info/subtitle.dart';
+import 'package:bilite/models_new/video/video_play_info/subtitle.dart';
 
 class SubtitleInfo {
   String? lan;

@@ -2,9 +2,9 @@ import 'dart:async';
 import 'dart:io';
 import 'dart:math' show max;
 
-import 'package:PiliPure/models/common/publish_panel_type.dart';
-import 'package:PiliPure/utils/extension/context_ext.dart';
-import 'package:PiliPure/utils/storage_pref.dart';
+import 'package:bilite/models/common/publish_panel_type.dart';
+import 'package:bilite/utils/extension/context_ext.dart';
+import 'package:bilite/utils/storage_pref.dart';
 import 'package:chat_bottom_container/chat_bottom_container.dart';
 import 'package:get/get.dart';
 import 'package:material_ui/material_ui.dart';

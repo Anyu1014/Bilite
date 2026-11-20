@@ -1,8 +1,8 @@
-import 'package:PiliPure/models/common/badge_type.dart';
-import 'package:PiliPure/models/common/episode_panel_type.dart';
-import 'package:PiliPure/models/common/pgc_episode_type.dart';
-import 'package:PiliPure/models_new/video/video_detail/arc.dart';
-import 'package:PiliPure/models_new/video/video_detail/page.dart';
+import 'package:bilite/models/common/badge_type.dart';
+import 'package:bilite/models/common/episode_panel_type.dart';
+import 'package:bilite/models/common/pgc_episode_type.dart';
+import 'package:bilite/models_new/video/video_detail/arc.dart';
+import 'package:bilite/models_new/video/video_detail/page.dart';
 
 typedef ShowEpisodes = void Function({
   required EpisodeType? type,

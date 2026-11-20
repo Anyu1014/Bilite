@@ -1,5 +1,5 @@
-import 'package:PiliPure/common/widgets/flutter/text/text.dart';
-import 'package:PiliPure/common/widgets/text_more/rich_text_more.dart';
+import 'package:bilite/common/widgets/flutter/text/text.dart';
+import 'package:bilite/common/widgets/text_more/rich_text_more.dart';
 import 'package:material_ui/material_ui.dart';
 
 class TextMore extends BaseText {

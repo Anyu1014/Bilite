@@ -1,10 +1,10 @@
-import 'package:PiliPure/common/widgets/dialog/dialog.dart';
-import 'package:PiliPure/http/dynamics.dart';
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/http/msg.dart';
-import 'package:PiliPure/models/dynamics/vote_model.dart';
-import 'package:PiliPure/utils/accounts.dart';
-import 'package:PiliPure/utils/utils.dart';
+import 'package:bilite/common/widgets/dialog/dialog.dart';
+import 'package:bilite/http/dynamics.dart';
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/http/msg.dart';
+import 'package:bilite/models/dynamics/vote_model.dart';
+import 'package:bilite/utils/accounts.dart';
+import 'package:bilite/utils/utils.dart';
 import 'package:flutter/widgets.dart' show Text;
 import 'package:get/get.dart';
 

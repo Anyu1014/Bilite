@@ -1,8 +1,8 @@
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/http/user.dart';
-import 'package:PiliPure/models_new/space_setting/data.dart';
-import 'package:PiliPure/models_new/space_setting/privacy.dart';
-import 'package:PiliPure/pages/common/common_data_controller.dart';
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/http/user.dart';
+import 'package:bilite/models_new/space_setting/data.dart';
+import 'package:bilite/models_new/space_setting/privacy.dart';
+import 'package:bilite/pages/common/common_data_controller.dart';
 
 class SpaceSettingController
     extends CommonDataController<SpaceSettingData, Privacy?> {

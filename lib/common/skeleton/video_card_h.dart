@@ -1,5 +1,5 @@
-import 'package:PiliPure/common/skeleton/skeleton.dart';
-import 'package:PiliPure/common/style.dart';
+import 'package:bilite/common/skeleton/skeleton.dart';
+import 'package:bilite/common/style.dart';
 import 'package:material_ui/material_ui.dart';
 
 class VideoCardHSkeleton extends StatelessWidget {

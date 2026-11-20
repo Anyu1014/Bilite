@@ -1,18 +1,18 @@
-import 'package:PiliPure/common/style.dart';
-import 'package:PiliPure/common/widgets/badge.dart';
-import 'package:PiliPure/common/widgets/image/image_save.dart';
-import 'package:PiliPure/common/widgets/image/network_img_layer.dart';
-import 'package:PiliPure/common/widgets/progress_bar/video_progress_indicator.dart';
-import 'package:PiliPure/common/widgets/stat/stat.dart';
-import 'package:PiliPure/common/widgets/video_popup_menu.dart';
-import 'package:PiliPure/models/common/badge_type.dart';
-import 'package:PiliPure/models/common/stat_type.dart';
-import 'package:PiliPure/models_new/space/space_archive/item.dart';
-import 'package:PiliPure/utils/date_utils.dart';
-import 'package:PiliPure/utils/duration_utils.dart';
-import 'package:PiliPure/utils/extension/dimension_ext.dart';
-import 'package:PiliPure/utils/page_utils.dart';
-import 'package:PiliPure/utils/platform_utils.dart';
+import 'package:bilite/common/style.dart';
+import 'package:bilite/common/widgets/badge.dart';
+import 'package:bilite/common/widgets/image/image_save.dart';
+import 'package:bilite/common/widgets/image/network_img_layer.dart';
+import 'package:bilite/common/widgets/progress_bar/video_progress_indicator.dart';
+import 'package:bilite/common/widgets/stat/stat.dart';
+import 'package:bilite/common/widgets/video_popup_menu.dart';
+import 'package:bilite/models/common/badge_type.dart';
+import 'package:bilite/models/common/stat_type.dart';
+import 'package:bilite/models_new/space/space_archive/item.dart';
+import 'package:bilite/utils/date_utils.dart';
+import 'package:bilite/utils/duration_utils.dart';
+import 'package:bilite/utils/extension/dimension_ext.dart';
+import 'package:bilite/utils/page_utils.dart';
+import 'package:bilite/utils/platform_utils.dart';
 import 'package:material_ui/material_ui.dart';
 
 // 视频卡片 - 水平布局

@@ -1,7 +1,7 @@
 import 'dart:io' show Platform;
 
-import 'package:PiliPure/models/video/play/url.dart' show Volume;
-import 'package:PiliPure/utils/storage_pref.dart';
+import 'package:bilite/models/video/play/url.dart' show Volume;
+import 'package:bilite/utils/storage_pref.dart';
 
 enum AudioNormalization {
   disable('禁用'),

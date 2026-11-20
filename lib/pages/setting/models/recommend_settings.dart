@@ -1,8 +1,8 @@
-import 'package:PiliPure/http/video.dart';
-import 'package:PiliPure/pages/rcmd/controller.dart';
-import 'package:PiliPure/pages/setting/models/model.dart';
-import 'package:PiliPure/utils/recommend_filter.dart';
-import 'package:PiliPure/utils/storage_key.dart';
+import 'package:bilite/http/video.dart';
+import 'package:bilite/pages/rcmd/controller.dart';
+import 'package:bilite/pages/setting/models/model.dart';
+import 'package:bilite/utils/recommend_filter.dart';
+import 'package:bilite/utils/storage_key.dart';
 import 'package:flutter/foundation.dart';
 import 'package:get/get.dart';
 import 'package:material_ui/material_ui.dart' hide StatefulBuilder;

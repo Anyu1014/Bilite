@@ -1,6 +1,6 @@
 import 'dart:io' show Platform;
 
-import 'package:PiliPure/utils/platform_utils.dart';
+import 'package:bilite/utils/platform_utils.dart';
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:nm/nm.dart';
 

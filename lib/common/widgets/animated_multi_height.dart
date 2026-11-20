@@ -1,5 +1,5 @@
-import 'package:PiliPure/common/widgets/animated_height.dart' show Heights;
-import 'package:PiliPure/utils/extension/num_ext.dart';
+import 'package:bilite/common/widgets/animated_height.dart' show Heights;
+import 'package:bilite/utils/extension/num_ext.dart';
 import 'package:flutter/rendering.dart'
     show ClipRectLayer, LayerHandle, PipelineOwner, RenderProxyBox;
 import 'package:material_ui/material_ui.dart';

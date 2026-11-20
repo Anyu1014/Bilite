@@ -2,7 +2,7 @@
 
 import 'dart:developer';
 
-import 'package:PiliPure/utils/cache_manager.dart';
+import 'package:bilite/utils/cache_manager.dart';
 import 'package:flutter/foundation.dart' show kDebugMode;
 import 'package:flutter/scheduler.dart';
 import 'package:flutter_svg/flutter_svg.dart';

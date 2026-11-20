@@ -1,7 +1,7 @@
-import 'package:PiliPure/common/widgets/dialog/dialog.dart';
-import 'package:PiliPure/common/widgets/flutter/list_tile.dart';
-import 'package:PiliPure/utils/storage.dart';
-import 'package:PiliPure/utils/storage_key.dart';
+import 'package:bilite/common/widgets/dialog/dialog.dart';
+import 'package:bilite/common/widgets/flutter/list_tile.dart';
+import 'package:bilite/utils/storage.dart';
+import 'package:bilite/utils/storage_key.dart';
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 import 'package:material_ui/material_ui.dart' hide ListTile;
 

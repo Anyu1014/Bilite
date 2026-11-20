@@ -1,26 +1,26 @@
 import 'dart:math' as math;
 
-import 'package:PiliPure/common/assets.dart';
-import 'package:PiliPure/common/widgets/badge.dart';
-import 'package:PiliPure/common/widgets/emote_tooltip.dart';
-import 'package:PiliPure/common/widgets/gesture/tap_gesture_recognizer.dart';
-import 'package:PiliPure/common/widgets/image/cached_network_svg_image.dart';
-import 'package:PiliPure/common/widgets/image/network_img_layer.dart';
-import 'package:PiliPure/common/widgets/image_grid/image_grid_view.dart';
-import 'package:PiliPure/common/widgets/image_viewer/hero.dart';
-import 'package:PiliPure/http/constants.dart';
-import 'package:PiliPure/models/common/image_preview_type.dart';
-import 'package:PiliPure/models/dynamics/article_content_model.dart'
+import 'package:bilite/common/assets.dart';
+import 'package:bilite/common/widgets/badge.dart';
+import 'package:bilite/common/widgets/emote_tooltip.dart';
+import 'package:bilite/common/widgets/gesture/tap_gesture_recognizer.dart';
+import 'package:bilite/common/widgets/image/cached_network_svg_image.dart';
+import 'package:bilite/common/widgets/image/network_img_layer.dart';
+import 'package:bilite/common/widgets/image_grid/image_grid_view.dart';
+import 'package:bilite/common/widgets/image_viewer/hero.dart';
+import 'package:bilite/http/constants.dart';
+import 'package:bilite/models/common/image_preview_type.dart';
+import 'package:bilite/models/dynamics/article_content_model.dart'
     show ArticleContentModel, Rich, Style, Word, Node;
-import 'package:PiliPure/models/dynamics/result.dart';
-import 'package:PiliPure/pages/article/widgets/sliver_list_ext.dart';
-import 'package:PiliPure/pages/dynamics/widgets/vote.dart';
-import 'package:PiliPure/utils/app_scheme.dart';
-import 'package:PiliPure/utils/extension/num_ext.dart';
-import 'package:PiliPure/utils/extension/theme_ext.dart';
-import 'package:PiliPure/utils/image_utils.dart';
-import 'package:PiliPure/utils/num_utils.dart';
-import 'package:PiliPure/utils/page_utils.dart';
+import 'package:bilite/models/dynamics/result.dart';
+import 'package:bilite/pages/article/widgets/sliver_list_ext.dart';
+import 'package:bilite/pages/dynamics/widgets/vote.dart';
+import 'package:bilite/utils/app_scheme.dart';
+import 'package:bilite/utils/extension/num_ext.dart';
+import 'package:bilite/utils/extension/theme_ext.dart';
+import 'package:bilite/utils/image_utils.dart';
+import 'package:bilite/utils/num_utils.dart';
+import 'package:bilite/utils/page_utils.dart';
 import 'package:cached_network_image_ce/cached_network_image.dart';
 import 'package:collection/collection.dart';
 import 'package:flutter/foundation.dart' show kDebugMode;

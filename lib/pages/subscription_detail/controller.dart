@@ -1,10 +1,10 @@
-import 'package:PiliPure/http/fav.dart';
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/models_new/sub/sub/list.dart';
-import 'package:PiliPure/models_new/sub/sub_detail/data.dart';
-import 'package:PiliPure/models_new/sub/sub_detail/media.dart';
-import 'package:PiliPure/pages/common/common_list_controller.dart';
-import 'package:PiliPure/pages/common/page_order/page_order_mixin.dart';
+import 'package:bilite/http/fav.dart';
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/models_new/sub/sub/list.dart';
+import 'package:bilite/models_new/sub/sub_detail/data.dart';
+import 'package:bilite/models_new/sub/sub_detail/media.dart';
+import 'package:bilite/pages/common/common_list_controller.dart';
+import 'package:bilite/pages/common/page_order/page_order_mixin.dart';
 import 'package:get/get.dart';
 
 class SubDetailController

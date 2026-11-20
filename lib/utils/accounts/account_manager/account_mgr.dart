@@ -1,16 +1,16 @@
 // edit from package:dio_cookie_manager
 import 'dart:io';
 
-import 'package:PiliPure/http/api.dart';
-import 'package:PiliPure/http/constants.dart';
-import 'package:PiliPure/models/common/account_type.dart';
-import 'package:PiliPure/utils/accounts.dart';
-import 'package:PiliPure/utils/accounts/account.dart';
-import 'package:PiliPure/utils/accounts/api_type.dart';
-import 'package:PiliPure/utils/app_sign.dart';
-import 'package:PiliPure/utils/extension/string_ext.dart';
-import 'package:PiliPure/utils/platform_utils.dart';
-import 'package:PiliPure/utils/storage_pref.dart';
+import 'package:bilite/http/api.dart';
+import 'package:bilite/http/constants.dart';
+import 'package:bilite/models/common/account_type.dart';
+import 'package:bilite/utils/accounts.dart';
+import 'package:bilite/utils/accounts/account.dart';
+import 'package:bilite/utils/accounts/api_type.dart';
+import 'package:bilite/utils/app_sign.dart';
+import 'package:bilite/utils/extension/string_ext.dart';
+import 'package:bilite/utils/platform_utils.dart';
+import 'package:bilite/utils/storage_pref.dart';
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart' show kDebugMode;

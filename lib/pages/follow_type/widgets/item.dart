@@ -1,6 +1,6 @@
-import 'package:PiliPure/common/widgets/image/network_img_layer.dart';
-import 'package:PiliPure/models/common/image_type.dart';
-import 'package:PiliPure/models_new/follow/list.dart';
+import 'package:bilite/common/widgets/image/network_img_layer.dart';
+import 'package:bilite/models/common/image_type.dart';
+import 'package:bilite/models_new/follow/list.dart';
 import 'package:get/get.dart';
 import 'package:material_ui/material_ui.dart';
 

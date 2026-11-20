@@ -1,20 +1,20 @@
 import 'dart:async';
 import 'dart:math';
 
-import 'package:PiliPure/common/widgets/loading_widget/http_error.dart';
-import 'package:PiliPure/common/widgets/loading_widget/loading_widget.dart';
-import 'package:PiliPure/common/widgets/scaffold/simple_scaffold.dart';
-import 'package:PiliPure/common/widgets/sliver/sliver_pinned_header.dart';
-import 'package:PiliPure/common/widgets/view_insets_safe_area.dart';
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/models_new/dynamic/dyn_mention/group.dart';
-import 'package:PiliPure/models_new/dynamic/dyn_mention/item.dart';
-import 'package:PiliPure/pages/dynamics_mention/controller.dart';
-import 'package:PiliPure/pages/dynamics_mention/widgets/item.dart';
-import 'package:PiliPure/pages/search/controller.dart' show DebounceStreamState;
-import 'package:PiliPure/utils/extension/context_ext.dart';
-import 'package:PiliPure/utils/extension/iterable_ext.dart';
-import 'package:PiliPure/utils/extension/scroll_controller_ext.dart';
+import 'package:bilite/common/widgets/loading_widget/http_error.dart';
+import 'package:bilite/common/widgets/loading_widget/loading_widget.dart';
+import 'package:bilite/common/widgets/scaffold/simple_scaffold.dart';
+import 'package:bilite/common/widgets/sliver/sliver_pinned_header.dart';
+import 'package:bilite/common/widgets/view_insets_safe_area.dart';
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/models_new/dynamic/dyn_mention/group.dart';
+import 'package:bilite/models_new/dynamic/dyn_mention/item.dart';
+import 'package:bilite/pages/dynamics_mention/controller.dart';
+import 'package:bilite/pages/dynamics_mention/widgets/item.dart';
+import 'package:bilite/pages/search/controller.dart' show DebounceStreamState;
+import 'package:bilite/utils/extension/context_ext.dart';
+import 'package:bilite/utils/extension/iterable_ext.dart';
+import 'package:bilite/utils/extension/scroll_controller_ext.dart';
 import 'package:get/get.dart';
 import 'package:material_ui/material_ui.dart';
 

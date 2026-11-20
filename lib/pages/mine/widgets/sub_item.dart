@@ -1,8 +1,8 @@
-import 'package:PiliPure/common/widgets/badge.dart';
-import 'package:PiliPure/common/widgets/image/network_img_layer.dart';
-import 'package:PiliPure/models_new/sub/sub/list.dart';
-import 'package:PiliPure/pages/subscription/widgets/item.dart' show onPushSub;
-import 'package:PiliPure/utils/utils.dart';
+import 'package:bilite/common/widgets/badge.dart';
+import 'package:bilite/common/widgets/image/network_img_layer.dart';
+import 'package:bilite/models_new/sub/sub/list.dart';
+import 'package:bilite/pages/subscription/widgets/item.dart' show onPushSub;
+import 'package:bilite/utils/utils.dart';
 import 'package:material_ui/material_ui.dart';
 
 class MineSubItem extends StatelessWidget {

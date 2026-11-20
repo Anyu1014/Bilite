@@ -1,5 +1,5 @@
-import 'package:PiliPure/pages/video/introduction/pgc/controller.dart';
-import 'package:PiliPure/utils/scroll_offset_helper.dart';
+import 'package:bilite/pages/video/introduction/pgc/controller.dart';
+import 'package:bilite/utils/scroll_offset_helper.dart';
 import 'package:material_ui/material_ui.dart';
 
 class SeasonPanel extends StatelessWidget {

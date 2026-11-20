@@ -1,4 +1,4 @@
-import 'package:PiliPure/models_new/sub/sub/list.dart';
+import 'package:bilite/models_new/sub/sub/list.dart';
 
 class SubData {
   int? count;

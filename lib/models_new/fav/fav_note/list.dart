@@ -1,4 +1,4 @@
-import 'package:PiliPure/pages/common/multi_select/base.dart';
+import 'package:bilite/pages/common/multi_select/base.dart';
 
 class FavNoteItemModel with MultiSelectData {
   FavNoteItemModel({

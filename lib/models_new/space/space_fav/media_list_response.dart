@@ -1,4 +1,4 @@
-import 'package:PiliPure/models_new/space/space_fav/list.dart';
+import 'package:bilite/models_new/space/space_fav/list.dart';
 
 class MediaListResponse {
   int? count;

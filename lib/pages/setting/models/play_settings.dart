@@ -1,28 +1,28 @@
 import 'dart:io' show Platform;
 
-import 'package:PiliPure/common/widgets/custom_icon.dart';
-import 'package:PiliPure/common/widgets/glass.dart';
-import 'package:PiliPure/common/widgets/image_grid/image_grid_view.dart';
-import 'package:PiliPure/models/common/audio_normalization.dart';
-import 'package:PiliPure/models/common/super_chat_type.dart';
-import 'package:PiliPure/models/common/super_resolution_type.dart';
-import 'package:PiliPure/models/common/video/subtitle_pref_type.dart';
-import 'package:PiliPure/pages/setting/models/model.dart';
-import 'package:PiliPure/pages/setting/pages/fullscreen_sc.dart';
-import 'package:PiliPure/pages/setting/widgets/select_dialog.dart';
-import 'package:PiliPure/pages/setting/widgets/slider_dialog.dart';
-import 'package:PiliPure/plugin/pl_player/models/bottom_progress_behavior.dart';
-import 'package:PiliPure/plugin/pl_player/models/fullscreen_mode.dart';
-import 'package:PiliPure/plugin/pl_player/models/play_repeat.dart';
-import 'package:PiliPure/services/service_locator.dart';
-import 'package:PiliPure/utils/android/android_helper.dart';
-import 'package:PiliPure/utils/desktop/window_controller.dart';
-import 'package:PiliPure/utils/extension/num_ext.dart';
-import 'package:PiliPure/utils/ios/pip_helper.dart';
-import 'package:PiliPure/utils/platform_utils.dart';
-import 'package:PiliPure/utils/storage.dart';
-import 'package:PiliPure/utils/storage_key.dart';
-import 'package:PiliPure/utils/storage_pref.dart';
+import 'package:bilite/common/widgets/custom_icon.dart';
+import 'package:bilite/common/widgets/glass.dart';
+import 'package:bilite/common/widgets/image_grid/image_grid_view.dart';
+import 'package:bilite/models/common/audio_normalization.dart';
+import 'package:bilite/models/common/super_chat_type.dart';
+import 'package:bilite/models/common/super_resolution_type.dart';
+import 'package:bilite/models/common/video/subtitle_pref_type.dart';
+import 'package:bilite/pages/setting/models/model.dart';
+import 'package:bilite/pages/setting/pages/fullscreen_sc.dart';
+import 'package:bilite/pages/setting/widgets/select_dialog.dart';
+import 'package:bilite/pages/setting/widgets/slider_dialog.dart';
+import 'package:bilite/plugin/pl_player/models/bottom_progress_behavior.dart';
+import 'package:bilite/plugin/pl_player/models/fullscreen_mode.dart';
+import 'package:bilite/plugin/pl_player/models/play_repeat.dart';
+import 'package:bilite/services/service_locator.dart';
+import 'package:bilite/utils/android/android_helper.dart';
+import 'package:bilite/utils/desktop/window_controller.dart';
+import 'package:bilite/utils/extension/num_ext.dart';
+import 'package:bilite/utils/ios/pip_helper.dart';
+import 'package:bilite/utils/platform_utils.dart';
+import 'package:bilite/utils/storage.dart';
+import 'package:bilite/utils/storage_key.dart';
+import 'package:bilite/utils/storage_pref.dart';
 import 'package:flutter/foundation.dart' show kDebugMode;
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 import 'package:get/get.dart';
@@ -74,7 +74,7 @@ List<SettingsModel> get playSettings => [
     subtitle: '进入详情页自动播放',
     leading: Icon(Icons.motion_photos_auto_outlined),
     setKey: SettingBoxKey.autoPlayEnable,
-    defaultVal: false,
+    defaultVal: true,
   ),
   const SwitchModel(
     title: '全屏显示锁定按钮',
@@ -371,7 +371,7 @@ List<SettingsModel> get playSettings => [
     subtitle: '展示同时在看人数',
     leading: Icon(Icons.people_outlined),
     setKey: SettingBoxKey.enableOnlineTotal,
-    defaultVal: false,
+    defaultVal: true,
   ),
   NormalModel(
     title: '默认全屏方向',

@@ -1,5 +1,5 @@
-import 'package:PiliPure/models_new/msg/msg_reply/content.dart';
-import 'package:PiliPure/models_new/msg/msg_reply/user.dart';
+import 'package:bilite/models_new/msg/msg_reply/content.dart';
+import 'package:bilite/models_new/msg/msg_reply/user.dart';
 
 class MsgReplyItem {
   int? id;

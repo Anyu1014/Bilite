@@ -1,6 +1,6 @@
-import 'package:PiliPure/common/widgets/scaffold/simple_scaffold.dart';
-import 'package:PiliPure/models/common/setting_type.dart';
-import 'package:PiliPure/pages/setting/models/model.dart';
+import 'package:bilite/common/widgets/scaffold/simple_scaffold.dart';
+import 'package:bilite/models/common/setting_type.dart';
+import 'package:bilite/pages/setting/models/model.dart';
 import 'package:material_ui/material_ui.dart';
 
 class CommonSetting extends StatefulWidget {

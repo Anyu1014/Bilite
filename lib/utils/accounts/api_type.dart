@@ -1,5 +1,5 @@
-import 'package:PiliPure/http/api.dart';
-import 'package:PiliPure/models/common/account_type.dart';
+import 'package:bilite/http/api.dart';
+import 'package:bilite/models/common/account_type.dart';
 
 abstract final class ApiType {
   // TODO: grpc api type

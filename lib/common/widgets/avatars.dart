@@ -1,5 +1,5 @@
-import 'package:PiliPure/common/widgets/image/network_img_layer.dart';
-import 'package:PiliPure/models/model_owner.dart';
+import 'package:bilite/common/widgets/image/network_img_layer.dart';
+import 'package:bilite/models/model_owner.dart';
 import 'package:collection/collection.dart';
 import 'package:material_ui/material_ui.dart';
 

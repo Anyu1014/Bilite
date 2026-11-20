@@ -1,5 +1,5 @@
-import 'package:PiliPure/models_new/reply/pagination_reply.dart';
-import 'package:PiliPure/utils/extension/iterable_ext.dart';
+import 'package:bilite/models_new/reply/pagination_reply.dart';
+import 'package:bilite/utils/extension/iterable_ext.dart';
 
 class ReplyCursor {
   bool? isBegin;

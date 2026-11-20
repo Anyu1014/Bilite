@@ -1,8 +1,8 @@
-import 'package:PiliPure/http/init.dart';
-import 'package:PiliPure/http/search.dart';
-import 'package:PiliPure/utils/accounts/account.dart';
-import 'package:PiliPure/utils/id_utils.dart';
-import 'package:PiliPure/utils/page_utils.dart';
+import 'package:bilite/http/init.dart';
+import 'package:bilite/http/search.dart';
+import 'package:bilite/utils/accounts/account.dart';
+import 'package:bilite/utils/id_utils.dart';
+import 'package:bilite/utils/page_utils.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart' show kDebugMode, debugPrint;
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';

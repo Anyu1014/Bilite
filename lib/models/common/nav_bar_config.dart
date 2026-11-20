@@ -1,8 +1,8 @@
-import 'package:PiliPure/common/widgets/custom_icon.dart';
-import 'package:PiliPure/models/common/enum_with_label.dart';
-import 'package:PiliPure/pages/dynamics/view.dart';
-import 'package:PiliPure/pages/home/view.dart';
-import 'package:PiliPure/pages/mine/view.dart';
+import 'package:bilite/common/widgets/custom_icon.dart';
+import 'package:bilite/models/common/enum_with_label.dart';
+import 'package:bilite/pages/dynamics/view.dart';
+import 'package:bilite/pages/home/view.dart';
+import 'package:bilite/pages/mine/view.dart';
 import 'package:material_ui/material_ui.dart';
 
 enum NavigationBarType implements EnumWithLabel {

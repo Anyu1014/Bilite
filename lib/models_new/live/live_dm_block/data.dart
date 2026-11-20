@@ -1,4 +1,4 @@
-import 'package:PiliPure/models_new/live/live_dm_block/shield_info.dart';
+import 'package:bilite/models_new/live/live_dm_block/shield_info.dart';
 
 class LiveDmBlockData {
   ShieldInfo? shieldInfo;

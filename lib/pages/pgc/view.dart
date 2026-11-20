@@ -1,28 +1,28 @@
 import 'dart:math';
 
-import 'package:PiliPure/common/style.dart';
-import 'package:PiliPure/common/widgets/button/more_btn.dart';
-import 'package:PiliPure/common/widgets/flutter/refresh_indicator.dart';
-import 'package:PiliPure/common/widgets/loading_widget/http_error.dart';
-import 'package:PiliPure/common/widgets/loading_widget/loading_widget.dart';
-import 'package:PiliPure/common/widgets/scaffold/simple_scaffold.dart';
-import 'package:PiliPure/common/widgets/scroll_physics.dart' show tabBarView;
-import 'package:PiliPure/common/widgets/view_safe_area.dart';
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/models/common/fav_type.dart';
-import 'package:PiliPure/models/common/home_tab_type.dart';
-import 'package:PiliPure/models_new/fav/fav_pgc/list.dart';
-import 'package:PiliPure/models_new/pgc/pgc_index_result/list.dart';
-import 'package:PiliPure/models_new/pgc/pgc_timeline/result.dart';
-import 'package:PiliPure/pages/pgc/controller.dart';
-import 'package:PiliPure/pages/pgc/widgets/pgc_card_v.dart';
-import 'package:PiliPure/pages/pgc/widgets/pgc_card_v_timeline.dart';
-import 'package:PiliPure/pages/pgc_index/controller.dart';
-import 'package:PiliPure/pages/pgc_index/view.dart';
-import 'package:PiliPure/pages/pgc_index/widgets/pgc_card_v_pgc_index.dart';
-import 'package:PiliPure/utils/grid.dart';
+import 'package:bilite/common/style.dart';
+import 'package:bilite/common/widgets/button/more_btn.dart';
+import 'package:bilite/common/widgets/flutter/refresh_indicator.dart';
+import 'package:bilite/common/widgets/loading_widget/http_error.dart';
+import 'package:bilite/common/widgets/loading_widget/loading_widget.dart';
+import 'package:bilite/common/widgets/scaffold/simple_scaffold.dart';
+import 'package:bilite/common/widgets/scroll_physics.dart' show tabBarView;
+import 'package:bilite/common/widgets/view_safe_area.dart';
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/models/common/fav_type.dart';
+import 'package:bilite/models/common/home_tab_type.dart';
+import 'package:bilite/models_new/fav/fav_pgc/list.dart';
+import 'package:bilite/models_new/pgc/pgc_index_result/list.dart';
+import 'package:bilite/models_new/pgc/pgc_timeline/result.dart';
+import 'package:bilite/pages/pgc/controller.dart';
+import 'package:bilite/pages/pgc/widgets/pgc_card_v.dart';
+import 'package:bilite/pages/pgc/widgets/pgc_card_v_timeline.dart';
+import 'package:bilite/pages/pgc_index/controller.dart';
+import 'package:bilite/pages/pgc_index/view.dart';
+import 'package:bilite/pages/pgc_index/widgets/pgc_card_v_pgc_index.dart';
+import 'package:bilite/utils/grid.dart';
 import 'package:get/get.dart';
-import 'package:PiliPure/common/widgets/home_header_inset.dart';
+import 'package:bilite/common/widgets/home_header_inset.dart';
 import 'package:material_ui/material_ui.dart';
 
 class PgcPage extends StatefulWidget {
@@ -57,6 +57,7 @@ class _PgcPageState extends State<PgcPage> with AutomaticKeepAliveClientMixin {
     super.build(context);
     final ThemeData theme = Theme.of(context);
     return refreshIndicator(
+      topInset: HomeHeaderInset.of(context),
       onRefresh: controller.onRefresh,
       child: CustomScrollView(
         controller: controller.scrollController,

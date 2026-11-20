@@ -1,7 +1,7 @@
-import 'package:PiliPure/models/model_owner.dart';
-import 'package:PiliPure/models_new/fav/fav_detail/cnt_info.dart';
-import 'package:PiliPure/models_new/media_list/page.dart';
-import 'package:PiliPure/models_new/video/video_detail/episode.dart';
+import 'package:bilite/models/model_owner.dart';
+import 'package:bilite/models_new/fav/fav_detail/cnt_info.dart';
+import 'package:bilite/models_new/media_list/page.dart';
+import 'package:bilite/models_new/video/video_detail/episode.dart';
 
 class MediaListItemModel extends BaseEpisodeItem {
   @override

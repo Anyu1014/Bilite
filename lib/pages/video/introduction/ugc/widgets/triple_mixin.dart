@@ -1,8 +1,8 @@
 import 'dart:async';
 
-import 'package:PiliPure/pages/video/pay_coins/view.dart';
-import 'package:PiliPure/utils/global_data.dart';
-import 'package:PiliPure/utils/platform_utils.dart';
+import 'package:bilite/pages/video/pay_coins/view.dart';
+import 'package:bilite/utils/global_data.dart';
+import 'package:bilite/utils/platform_utils.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 import 'package:get/get.dart';

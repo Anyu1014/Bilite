@@ -1,4 +1,4 @@
-import 'package:PiliPure/models_new/video/video_detail/episode.dart';
+import 'package:bilite/models_new/video/video_detail/episode.dart';
 
 class Choice extends BaseEpisodeItem {
   String? option;

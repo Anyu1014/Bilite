@@ -1,10 +1,10 @@
-import 'package:PiliPure/common/widgets/image/network_img_layer.dart';
-import 'package:PiliPure/models_new/match/match_info/contest.dart';
-import 'package:PiliPure/models_new/match/match_info/team.dart';
-import 'package:PiliPure/pages/match_info/widgets/team_info_layout.dart';
-import 'package:PiliPure/utils/app_scheme.dart';
-import 'package:PiliPure/utils/date_utils.dart';
-import 'package:PiliPure/utils/page_utils.dart';
+import 'package:bilite/common/widgets/image/network_img_layer.dart';
+import 'package:bilite/models_new/match/match_info/contest.dart';
+import 'package:bilite/models_new/match/match_info/team.dart';
+import 'package:bilite/pages/match_info/widgets/team_info_layout.dart';
+import 'package:bilite/utils/app_scheme.dart';
+import 'package:bilite/utils/date_utils.dart';
+import 'package:bilite/utils/page_utils.dart';
 import 'package:intl/intl.dart';
 import 'package:material_ui/material_ui.dart';
 

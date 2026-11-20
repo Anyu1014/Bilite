@@ -1,21 +1,21 @@
 import 'dart:convert';
 
-import 'package:PiliPure/common/widgets/dialog/export_import.dart';
-import 'package:PiliPure/common/widgets/disabled_icon.dart';
-import 'package:PiliPure/common/widgets/loading_widget/http_error.dart';
-import 'package:PiliPure/common/widgets/scaffold/simple_scaffold.dart';
-import 'package:PiliPure/common/widgets/sliver_wrap.dart';
-import 'package:PiliPure/common/widgets/view_insets_safe_area.dart';
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/models_new/search/search_rcmd/data.dart';
-import 'package:PiliPure/pages/search/controller.dart';
-import 'package:PiliPure/pages/search/widgets/hot_keyword.dart';
-import 'package:PiliPure/pages/search/widgets/search_text.dart';
-import 'package:PiliPure/utils/em.dart' show Em;
-import 'package:PiliPure/utils/extension/size_ext.dart';
-import 'package:PiliPure/utils/storage.dart';
-import 'package:PiliPure/utils/storage_key.dart';
-import 'package:PiliPure/utils/utils.dart';
+import 'package:bilite/common/widgets/dialog/export_import.dart';
+import 'package:bilite/common/widgets/disabled_icon.dart';
+import 'package:bilite/common/widgets/loading_widget/http_error.dart';
+import 'package:bilite/common/widgets/scaffold/simple_scaffold.dart';
+import 'package:bilite/common/widgets/sliver_wrap.dart';
+import 'package:bilite/common/widgets/view_insets_safe_area.dart';
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/models_new/search/search_rcmd/data.dart';
+import 'package:bilite/pages/search/controller.dart';
+import 'package:bilite/pages/search/widgets/hot_keyword.dart';
+import 'package:bilite/pages/search/widgets/search_text.dart';
+import 'package:bilite/utils/em.dart' show Em;
+import 'package:bilite/utils/extension/size_ext.dart';
+import 'package:bilite/utils/storage.dart';
+import 'package:bilite/utils/storage_key.dart';
+import 'package:bilite/utils/utils.dart';
 import 'package:get/get.dart';
 import 'package:material_ui/material_ui.dart';
 

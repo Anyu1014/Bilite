@@ -5,9 +5,9 @@
 import 'dart:io' show File;
 import 'dart:math' as math;
 
-import 'package:PiliPure/common/style.dart';
-import 'package:PiliPure/common/widgets/gesture/image_horizontal_drag_gesture_recognizer.dart';
-import 'package:PiliPure/common/widgets/image_viewer/viewer.dart';
+import 'package:bilite/common/style.dart';
+import 'package:bilite/common/widgets/gesture/image_horizontal_drag_gesture_recognizer.dart';
+import 'package:bilite/common/widgets/image_viewer/viewer.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/gestures.dart' show DoubleTapGestureRecognizer;
 import 'package:flutter/scheduler.dart';

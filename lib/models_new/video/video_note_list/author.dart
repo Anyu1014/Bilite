@@ -1,4 +1,4 @@
-import 'package:PiliPure/models/model_avatar.dart';
+import 'package:bilite/models/model_avatar.dart';
 
 class Author {
   int? mid;

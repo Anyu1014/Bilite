@@ -1,4 +1,4 @@
-import 'package:PiliPure/http/constants.dart';
+import 'package:bilite/http/constants.dart';
 
 abstract final class Api {
   // 推荐视频

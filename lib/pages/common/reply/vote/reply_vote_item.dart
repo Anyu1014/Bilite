@@ -1,7 +1,7 @@
-import 'package:PiliPure/grpc/bilibili/main/community/reply/v1.pb.dart'
+import 'package:bilite/grpc/bilibili/main/community/reply/v1.pb.dart'
     show VoteCard;
-import 'package:PiliPure/pages/dynamics/widgets/vote.dart';
-import 'package:PiliPure/utils/num_utils.dart';
+import 'package:bilite/pages/dynamics/widgets/vote.dart';
+import 'package:bilite/utils/num_utils.dart';
 import 'package:material_ui/material_ui.dart';
 
 Widget buildVoteCard(

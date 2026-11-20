@@ -1,5 +1,5 @@
-import 'package:PiliPure/common/widgets/gesture/tap_gesture_recognizer.dart';
-import 'package:PiliPure/models/dynamics/result.dart';
+import 'package:bilite/common/widgets/gesture/tap_gesture_recognizer.dart';
+import 'package:bilite/models/dynamics/result.dart';
 import 'package:flutter/foundation.dart' show kDebugMode;
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get_core/src/get_main.dart';

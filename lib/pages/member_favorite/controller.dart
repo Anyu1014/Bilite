@@ -1,10 +1,10 @@
-import 'package:PiliPure/http/api.dart';
-import 'package:PiliPure/http/fav.dart';
-import 'package:PiliPure/http/init.dart';
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/models_new/space/space_fav/data.dart';
-import 'package:PiliPure/models_new/space/space_fav/list.dart';
-import 'package:PiliPure/pages/common/common_data_controller.dart';
+import 'package:bilite/http/api.dart';
+import 'package:bilite/http/fav.dart';
+import 'package:bilite/http/init.dart';
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/models_new/space/space_fav/data.dart';
+import 'package:bilite/models_new/space/space_fav/list.dart';
+import 'package:bilite/pages/common/common_data_controller.dart';
 import 'package:flutter/foundation.dart' show kDebugMode;
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 import 'package:get/get.dart';

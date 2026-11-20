@@ -1,11 +1,11 @@
-import 'package:PiliPure/common/widgets/progress_bar/audio_video_progress_bar.dart';
-import 'package:PiliPure/common/widgets/progress_bar/segment_progress_bar.dart';
-import 'package:PiliPure/pages/video/controller.dart';
-import 'package:PiliPure/plugin/pl_player/controller.dart';
-import 'package:PiliPure/plugin/pl_player/view/view.dart';
-import 'package:PiliPure/utils/extension/theme_ext.dart';
-import 'package:PiliPure/utils/feed_back.dart';
-import 'package:PiliPure/utils/platform_utils.dart';
+import 'package:bilite/common/widgets/progress_bar/audio_video_progress_bar.dart';
+import 'package:bilite/common/widgets/progress_bar/segment_progress_bar.dart';
+import 'package:bilite/pages/video/controller.dart';
+import 'package:bilite/plugin/pl_player/controller.dart';
+import 'package:bilite/plugin/pl_player/view/view.dart';
+import 'package:bilite/utils/extension/theme_ext.dart';
+import 'package:bilite/utils/feed_back.dart';
+import 'package:bilite/utils/platform_utils.dart';
 import 'package:get/get.dart';
 import 'package:material_ui/material_ui.dart';
 

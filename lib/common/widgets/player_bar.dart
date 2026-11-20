@@ -17,7 +17,7 @@
 
 import 'dart:math' as math;
 
-import 'package:PiliPure/common/widgets/slotted_layout_helper.dart';
+import 'package:bilite/common/widgets/slotted_layout_helper.dart';
 import 'package:flutter/rendering.dart'
     show BoxHitTestResult, TransformLayer, BoxParentData;
 import 'package:flutter/widgets.dart';

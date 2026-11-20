@@ -1,8 +1,8 @@
-import 'package:PiliPure/models/model_owner.dart';
-import 'package:PiliPure/models_new/live/live_danmaku/live_emote.dart';
-import 'package:PiliPure/models_new/live/live_medal_wall/uinfo_medal.dart';
-import 'package:PiliPure/pages/danmaku/danmaku_model.dart';
-import 'package:PiliPure/utils/global_data.dart';
+import 'package:bilite/models/model_owner.dart';
+import 'package:bilite/models_new/live/live_danmaku/live_emote.dart';
+import 'package:bilite/models_new/live/live_medal_wall/uinfo_medal.dart';
+import 'package:bilite/pages/danmaku/danmaku_model.dart';
+import 'package:bilite/utils/global_data.dart';
 
 class DanmakuMsg {
   final String name;

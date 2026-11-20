@@ -1,5 +1,5 @@
-import 'package:PiliPure/models_new/msg/msg_at/cursor.dart';
-import 'package:PiliPure/models_new/msg/msg_at/item.dart';
+import 'package:bilite/models_new/msg/msg_at/cursor.dart';
+import 'package:bilite/models_new/msg/msg_at/item.dart';
 
 class MsgAtData {
   Cursor? cursor;

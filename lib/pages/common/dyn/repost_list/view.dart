@@ -1,13 +1,13 @@
-import 'package:PiliPure/common/widgets/flutter/refresh_indicator.dart';
-import 'package:PiliPure/common/widgets/loading_widget/http_error.dart';
-import 'package:PiliPure/common/widgets/loading_widget/loading_widget.dart';
-import 'package:PiliPure/common/widgets/scroll_physics.dart'
+import 'package:bilite/common/widgets/flutter/refresh_indicator.dart';
+import 'package:bilite/common/widgets/loading_widget/http_error.dart';
+import 'package:bilite/common/widgets/loading_widget/loading_widget.dart';
+import 'package:bilite/common/widgets/scroll_physics.dart'
     show platformAlwaysClampingPhysics;
-import 'package:PiliPure/grpc/bilibili/app/dynamic/v2.pb.dart' show DynamicItem;
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/pages/common/dyn/common_dyn_page.dart';
-import 'package:PiliPure/pages/common/dyn/repost_list/controller.dart';
-import 'package:PiliPure/pages/common/dyn/repost_list/widgets/item.dart';
+import 'package:bilite/grpc/bilibili/app/dynamic/v2.pb.dart' show DynamicItem;
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/pages/common/dyn/common_dyn_page.dart';
+import 'package:bilite/pages/common/dyn/repost_list/controller.dart';
+import 'package:bilite/pages/common/dyn/repost_list/widgets/item.dart';
 import 'package:get/get.dart';
 import 'package:material_ui/material_ui.dart' hide ListTile;
 

@@ -1,9 +1,9 @@
-import 'package:PiliPure/common/assets.dart';
-import 'package:PiliPure/common/style.dart';
-import 'package:PiliPure/models/common/image_type.dart';
-import 'package:PiliPure/utils/extension/num_ext.dart';
-import 'package:PiliPure/utils/image_utils.dart';
-import 'package:PiliPure/utils/storage_pref.dart';
+import 'package:bilite/common/assets.dart';
+import 'package:bilite/common/style.dart';
+import 'package:bilite/models/common/image_type.dart';
+import 'package:bilite/utils/extension/num_ext.dart';
+import 'package:bilite/utils/image_utils.dart';
+import 'package:bilite/utils/storage_pref.dart';
 import 'package:cached_network_image_ce/cached_network_image.dart';
 import 'package:material_ui/material_ui.dart';
 

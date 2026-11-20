@@ -1,9 +1,9 @@
 import 'dart:convert';
 
-import 'package:PiliPure/http/danmaku_block.dart';
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/models/common/dm_block_type.dart';
-import 'package:PiliPure/models/user/danmaku_block.dart';
+import 'package:bilite/http/danmaku_block.dart';
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/models/common/dm_block_type.dart';
+import 'package:bilite/models/user/danmaku_block.dart';
 import 'package:archive/archive.dart' show getCrc32;
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 import 'package:get/get.dart';

@@ -1,7 +1,7 @@
-import 'package:PiliPure/http/live.dart';
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/models_new/live/live_dm_block/shield_user_list.dart';
-import 'package:PiliPure/pages/live_room/controller.dart';
+import 'package:bilite/http/live.dart';
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/models_new/live/live_dm_block/shield_user_list.dart';
+import 'package:bilite/pages/live_room/controller.dart';
 import 'package:get/get.dart';
 import 'package:material_ui/material_ui.dart';
 

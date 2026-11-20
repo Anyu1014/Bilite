@@ -1,7 +1,7 @@
 import 'dart:io' show Platform;
 
-import 'package:PiliPure/utils/android/android_helper.dart';
-import 'package:PiliPure/utils/android/bindings.g.dart';
+import 'package:bilite/utils/android/android_helper.dart';
+import 'package:bilite/utils/android/bindings.g.dart';
 
 abstract final class MaxScreenSize {
   static int? _maxWidth;

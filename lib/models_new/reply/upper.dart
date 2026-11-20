@@ -1,9 +1,9 @@
-import 'package:PiliPure/models_new/reply/content.dart';
-import 'package:PiliPure/models_new/reply/folder.dart';
-import 'package:PiliPure/models_new/reply/member.dart';
-import 'package:PiliPure/models_new/reply/reply.dart';
-import 'package:PiliPure/models_new/reply/reply_control.dart';
-import 'package:PiliPure/models_new/reply/up_action.dart';
+import 'package:bilite/models_new/reply/content.dart';
+import 'package:bilite/models_new/reply/folder.dart';
+import 'package:bilite/models_new/reply/member.dart';
+import 'package:bilite/models_new/reply/reply.dart';
+import 'package:bilite/models_new/reply/reply_control.dart';
+import 'package:bilite/models_new/reply/up_action.dart';
 
 class Upper {
   int? rpid;

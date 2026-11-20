@@ -1,6 +1,6 @@
-import 'package:PiliPure/common/widgets/pair.dart';
-import 'package:PiliPure/models/common/sponsor_block/action_type.dart';
-import 'package:PiliPure/models/common/sponsor_block/segment_type.dart';
+import 'package:bilite/common/widgets/pair.dart';
+import 'package:bilite/models/common/sponsor_block/action_type.dart';
+import 'package:bilite/models/common/sponsor_block/segment_type.dart';
 
 class PostSegmentModel {
   PostSegmentModel({

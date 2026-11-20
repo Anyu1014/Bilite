@@ -1,16 +1,16 @@
 import 'dart:async';
 
-import 'package:PiliPure/common/widgets/flutter/refresh_indicator.dart';
-import 'package:PiliPure/common/widgets/loading_widget/http_error.dart';
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/models/common/dynamic/dynamics_type.dart';
-import 'package:PiliPure/models/dynamics/result.dart';
-import 'package:PiliPure/pages/dynamics/controller.dart';
-import 'package:PiliPure/pages/dynamics/widgets/dynamic_panel.dart';
-import 'package:PiliPure/pages/dynamics_tab/controller.dart';
-import 'package:PiliPure/utils/extension/get_ext.dart';
-import 'package:PiliPure/utils/global_data.dart';
-import 'package:PiliPure/utils/waterfall.dart';
+import 'package:bilite/common/widgets/flutter/refresh_indicator.dart';
+import 'package:bilite/common/widgets/loading_widget/http_error.dart';
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/models/common/dynamic/dynamics_type.dart';
+import 'package:bilite/models/dynamics/result.dart';
+import 'package:bilite/pages/dynamics/controller.dart';
+import 'package:bilite/pages/dynamics/widgets/dynamic_panel.dart';
+import 'package:bilite/pages/dynamics_tab/controller.dart';
+import 'package:bilite/utils/extension/get_ext.dart';
+import 'package:bilite/utils/global_data.dart';
+import 'package:bilite/utils/waterfall.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:get/get.dart';
 import 'package:material_ui/material_ui.dart';

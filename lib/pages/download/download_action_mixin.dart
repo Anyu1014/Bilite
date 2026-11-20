@@ -1,11 +1,11 @@
-import 'package:PiliPure/models_new/download/bili_download_entry_info.dart';
-import 'package:PiliPure/models_new/download/download_info.dart';
-import 'package:PiliPure/pages/common/multi_select/base.dart';
-import 'package:PiliPure/services/download/download_service.dart';
-import 'package:PiliPure/utils/extension/iterable_ext.dart';
-import 'package:PiliPure/utils/page_utils.dart';
+import 'package:bilite/models_new/download/bili_download_entry_info.dart';
+import 'package:bilite/models_new/download/download_info.dart';
+import 'package:bilite/pages/common/multi_select/base.dart';
+import 'package:bilite/services/download/download_service.dart';
+import 'package:bilite/utils/extension/iterable_ext.dart';
+import 'package:bilite/utils/page_utils.dart';
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
-import 'package:PiliPure/common/widgets/glass.dart';
+import 'package:bilite/common/widgets/glass.dart';
 import 'package:material_ui/material_ui.dart';
 
 const kUpdateConcurrency = 10;

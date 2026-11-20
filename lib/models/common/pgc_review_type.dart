@@ -1,4 +1,4 @@
-import 'package:PiliPure/http/api.dart';
+import 'package:bilite/http/api.dart';
 
 enum PgcReviewType {
   long(label: '长评', api: Api.pgcReviewL),

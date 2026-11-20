@@ -1,8 +1,8 @@
-import 'package:PiliPure/common/widgets/pendant_avatar.dart';
-import 'package:PiliPure/grpc/bilibili/app/dynamic/v2.pb.dart'
+import 'package:bilite/common/widgets/pendant_avatar.dart';
+import 'package:bilite/grpc/bilibili/app/dynamic/v2.pb.dart'
     show ModuleAuthor;
-import 'package:PiliPure/utils/bili_utils.dart';
-import 'package:PiliPure/utils/extension/theme_ext.dart';
+import 'package:bilite/utils/bili_utils.dart';
+import 'package:bilite/utils/extension/theme_ext.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_navigation/src/extension_navigation.dart';
 import 'package:material_ui/material_ui.dart';

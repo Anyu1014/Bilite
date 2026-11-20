@@ -1,10 +1,10 @@
-import 'package:PiliPure/common/widgets/loading_widget/loading_widget.dart';
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/models_new/fav/fav_folder/list.dart';
-import 'package:PiliPure/pages/common/common_intro_controller.dart';
-import 'package:PiliPure/utils/bili_utils.dart';
-import 'package:PiliPure/utils/feed_back.dart';
-import 'package:PiliPure/utils/num_utils.dart';
+import 'package:bilite/common/widgets/loading_widget/loading_widget.dart';
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/models_new/fav/fav_folder/list.dart';
+import 'package:bilite/pages/common/common_intro_controller.dart';
+import 'package:bilite/utils/bili_utils.dart';
+import 'package:bilite/utils/feed_back.dart';
+import 'package:bilite/utils/num_utils.dart';
 import 'package:get/get.dart';
 import 'package:material_ui/material_ui.dart';
 

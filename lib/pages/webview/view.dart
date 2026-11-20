@@ -1,21 +1,21 @@
 import 'dart:async';
 import 'dart:io' show Platform;
 
-import 'package:PiliPure/common/widgets/route_aware_mixin.dart'
+import 'package:bilite/common/widgets/route_aware_mixin.dart'
     show routeObserver;
-import 'package:PiliPure/common/widgets/selection_text.dart';
-import 'package:PiliPure/common/widgets/glass.dart';
-import 'package:PiliPure/http/browser_ua.dart';
-import 'package:PiliPure/main.dart' show webViewEnvironment;
-import 'package:PiliPure/models/common/webview_menu_type.dart';
-import 'package:PiliPure/plugin/linux_webview.dart';
-import 'package:PiliPure/utils/app_scheme.dart';
-import 'package:PiliPure/utils/extension/num_ext.dart';
-import 'package:PiliPure/utils/extension/string_ext.dart';
-import 'package:PiliPure/utils/linux_cookie_manager.dart';
-import 'package:PiliPure/utils/login_utils.dart';
-import 'package:PiliPure/utils/page_utils.dart';
-import 'package:PiliPure/utils/utils.dart';
+import 'package:bilite/common/widgets/selection_text.dart';
+import 'package:bilite/common/widgets/glass.dart';
+import 'package:bilite/http/browser_ua.dart';
+import 'package:bilite/main.dart' show webViewEnvironment;
+import 'package:bilite/models/common/webview_menu_type.dart';
+import 'package:bilite/plugin/linux_webview.dart';
+import 'package:bilite/utils/app_scheme.dart';
+import 'package:bilite/utils/extension/num_ext.dart';
+import 'package:bilite/utils/extension/string_ext.dart';
+import 'package:bilite/utils/linux_cookie_manager.dart';
+import 'package:bilite/utils/login_utils.dart';
+import 'package:bilite/utils/page_utils.dart';
+import 'package:bilite/utils/utils.dart';
 import 'package:flutter/foundation.dart' show kDebugMode;
 import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';

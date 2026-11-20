@@ -18,7 +18,7 @@ if (!isBuiltInKotlinEnabled) {
 }
 
 android {
-    namespace = "com.pilipure.app"
+    namespace = "com.bilite.app"
     compileSdk = 37
     ndkVersion = flutter.ndkVersion
 
@@ -28,7 +28,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.pilipure.app"
+        applicationId = "com.bilite.app"
         minSdk = flutter.minSdkVersion
         targetSdk = 37
         versionCode = flutter.versionCode
@@ -70,7 +70,7 @@ android {
                 resValue(
                     type = "string",
                     name = "app_name",
-                    value = "PiliPure dev",
+                    value = "Bilite dev",
                 )
             }
             proguardFiles(

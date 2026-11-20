@@ -1,4 +1,4 @@
-import 'package:PiliPure/models/model_avatar.dart' show Vip;
+import 'package:bilite/models/model_avatar.dart' show Vip;
 
 class Author {
   String? avatar;

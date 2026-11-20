@@ -1,8 +1,8 @@
-import 'package:PiliPure/common/widgets/badge.dart';
-import 'package:PiliPure/common/widgets/image/network_img_layer.dart';
-import 'package:PiliPure/models/common/badge_type.dart';
-import 'package:PiliPure/models_new/space/space_shop/item.dart';
-import 'package:PiliPure/utils/extension/theme_ext.dart';
+import 'package:bilite/common/widgets/badge.dart';
+import 'package:bilite/common/widgets/image/network_img_layer.dart';
+import 'package:bilite/models/common/badge_type.dart';
+import 'package:bilite/models_new/space/space_shop/item.dart';
+import 'package:bilite/utils/extension/theme_ext.dart';
 import 'package:get/get.dart';
 import 'package:material_ui/material_ui.dart';
 

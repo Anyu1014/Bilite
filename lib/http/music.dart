@@ -1,10 +1,10 @@
-import 'package:PiliPure/http/api.dart';
-import 'package:PiliPure/http/init.dart';
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/models_new/music/bgm_detail.dart';
-import 'package:PiliPure/models_new/music/bgm_recommend_list.dart';
-import 'package:PiliPure/utils/accounts.dart';
-import 'package:PiliPure/utils/wbi_sign.dart';
+import 'package:bilite/http/api.dart';
+import 'package:bilite/http/init.dart';
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/models_new/music/bgm_detail.dart';
+import 'package:bilite/models_new/music/bgm_recommend_list.dart';
+import 'package:bilite/utils/accounts.dart';
+import 'package:bilite/utils/wbi_sign.dart';
 import 'package:dio/dio.dart';
 
 abstract final class MusicHttp {

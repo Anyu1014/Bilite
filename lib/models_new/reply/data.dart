@@ -1,9 +1,9 @@
-import 'package:PiliPure/models_new/reply/control.dart';
-import 'package:PiliPure/models_new/reply/cursor.dart';
-import 'package:PiliPure/models_new/reply/reply.dart';
-import 'package:PiliPure/models_new/reply/top.dart';
-import 'package:PiliPure/models_new/reply/up_selection.dart';
-import 'package:PiliPure/models_new/reply/upper.dart';
+import 'package:bilite/models_new/reply/control.dart';
+import 'package:bilite/models_new/reply/cursor.dart';
+import 'package:bilite/models_new/reply/reply.dart';
+import 'package:bilite/models_new/reply/top.dart';
+import 'package:bilite/models_new/reply/up_selection.dart';
+import 'package:bilite/models_new/reply/upper.dart';
 
 class ReplyData {
   ReplyCursor? cursor;

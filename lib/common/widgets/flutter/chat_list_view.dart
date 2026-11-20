@@ -4,7 +4,7 @@
 
 // ignore_for_file: prefer_initializing_formals
 
-import 'package:PiliPure/common/widgets/sliver/sliver_constrained_cross_axis.dart';
+import 'package:bilite/common/widgets/sliver/sliver_constrained_cross_axis.dart';
 import 'package:flutter/foundation.dart' show precisionErrorTolerance;
 import 'package:flutter/rendering.dart'
     show

@@ -1,14 +1,14 @@
-import 'package:PiliPure/common/style.dart' as common_style;
-import 'package:PiliPure/models/dynamics/eva3_comment.dart';
-import 'package:PiliPure/models/dynamics/eva3_opus.dart';
-import 'package:PiliPure/models/dynamics/eva3_toy.dart';
-import 'package:PiliPure/models/dynamics/eva3_user.dart';
-import 'package:PiliPure/models/dynamics/eva3_video.dart';
-import 'package:PiliPure/models/dynamics/eva3_vote.dart';
-import 'package:PiliPure/models/dynamics/result.dart';
-import 'package:PiliPure/models/dynamics/vote_model.dart';
-import 'package:PiliPure/utils/color_utils.dart';
-import 'package:PiliPure/utils/parse_int.dart';
+import 'package:bilite/common/style.dart' as common_style;
+import 'package:bilite/models/dynamics/eva3_comment.dart';
+import 'package:bilite/models/dynamics/eva3_opus.dart';
+import 'package:bilite/models/dynamics/eva3_toy.dart';
+import 'package:bilite/models/dynamics/eva3_user.dart';
+import 'package:bilite/models/dynamics/eva3_video.dart';
+import 'package:bilite/models/dynamics/eva3_vote.dart';
+import 'package:bilite/models/dynamics/result.dart';
+import 'package:bilite/models/dynamics/vote_model.dart';
+import 'package:bilite/utils/color_utils.dart';
+import 'package:bilite/utils/parse_int.dart';
 
 class ArticleContentModel {
   int? align;

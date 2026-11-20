@@ -1,10 +1,10 @@
-import 'package:PiliPure/common/widgets/button/icon_button.dart';
-import 'package:PiliPure/common/widgets/glass.dart';
-import 'package:PiliPure/common/widgets/radio_widget.dart';
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/utils/extension/string_ext.dart';
-import 'package:PiliPure/utils/storage_pref.dart';
-import 'package:PiliPure/utils/utils.dart';
+import 'package:bilite/common/widgets/button/icon_button.dart';
+import 'package:bilite/common/widgets/glass.dart';
+import 'package:bilite/common/widgets/radio_widget.dart';
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/utils/extension/string_ext.dart';
+import 'package:bilite/utils/storage_pref.dart';
+import 'package:bilite/utils/utils.dart';
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 import 'package:get/get.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';

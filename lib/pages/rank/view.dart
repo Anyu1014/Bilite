@@ -1,7 +1,8 @@
-import 'package:PiliPure/common/widgets/flutter/vertical_tabs.dart';
-import 'package:PiliPure/models/common/rank_type.dart';
-import 'package:PiliPure/pages/rank/controller.dart';
-import 'package:PiliPure/pages/rank/zone/view.dart';
+import 'package:bilite/common/widgets/flutter/vertical_tabs.dart';
+import 'package:bilite/common/widgets/home_header_inset.dart';
+import 'package:bilite/models/common/rank_type.dart';
+import 'package:bilite/pages/rank/controller.dart';
+import 'package:bilite/pages/rank/zone/view.dart';
 import 'package:get/get.dart';
 import 'package:material_ui/material_ui.dart';
 
@@ -25,7 +26,12 @@ class _RankPageState extends State<RankPage>
     final theme = Theme.of(context);
     return Row(
       children: [
-        _buildTab(theme),
+        // 左侧分类栏不能越过顶栏：按顶栏当前高度整体下移，
+        // 顶栏收起时也跟着上移，和右侧内容始终对齐
+        Padding(
+          padding: .only(top: HomeHeaderInset.of(context)),
+          child: _buildTab(theme),
+        ),
         Expanded(
           child: TabBarView(
             physics: const NeverScrollableScrollPhysics(),

@@ -1,5 +1,5 @@
-import 'package:PiliPure/models_new/sub/sub/list.dart';
-import 'package:PiliPure/models_new/sub/sub_detail/media.dart';
+import 'package:bilite/models_new/sub/sub/list.dart';
+import 'package:bilite/models_new/sub/sub_detail/media.dart';
 
 class SubDetailData {
   SubItemModel? info;

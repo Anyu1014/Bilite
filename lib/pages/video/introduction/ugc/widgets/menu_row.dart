@@ -1,4 +1,4 @@
-import 'package:PiliPure/utils/feed_back.dart';
+import 'package:bilite/utils/feed_back.dart';
 import 'package:material_ui/material_ui.dart';
 
 class ActionRowLineItem extends StatelessWidget {

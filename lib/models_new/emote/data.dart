@@ -1,4 +1,4 @@
-import 'package:PiliPure/models_new/emote/package.dart';
+import 'package:bilite/models_new/emote/package.dart';
 
 class EmoteModelData {
   List<Package>? packages;

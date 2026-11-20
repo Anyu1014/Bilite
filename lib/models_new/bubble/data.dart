@@ -1,7 +1,7 @@
-import 'package:PiliPure/models_new/bubble/base_info.dart';
-import 'package:PiliPure/models_new/bubble/category.dart';
-import 'package:PiliPure/models_new/bubble/content.dart';
-import 'package:PiliPure/models_new/bubble/sort_info.dart';
+import 'package:bilite/models_new/bubble/base_info.dart';
+import 'package:bilite/models_new/bubble/category.dart';
+import 'package:bilite/models_new/bubble/content.dart';
+import 'package:bilite/models_new/bubble/sort_info.dart';
 
 class BubbleData {
   BaseInfo? baseInfo;

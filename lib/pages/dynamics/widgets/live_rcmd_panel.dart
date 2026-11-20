@@ -1,10 +1,10 @@
-import 'package:PiliPure/common/assets.dart';
-import 'package:PiliPure/common/style.dart';
-import 'package:PiliPure/common/widgets/badge.dart';
-import 'package:PiliPure/common/widgets/image/network_img_layer.dart';
-import 'package:PiliPure/models/common/badge_type.dart';
-import 'package:PiliPure/models/dynamics/result.dart';
-import 'package:PiliPure/utils/extension/num_ext.dart';
+import 'package:bilite/common/assets.dart';
+import 'package:bilite/common/style.dart';
+import 'package:bilite/common/widgets/badge.dart';
+import 'package:bilite/common/widgets/image/network_img_layer.dart';
+import 'package:bilite/models/common/badge_type.dart';
+import 'package:bilite/models/dynamics/result.dart';
+import 'package:bilite/utils/extension/num_ext.dart';
 import 'package:material_ui/material_ui.dart';
 
 Widget liveRcmdPanel(

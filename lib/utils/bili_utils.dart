@@ -1,4 +1,4 @@
-import 'package:PiliPure/common/widgets/svg/level_icon.dart';
+import 'package:bilite/common/widgets/svg/level_icon.dart';
 import 'package:material_ui/material_ui.dart';
 
 abstract final class BiliUtils {

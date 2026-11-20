@@ -1,6 +1,6 @@
-import 'package:PiliPure/models_new/fav/fav_article/author.dart';
-import 'package:PiliPure/models_new/fav/fav_article/cover.dart';
-import 'package:PiliPure/models_new/fav/fav_article/stat.dart';
+import 'package:bilite/models_new/fav/fav_article/author.dart';
+import 'package:bilite/models_new/fav/fav_article/cover.dart';
+import 'package:bilite/models_new/fav/fav_article/stat.dart';
 
 class FavArticleItemModel {
   String? opusId;

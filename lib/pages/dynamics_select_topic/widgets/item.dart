@@ -1,6 +1,6 @@
-import 'package:PiliPure/common/widgets/custom_icon.dart';
-import 'package:PiliPure/models_new/dynamic/dyn_topic_top/topic_item.dart';
-import 'package:PiliPure/utils/num_utils.dart';
+import 'package:bilite/common/widgets/custom_icon.dart';
+import 'package:bilite/models_new/dynamic/dyn_topic_top/topic_item.dart';
+import 'package:bilite/utils/num_utils.dart';
 import 'package:material_ui/material_ui.dart';
 
 class DynTopicItem extends StatelessWidget {

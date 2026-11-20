@@ -1,23 +1,23 @@
-import 'package:PiliPure/common/widgets/badge.dart';
-import 'package:PiliPure/common/widgets/flutter/live_list_view.dart';
-import 'package:PiliPure/common/widgets/flutter/popup_menu.dart';
-import 'package:PiliPure/common/widgets/gesture/tap_gesture_recognizer.dart';
-import 'package:PiliPure/common/widgets/image/network_img_layer.dart';
-import 'package:PiliPure/common/widgets/scroll_physics.dart'
+import 'package:bilite/common/widgets/badge.dart';
+import 'package:bilite/common/widgets/flutter/live_list_view.dart';
+import 'package:bilite/common/widgets/flutter/popup_menu.dart';
+import 'package:bilite/common/widgets/gesture/tap_gesture_recognizer.dart';
+import 'package:bilite/common/widgets/image/network_img_layer.dart';
+import 'package:bilite/common/widgets/scroll_physics.dart'
     show platformClampingPhysics;
-import 'package:PiliPure/http/live.dart';
-import 'package:PiliPure/models_new/live/live_danmaku/danmaku_msg.dart';
-import 'package:PiliPure/models_new/live/live_superchat/item.dart';
-import 'package:PiliPure/pages/live_room/controller.dart';
-import 'package:PiliPure/pages/live_room/superchat/superchat_card.dart';
-import 'package:PiliPure/pages/member/widget/medal_widget.dart';
-import 'package:PiliPure/pages/video/widgets/header_control.dart';
-import 'package:PiliPure/utils/extension/theme_ext.dart';
-import 'package:PiliPure/utils/utils.dart';
+import 'package:bilite/http/live.dart';
+import 'package:bilite/models_new/live/live_danmaku/danmaku_msg.dart';
+import 'package:bilite/models_new/live/live_superchat/item.dart';
+import 'package:bilite/pages/live_room/controller.dart';
+import 'package:bilite/pages/live_room/superchat/superchat_card.dart';
+import 'package:bilite/pages/member/widget/medal_widget.dart';
+import 'package:bilite/pages/video/widgets/header_control.dart';
+import 'package:bilite/utils/extension/theme_ext.dart';
+import 'package:bilite/utils/utils.dart';
 import 'package:flutter/foundation.dart' show kDebugMode;
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 import 'package:get/get.dart';
-import 'package:PiliPure/common/widgets/glass.dart';
+import 'package:bilite/common/widgets/glass.dart';
 import 'package:material_ui/material_ui.dart';
 
 class LiveRoomChatPanel extends StatelessWidget {

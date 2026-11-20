@@ -1,5 +1,5 @@
-import 'package:PiliPure/utils/extension/num_ext.dart';
-import 'package:PiliPure/common/widgets/glass.dart';
+import 'package:bilite/utils/extension/num_ext.dart';
+import 'package:bilite/common/widgets/glass.dart';
 import 'package:material_ui/material_ui.dart';
 
 class SliderDialog extends StatefulWidget {

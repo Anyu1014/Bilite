@@ -1,4 +1,4 @@
-import 'package:PiliPure/pages/common/page_order/page_order_mixin.dart';
+import 'package:bilite/pages/common/page_order/page_order_mixin.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:material_ui/material_ui.dart';
 

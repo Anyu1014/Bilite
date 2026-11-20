@@ -1,7 +1,8 @@
 import 'dart:ui' show ImageFilter;
 
-import 'package:PiliPure/models/common/enum_with_label.dart';
-import 'package:PiliPure/utils/storage_pref.dart';
+import 'package:bilite/models/common/enum_with_label.dart';
+import 'package:bilite/utils/page_utils.dart';
+import 'package:bilite/utils/storage_pref.dart';
 import 'package:material_ui/material_ui.dart';
 
 /// 全局磨砂玻璃样式（设置里「磨砂玻璃样式」）
@@ -198,6 +199,7 @@ class GlassSurface extends StatelessWidget {
 
   final Widget child;
   final double borderRadius;
+
   /// 为空时按当前 GlassStyle 取默认值
   final double? blurSigma;
   final EdgeInsets padding;
@@ -254,14 +256,15 @@ class GlassSurface extends StatelessWidget {
         ),
         // 环画在 ClipRRect 外层：放在里面会被圆角裁掉转角处的圆弧，只剩两段直线
         child: CustomPaint(
-          foregroundPainter:
-              border && !off ? LiquidEdgePainter(borderRadius) : null,
+          foregroundPainter: border && !off
+              ? LiquidEdgePainter(borderRadius)
+              : null,
           child: ClipRRect(
-          borderRadius: radius,
-          clipBehavior: clipBehavior,
-          child: _MaybeBlurWidget(
-            sigma: sigma,
-            child: DecoratedBox(
+            borderRadius: radius,
+            clipBehavior: clipBehavior,
+            child: _MaybeBlurWidget(
+              sigma: sigma,
+              child: DecoratedBox(
                 decoration: BoxDecoration(
                   color: surfaceColor,
                   borderRadius: radius,
@@ -298,6 +301,9 @@ Future<T?> showGlassMenu<T>({
   required RelativeRect position,
   required List<PopupMenuEntry<T>> items,
   T? initialValue,
+
+  /// 深色玻璃面板：播放器这类深色界面的菜单，让白色文字保持可读
+  bool dark = false,
   // 与 showMenu 签名兼容，这里不参与布局
   bool requestFocus = true,
 }) {
@@ -306,6 +312,7 @@ Future<T?> showGlassMenu<T>({
       position: position,
       items: items,
       initialValue: initialValue,
+      dark: dark,
     ),
   );
 }
@@ -315,11 +322,13 @@ class _GlassMenuRoute<T> extends PopupRoute<T> {
     required this.position,
     required this.items,
     this.initialValue,
+    this.dark = false,
   });
 
   final RelativeRect position;
   final List<PopupMenuEntry<T>> items;
   final T? initialValue;
+  final bool dark;
 
   @override
   /// 与 Dialog 的 barrier 同档，列表出现时背景同样变灰
@@ -341,16 +350,25 @@ class _GlassMenuRoute<T> extends PopupRoute<T> {
     Animation<double> secondaryAnimation,
   ) {
     final media = MediaQuery.of(context);
-    final overlay = Overlay.of(context).context.findRenderObject()! as RenderBox;
-    final maxW = overlay.size.width - position.left - 8;
-    final maxH = overlay.size.height - position.top - 8;
+    final overlay =
+        Overlay.of(context).context.findRenderObject()! as RenderBox;
+    // 靠近右边缘的按钮（如播放器右上角的「更多」）不能把菜单顶出屏幕
+    const minMenuWidth = 160.0;
+    final left = position.left.clamp(
+      8.0,
+      (overlay.size.width - minMenuWidth - 8).clamp(8.0, double.infinity),
+    );
+    final top = position.top.clamp(8.0, overlay.size.height - 120);
+    final maxW = overlay.size.width - left - 8;
+    final maxH = overlay.size.height - top - 8;
     return _GlassMenu<T>(
       items: items,
       initialValue: initialValue,
-      position: position,
+      position: RelativeRect.fromLTRB(left, top, 0, 0),
       maxWidth: maxW,
       maxHeight: maxH,
       textScaler: media.textScaler,
+      palette: dark ? GlassPalette.dark : null,
     );
   }
 
@@ -384,6 +402,7 @@ class _GlassMenu<T> extends StatelessWidget {
     required this.maxWidth,
     required this.maxHeight,
     required this.textScaler,
+    this.palette,
   });
 
   final List<PopupMenuEntry<T>> items;
@@ -392,11 +411,26 @@ class _GlassMenu<T> extends StatelessWidget {
   final double maxWidth;
   final double maxHeight;
   final TextScaler textScaler;
+  final GlassPalette? palette;
 
   @override
   Widget build(BuildContext context) {
-    final p = GlassPalette.of(context);
+    final p = palette ?? GlassPalette.of(context);
     final theme = Theme.of(context);
+    // 菜单面板的明暗决定文字色：浅色玻璃用黑字，深色玻璃（播放器/深色主题）用白字。
+    // 放在这里而不是每个 item 上，避免各调用点漏传、口径打架。
+    final itemTextStyle = theme.textTheme.labelSmall!.copyWith(
+      fontSize: 13,
+      height: 1,
+      // 高透磨砂的菜单更暗，用白字；关闭 / 原生磨砂用黑字。
+      // 深色主题或显式深色面板一律白字。每次打开菜单重新求值。
+      color:
+          palette != null ||
+              theme.brightness == Brightness.dark ||
+              GlassPalette.style == GlassStyle.clear
+          ? Colors.white
+          : Colors.black,
+    );
     final entries = <Widget>[];
     for (final item in items) {
       if (item is PopupMenuDivider) {
@@ -414,10 +448,7 @@ class _GlassMenu<T> extends StatelessWidget {
             item: item,
             selected: selected,
             palette: p,
-            textStyle: theme.textTheme.labelSmall!.copyWith(
-              fontSize: 13,
-              height: 1,
-            ),
+            textStyle: itemTextStyle,
           ),
         );
       }
@@ -435,7 +466,7 @@ class _GlassMenu<T> extends StatelessWidget {
           top: position.top,
           child: GlassSurface(
             borderRadius: 14,
-            palette: null,
+            palette: palette,
             surfaceColor: null,
             shadowColor: GlassPalette.anyuShadow,
             padding: const EdgeInsets.all(5),
@@ -586,8 +617,8 @@ class GlassAlertDialog extends StatelessWidget {
               style:
                   titleTextStyle ??
                   (m3
-                          ? theme.textTheme.headlineSmall!
-                          : theme.textTheme.titleMedium!),
+                      ? theme.textTheme.headlineSmall!
+                      : theme.textTheme.titleMedium!),
               child: title!,
             ),
           );
@@ -595,9 +626,8 @@ class GlassAlertDialog extends StatelessWidget {
     Widget? contentWidget = content;
     if (contentWidget != null) {
       contentWidget = Padding(
-        padding:
-            (contentPadding ?? const EdgeInsets.fromLTRB(24, 20, 24, 24))
-                .resolve(textDirection)!,
+        padding: (contentPadding ?? const EdgeInsets.fromLTRB(24, 20, 24, 24))
+            .resolve(textDirection)!,
         child: DefaultTextStyle(
           style: contentTextStyle ?? theme.textTheme.bodyMedium!,
           child: scrollable
@@ -614,11 +644,11 @@ class GlassAlertDialog extends StatelessWidget {
                 (actionsPadding ?? const EdgeInsets.fromLTRB(24, 8, 24, 24))
                     .resolve(textDirection)!,
             child: OverflowBar(
-                alignment: actionsAlignment ?? MainAxisAlignment.end,
-                spacing: 8,
-                overflowSpacing: 8,
-                children: actions!,
-              ),
+              alignment: actionsAlignment ?? MainAxisAlignment.end,
+              spacing: 8,
+              overflowSpacing: 8,
+              children: actions!,
+            ),
           );
 
     return Dialog(
@@ -627,7 +657,8 @@ class GlassAlertDialog extends StatelessWidget {
       shadowColor: Colors.transparent,
       surfaceTintColor: Colors.transparent,
       insetPadding:
-          insetPadding ?? const EdgeInsets.symmetric(horizontal: 40, vertical: 24),
+          insetPadding ??
+          const EdgeInsets.symmetric(horizontal: 40, vertical: 24),
       // Dialog 默认 M3 圆角是 28：Clip.hardEdge 会把半径 16 的环在四个转角处剪掉
       // （只切到角落，直线段还在，所以看起来像「白边被截断」）。形状对齐 + 不外裁。
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
@@ -647,22 +678,21 @@ class GlassAlertDialog extends StatelessWidget {
           // 宽度贴合内容但有下限，避免输入框等宽松子节点把内容挤在左边
           constraints: const BoxConstraints(minWidth: 320, maxWidth: 420),
           child: IntrinsicWidth(
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: [
-                  if (titleWidget != null) titleWidget,
-                  if (contentWidget != null) contentWidget,
-                  if (actionsWidget != null) actionsWidget,
-                ],
-              ),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                if (titleWidget != null) titleWidget,
+                if (contentWidget != null) contentWidget,
+                if (actionsWidget != null) actionsWidget,
+              ],
             ),
           ),
         ),
+      ),
     );
   }
 }
-
 
 /// anyu `.liquid-glass::before` 的渐变描边：
 /// `padding:1.4px` + `linear-gradient(180deg, .45 → .15 → 0 → 0 → .15 → .45)`
@@ -709,4 +739,78 @@ class LiquidEdgePainter extends CustomPainter {
   @override
   bool shouldRepaint(covariant LiquidEdgePainter oldDelegate) =>
       oldDelegate.radius != radius;
+}
+
+/// 磨砂玻璃版 [PopupMenuButton]：接口保持兼容（color / requestFocus 忽略），
+/// 菜单本体走 [showGlassMenu]。
+class GlassPopupMenuButton<T> extends StatelessWidget {
+  const GlassPopupMenuButton({
+    super.key,
+    this.initialValue,
+    required this.itemBuilder,
+    this.onSelected,
+    this.tooltip,
+    this.child,
+    this.icon,
+    this.iconSize,
+    this.padding,
+    this.enabled = true,
+    this.dark = false,
+    // 兼容 PopupMenuButton 的参数，磨砂玻璃菜单不使用
+    this.color,
+    this.requestFocus = false,
+  });
+
+  final T? initialValue;
+  final PopupMenuItemBuilder<T> itemBuilder;
+  final PopupMenuItemSelected<T>? onSelected;
+  final String? tooltip;
+  final Widget? child;
+  final Widget? icon;
+  final double? iconSize;
+  final EdgeInsetsGeometry? padding;
+  final bool enabled;
+
+  /// 深色玻璃面板（播放器使用）
+  final bool dark;
+  final Color? color;
+  final bool requestFocus;
+
+  @override
+  Widget build(BuildContext context) {
+    final content =
+        child ??
+        IconTheme.merge(
+          data: IconThemeData(size: iconSize),
+          child: icon ?? const SizedBox.shrink(),
+        );
+    final button = Builder(
+      builder: (ctx) => GestureDetector(
+        behavior: HitTestBehavior.opaque,
+        onTap: enabled
+            ? () async {
+                final box = ctx.findRenderObject() as RenderBox?;
+                final anchor = box == null
+                    ? Offset.zero
+                    : box.localToGlobal(box.size.bottomLeft(Offset.zero));
+                final value = await showGlassMenu<T>(
+                  context: ctx,
+                  position: PageUtils.menuPosition(anchor),
+                  initialValue: initialValue,
+                  items: itemBuilder(ctx),
+                  dark: dark,
+                );
+                if (value != null) {
+                  onSelected?.call(value);
+                }
+              }
+            : null,
+        child: Padding(
+          padding: padding ?? EdgeInsets.zero,
+          child: content,
+        ),
+      ),
+    );
+    return tooltip == null ? button : Tooltip(message: tooltip!, child: button);
+  }
 }

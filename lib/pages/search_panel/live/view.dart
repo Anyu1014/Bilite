@@ -1,11 +1,11 @@
-import 'package:PiliPure/common/skeleton/video_card_v.dart';
-import 'package:PiliPure/common/sliver_single_child_delegate.dart';
-import 'package:PiliPure/common/style.dart';
-import 'package:PiliPure/models/search/result.dart';
-import 'package:PiliPure/pages/search_panel/controller.dart';
-import 'package:PiliPure/pages/search_panel/live/widgets/item.dart';
-import 'package:PiliPure/pages/search_panel/view.dart';
-import 'package:PiliPure/utils/grid.dart';
+import 'package:bilite/common/skeleton/video_card_v.dart';
+import 'package:bilite/common/sliver_single_child_delegate.dart';
+import 'package:bilite/common/style.dart';
+import 'package:bilite/models/search/result.dart';
+import 'package:bilite/pages/search_panel/controller.dart';
+import 'package:bilite/pages/search_panel/live/widgets/item.dart';
+import 'package:bilite/pages/search_panel/view.dart';
+import 'package:bilite/utils/grid.dart';
 import 'package:get/get.dart';
 import 'package:material_ui/material_ui.dart';
 

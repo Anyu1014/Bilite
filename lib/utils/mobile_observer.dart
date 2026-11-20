@@ -1,4 +1,4 @@
-import 'package:PiliPure/utils/platform_utils.dart';
+import 'package:bilite/utils/platform_utils.dart';
 import 'package:flutter/widgets.dart'
     show WidgetsBinding, WidgetsBindingObserver;
 

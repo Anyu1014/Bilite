@@ -1,15 +1,15 @@
-import 'package:PiliPure/common/widgets/hit_test.dart';
-import 'package:PiliPure/common/widgets/loading_widget/loading_widget.dart';
-import 'package:PiliPure/models/common/member/contribute_type.dart';
-import 'package:PiliPure/models_new/space/space/tab2.dart';
-import 'package:PiliPure/pages/member_article/view.dart';
-import 'package:PiliPure/pages/member_audio/view.dart';
-import 'package:PiliPure/pages/member_comic/view.dart';
-import 'package:PiliPure/pages/member_contribute/controller.dart';
-import 'package:PiliPure/pages/member_opus/view.dart';
-import 'package:PiliPure/pages/member_season_series/view.dart';
-import 'package:PiliPure/pages/member_video/view.dart';
-import 'package:PiliPure/utils/extension/get_ext.dart';
+import 'package:bilite/common/widgets/hit_test.dart';
+import 'package:bilite/common/widgets/loading_widget/loading_widget.dart';
+import 'package:bilite/models/common/member/contribute_type.dart';
+import 'package:bilite/models_new/space/space/tab2.dart';
+import 'package:bilite/pages/member_article/view.dart';
+import 'package:bilite/pages/member_audio/view.dart';
+import 'package:bilite/pages/member_comic/view.dart';
+import 'package:bilite/pages/member_contribute/controller.dart';
+import 'package:bilite/pages/member_opus/view.dart';
+import 'package:bilite/pages/member_season_series/view.dart';
+import 'package:bilite/pages/member_video/view.dart';
+import 'package:bilite/utils/extension/get_ext.dart';
 import 'package:get/get.dart';
 import 'package:material_ui/material_ui.dart';
 

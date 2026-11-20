@@ -1,8 +1,8 @@
-import 'package:PiliPure/models/dynamics/result.dart';
-import 'package:PiliPure/pages/dynamics_repost/view.dart';
-import 'package:PiliPure/utils/num_utils.dart';
-import 'package:PiliPure/utils/page_utils.dart';
-import 'package:PiliPure/utils/request_utils.dart';
+import 'package:bilite/models/dynamics/result.dart';
+import 'package:bilite/pages/dynamics_repost/view.dart';
+import 'package:bilite/utils/num_utils.dart';
+import 'package:bilite/utils/page_utils.dart';
+import 'package:bilite/utils/request_utils.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:material_ui/material_ui.dart';
 

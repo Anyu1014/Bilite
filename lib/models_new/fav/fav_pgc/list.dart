@@ -1,5 +1,5 @@
-import 'package:PiliPure/models_new/fav/fav_pgc/new_ep.dart';
-import 'package:PiliPure/pages/common/multi_select/base.dart';
+import 'package:bilite/models_new/fav/fav_pgc/new_ep.dart';
+import 'package:bilite/pages/common/multi_select/base.dart';
 
 class FavPgcItemModel with MultiSelectData {
   int? seasonId;

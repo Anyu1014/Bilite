@@ -1,18 +1,18 @@
 import 'dart:io' show Platform;
 
-import 'package:PiliPure/common/widgets/emote_tooltip.dart';
-import 'package:PiliPure/common/widgets/gesture/tap_gesture_recognizer.dart';
-import 'package:PiliPure/common/widgets/image/network_img_layer.dart';
-import 'package:PiliPure/common/widgets/image_grid/image_grid_view.dart';
-import 'package:PiliPure/http/dynamics.dart';
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/http/search.dart';
-import 'package:PiliPure/models/common/image_preview_type.dart'
+import 'package:bilite/common/widgets/emote_tooltip.dart';
+import 'package:bilite/common/widgets/gesture/tap_gesture_recognizer.dart';
+import 'package:bilite/common/widgets/image/network_img_layer.dart';
+import 'package:bilite/common/widgets/image_grid/image_grid_view.dart';
+import 'package:bilite/http/dynamics.dart';
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/http/search.dart';
+import 'package:bilite/models/common/image_preview_type.dart'
     show SourceModel;
-import 'package:PiliPure/models/dynamics/result.dart';
-import 'package:PiliPure/pages/dynamics/widgets/vote.dart';
-import 'package:PiliPure/utils/page_utils.dart';
-import 'package:PiliPure/utils/parse_string.dart';
+import 'package:bilite/models/dynamics/result.dart';
+import 'package:bilite/pages/dynamics/widgets/vote.dart';
+import 'package:bilite/utils/page_utils.dart';
+import 'package:bilite/utils/parse_string.dart';
 import 'package:flutter/foundation.dart' show kDebugMode;
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 import 'package:get/get.dart';

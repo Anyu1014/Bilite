@@ -1,12 +1,12 @@
-import 'package:PiliPure/grpc/bilibili/main/community/reply/v1.pb.dart';
-import 'package:PiliPure/grpc/reply.dart';
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/models_new/dynamic/dyn_mention/item.dart';
-import 'package:PiliPure/pages/common/reply/fold/reply_fold_mixin.dart';
-import 'package:PiliPure/pages/common/reply/reply_controller.dart';
-import 'package:PiliPure/pages/common/reply/vote/reply_vote_mixin.dart';
-import 'package:PiliPure/utils/reply_scheme_helper.dart';
-import 'package:PiliPure/utils/storage_pref.dart';
+import 'package:bilite/grpc/bilibili/main/community/reply/v1.pb.dart';
+import 'package:bilite/grpc/reply.dart';
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/models_new/dynamic/dyn_mention/item.dart';
+import 'package:bilite/pages/common/reply/fold/reply_fold_mixin.dart';
+import 'package:bilite/pages/common/reply/reply_controller.dart';
+import 'package:bilite/pages/common/reply/vote/reply_vote_mixin.dart';
+import 'package:bilite/utils/reply_scheme_helper.dart';
+import 'package:bilite/utils/storage_pref.dart';
 import 'package:get/get.dart';
 
 mixin DynReplyLocateMixin on MainReplyLocateMixin {

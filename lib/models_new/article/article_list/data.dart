@@ -1,6 +1,6 @@
-import 'package:PiliPure/models/model_owner.dart';
-import 'package:PiliPure/models_new/article/article_list/article.dart';
-import 'package:PiliPure/models_new/article/article_list/list.dart';
+import 'package:bilite/models/model_owner.dart';
+import 'package:bilite/models_new/article/article_list/article.dart';
+import 'package:bilite/models_new/article/article_list/list.dart';
 
 class ArticleListData {
   ArticleListInfo? list;

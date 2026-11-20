@@ -1,4 +1,4 @@
-part of 'package:PiliPure/pages/dynamics/widgets/content_panel.dart';
+part of 'package:bilite/pages/dynamics/widgets/content_panel.dart';
 
 Widget dynTextMenuBuilder(
   SelectableRegionState state,

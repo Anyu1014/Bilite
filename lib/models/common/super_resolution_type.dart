@@ -1,4 +1,4 @@
-import 'package:PiliPure/models/common/enum_with_label.dart';
+import 'package:bilite/models/common/enum_with_label.dart';
 
 enum SuperResolutionType with EnumWithLabel {
   disable('禁用'),

@@ -1,6 +1,6 @@
-import 'package:PiliPure/models_new/msg/msg_like_detail/card.dart';
-import 'package:PiliPure/models_new/msg/msg_like_detail/item.dart';
-import 'package:PiliPure/models_new/msg/msg_like_detail/page.dart';
+import 'package:bilite/models_new/msg/msg_like_detail/card.dart';
+import 'package:bilite/models_new/msg/msg_like_detail/item.dart';
+import 'package:bilite/models_new/msg/msg_like_detail/page.dart';
 
 class MsgLikeDetailData {
   MsgLikeDetailPage? page;

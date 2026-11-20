@@ -1,13 +1,13 @@
-import 'package:PiliPure/http/dynamics.dart';
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/http/msg.dart';
-import 'package:PiliPure/models/common/dynamic/dynamics_type.dart';
-import 'package:PiliPure/models/dynamics/result.dart';
-import 'package:PiliPure/pages/common/common_list_controller.dart';
-import 'package:PiliPure/pages/dynamics/controller.dart';
-import 'package:PiliPure/pages/main/controller.dart';
-import 'package:PiliPure/services/account_service.dart';
-import 'package:PiliPure/utils/extension/scroll_controller_ext.dart';
+import 'package:bilite/http/dynamics.dart';
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/http/msg.dart';
+import 'package:bilite/models/common/dynamic/dynamics_type.dart';
+import 'package:bilite/models/dynamics/result.dart';
+import 'package:bilite/pages/common/common_list_controller.dart';
+import 'package:bilite/pages/dynamics/controller.dart';
+import 'package:bilite/pages/main/controller.dart';
+import 'package:bilite/services/account_service.dart';
+import 'package:bilite/utils/extension/scroll_controller_ext.dart';
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 import 'package:get/get.dart';
 

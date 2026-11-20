@@ -1,5 +1,5 @@
-import 'package:PiliPure/models_new/video/video_note_list/list.dart';
-import 'package:PiliPure/models_new/video/video_note_list/page.dart';
+import 'package:bilite/models_new/video/video_note_list/list.dart';
+import 'package:bilite/models_new/video/video_note_list/page.dart';
 
 class VideoNoteData {
   List<VideoNoteItemModel>? list;

@@ -1,5 +1,5 @@
-import 'package:PiliPure/models/model_video.dart';
-import 'package:PiliPure/models_new/video/video_detail/dimension.dart';
+import 'package:bilite/models/model_video.dart';
+import 'package:bilite/models_new/video/video_detail/dimension.dart';
 
 abstract class HorizontalVideoModel extends BaseVideoItemModel {
   bool? isPugv;

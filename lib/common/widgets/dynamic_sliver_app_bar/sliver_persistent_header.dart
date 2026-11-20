@@ -15,7 +15,7 @@
  * along with PiliPlus.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-import 'package:PiliPure/common/widgets/dynamic_sliver_app_bar/rendering/sliver_persistent_header.dart';
+import 'package:bilite/common/widgets/dynamic_sliver_app_bar/rendering/sliver_persistent_header.dart';
 import 'package:flutter/widgets.dart';
 
 /// ref [SliverPersistentHeader]

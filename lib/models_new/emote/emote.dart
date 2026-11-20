@@ -1,4 +1,4 @@
-import 'package:PiliPure/models_new/emote/meta.dart';
+import 'package:bilite/models_new/emote/meta.dart';
 
 class Emote {
   String? text;

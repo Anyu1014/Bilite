@@ -1,14 +1,14 @@
-import 'package:PiliPure/http/constants.dart';
-import 'package:PiliPure/models/horizontal_video_model.dart';
-import 'package:PiliPure/models/model_avatar.dart';
-import 'package:PiliPure/models/model_owner.dart';
-import 'package:PiliPure/models/model_video.dart';
-import 'package:PiliPure/models/search/search_esports.dart';
-import 'package:PiliPure/utils/duration_utils.dart';
-import 'package:PiliPure/utils/em.dart';
-import 'package:PiliPure/utils/extension/iterable_ext.dart';
-import 'package:PiliPure/utils/global_data.dart';
-import 'package:PiliPure/utils/parse_int.dart';
+import 'package:bilite/http/constants.dart';
+import 'package:bilite/models/horizontal_video_model.dart';
+import 'package:bilite/models/model_avatar.dart';
+import 'package:bilite/models/model_owner.dart';
+import 'package:bilite/models/model_video.dart';
+import 'package:bilite/models/search/search_esports.dart';
+import 'package:bilite/utils/duration_utils.dart';
+import 'package:bilite/utils/em.dart';
+import 'package:bilite/utils/extension/iterable_ext.dart';
+import 'package:bilite/utils/global_data.dart';
+import 'package:bilite/utils/parse_int.dart';
 import 'package:flutter/foundation.dart' show kDebugMode;
 
 abstract class SearchNumData<T> {

@@ -1,8 +1,8 @@
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/http/search.dart';
-import 'package:PiliPure/models_new/dynamic/dyn_topic_pub_search/data.dart';
-import 'package:PiliPure/models_new/dynamic/dyn_topic_top/topic_item.dart';
-import 'package:PiliPure/pages/common/common_list_controller.dart';
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/http/search.dart';
+import 'package:bilite/models_new/dynamic/dyn_topic_pub_search/data.dart';
+import 'package:bilite/models_new/dynamic/dyn_topic_top/topic_item.dart';
+import 'package:bilite/pages/common/common_list_controller.dart';
 import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 

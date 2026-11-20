@@ -1,28 +1,28 @@
-import 'package:PiliPure/common/style.dart';
-import 'package:PiliPure/common/widgets/button/more_btn.dart';
-import 'package:PiliPure/common/widgets/loading_widget/loading_widget.dart';
-import 'package:PiliPure/common/widgets/scroll_physics.dart'
+import 'package:bilite/common/style.dart';
+import 'package:bilite/common/widgets/button/more_btn.dart';
+import 'package:bilite/common/widgets/loading_widget/loading_widget.dart';
+import 'package:bilite/common/widgets/scroll_physics.dart'
     show platformAlwaysClampingPhysics;
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/models_new/space/space/data.dart';
-import 'package:PiliPure/models_new/space/space/tab2.dart';
-import 'package:PiliPure/models_new/space/space_archive/item.dart';
-import 'package:PiliPure/models_new/space/space_article/item.dart';
-import 'package:PiliPure/models_new/space/space_audio/item.dart';
-import 'package:PiliPure/models_new/space/space_fav/list.dart';
-import 'package:PiliPure/pages/member/controller.dart';
-import 'package:PiliPure/pages/member_article/widget/item.dart';
-import 'package:PiliPure/pages/member_audio/widgets/item.dart';
-import 'package:PiliPure/pages/member_coin_arc/view.dart';
-import 'package:PiliPure/pages/member_comic/widgets/item.dart';
-import 'package:PiliPure/pages/member_contribute/controller.dart';
-import 'package:PiliPure/pages/member_home/widgets/fav_item.dart';
-import 'package:PiliPure/pages/member_home/widgets/video_card_v_member_home.dart';
-import 'package:PiliPure/pages/member_like_arc/view.dart';
-import 'package:PiliPure/pages/member_opus/widgets/opus_grid.dart';
-import 'package:PiliPure/pages/member_pgc/widgets/pgc_card_v_member_pgc.dart';
-import 'package:PiliPure/utils/grid.dart';
-import 'package:PiliPure/utils/page_utils.dart';
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/models_new/space/space/data.dart';
+import 'package:bilite/models_new/space/space/tab2.dart';
+import 'package:bilite/models_new/space/space_archive/item.dart';
+import 'package:bilite/models_new/space/space_article/item.dart';
+import 'package:bilite/models_new/space/space_audio/item.dart';
+import 'package:bilite/models_new/space/space_fav/list.dart';
+import 'package:bilite/pages/member/controller.dart';
+import 'package:bilite/pages/member_article/widget/item.dart';
+import 'package:bilite/pages/member_audio/widgets/item.dart';
+import 'package:bilite/pages/member_coin_arc/view.dart';
+import 'package:bilite/pages/member_comic/widgets/item.dart';
+import 'package:bilite/pages/member_contribute/controller.dart';
+import 'package:bilite/pages/member_home/widgets/fav_item.dart';
+import 'package:bilite/pages/member_home/widgets/video_card_v_member_home.dart';
+import 'package:bilite/pages/member_like_arc/view.dart';
+import 'package:bilite/pages/member_opus/widgets/opus_grid.dart';
+import 'package:bilite/pages/member_pgc/widgets/pgc_card_v_member_pgc.dart';
+import 'package:bilite/utils/grid.dart';
+import 'package:bilite/utils/page_utils.dart';
 import 'package:flutter/rendering.dart'
     show BoxHitTestEntry, BoxHitTestResult, RenderObjectWithChildMixin;
 import 'package:flutter/services.dart'
@@ -34,7 +34,7 @@ import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 import 'package:get/get.dart';
 import 'package:material_ui/material_ui.dart';
 
-part 'package:PiliPure/pages/member_home/widgets/live_item.dart';
+part 'package:bilite/pages/member_home/widgets/live_item.dart';
 
 class MemberHome extends StatefulWidget {
   const MemberHome({super.key, this.heroTag});

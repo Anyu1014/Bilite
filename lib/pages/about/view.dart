@@ -1,23 +1,24 @@
 import 'dart:async';
 
-import 'package:PiliPure/common/widgets/glass.dart';
-import 'package:PiliPure/common/assets.dart';
-import 'package:PiliPure/common/constants.dart';
-import 'package:PiliPure/common/style.dart';
-import 'package:PiliPure/common/widgets/dialog/dialog.dart';
-import 'package:PiliPure/common/widgets/dialog/export_import.dart';
-import 'package:PiliPure/common/widgets/dialog/simple_dialog_option.dart';
-import 'package:PiliPure/common/widgets/flutter/list_tile.dart';
-import 'package:PiliPure/common/widgets/scaffold/simple_scaffold.dart';
-import 'package:PiliPure/utils/accounts.dart';
-import 'package:PiliPure/utils/app_scheme.dart';
-import 'package:PiliPure/utils/cache_manager.dart';
-import 'package:PiliPure/utils/date_utils.dart';
-import 'package:PiliPure/utils/device_utils.dart';
-import 'package:PiliPure/utils/extension/num_ext.dart';
-import 'package:PiliPure/utils/platform_utils.dart';
-import 'package:PiliPure/utils/storage.dart';
-import 'package:PiliPure/utils/utils.dart';
+import 'package:bilite/common/widgets/glass.dart';
+import 'package:bilite/common/assets.dart';
+import 'package:bilite/common/constants.dart';
+import 'package:bilite/common/style.dart';
+import 'package:bilite/common/widgets/dialog/dialog.dart';
+import 'package:bilite/common/widgets/dialog/export_import.dart';
+import 'package:bilite/common/widgets/dialog/simple_dialog_option.dart';
+import 'package:bilite/common/widgets/flutter/list_tile.dart';
+import 'package:bilite/common/widgets/scaffold/simple_scaffold.dart';
+import 'package:bilite/utils/accounts.dart';
+import 'package:bilite/utils/app_scheme.dart';
+import 'package:bilite/utils/cache_manager.dart';
+import 'package:bilite/utils/date_utils.dart';
+import 'package:bilite/utils/device_utils.dart';
+import 'package:bilite/utils/extension/num_ext.dart';
+import 'package:bilite/utils/page_utils.dart';
+import 'package:bilite/utils/platform_utils.dart';
+import 'package:bilite/utils/storage.dart';
+import 'package:bilite/utils/utils.dart';
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 import 'package:get/get.dart';
 import 'package:material_ui/material_ui.dart' hide ListTile;
@@ -32,7 +33,12 @@ class AboutPage extends StatefulWidget {
 }
 
 class _AboutPageState extends State<AboutPage> {
-  static const currentVersion = '1.0';
+  /// 关于页显示的版本号（手写；只改这一处文本）
+  static const currentVersion = '1.3';
+
+  /// 源码仓库地址（安装包在各版本分支的 dist/<版本>/ 下）
+  static const repositoryUrl = 'https://github.com/Anyu1014/Bilite';
+  static const repositoryName = 'Anyu1014/Bilite';
   RxString cacheSize = ''.obs;
 
   late int _pressCount = 0;
@@ -112,21 +118,6 @@ class _AboutPageState extends State<AboutPage> {
               textAlign: TextAlign.center,
               style: theme.textTheme.titleMedium!.copyWith(height: 2),
             ),
-            subtitle: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text(
-                  '使用Flutter开发的B站第三方客户端',
-                  style: TextStyle(color: outline),
-                  semanticsLabel: '与你一起，发现不一样的世界',
-                ),
-                const Icon(
-                  Icons.accessibility_new,
-                  semanticLabel: "无障碍适配",
-                  size: 18,
-                ),
-              ],
-            ),
           ),
           ListTile(
             leading: const Icon(Icons.person_outline),
@@ -143,6 +134,23 @@ class _AboutPageState extends State<AboutPage> {
             trailing: Text(
               currentVersion,
               style: subTitleStyle,
+            ),
+          ),
+          ListTile(
+            onTap: () => PageUtils.launchURL(repositoryUrl),
+            leading: const Icon(Icons.code_outlined),
+            title: const Text('仓库'),
+            trailing: Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Text(repositoryName, style: subTitleStyle),
+                const SizedBox(width: 6),
+                Icon(
+                  Icons.open_in_new,
+                  size: 16,
+                  color: theme.colorScheme.outline,
+                ),
+              ],
             ),
           ),
           Divider(

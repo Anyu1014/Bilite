@@ -1,8 +1,8 @@
-import 'package:PiliPure/grpc/bilibili/app/dynamic/v2.pb.dart'
+import 'package:bilite/grpc/bilibili/app/dynamic/v2.pb.dart'
     show LikeListReply, ModuleAuthor;
-import 'package:PiliPure/grpc/dyn.dart';
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/pages/common/common_list_controller.dart';
+import 'package:bilite/grpc/dyn.dart';
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/pages/common/common_list_controller.dart';
 import 'package:fixnum/fixnum.dart' show Int64;
 import 'package:get/get.dart';
 

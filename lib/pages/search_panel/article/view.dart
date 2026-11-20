@@ -1,9 +1,9 @@
-import 'package:PiliPure/common/widgets/sliver/sliver_floating_header.dart';
-import 'package:PiliPure/models/search/result.dart';
-import 'package:PiliPure/pages/search_panel/article/controller.dart';
-import 'package:PiliPure/pages/search_panel/article/widgets/item.dart';
-import 'package:PiliPure/pages/search_panel/view.dart';
-import 'package:PiliPure/utils/grid.dart';
+import 'package:bilite/common/widgets/sliver/sliver_floating_header.dart';
+import 'package:bilite/models/search/result.dart';
+import 'package:bilite/pages/search_panel/article/controller.dart';
+import 'package:bilite/pages/search_panel/article/widgets/item.dart';
+import 'package:bilite/pages/search_panel/view.dart';
+import 'package:bilite/utils/grid.dart';
 import 'package:get/get.dart';
 import 'package:material_ui/material_ui.dart';
 

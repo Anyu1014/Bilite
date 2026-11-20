@@ -1,15 +1,15 @@
 import 'dart:async';
 
-import 'package:PiliPure/http/browser_ua.dart';
-import 'package:PiliPure/common/widgets/glass.dart';
-import 'package:PiliPure/http/constants.dart';
-import 'package:PiliPure/http/video.dart';
-import 'package:PiliPure/models/common/video/cdn_type.dart';
-import 'package:PiliPure/models/common/video/base_quality.dart';
-import 'package:PiliPure/models/common/video/video_type.dart';
-import 'package:PiliPure/models/video/play/url.dart';
-import 'package:PiliPure/utils/storage_pref.dart';
-import 'package:PiliPure/utils/video_utils.dart';
+import 'package:bilite/http/browser_ua.dart';
+import 'package:bilite/common/widgets/glass.dart';
+import 'package:bilite/http/constants.dart';
+import 'package:bilite/http/video.dart';
+import 'package:bilite/models/common/video/cdn_type.dart';
+import 'package:bilite/models/common/video/base_quality.dart';
+import 'package:bilite/models/common/video/video_type.dart';
+import 'package:bilite/models/video/play/url.dart';
+import 'package:bilite/utils/storage_pref.dart';
+import 'package:bilite/utils/video_utils.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart' show kDebugMode;
 import 'package:material_ui/material_ui.dart';

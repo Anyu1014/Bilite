@@ -1,4 +1,4 @@
-import 'package:PiliPure/models/common/enum_with_label.dart';
+import 'package:bilite/models/common/enum_with_label.dart';
 
 /// 悬浮底栏收起成头像胶囊后的水平位置
 enum CollapsedNavAlign with EnumWithLabel {

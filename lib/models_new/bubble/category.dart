@@ -1,4 +1,4 @@
-import 'package:PiliPure/models_new/bubble/category_list.dart';
+import 'package:bilite/models_new/bubble/category_list.dart';
 
 class Category {
   List<CategoryList>? categoryList;

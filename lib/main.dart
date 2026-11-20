@@ -1,38 +1,39 @@
 import 'dart:io';
 
-import 'package:PiliPure/build_config.dart';
-import 'package:PiliPure/common/constants.dart';
-import 'package:PiliPure/common/widgets/back_detector.dart';
-import 'package:PiliPure/common/widgets/custom_toast.dart';
-import 'package:PiliPure/common/widgets/route_aware_mixin.dart';
-import 'package:PiliPure/common/widgets/scale_app.dart';
-import 'package:PiliPure/common/widgets/scroll_behavior.dart';
-import 'package:PiliPure/http/init.dart';
-import 'package:PiliPure/models/common/theme/theme_color_type.dart';
-import 'package:PiliPure/plugin/pl_player/utils/fullscreen.dart';
-import 'package:PiliPure/router/app_pages.dart';
-import 'package:PiliPure/services/account_service.dart';
-import 'package:PiliPure/services/download/download_service.dart';
-import 'package:PiliPure/services/logger.dart';
-import 'package:PiliPure/services/service_locator.dart';
-import 'package:PiliPure/utils/cache_manager.dart';
-import 'package:PiliPure/utils/date_utils.dart';
-import 'package:PiliPure/utils/desktop/calc_window_position.dart';
-import 'package:PiliPure/utils/device_utils.dart';
-import 'package:PiliPure/utils/extension/core_palettes_ext.dart';
-import 'package:PiliPure/utils/extension/theme_ext.dart';
-import 'package:PiliPure/utils/font_utils.dart';
-import 'package:PiliPure/utils/ios/pip_helper.dart';
-import 'package:PiliPure/utils/json_file_handler.dart';
-import 'package:PiliPure/utils/max_screen_size.dart';
-import 'package:PiliPure/utils/path_utils.dart';
-import 'package:PiliPure/utils/platform_utils.dart';
-import 'package:PiliPure/utils/request_utils.dart';
-import 'package:PiliPure/utils/storage.dart';
-import 'package:PiliPure/utils/storage_key.dart';
-import 'package:PiliPure/utils/storage_pref.dart';
-import 'package:PiliPure/utils/theme_utils.dart';
-import 'package:PiliPure/utils/utils.dart';
+import 'package:bilite/build_config.dart';
+import 'package:bilite/common/constants.dart';
+import 'package:bilite/common/widgets/back_detector.dart';
+import 'package:bilite/common/widgets/custom_toast.dart';
+import 'package:bilite/common/widgets/route_aware_mixin.dart';
+import 'package:bilite/common/widgets/scale_app.dart';
+import 'package:bilite/common/widgets/scroll_behavior.dart';
+import 'package:bilite/http/init.dart';
+import 'package:bilite/models/common/theme/theme_color_type.dart';
+import 'package:bilite/plugin/pl_player/utils/fullscreen.dart';
+import 'package:bilite/router/app_pages.dart';
+import 'package:bilite/services/account_service.dart';
+import 'package:bilite/services/download/download_service.dart';
+import 'package:bilite/services/logger.dart';
+import 'package:bilite/services/service_locator.dart';
+import 'package:bilite/utils/cache_manager.dart';
+import 'package:bilite/utils/date_utils.dart';
+import 'package:bilite/utils/desktop/calc_window_position.dart';
+import 'package:bilite/utils/device_utils.dart';
+import 'package:bilite/utils/extension/core_palettes_ext.dart';
+import 'package:bilite/utils/extension/theme_ext.dart';
+import 'package:flex_seed_scheme/flex_seed_scheme.dart' show FlexSchemeVariant;
+import 'package:bilite/utils/font_utils.dart';
+import 'package:bilite/utils/ios/pip_helper.dart';
+import 'package:bilite/utils/json_file_handler.dart';
+import 'package:bilite/utils/max_screen_size.dart';
+import 'package:bilite/utils/path_utils.dart';
+import 'package:bilite/utils/platform_utils.dart';
+import 'package:bilite/utils/request_utils.dart';
+import 'package:bilite/utils/storage.dart';
+import 'package:bilite/utils/storage_key.dart';
+import 'package:bilite/utils/storage_pref.dart';
+import 'package:bilite/utils/theme_utils.dart';
+import 'package:bilite/utils/utils.dart';
 import 'package:catcher_2/catcher_2.dart';
 import 'package:collection/collection.dart';
 import 'package:dynamic_color/dynamic_color.dart' show DynamicColorPlugin;
@@ -261,25 +262,56 @@ class MyApp extends StatelessWidget {
       lightScheme = _light!;
       darkScheme = _dark!;
     } else {
+      // 默认风格固定用默认亮粉 + Material-3 legacy，背景走原生纯白/纯黑
+      final defaultStyle = Pref.defaultThemeStyle;
       final customColor = Pref.customColor;
-      final brandColor =
-          colorThemeTypes.elementAtOrNull(customColor)?.color ??
-          Color(customColor);
-      final variant = Pref.schemeVariant;
+      final brandColor = defaultStyle
+          ? colorThemeTypes.first.color
+          : colorThemeTypes.elementAtOrNull(customColor)?.color ??
+                Color(customColor);
+      final variant = defaultStyle
+          ? FlexSchemeVariant.material3Legacy
+          : Pref.schemeVariant;
 
       lightScheme = brandColor.asColorSchemeSeed(variant, .light);
       darkScheme = brandColor.asColorSchemeSeed(variant, .dark);
     }
 
+    final nativeBackground =
+        !dynamicColor && (Pref.isNativePaletteStyle || Pref.defaultThemeStyle);
+
+    // 标签选中态直接用所选主题色原色（M3 派生主色偏暗，和亮粉等原色差太多）
+    final rawAccent = dynamicColor
+        ? null
+        : Pref.defaultThemeStyle
+        ? colorThemeTypes.first.color
+        : colorThemeTypes.elementAtOrNull(Pref.customColor)?.color ??
+              Color(Pref.customColor);
+
+    ThemeData applyRawAccent(ThemeData theme) => rawAccent == null
+        ? theme
+        : theme.copyWith(
+            tabBarTheme: theme.tabBarTheme.copyWith(
+              labelColor: rawAccent,
+              indicatorColor: rawAccent,
+            ),
+          );
+
     return (
-      ThemeUtils.lightTheme = ThemeUtils.getThemeData(
-        colorScheme: lightScheme,
-        isDynamic: dynamicColor,
+      ThemeUtils.lightTheme = applyRawAccent(
+        ThemeUtils.getThemeData(
+          colorScheme: lightScheme,
+          isDynamic: dynamicColor,
+          nativeBackground: nativeBackground,
+        ),
       ),
-      ThemeUtils.darkTheme = ThemeUtils.getThemeData(
-        isDark: true,
-        colorScheme: darkScheme,
-        isDynamic: dynamicColor,
+      ThemeUtils.darkTheme = applyRawAccent(
+        ThemeUtils.getThemeData(
+          isDark: true,
+          colorScheme: darkScheme,
+          isDynamic: dynamicColor,
+          nativeBackground: nativeBackground,
+        ),
       ),
     );
   }

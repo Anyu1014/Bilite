@@ -13,14 +13,14 @@ library;
 
 import 'dart:ui' as ui show BoxHeightStyle, BoxWidthStyle;
 
-import 'package:PiliPure/common/widgets/flutter/text_field/controller.dart';
-import 'package:PiliPure/common/widgets/flutter/text_field/cupertino/spell_check_suggestions_toolbar.dart';
-import 'package:PiliPure/common/widgets/flutter/text_field/cupertino/text_field.dart';
-import 'package:PiliPure/common/widgets/flutter/text_field/editable_text.dart';
-import 'package:PiliPure/common/widgets/flutter/text_field/spell_check.dart';
-import 'package:PiliPure/common/widgets/flutter/text_field/spell_check_suggestions_toolbar.dart';
-import 'package:PiliPure/common/widgets/flutter/text_field/system_context_menu.dart';
-import 'package:PiliPure/common/widgets/flutter/text_field/text_selection.dart';
+import 'package:bilite/common/widgets/flutter/text_field/controller.dart';
+import 'package:bilite/common/widgets/flutter/text_field/cupertino/spell_check_suggestions_toolbar.dart';
+import 'package:bilite/common/widgets/flutter/text_field/cupertino/text_field.dart';
+import 'package:bilite/common/widgets/flutter/text_field/editable_text.dart';
+import 'package:bilite/common/widgets/flutter/text_field/spell_check.dart';
+import 'package:bilite/common/widgets/flutter/text_field/spell_check_suggestions_toolbar.dart';
+import 'package:bilite/common/widgets/flutter/text_field/system_context_menu.dart';
+import 'package:bilite/common/widgets/flutter/text_field/text_selection.dart';
 import 'package:cupertino_ui/cupertino_ui.dart'
     hide
         EditableText,

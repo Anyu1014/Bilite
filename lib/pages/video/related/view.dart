@@ -1,10 +1,10 @@
-import 'package:PiliPure/common/widgets/loading_widget/http_error.dart';
-import 'package:PiliPure/common/widgets/video_card/video_card_h.dart';
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/models/model_hot_video_item.dart';
-import 'package:PiliPure/pages/video/related/controller.dart';
-import 'package:PiliPure/utils/extension/get_ext.dart';
-import 'package:PiliPure/utils/grid.dart';
+import 'package:bilite/common/widgets/loading_widget/http_error.dart';
+import 'package:bilite/common/widgets/video_card/video_card_h.dart';
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/models/model_hot_video_item.dart';
+import 'package:bilite/pages/video/related/controller.dart';
+import 'package:bilite/utils/extension/get_ext.dart';
+import 'package:bilite/utils/grid.dart';
 import 'package:get/get.dart';
 import 'package:material_ui/material_ui.dart';
 

@@ -1,7 +1,7 @@
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/http/user.dart';
-import 'package:PiliPure/models_new/follow/data.dart';
-import 'package:PiliPure/pages/follow_type/controller.dart';
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/http/user.dart';
+import 'package:bilite/models_new/follow/data.dart';
+import 'package:bilite/pages/follow_type/controller.dart';
 
 class FollowSameController extends FollowTypeController {
   @override

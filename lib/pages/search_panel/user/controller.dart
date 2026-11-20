@@ -1,10 +1,10 @@
 import 'dart:math';
 
-import 'package:PiliPure/models/common/search/user_search_type.dart';
-import 'package:PiliPure/models/search/result.dart';
-import 'package:PiliPure/pages/search/widgets/search_text.dart';
-import 'package:PiliPure/pages/search_panel/controller.dart';
-import 'package:PiliPure/utils/extension/context_ext.dart';
+import 'package:bilite/models/common/search/user_search_type.dart';
+import 'package:bilite/models/search/result.dart';
+import 'package:bilite/pages/search/widgets/search_text.dart';
+import 'package:bilite/pages/search_panel/controller.dart';
+import 'package:bilite/utils/extension/context_ext.dart';
 import 'package:get/get.dart';
 import 'package:material_ui/material_ui.dart';
 

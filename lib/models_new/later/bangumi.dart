@@ -1,4 +1,4 @@
-import 'package:PiliPure/models_new/later/season.dart';
+import 'package:bilite/models_new/later/season.dart';
 
 class Bangumi {
   int? epId;

@@ -1,12 +1,12 @@
-import 'package:PiliPure/common/widgets/dialog/dialog.dart';
-import 'package:PiliPure/models_new/follow/list.dart';
-import 'package:PiliPure/pages/fan/controller.dart';
-import 'package:PiliPure/pages/follow_type/view.dart';
-import 'package:PiliPure/pages/follow_type/widgets/item.dart';
-import 'package:PiliPure/pages/share/view.dart' show UserModel;
-import 'package:PiliPure/utils/parse_int.dart';
-import 'package:PiliPure/utils/platform_utils.dart';
-import 'package:PiliPure/utils/utils.dart';
+import 'package:bilite/common/widgets/dialog/dialog.dart';
+import 'package:bilite/models_new/follow/list.dart';
+import 'package:bilite/pages/fan/controller.dart';
+import 'package:bilite/pages/follow_type/view.dart';
+import 'package:bilite/pages/follow_type/widgets/item.dart';
+import 'package:bilite/pages/share/view.dart' show UserModel;
+import 'package:bilite/utils/parse_int.dart';
+import 'package:bilite/utils/platform_utils.dart';
+import 'package:bilite/utils/utils.dart';
 import 'package:get/get.dart';
 import 'package:material_ui/material_ui.dart';
 

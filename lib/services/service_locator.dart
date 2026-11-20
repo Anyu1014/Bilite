@@ -1,5 +1,5 @@
-import 'package:PiliPure/services/audio_handler.dart';
-import 'package:PiliPure/services/audio_session.dart';
+import 'package:bilite/services/audio_handler.dart';
+import 'package:bilite/services/audio_session.dart';
 
 VideoPlayerServiceHandler? videoPlayerServiceHandler;
 AudioSessionHandler? audioSessionHandler;

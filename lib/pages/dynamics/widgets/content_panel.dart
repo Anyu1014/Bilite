@@ -1,19 +1,19 @@
 // 内容
-import 'package:PiliPure/common/widgets/custom_icon.dart';
-import 'package:PiliPure/common/widgets/image/network_img_layer.dart';
-import 'package:PiliPure/common/widgets/image_grid/image_grid_view.dart';
-import 'package:PiliPure/common/widgets/selection_text.dart';
-import 'package:PiliPure/common/widgets/text_more/text_more.dart';
-import 'package:PiliPure/models/dynamics/result.dart';
-import 'package:PiliPure/pages/dynamics/widgets/rich_node_panel.dart';
-import 'package:PiliPure/utils/extension/iterable_ext.dart';
-import 'package:PiliPure/utils/extension/selectable_region_ext.dart';
-import 'package:PiliPure/utils/page_utils.dart';
+import 'package:bilite/common/widgets/custom_icon.dart';
+import 'package:bilite/common/widgets/image/network_img_layer.dart';
+import 'package:bilite/common/widgets/image_grid/image_grid_view.dart';
+import 'package:bilite/common/widgets/selection_text.dart';
+import 'package:bilite/common/widgets/text_more/text_more.dart';
+import 'package:bilite/models/dynamics/result.dart';
+import 'package:bilite/pages/dynamics/widgets/rich_node_panel.dart';
+import 'package:bilite/utils/extension/iterable_ext.dart';
+import 'package:bilite/utils/extension/selectable_region_ext.dart';
+import 'package:bilite/utils/page_utils.dart';
 import 'package:collection/collection.dart' show IterableExtension;
 import 'package:get/get.dart';
 import 'package:material_ui/material_ui.dart';
 
-part 'package:PiliPure/common/widgets/context_menu/dyn_menu_helper.dart';
+part 'package:bilite/common/widgets/context_menu/dyn_menu_helper.dart';
 
 Widget content(
   BuildContext context, {

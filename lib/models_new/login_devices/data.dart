@@ -1,4 +1,4 @@
-import 'package:PiliPure/models_new/login_devices/device.dart';
+import 'package:bilite/models_new/login_devices/device.dart';
 
 class LoginDevicesData {
   List<LoginDevice>? devices;

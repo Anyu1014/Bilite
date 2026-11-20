@@ -1,4 +1,4 @@
-import 'package:PiliPure/models_new/match/match_info/contest.dart';
+import 'package:bilite/models_new/match/match_info/contest.dart';
 
 class SearchEsports {
   List<MatchContest> contest;

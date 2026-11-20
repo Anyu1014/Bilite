@@ -1,9 +1,9 @@
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/http/msg.dart';
-import 'package:PiliPure/models_new/msg/msg_like_detail/card.dart';
-import 'package:PiliPure/models_new/msg/msg_like_detail/data.dart';
-import 'package:PiliPure/models_new/msg/msg_like_detail/item.dart';
-import 'package:PiliPure/pages/common/common_list_controller.dart';
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/http/msg.dart';
+import 'package:bilite/models_new/msg/msg_like_detail/card.dart';
+import 'package:bilite/models_new/msg/msg_like_detail/data.dart';
+import 'package:bilite/models_new/msg/msg_like_detail/item.dart';
+import 'package:bilite/pages/common/common_list_controller.dart';
 import 'package:get/get.dart';
 
 class LikeDetailController

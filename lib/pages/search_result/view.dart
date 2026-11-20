@@ -1,15 +1,15 @@
-import 'package:PiliPure/common/widgets/scaffold/simple_scaffold.dart';
-import 'package:PiliPure/common/widgets/scroll_physics.dart' show tabBarView;
-import 'package:PiliPure/common/widgets/view_safe_area.dart';
-import 'package:PiliPure/models/common/search/search_type.dart';
-import 'package:PiliPure/pages/search/controller.dart';
-import 'package:PiliPure/pages/search_panel/all/view.dart';
-import 'package:PiliPure/pages/search_panel/article/view.dart';
-import 'package:PiliPure/pages/search_panel/live/view.dart';
-import 'package:PiliPure/pages/search_panel/pgc/view.dart';
-import 'package:PiliPure/pages/search_panel/user/view.dart';
-import 'package:PiliPure/pages/search_panel/video/view.dart';
-import 'package:PiliPure/pages/search_result/controller.dart';
+import 'package:bilite/common/widgets/scaffold/simple_scaffold.dart';
+import 'package:bilite/common/widgets/scroll_physics.dart' show tabBarView;
+import 'package:bilite/common/widgets/view_safe_area.dart';
+import 'package:bilite/models/common/search/search_type.dart';
+import 'package:bilite/pages/search/controller.dart';
+import 'package:bilite/pages/search_panel/all/view.dart';
+import 'package:bilite/pages/search_panel/article/view.dart';
+import 'package:bilite/pages/search_panel/live/view.dart';
+import 'package:bilite/pages/search_panel/pgc/view.dart';
+import 'package:bilite/pages/search_panel/user/view.dart';
+import 'package:bilite/pages/search_panel/video/view.dart';
+import 'package:bilite/pages/search_result/controller.dart';
 import 'package:get/get.dart';
 import 'package:material_ui/material_ui.dart';
 

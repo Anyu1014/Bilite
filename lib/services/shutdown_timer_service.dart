@@ -2,14 +2,14 @@
 
 import 'dart:async' show Timer;
 
-import 'package:PiliPure/models/common/enum_with_label.dart';
-import 'package:PiliPure/common/widgets/glass.dart';
-import 'package:PiliPure/pages/video/introduction/ugc/widgets/menu_row.dart';
-import 'package:PiliPure/plugin/pl_player/controller.dart';
-import 'package:PiliPure/utils/device_utils.dart';
-import 'package:PiliPure/utils/duration_utils.dart';
-import 'package:PiliPure/utils/page_utils.dart';
-import 'package:PiliPure/utils/theme_utils.dart';
+import 'package:bilite/models/common/enum_with_label.dart';
+import 'package:bilite/common/widgets/glass.dart';
+import 'package:bilite/pages/video/introduction/ugc/widgets/menu_row.dart';
+import 'package:bilite/plugin/pl_player/controller.dart';
+import 'package:bilite/utils/device_utils.dart';
+import 'package:bilite/utils/duration_utils.dart';
+import 'package:bilite/utils/page_utils.dart';
+import 'package:bilite/utils/theme_utils.dart';
 import 'package:collection/collection.dart';
 import 'package:cupertino_ui/cupertino_ui.dart' show CupertinoPicker;
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';

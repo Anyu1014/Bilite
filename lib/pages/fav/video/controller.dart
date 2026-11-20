@@ -1,9 +1,9 @@
-import 'package:PiliPure/http/fav.dart';
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/models_new/fav/fav_folder/data.dart';
-import 'package:PiliPure/models_new/fav/fav_folder/list.dart';
-import 'package:PiliPure/pages/common/common_list_controller.dart';
-import 'package:PiliPure/utils/accounts.dart';
+import 'package:bilite/http/fav.dart';
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/models_new/fav/fav_folder/data.dart';
+import 'package:bilite/models_new/fav/fav_folder/list.dart';
+import 'package:bilite/pages/common/common_list_controller.dart';
+import 'package:bilite/utils/accounts.dart';
 
 class FavController extends CommonListController<FavFolderData, FavFolderInfo> {
   late final account = Accounts.main;

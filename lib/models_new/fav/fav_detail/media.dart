@@ -1,8 +1,8 @@
-import 'package:PiliPure/models/model_owner.dart';
-import 'package:PiliPure/models_new/fav/fav_detail/cnt_info.dart';
-import 'package:PiliPure/models_new/fav/fav_detail/ogv.dart';
-import 'package:PiliPure/models_new/fav/fav_detail/ugc.dart';
-import 'package:PiliPure/pages/common/multi_select/base.dart';
+import 'package:bilite/models/model_owner.dart';
+import 'package:bilite/models_new/fav/fav_detail/cnt_info.dart';
+import 'package:bilite/models_new/fav/fav_detail/ogv.dart';
+import 'package:bilite/models_new/fav/fav_detail/ugc.dart';
+import 'package:bilite/pages/common/multi_select/base.dart';
 
 class FavDetailItemModel with MultiSelectData {
   int? id;

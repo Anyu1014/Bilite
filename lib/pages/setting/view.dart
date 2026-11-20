@@ -1,20 +1,20 @@
-import 'package:PiliPure/common/widgets/custom_icon.dart';
-import 'package:PiliPure/common/widgets/glass.dart';
-import 'package:PiliPure/common/widgets/flutter/list_tile.dart';
-import 'package:PiliPure/common/widgets/scaffold/simple_scaffold.dart';
-import 'package:PiliPure/common/widgets/view_safe_area.dart';
-import 'package:PiliPure/http/login.dart';
-import 'package:PiliPure/models/common/setting_type.dart';
-import 'package:PiliPure/pages/about/view.dart';
-import 'package:PiliPure/pages/login/controller.dart';
-import 'package:PiliPure/pages/setting/common_setting.dart';
-import 'package:PiliPure/pages/setting/group.dart';
-import 'package:PiliPure/pages/setting/widgets/multi_select_dialog.dart';
-import 'package:PiliPure/pages/webdav/view.dart';
-import 'package:PiliPure/utils/accounts.dart';
-import 'package:PiliPure/utils/accounts/account.dart';
-import 'package:PiliPure/utils/extension/size_ext.dart';
-import 'package:PiliPure/utils/utils.dart';
+import 'package:bilite/common/widgets/custom_icon.dart';
+import 'package:bilite/common/widgets/glass.dart';
+import 'package:bilite/common/widgets/flutter/list_tile.dart';
+import 'package:bilite/common/widgets/scaffold/simple_scaffold.dart';
+import 'package:bilite/common/widgets/view_safe_area.dart';
+import 'package:bilite/http/login.dart';
+import 'package:bilite/models/common/setting_type.dart';
+import 'package:bilite/pages/about/view.dart';
+import 'package:bilite/pages/login/controller.dart';
+import 'package:bilite/pages/setting/common_setting.dart';
+import 'package:bilite/pages/setting/group.dart';
+import 'package:bilite/pages/setting/widgets/multi_select_dialog.dart';
+import 'package:bilite/pages/webdav/view.dart';
+import 'package:bilite/utils/accounts.dart';
+import 'package:bilite/utils/accounts/account.dart';
+import 'package:bilite/utils/extension/size_ext.dart';
+import 'package:bilite/utils/utils.dart';
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 import 'package:get/get.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
@@ -62,6 +62,16 @@ class _SettingPageState extends State<SettingPage> {
           type: .recommendSetting,
           subtitle: '推荐来源（web/app）、刷新保留内容、过滤器',
           icon: Icon(Icons.explore_outlined),
+        ),
+        SettingGroupItem(
+          type: .homeTabSetting,
+          subtitle: '冷启动时首页停在哪个板块（直播/推荐/热门/分区/番剧/影视）',
+          icon: Icon(Icons.tab_outlined),
+        ),
+        SettingGroupItem(
+          type: .themeSetting,
+          subtitle: '主题模式、调色板风格、主题色、动态取色',
+          icon: Icon(Icons.palette_outlined),
         ),
         SettingGroupItem(
           type: .glassSetting,

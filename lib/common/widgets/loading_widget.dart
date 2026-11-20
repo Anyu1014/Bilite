@@ -1,4 +1,4 @@
-import 'package:PiliPure/common/widgets/custom_arc.dart';
+import 'package:bilite/common/widgets/custom_arc.dart';
 import 'package:get/get.dart';
 import 'package:material_ui/material_ui.dart';
 

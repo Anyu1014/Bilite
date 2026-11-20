@@ -1,5 +1,5 @@
-import 'package:PiliPure/models_new/search/search_rcmd/data.dart';
-import 'package:PiliPure/models_new/search/search_trending/list.dart';
+import 'package:bilite/models_new/search/search_rcmd/data.dart';
+import 'package:bilite/models_new/search/search_trending/list.dart';
 
 class SearchTrendingData extends SearchRcmdData {
   late int topCount;

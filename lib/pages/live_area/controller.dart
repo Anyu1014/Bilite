@@ -1,9 +1,9 @@
-import 'package:PiliPure/http/live.dart';
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/models_new/live/live_area_list/area_item.dart';
-import 'package:PiliPure/models_new/live/live_area_list/area_list.dart';
-import 'package:PiliPure/pages/common/common_list_controller.dart';
-import 'package:PiliPure/utils/accounts.dart';
+import 'package:bilite/http/live.dart';
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/models_new/live/live_area_list/area_item.dart';
+import 'package:bilite/models_new/live/live_area_list/area_list.dart';
+import 'package:bilite/pages/common/common_list_controller.dart';
+import 'package:bilite/utils/accounts.dart';
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 import 'package:get/get.dart';
 import 'package:material_ui/material_ui.dart' show TabController;

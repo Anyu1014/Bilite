@@ -1,11 +1,11 @@
-import 'package:PiliPure/models/common/video/base_quality.dart';
-import 'package:PiliPure/models/common/video/cdn_type.dart';
-import 'package:PiliPure/models/common/video/video_decode_type.dart';
-import 'package:PiliPure/models/video/play/url.dart'
+import 'package:bilite/models/common/video/base_quality.dart';
+import 'package:bilite/models/common/video/cdn_type.dart';
+import 'package:bilite/models/common/video/video_decode_type.dart';
+import 'package:bilite/models/video/play/url.dart'
     show AudioItem, VideoItem, FormatItem;
-import 'package:PiliPure/models_new/live/live_room_play_info/codec.dart';
-import 'package:PiliPure/utils/extension/iterable_ext.dart';
-import 'package:PiliPure/utils/storage_pref.dart';
+import 'package:bilite/models_new/live/live_room_play_info/codec.dart';
+import 'package:bilite/utils/extension/iterable_ext.dart';
+import 'package:bilite/utils/storage_pref.dart';
 import 'package:flutter/foundation.dart' show kDebugMode, debugPrint;
 
 abstract final class VideoUtils {

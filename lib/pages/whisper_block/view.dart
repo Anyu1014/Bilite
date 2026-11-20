@@ -1,13 +1,13 @@
-import 'package:PiliPure/common/assets.dart';
-import 'package:PiliPure/common/widgets/dialog/dialog.dart';
-import 'package:PiliPure/common/widgets/loading_widget/loading_widget.dart';
-import 'package:PiliPure/common/widgets/scaffold/simple_scaffold.dart';
-import 'package:PiliPure/common/widgets/view_insets_safe_area.dart';
-import 'package:PiliPure/grpc/bilibili/app/im/v1.pb.dart'
+import 'package:bilite/common/assets.dart';
+import 'package:bilite/common/widgets/dialog/dialog.dart';
+import 'package:bilite/common/widgets/loading_widget/loading_widget.dart';
+import 'package:bilite/common/widgets/scaffold/simple_scaffold.dart';
+import 'package:bilite/common/widgets/view_insets_safe_area.dart';
+import 'package:bilite/grpc/bilibili/app/im/v1.pb.dart'
     show KeywordBlockingItem;
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/pages/search/widgets/search_text.dart';
-import 'package:PiliPure/pages/whisper_block/controller.dart';
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/pages/search/widgets/search_text.dart';
+import 'package:bilite/pages/whisper_block/controller.dart';
 import 'package:flutter/services.dart' show LengthLimitingTextInputFormatter;
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';

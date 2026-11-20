@@ -1,15 +1,15 @@
 import 'dart:convert';
 
-import 'package:PiliPure/common/constants.dart';
-import 'package:PiliPure/http/api.dart';
-import 'package:PiliPure/http/init.dart';
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/models_new/login_devices/data.dart';
-import 'package:PiliPure/utils/accounts.dart';
-import 'package:PiliPure/utils/accounts/account.dart';
-import 'package:PiliPure/utils/app_sign.dart';
-import 'package:PiliPure/utils/login_utils.dart';
-import 'package:PiliPure/utils/utils.dart';
+import 'package:bilite/common/constants.dart';
+import 'package:bilite/http/api.dart';
+import 'package:bilite/http/init.dart';
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/models_new/login_devices/data.dart';
+import 'package:bilite/utils/accounts.dart';
+import 'package:bilite/utils/accounts/account.dart';
+import 'package:bilite/utils/app_sign.dart';
+import 'package:bilite/utils/login_utils.dart';
+import 'package:bilite/utils/utils.dart';
 import 'package:crypto/crypto.dart';
 import 'package:dio/dio.dart';
 import 'package:encrypt/encrypt.dart';

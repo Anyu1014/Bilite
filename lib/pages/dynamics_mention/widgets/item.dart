@@ -1,6 +1,6 @@
-import 'package:PiliPure/common/widgets/image/network_img_layer.dart';
-import 'package:PiliPure/models_new/dynamic/dyn_mention/item.dart';
-import 'package:PiliPure/utils/num_utils.dart';
+import 'package:bilite/common/widgets/image/network_img_layer.dart';
+import 'package:bilite/models_new/dynamic/dyn_mention/item.dart';
+import 'package:bilite/utils/num_utils.dart';
 import 'package:material_ui/material_ui.dart';
 
 class DynMentionItem extends StatelessWidget {

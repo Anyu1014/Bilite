@@ -1,16 +1,16 @@
 import 'dart:async' show StreamSubscription, Timer;
 import 'dart:math' as math;
 
-import 'package:PiliPure/common/widgets/dialog/simple_dialog_option.dart';
-import 'package:PiliPure/common/widgets/progress_bar/segment_progress_bar.dart';
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/http/sponsor_block.dart';
-import 'package:PiliPure/models/common/sponsor_block/segment_model.dart';
-import 'package:PiliPure/models/common/sponsor_block/segment_type.dart';
-import 'package:PiliPure/models/common/sponsor_block/skip_type.dart';
-import 'package:PiliPure/models_new/sponsor_block/segment_item.dart';
-import 'package:PiliPure/utils/duration_utils.dart';
-import 'package:PiliPure/utils/storage_pref.dart';
+import 'package:bilite/common/widgets/dialog/simple_dialog_option.dart';
+import 'package:bilite/common/widgets/progress_bar/segment_progress_bar.dart';
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/http/sponsor_block.dart';
+import 'package:bilite/models/common/sponsor_block/segment_model.dart';
+import 'package:bilite/models/common/sponsor_block/segment_type.dart';
+import 'package:bilite/models/common/sponsor_block/skip_type.dart';
+import 'package:bilite/models_new/sponsor_block/segment_item.dart';
+import 'package:bilite/utils/duration_utils.dart';
+import 'package:bilite/utils/storage_pref.dart';
 import 'package:easy_debounce/easy_throttle.dart';
 import 'package:flutter/foundation.dart' show kDebugMode;
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';

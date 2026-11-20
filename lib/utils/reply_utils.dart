@@ -1,20 +1,20 @@
 import 'dart:io' show Platform;
 
-import 'package:PiliPure/common/widgets/selection_text.dart';
-import 'package:PiliPure/common/widgets/glass.dart';
-import 'package:PiliPure/grpc/bilibili/main/community/reply/v1.pb.dart'
+import 'package:bilite/common/widgets/selection_text.dart';
+import 'package:bilite/common/widgets/glass.dart';
+import 'package:bilite/grpc/bilibili/main/community/reply/v1.pb.dart'
     show ReplyInfo;
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/http/reply.dart';
-import 'package:PiliPure/models/common/reply/reply_sort_type.dart';
-import 'package:PiliPure/utils/accounts.dart';
-import 'package:PiliPure/utils/accounts/account.dart';
-import 'package:PiliPure/utils/android/android_helper.dart';
-import 'package:PiliPure/utils/extension/iterable_ext.dart';
-import 'package:PiliPure/utils/extension/theme_ext.dart';
-import 'package:PiliPure/utils/id_utils.dart';
-import 'package:PiliPure/utils/theme_utils.dart';
-import 'package:PiliPure/utils/utils.dart';
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/http/reply.dart';
+import 'package:bilite/models/common/reply/reply_sort_type.dart';
+import 'package:bilite/utils/accounts.dart';
+import 'package:bilite/utils/accounts/account.dart';
+import 'package:bilite/utils/android/android_helper.dart';
+import 'package:bilite/utils/extension/iterable_ext.dart';
+import 'package:bilite/utils/extension/theme_ext.dart';
+import 'package:bilite/utils/id_utils.dart';
+import 'package:bilite/utils/theme_utils.dart';
+import 'package:bilite/utils/utils.dart';
 import 'package:flutter/foundation.dart' show kDebugMode;
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 import 'package:get/get.dart';

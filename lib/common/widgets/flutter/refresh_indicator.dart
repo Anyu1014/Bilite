@@ -6,12 +6,13 @@
 
 import 'dart:async' show Completer;
 
-import 'package:PiliPure/common/widgets/refresh_layout.dart';
-import 'package:PiliPure/common/widgets/scroll_behavior.dart';
-import 'package:PiliPure/common/widgets/scroll_physics.dart'
+import 'package:bilite/common/widgets/refresh_icon_indicator.dart';
+import 'package:bilite/common/widgets/refresh_layout.dart';
+import 'package:bilite/common/widgets/scroll_behavior.dart';
+import 'package:bilite/common/widgets/scroll_physics.dart'
     show BouncingScrollPhysicsExt;
-import 'package:PiliPure/utils/platform_utils.dart';
-import 'package:PiliPure/utils/storage_pref.dart';
+import 'package:bilite/utils/platform_utils.dart';
+import 'package:bilite/utils/storage_pref.dart';
 import 'package:extended_nested_scroll_view/refresh.dart';
 import 'package:flutter/foundation.dart' show clampDouble;
 import 'package:material_ui/material_ui.dart' hide RefreshIndicator;
@@ -151,6 +152,7 @@ class RefreshIndicator extends StatefulWidget {
     this.notificationPredicate = defaultScrollNotificationPredicate,
     this.strokeWidth = RefreshProgressIndicator.defaultStrokeWidth,
     this.elevation = 2.0,
+    this.topInset = 0,
     this.isClampingScrollPhysics = false,
     required this.child,
   }) : assert(elevation >= 0.0);
@@ -208,6 +210,9 @@ class RefreshIndicator extends StatefulWidget {
   ///
   /// Defaults to 2.0.
   final double elevation;
+
+  /// 指示器相对滚动视图顶部的额外下移（首页顶栏是覆盖层，指示器要让到它下面）
+  final double topInset;
 
   final bool isClampingScrollPhysics;
 
@@ -520,16 +525,13 @@ class RefreshIndicatorState extends State<RefreshIndicator>
       body: child,
       scale: _scaleFactor,
       position: _positionFactor,
+      topInset: widget.topInset,
       indicator: _status == null
           ? null
           : AnimatedBuilder(
               animation: _positionController,
-              builder: (context, child) => RefreshProgressIndicator(
+              builder: (context, child) => RefreshIconIndicator(
                 value: showIndeterminateIndicator ? null : _value.value,
-                valueColor: _valueColor,
-                backgroundColor: widget.backgroundColor,
-                strokeWidth: widget.strokeWidth,
-                elevation: widget.elevation,
               ),
             ),
     );

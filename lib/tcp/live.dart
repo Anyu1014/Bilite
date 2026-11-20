@@ -3,8 +3,8 @@ import 'dart:convert';
 import 'dart:io';
 import 'dart:typed_data';
 
-import 'package:PiliPure/http/init.dart';
-import 'package:PiliPure/services/logger.dart';
+import 'package:bilite/http/init.dart';
+import 'package:bilite/services/logger.dart';
 import 'package:flutter/foundation.dart' show kDebugMode;
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 import 'package:web_socket_channel/web_socket_channel.dart';

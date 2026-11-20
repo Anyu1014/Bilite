@@ -1,15 +1,15 @@
-import 'package:PiliPure/common/widgets/scroll_physics.dart' show tabBarView;
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/models/common/dynamic/dynamics_type.dart';
-import 'package:PiliPure/models/common/dynamic/up_panel_position.dart';
-import 'package:PiliPure/models/dynamics/up.dart';
-import 'package:PiliPure/pages/common/common_page.dart';
-import 'package:PiliPure/pages/dynamics/controller.dart';
-import 'package:PiliPure/pages/dynamics/widgets/up_panel.dart';
-import 'package:PiliPure/pages/dynamics_create/view.dart';
-import 'package:PiliPure/pages/dynamics_tab/view.dart';
-import 'package:PiliPure/pages/main/controller.dart';
-import 'package:PiliPure/utils/extension/get_ext.dart';
+import 'package:bilite/common/widgets/scroll_physics.dart' show tabBarView;
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/models/common/dynamic/dynamics_type.dart';
+import 'package:bilite/models/common/dynamic/up_panel_position.dart';
+import 'package:bilite/models/dynamics/up.dart';
+import 'package:bilite/pages/common/common_page.dart';
+import 'package:bilite/pages/dynamics/controller.dart';
+import 'package:bilite/pages/dynamics/widgets/up_panel.dart';
+import 'package:bilite/pages/dynamics_create/view.dart';
+import 'package:bilite/pages/dynamics_tab/view.dart';
+import 'package:bilite/pages/main/controller.dart';
+import 'package:bilite/utils/extension/get_ext.dart';
 import 'package:get/get.dart';
 import 'package:material_ui/material_ui.dart' hide DraggableScrollableSheet;
 
@@ -180,8 +180,6 @@ class _DynamicsPageState extends CommonPageState<DynamicsPage>
                 isScrollable: true,
                 tabAlignment: .start,
                 dividerColor: Colors.transparent,
-                labelColor: colorScheme.primary,
-                indicatorColor: colorScheme.primary,
                 controller: _dynamicsController.tabController,
                 unselectedLabelColor: colorScheme.onSurface,
                 labelStyle:

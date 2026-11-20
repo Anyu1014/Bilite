@@ -1,7 +1,7 @@
-import 'package:PiliPure/models/model_avatar.dart';
-import 'package:PiliPure/models_new/article/article_view/ops.dart';
-import 'package:PiliPure/models_new/article/article_view/opus.dart';
-import 'package:PiliPure/utils/extension/iterable_ext.dart';
+import 'package:bilite/models/model_avatar.dart';
+import 'package:bilite/models_new/article/article_view/ops.dart';
+import 'package:bilite/models_new/article/article_view/opus.dart';
+import 'package:bilite/utils/extension/iterable_ext.dart';
 
 class ArticleViewData {
   int? id;

@@ -1,5 +1,5 @@
-import 'package:PiliPure/utils/extension/iterable_ext.dart';
-import 'package:PiliPure/utils/parse_string.dart';
+import 'package:bilite/utils/extension/iterable_ext.dart';
+import 'package:bilite/utils/parse_string.dart';
 
 class Top {
   List<TopImage>? imgUrls;

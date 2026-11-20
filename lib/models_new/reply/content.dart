@@ -1,4 +1,4 @@
-import 'package:PiliPure/models_new/reply/picture.dart';
+import 'package:bilite/models_new/reply/picture.dart';
 
 class ReplyContent {
   String? message;

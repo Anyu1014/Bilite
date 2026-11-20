@@ -1,10 +1,10 @@
-import 'package:PiliPure/common/widgets/scaffold/simple_scaffold.dart';
-import 'package:PiliPure/common/widgets/scroll_physics.dart' show tabBarView;
-import 'package:PiliPure/pages/fan/view.dart';
-import 'package:PiliPure/pages/follow/child/child_view.dart';
-import 'package:PiliPure/pages/follow_search/view.dart';
-import 'package:PiliPure/pages/share/view.dart' show UserModel;
-import 'package:PiliPure/utils/accounts.dart';
+import 'package:bilite/common/widgets/scaffold/simple_scaffold.dart';
+import 'package:bilite/common/widgets/scroll_physics.dart' show tabBarView;
+import 'package:bilite/pages/fan/view.dart';
+import 'package:bilite/pages/follow/child/child_view.dart';
+import 'package:bilite/pages/follow_search/view.dart';
+import 'package:bilite/pages/share/view.dart' show UserModel;
+import 'package:bilite/utils/accounts.dart';
 import 'package:get/get.dart';
 import 'package:material_ui/material_ui.dart';
 

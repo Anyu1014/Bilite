@@ -1,5 +1,5 @@
-import 'package:PiliPure/models_new/space/space_cheese/item.dart';
-import 'package:PiliPure/models_new/space/space_cheese/page.dart';
+import 'package:bilite/models_new/space/space_cheese/item.dart';
+import 'package:bilite/models_new/space/space_cheese/page.dart';
 
 class SpaceCheeseData {
   List<SpaceCheeseItem>? items;

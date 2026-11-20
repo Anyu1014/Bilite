@@ -3,20 +3,20 @@ import 'dart:convert';
 import 'dart:typed_data';
 import 'dart:ui' as ui;
 
-import 'package:PiliPure/build_config.dart';
-import 'package:PiliPure/common/constants.dart';
-import 'package:PiliPure/grpc/bilibili/main/community/reply/v1.pb.dart'
+import 'package:bilite/build_config.dart';
+import 'package:bilite/common/constants.dart';
+import 'package:bilite/grpc/bilibili/main/community/reply/v1.pb.dart'
     show ReplyInfo;
-import 'package:PiliPure/pages/my_reply/view.dart';
-import 'package:PiliPure/pages/search/controller.dart';
-import 'package:PiliPure/utils/accounts.dart';
-import 'package:PiliPure/utils/device_utils.dart';
-import 'package:PiliPure/utils/font_utils.dart';
-import 'package:PiliPure/utils/global_data.dart';
-import 'package:PiliPure/utils/parse_int.dart';
-import 'package:PiliPure/utils/storage.dart';
-import 'package:PiliPure/utils/storage_key.dart';
-import 'package:PiliPure/utils/storage_pref.dart';
+import 'package:bilite/pages/my_reply/view.dart';
+import 'package:bilite/pages/search/controller.dart';
+import 'package:bilite/utils/accounts.dart';
+import 'package:bilite/utils/device_utils.dart';
+import 'package:bilite/utils/font_utils.dart';
+import 'package:bilite/utils/global_data.dart';
+import 'package:bilite/utils/parse_int.dart';
+import 'package:bilite/utils/storage.dart';
+import 'package:bilite/utils/storage_key.dart';
+import 'package:bilite/utils/storage_pref.dart';
 import 'package:archive/archive.dart';
 import 'package:get/get.dart';
 

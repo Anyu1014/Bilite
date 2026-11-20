@@ -1,5 +1,5 @@
-import 'package:PiliPure/models_new/msg/msg_at/content.dart';
-import 'package:PiliPure/models_new/msg/msg_at/user.dart';
+import 'package:bilite/models_new/msg/msg_at/content.dart';
+import 'package:bilite/models_new/msg/msg_at/user.dart';
 
 class MsgAtItem {
   int? id;

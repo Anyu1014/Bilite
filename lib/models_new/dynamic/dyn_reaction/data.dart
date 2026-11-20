@@ -1,4 +1,4 @@
-import 'package:PiliPure/models_new/dynamic/dyn_reaction/item.dart';
+import 'package:bilite/models_new/dynamic/dyn_reaction/item.dart';
 
 class DynReactionData {
   bool? hasMore;

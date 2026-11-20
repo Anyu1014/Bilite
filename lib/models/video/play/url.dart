@@ -1,8 +1,8 @@
 import 'dart:math' show max, min;
 
-import 'package:PiliPure/models/common/video/base_quality.dart';
-import 'package:PiliPure/models_new/sponsor_block/segment_item.dart';
-import 'package:PiliPure/utils/extension/iterable_ext.dart';
+import 'package:bilite/models/common/video/base_quality.dart';
+import 'package:bilite/models_new/sponsor_block/segment_item.dart';
+import 'package:bilite/utils/extension/iterable_ext.dart';
 import 'package:flutter/foundation.dart' show kDebugMode;
 
 class PlayUrlModel {

@@ -1,4 +1,4 @@
-import 'package:PiliPure/models_new/space/space_opus/item.dart';
+import 'package:bilite/models_new/space/space_opus/item.dart';
 
 class SpaceOpusData {
   bool? hasMore;

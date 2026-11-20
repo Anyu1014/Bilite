@@ -1,15 +1,15 @@
-import 'package:PiliPure/common/widgets/loading_widget/http_error.dart';
-import 'package:PiliPure/common/widgets/scaffold/simple_scaffold.dart';
-import 'package:PiliPure/common/widgets/scroll_physics.dart';
-import 'package:PiliPure/common/widgets/view_safe_area.dart';
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/models/common/member/contribute_type.dart';
-import 'package:PiliPure/models_new/space/space_season_series/season.dart'
+import 'package:bilite/common/widgets/loading_widget/http_error.dart';
+import 'package:bilite/common/widgets/scaffold/simple_scaffold.dart';
+import 'package:bilite/common/widgets/scroll_physics.dart';
+import 'package:bilite/common/widgets/view_safe_area.dart';
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/models/common/member/contribute_type.dart';
+import 'package:bilite/models_new/space/space_season_series/season.dart'
     show SpaceSsModel;
-import 'package:PiliPure/pages/member_season_series/controller.dart';
-import 'package:PiliPure/pages/member_season_series/widget/season_series_card.dart';
-import 'package:PiliPure/pages/member_video/view.dart';
-import 'package:PiliPure/utils/grid.dart';
+import 'package:bilite/pages/member_season_series/controller.dart';
+import 'package:bilite/pages/member_season_series/widget/season_series_card.dart';
+import 'package:bilite/pages/member_video/view.dart';
+import 'package:bilite/utils/grid.dart';
 import 'package:get/get.dart';
 import 'package:material_ui/material_ui.dart';
 

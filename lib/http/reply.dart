@@ -1,14 +1,14 @@
-import 'package:PiliPure/common/constants.dart';
-import 'package:PiliPure/http/api.dart';
-import 'package:PiliPure/http/init.dart';
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/models_new/emote/data.dart';
-import 'package:PiliPure/models_new/emote/package.dart';
-import 'package:PiliPure/models_new/reply/data.dart';
-import 'package:PiliPure/models_new/reply2reply/data.dart';
-import 'package:PiliPure/models_new/reply_interaction/data.dart';
-import 'package:PiliPure/utils/accounts.dart';
-import 'package:PiliPure/utils/accounts/account.dart';
+import 'package:bilite/common/constants.dart';
+import 'package:bilite/http/api.dart';
+import 'package:bilite/http/init.dart';
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/models_new/emote/data.dart';
+import 'package:bilite/models_new/emote/package.dart';
+import 'package:bilite/models_new/reply/data.dart';
+import 'package:bilite/models_new/reply2reply/data.dart';
+import 'package:bilite/models_new/reply_interaction/data.dart';
+import 'package:bilite/utils/accounts.dart';
+import 'package:bilite/utils/accounts/account.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 

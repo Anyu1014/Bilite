@@ -1,7 +1,7 @@
-import 'package:PiliPure/http/fav.dart';
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/models_new/fav/fav_note/list.dart';
-import 'package:PiliPure/pages/common/multi_select/multi_select_controller.dart';
+import 'package:bilite/http/fav.dart';
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/models_new/fav/fav_note/list.dart';
+import 'package:bilite/pages/common/multi_select/multi_select_controller.dart';
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 import 'package:get/get.dart';
 

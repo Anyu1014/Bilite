@@ -1,4 +1,4 @@
-import 'package:PiliPure/common/skeleton/skeleton.dart';
+import 'package:bilite/common/skeleton/skeleton.dart';
 import 'package:material_ui/material_ui.dart';
 
 class WhisperItemSkeleton extends StatelessWidget {

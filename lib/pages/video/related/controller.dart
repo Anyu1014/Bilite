@@ -1,7 +1,7 @@
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/http/video.dart';
-import 'package:PiliPure/models/model_hot_video_item.dart';
-import 'package:PiliPure/pages/common/common_list_controller.dart';
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/http/video.dart';
+import 'package:bilite/models/model_hot_video_item.dart';
+import 'package:bilite/pages/common/common_list_controller.dart';
 import 'package:get/get.dart';
 
 class RelatedController

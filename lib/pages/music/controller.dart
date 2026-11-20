@@ -1,7 +1,7 @@
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/http/music.dart';
-import 'package:PiliPure/models_new/music/bgm_detail.dart';
-import 'package:PiliPure/pages/common/dyn/common_dyn_controller.dart';
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/http/music.dart';
+import 'package:bilite/models_new/music/bgm_detail.dart';
+import 'package:bilite/pages/common/dyn/common_dyn_controller.dart';
 import 'package:get/get.dart';
 
 class MusicDetailController extends CommonDynController {

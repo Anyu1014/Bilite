@@ -1,10 +1,10 @@
 import 'dart:convert';
 
-import 'package:PiliPure/common/constants.dart';
-import 'package:PiliPure/common/widgets/pair.dart';
-import 'package:PiliPure/utils/device_utils.dart';
-import 'package:PiliPure/utils/storage.dart';
-import 'package:PiliPure/utils/storage_pref.dart';
+import 'package:bilite/common/constants.dart';
+import 'package:bilite/common/widgets/pair.dart';
+import 'package:bilite/utils/device_utils.dart';
+import 'package:bilite/utils/storage.dart';
+import 'package:bilite/utils/storage_pref.dart';
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 import 'package:webdav_client/webdav_client.dart' as webdav;
 

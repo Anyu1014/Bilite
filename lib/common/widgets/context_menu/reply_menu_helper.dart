@@ -1,4 +1,4 @@
-part of 'package:PiliPure/pages/video/reply/widgets/reply_item_grpc.dart';
+part of 'package:bilite/pages/video/reply/widgets/reply_item_grpc.dart';
 
 void showReplyCopyDialog(
   BuildContext context,

@@ -1,8 +1,8 @@
 import 'dart:async';
 import 'dart:io' show Platform;
 
-import 'package:PiliPure/utils/desktop/window_controller.dart';
-import 'package:PiliPure/utils/device_utils.dart';
+import 'package:bilite/utils/desktop/window_controller.dart';
+import 'package:bilite/utils/device_utils.dart';
 import 'package:flutter/services.dart'
     show SystemChrome, SystemUiOverlay, DeviceOrientation;
 

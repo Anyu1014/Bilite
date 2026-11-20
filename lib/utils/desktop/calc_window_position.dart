@@ -1,4 +1,4 @@
-import 'package:PiliPure/utils/storage_pref.dart';
+import 'package:bilite/utils/storage_pref.dart';
 import 'package:collection/collection.dart';
 import 'package:flutter/rendering.dart' show Offset, Size;
 import 'package:nativeapi/nativeapi.dart' as nativeapi;

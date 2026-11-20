@@ -1,4 +1,4 @@
-import 'package:PiliPure/models_new/bubble/sort_item.dart';
+import 'package:bilite/models_new/bubble/sort_item.dart';
 
 class SortInfo {
   bool? showSort;

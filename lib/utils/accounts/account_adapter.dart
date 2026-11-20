@@ -1,5 +1,5 @@
-import 'package:PiliPure/models/common/account_type.dart';
-import 'package:PiliPure/utils/accounts/account.dart';
+import 'package:bilite/models/common/account_type.dart';
+import 'package:bilite/utils/accounts/account.dart';
 import 'package:cookie_jar/cookie_jar.dart';
 import 'package:hive_ce/hive.dart';
 

@@ -1,17 +1,17 @@
 import 'dart:async' show Timer;
 import 'dart:convert' show jsonDecode;
 
-import 'package:PiliPure/common/constants.dart';
-import 'package:PiliPure/common/widgets/button/icon_button.dart';
-import 'package:PiliPure/common/widgets/loading_widget/loading_widget.dart';
-import 'package:PiliPure/common/widgets/selection_text.dart';
-import 'package:PiliPure/services/logger.dart';
-import 'package:PiliPure/utils/date_utils.dart';
-import 'package:PiliPure/utils/page_utils.dart';
-import 'package:PiliPure/utils/storage.dart';
-import 'package:PiliPure/utils/storage_key.dart';
-import 'package:PiliPure/utils/storage_pref.dart';
-import 'package:PiliPure/utils/utils.dart';
+import 'package:bilite/common/constants.dart';
+import 'package:bilite/common/widgets/button/icon_button.dart';
+import 'package:bilite/common/widgets/loading_widget/loading_widget.dart';
+import 'package:bilite/common/widgets/selection_text.dart';
+import 'package:bilite/services/logger.dart';
+import 'package:bilite/utils/date_utils.dart';
+import 'package:bilite/utils/page_utils.dart';
+import 'package:bilite/utils/storage.dart';
+import 'package:bilite/utils/storage_key.dart';
+import 'package:bilite/utils/storage_pref.dart';
+import 'package:bilite/utils/utils.dart';
 import 'package:catcher_2/catcher_2.dart';
 import 'package:catcher_2/utils/log_printer.dart';
 import 'package:flutter/foundation.dart';

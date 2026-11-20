@@ -1,5 +1,5 @@
-import 'package:PiliPure/models_new/dynamic/dyn_topic_pub_search/page_info.dart';
-import 'package:PiliPure/models_new/dynamic/dyn_topic_top/topic_item.dart';
+import 'package:bilite/models_new/dynamic/dyn_topic_pub_search/page_info.dart';
+import 'package:bilite/models_new/dynamic/dyn_topic_top/topic_item.dart';
 
 class TopicPubSearchData {
   List<TopicItem>? topicItems;

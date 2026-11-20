@@ -1,4 +1,4 @@
-import 'package:PiliPure/models_new/dynamic/dyn_mention/item.dart';
+import 'package:bilite/models_new/dynamic/dyn_mention/item.dart';
 
 class MentionGroup {
   String? groupName;

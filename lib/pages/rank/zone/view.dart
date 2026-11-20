@@ -1,13 +1,13 @@
-import 'package:PiliPure/common/widgets/flutter/refresh_indicator.dart';
-import 'package:PiliPure/common/widgets/loading_widget/http_error.dart';
-import 'package:PiliPure/common/widgets/video_card/video_card_h.dart';
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/models/model_hot_video_item.dart';
-import 'package:PiliPure/pages/rank/zone/controller.dart';
-import 'package:PiliPure/pages/rank/zone/widget/pgc_rank_item.dart';
-import 'package:PiliPure/utils/grid.dart';
+import 'package:bilite/common/widgets/flutter/refresh_indicator.dart';
+import 'package:bilite/common/widgets/loading_widget/http_error.dart';
+import 'package:bilite/common/widgets/video_card/video_card_h.dart';
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/models/model_hot_video_item.dart';
+import 'package:bilite/pages/rank/zone/controller.dart';
+import 'package:bilite/pages/rank/zone/widget/pgc_rank_item.dart';
+import 'package:bilite/utils/grid.dart';
 import 'package:get/get.dart';
-import 'package:PiliPure/common/widgets/home_header_inset.dart';
+import 'package:bilite/common/widgets/home_header_inset.dart';
 import 'package:material_ui/material_ui.dart';
 
 class ZonePage extends StatefulWidget {
@@ -40,6 +40,7 @@ class _ZonePageState extends State<ZonePage>
   Widget build(BuildContext context) {
     super.build(context);
     return refreshIndicator(
+      topInset: HomeHeaderInset.of(context),
       onRefresh: controller.onRefresh,
       child: CustomScrollView(
         controller: controller.scrollController,

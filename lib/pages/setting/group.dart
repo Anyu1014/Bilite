@@ -1,12 +1,14 @@
-import 'package:PiliPure/common/widgets/glass.dart';
-import 'package:PiliPure/common/widgets/scaffold/simple_scaffold.dart';
-import 'package:PiliPure/common/widgets/view_safe_area.dart';
-import 'package:PiliPure/models/common/setting_type.dart';
-import 'package:PiliPure/pages/setting/common_setting.dart';
-import 'package:PiliPure/pages/setting/widgets/popup_item.dart';
-import 'package:PiliPure/utils/storage.dart';
-import 'package:PiliPure/utils/storage_key.dart';
-import 'package:PiliPure/utils/storage_pref.dart';
+import 'package:bilite/common/widgets/glass.dart';
+import 'package:bilite/common/widgets/scaffold/simple_scaffold.dart';
+import 'package:bilite/common/widgets/view_safe_area.dart';
+import 'package:bilite/models/common/home_tab_type.dart';
+import 'package:bilite/models/common/setting_type.dart';
+import 'package:bilite/pages/setting/common_setting.dart';
+import 'package:bilite/pages/setting/widgets/popup_item.dart';
+import 'package:bilite/utils/storage.dart';
+import 'package:bilite/utils/storage_key.dart';
+import 'package:bilite/utils/storage_pref.dart';
+import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 import 'package:get/get.dart';
 import 'package:material_ui/material_ui.dart';
 
@@ -53,8 +55,37 @@ class SettingGroupPage extends StatelessWidget {
           ),
           children: [
             for (final item in items)
+              // 应用主题：直接进主题页（不再埋在外观设置里）
+              if (item.type == .themeSetting)
+                ListTile(
+                  onTap: () => Get.toNamed('/colorSetting'),
+                  leading: item.icon,
+                  title: Text(item.type.title, style: titleStyle),
+                  subtitle: item.subtitle == null
+                      ? null
+                      : Text(item.subtitle!, style: subTitleStyle),
+                )
+              // 冷启动默认板块：同样直接弹选择
+              else if (item.type == .homeTabSetting)
+                PopupListTile<HomeTabType>(
+                  leading: item.icon,
+                  title: Text(item.type.title, style: titleStyle),
+                  descStyle: subTitleStyle,
+                  value: () => (Pref.defaultHomeTab, Pref.defaultHomeTab.label),
+                  itemBuilder: (context) =>
+                      enumItemBuilder(HomeTabType.values),
+                  onSelected: (value, setState) {
+                    GStorage.setting
+                        .put(SettingBoxKey.defaultHomeTab, value.index)
+                        .whenComplete(() {
+                          setState();
+                          Get.forceAppUpdate();
+                        });
+                    SmartDialog.showToast('重启生效');
+                  },
+                )
               // 磨砂玻璃：不跳二级页，直接在本页弹选择
-              if (item.type == .glassSetting)
+              else if (item.type == .glassSetting)
                 PopupListTile<GlassStyle>(
                   leading: item.icon,
                   title: Text(item.type.title, style: titleStyle),

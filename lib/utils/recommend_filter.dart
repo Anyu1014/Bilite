@@ -1,5 +1,5 @@
-import 'package:PiliPure/models/model_video.dart';
-import 'package:PiliPure/utils/storage_pref.dart';
+import 'package:bilite/models/model_video.dart';
+import 'package:bilite/utils/storage_pref.dart';
 
 abstract final class RecommendFilter {
   static int minDurationForRcmd = Pref.minDurationForRcmd;

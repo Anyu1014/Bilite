@@ -1,4 +1,4 @@
-import 'package:PiliPure/models/video/play/url.dart';
+import 'package:bilite/models/video/play/url.dart';
 
 part 'audio_quality.dart';
 part 'live_quality.dart';

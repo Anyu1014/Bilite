@@ -1,17 +1,17 @@
 import 'dart:async' show FutureOr;
 import 'dart:io' show Platform;
 
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/http/user.dart';
-import 'package:PiliPure/main.dart' show webViewEnvironment;
-import 'package:PiliPure/services/account_service.dart';
-import 'package:PiliPure/utils/accounts.dart';
-import 'package:PiliPure/utils/accounts/account.dart';
-import 'package:PiliPure/utils/linux_cookie_manager.dart';
-import 'package:PiliPure/utils/request_utils.dart';
-import 'package:PiliPure/utils/storage.dart';
-import 'package:PiliPure/utils/storage_pref.dart';
-import 'package:PiliPure/utils/utils.dart';
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/http/user.dart';
+import 'package:bilite/main.dart' show webViewEnvironment;
+import 'package:bilite/services/account_service.dart';
+import 'package:bilite/utils/accounts.dart';
+import 'package:bilite/utils/accounts/account.dart';
+import 'package:bilite/utils/linux_cookie_manager.dart';
+import 'package:bilite/utils/request_utils.dart';
+import 'package:bilite/utils/storage.dart';
+import 'package:bilite/utils/storage_pref.dart';
+import 'package:bilite/utils/utils.dart';
 import 'package:collection/collection.dart';
 import 'package:crypto/crypto.dart' show Digest;
 import 'package:flutter_inappwebview/flutter_inappwebview.dart' as web;

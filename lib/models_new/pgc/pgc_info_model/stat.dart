@@ -1,4 +1,4 @@
-import 'package:PiliPure/models_new/video/video_detail/stat_detail.dart';
+import 'package:bilite/models_new/video/video_detail/stat_detail.dart';
 
 class PgcStat extends StatDetail {
   PgcStat.fromJson(Map<String, dynamic> json) {

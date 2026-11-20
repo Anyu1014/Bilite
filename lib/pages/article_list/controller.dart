@@ -1,10 +1,10 @@
-import 'package:PiliPure/http/dynamics.dart';
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/models/model_owner.dart';
-import 'package:PiliPure/models_new/article/article_list/article.dart';
-import 'package:PiliPure/models_new/article/article_list/data.dart';
-import 'package:PiliPure/models_new/article/article_list/list.dart';
-import 'package:PiliPure/pages/common/common_list_controller.dart';
+import 'package:bilite/http/dynamics.dart';
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/models/model_owner.dart';
+import 'package:bilite/models_new/article/article_list/article.dart';
+import 'package:bilite/models_new/article/article_list/data.dart';
+import 'package:bilite/models_new/article/article_list/list.dart';
+import 'package:bilite/pages/common/common_list_controller.dart';
 import 'package:get/get.dart';
 
 class ArticleListController

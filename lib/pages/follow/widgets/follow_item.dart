@@ -1,8 +1,8 @@
-import 'package:PiliPure/common/widgets/pendant_avatar.dart';
-import 'package:PiliPure/models_new/follow/list.dart';
-import 'package:PiliPure/pages/share/view.dart' show UserModel;
-import 'package:PiliPure/utils/feed_back.dart';
-import 'package:PiliPure/utils/request_utils.dart';
+import 'package:bilite/common/widgets/pendant_avatar.dart';
+import 'package:bilite/models_new/follow/list.dart';
+import 'package:bilite/pages/share/view.dart' show UserModel;
+import 'package:bilite/utils/feed_back.dart';
+import 'package:bilite/utils/request_utils.dart';
 import 'package:get/get.dart';
 import 'package:material_ui/material_ui.dart';
 

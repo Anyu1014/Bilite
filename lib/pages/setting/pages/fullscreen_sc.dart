@@ -1,17 +1,17 @@
 import 'dart:io' show Platform;
 import 'dart:math' as math;
 
-import 'package:PiliPure/common/widgets/custom_icon.dart';
-import 'package:PiliPure/common/widgets/extra_hittest_stack.dart';
-import 'package:PiliPure/common/widgets/scaffold/simple_scaffold.dart';
-import 'package:PiliPure/models_new/live/live_superchat/item.dart';
-import 'package:PiliPure/pages/live_room/superchat/superchat_card.dart';
-import 'package:PiliPure/plugin/pl_player/utils/fullscreen.dart';
-import 'package:PiliPure/utils/extension/num_ext.dart';
-import 'package:PiliPure/utils/platform_utils.dart';
-import 'package:PiliPure/utils/storage.dart';
-import 'package:PiliPure/utils/storage_key.dart';
-import 'package:PiliPure/utils/storage_pref.dart';
+import 'package:bilite/common/widgets/custom_icon.dart';
+import 'package:bilite/common/widgets/extra_hittest_stack.dart';
+import 'package:bilite/common/widgets/scaffold/simple_scaffold.dart';
+import 'package:bilite/models_new/live/live_superchat/item.dart';
+import 'package:bilite/pages/live_room/superchat/superchat_card.dart';
+import 'package:bilite/plugin/pl_player/utils/fullscreen.dart';
+import 'package:bilite/utils/extension/num_ext.dart';
+import 'package:bilite/utils/platform_utils.dart';
+import 'package:bilite/utils/storage.dart';
+import 'package:bilite/utils/storage_key.dart';
+import 'package:bilite/utils/storage_pref.dart';
 import 'package:material_ui/material_ui.dart';
 
 const kFullScreenSCWidth = 255.0;

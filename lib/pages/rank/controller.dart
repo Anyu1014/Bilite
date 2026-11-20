@@ -1,8 +1,8 @@
 import 'dart:async';
 
-import 'package:PiliPure/models/common/rank_type.dart';
-import 'package:PiliPure/pages/common/common_controller.dart';
-import 'package:PiliPure/pages/rank/zone/controller.dart';
+import 'package:bilite/models/common/rank_type.dart';
+import 'package:bilite/pages/common/common_controller.dart';
+import 'package:bilite/pages/rank/zone/controller.dart';
 import 'package:get/get.dart';
 import 'package:material_ui/material_ui.dart';
 

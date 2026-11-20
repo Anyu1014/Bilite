@@ -1,6 +1,6 @@
-import 'package:PiliPure/common/widgets/custom_arc.dart';
-import 'package:PiliPure/utils/extension/theme_ext.dart';
-import 'package:PiliPure/utils/platform_utils.dart';
+import 'package:bilite/common/widgets/custom_arc.dart';
+import 'package:bilite/utils/extension/theme_ext.dart';
+import 'package:bilite/utils/platform_utils.dart';
 import 'package:material_ui/material_ui.dart';
 
 class ActionItem extends StatelessWidget {

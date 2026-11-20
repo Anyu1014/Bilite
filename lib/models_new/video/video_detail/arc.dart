@@ -1,6 +1,6 @@
-import 'package:PiliPure/models/model_owner.dart';
-import 'package:PiliPure/models_new/video/video_detail/dimension.dart';
-import 'package:PiliPure/models_new/video/video_detail/stat.dart';
+import 'package:bilite/models/model_owner.dart';
+import 'package:bilite/models_new/video/video_detail/dimension.dart';
+import 'package:bilite/models_new/video/video_detail/stat.dart';
 
 class Arc {
   int? aid;

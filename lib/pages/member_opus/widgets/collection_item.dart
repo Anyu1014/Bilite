@@ -1,8 +1,8 @@
-import 'package:PiliPure/common/style.dart';
-import 'package:PiliPure/common/widgets/image/network_img_layer.dart';
-import 'package:PiliPure/grpc/bilibili/app/dynamic/v2.pb.dart'
+import 'package:bilite/common/style.dart';
+import 'package:bilite/common/widgets/image/network_img_layer.dart';
+import 'package:bilite/grpc/bilibili/app/dynamic/v2.pb.dart'
     show SectionOpusCollection, OpusCollectionWithCover;
-import 'package:PiliPure/pages/member_opus/widgets/opus_grid.dart';
+import 'package:bilite/pages/member_opus/widgets/opus_grid.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_navigation/src/extension_navigation.dart';
 import 'package:material_ui/material_ui.dart'

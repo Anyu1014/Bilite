@@ -1,4 +1,4 @@
-import 'package:PiliPure/models_new/emote/emote.dart';
+import 'package:bilite/models_new/emote/emote.dart';
 
 class Package {
   String? url;

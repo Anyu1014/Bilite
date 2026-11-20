@@ -1,7 +1,7 @@
-import 'package:PiliPure/common/widgets/flutter/list_tile.dart';
-import 'package:PiliPure/common/widgets/glass.dart';
-import 'package:PiliPure/models/common/enum_with_label.dart';
-import 'package:PiliPure/utils/platform_utils.dart';
+import 'package:bilite/common/widgets/flutter/list_tile.dart';
+import 'package:bilite/common/widgets/glass.dart';
+import 'package:bilite/models/common/enum_with_label.dart';
+import 'package:bilite/utils/platform_utils.dart';
 import 'package:material_ui/material_ui.dart' hide ListTile;
 
 typedef PopupMenuItemSelected<T> = void Function(
@@ -9,6 +9,7 @@ typedef PopupMenuItemSelected<T> = void Function(
   VoidCallback setState,
 );
 
+/// 菜单文字颜色由磨砂面板的明暗统一决定（见 _GlassMenu），这里不写死颜色。
 List<PopupMenuEntry<T>> enumItemBuilder<T extends EnumWithLabel>(
   Iterable<T> items,
 ) => items.map((e) => PopupMenuItem(value: e, child: Text(e.label))).toList();

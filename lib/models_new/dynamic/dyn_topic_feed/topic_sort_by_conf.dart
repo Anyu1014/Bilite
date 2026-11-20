@@ -1,4 +1,4 @@
-import 'package:PiliPure/models_new/dynamic/dyn_topic_feed/all_sort_by.dart';
+import 'package:bilite/models_new/dynamic/dyn_topic_feed/all_sort_by.dart';
 
 class TopicSortByConf {
   List<AllSortBy>? allSortBy;

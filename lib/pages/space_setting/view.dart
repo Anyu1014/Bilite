@@ -1,10 +1,10 @@
 import 'dart:math';
 
-import 'package:PiliPure/common/widgets/loading_widget/loading_widget.dart';
-import 'package:PiliPure/common/widgets/scaffold/simple_scaffold.dart';
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/models_new/space_setting/privacy.dart';
-import 'package:PiliPure/pages/space_setting/controller.dart';
+import 'package:bilite/common/widgets/loading_widget/loading_widget.dart';
+import 'package:bilite/common/widgets/scaffold/simple_scaffold.dart';
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/models_new/space_setting/privacy.dart';
+import 'package:bilite/pages/space_setting/controller.dart';
 import 'package:get/get.dart';
 import 'package:material_ui/material_ui.dart';
 

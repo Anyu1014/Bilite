@@ -1,9 +1,9 @@
-import 'package:PiliPure/http/init.dart';
-import 'package:PiliPure/models/common/account_type.dart';
-import 'package:PiliPure/pages/mine/controller.dart';
-import 'package:PiliPure/utils/accounts/account.dart';
-import 'package:PiliPure/utils/login_utils.dart';
-import 'package:PiliPure/utils/storage_pref.dart';
+import 'package:bilite/http/init.dart';
+import 'package:bilite/models/common/account_type.dart';
+import 'package:bilite/pages/mine/controller.dart';
+import 'package:bilite/utils/accounts/account.dart';
+import 'package:bilite/utils/login_utils.dart';
+import 'package:bilite/utils/storage_pref.dart';
 import 'package:hive_ce/hive.dart';
 
 abstract final class Accounts {

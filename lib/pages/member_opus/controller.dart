@@ -1,10 +1,10 @@
-import 'package:PiliPure/grpc/bilibili/app/dynamic/v2.pb.dart'
+import 'package:bilite/grpc/bilibili/app/dynamic/v2.pb.dart'
     show OpusSpaceFlowResp, OpusFlowItem, SectionOpusCollection;
-import 'package:PiliPure/grpc/space.dart';
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/models_new/space/space/tab2.dart';
-import 'package:PiliPure/pages/common/common_list_controller.dart';
-import 'package:PiliPure/pages/member/controller.dart';
+import 'package:bilite/grpc/space.dart';
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/models_new/space/space/tab2.dart';
+import 'package:bilite/pages/common/common_list_controller.dart';
+import 'package:bilite/pages/member/controller.dart';
 import 'package:collection/collection.dart';
 import 'package:flutter/foundation.dart' show kDebugMode;
 import 'package:get/get.dart';

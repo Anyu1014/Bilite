@@ -1,13 +1,13 @@
-import 'package:PiliPure/common/skeleton/video_card_h.dart';
-import 'package:PiliPure/common/sliver_single_child_delegate.dart';
-import 'package:PiliPure/common/widgets/flutter/refresh_indicator.dart';
-import 'package:PiliPure/common/widgets/loading_widget/http_error.dart';
-import 'package:PiliPure/common/widgets/sliver/sliver_pinned_header.dart';
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/models_new/space/space_fav/data.dart';
-import 'package:PiliPure/pages/member_favorite/controller.dart';
-import 'package:PiliPure/pages/member_favorite/widget/item.dart';
-import 'package:PiliPure/utils/grid.dart';
+import 'package:bilite/common/skeleton/video_card_h.dart';
+import 'package:bilite/common/sliver_single_child_delegate.dart';
+import 'package:bilite/common/widgets/flutter/refresh_indicator.dart';
+import 'package:bilite/common/widgets/loading_widget/http_error.dart';
+import 'package:bilite/common/widgets/sliver/sliver_pinned_header.dart';
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/models_new/space/space_fav/data.dart';
+import 'package:bilite/pages/member_favorite/controller.dart';
+import 'package:bilite/pages/member_favorite/widget/item.dart';
+import 'package:bilite/utils/grid.dart';
 import 'package:get/get.dart';
 import 'package:material_ui/material_ui.dart';
 

@@ -1,8 +1,8 @@
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/http/music.dart';
-import 'package:PiliPure/models_new/music/bgm_detail.dart';
-import 'package:PiliPure/models_new/music/bgm_recommend_list.dart';
-import 'package:PiliPure/pages/common/common_list_controller.dart';
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/http/music.dart';
+import 'package:bilite/models_new/music/bgm_detail.dart';
+import 'package:bilite/models_new/music/bgm_recommend_list.dart';
+import 'package:bilite/pages/common/common_list_controller.dart';
 import 'package:get/get.dart';
 
 typedef MusicRecommendArgs = ({String id, MusicDetail item});

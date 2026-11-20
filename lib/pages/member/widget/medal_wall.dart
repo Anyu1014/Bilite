@@ -1,13 +1,13 @@
-import 'package:PiliPure/common/assets.dart';
-import 'package:PiliPure/common/widgets/glass.dart';
-import 'package:PiliPure/common/widgets/image/network_img_layer.dart';
-import 'package:PiliPure/common/widgets/pendant_avatar.dart';
-import 'package:PiliPure/models_new/live/live_medal_wall/data.dart';
-import 'package:PiliPure/pages/member/widget/medal_widget.dart';
-import 'package:PiliPure/utils/app_scheme.dart';
-import 'package:PiliPure/utils/extension/num_ext.dart';
-import 'package:PiliPure/utils/extension/theme_ext.dart';
-import 'package:PiliPure/utils/page_utils.dart';
+import 'package:bilite/common/assets.dart';
+import 'package:bilite/common/widgets/glass.dart';
+import 'package:bilite/common/widgets/image/network_img_layer.dart';
+import 'package:bilite/common/widgets/pendant_avatar.dart';
+import 'package:bilite/models_new/live/live_medal_wall/data.dart';
+import 'package:bilite/pages/member/widget/medal_widget.dart';
+import 'package:bilite/utils/app_scheme.dart';
+import 'package:bilite/utils/extension/num_ext.dart';
+import 'package:bilite/utils/extension/theme_ext.dart';
+import 'package:bilite/utils/page_utils.dart';
 import 'package:material_ui/material_ui.dart';
 
 class MedalWall extends StatelessWidget {

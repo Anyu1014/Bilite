@@ -1,11 +1,11 @@
 import 'dart:async';
 
-import 'package:PiliPure/common/widgets/dialog/dialog.dart';
-import 'package:PiliPure/models_new/download/download_info.dart';
-import 'package:PiliPure/pages/common/multi_select/base.dart'
+import 'package:bilite/common/widgets/dialog/dialog.dart';
+import 'package:bilite/models_new/download/download_info.dart';
+import 'package:bilite/pages/common/multi_select/base.dart'
     show BaseMultiSelectMixin;
-import 'package:PiliPure/services/download/download_service.dart';
-import 'package:PiliPure/utils/storage.dart';
+import 'package:bilite/services/download/download_service.dart';
+import 'package:bilite/utils/storage.dart';
 import 'package:collection/collection.dart';
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 import 'package:get/get.dart';

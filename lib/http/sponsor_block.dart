@@ -1,16 +1,16 @@
 import 'dart:convert';
 
-import 'package:PiliPure/build_config.dart';
-import 'package:PiliPure/common/constants.dart';
-import 'package:PiliPure/http/init.dart';
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/http/sponsor_block_api.dart';
-import 'package:PiliPure/models/common/sponsor_block/post_segment_model.dart';
-import 'package:PiliPure/models/common/sponsor_block/segment_type.dart';
-import 'package:PiliPure/models_new/sponsor_block/segment_item.dart';
-import 'package:PiliPure/models_new/sponsor_block/user_info.dart';
-import 'package:PiliPure/utils/storage_pref.dart';
-import 'package:PiliPure/utils/utils.dart';
+import 'package:bilite/build_config.dart';
+import 'package:bilite/common/constants.dart';
+import 'package:bilite/http/init.dart';
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/http/sponsor_block_api.dart';
+import 'package:bilite/models/common/sponsor_block/post_segment_model.dart';
+import 'package:bilite/models/common/sponsor_block/segment_type.dart';
+import 'package:bilite/models_new/sponsor_block/segment_item.dart';
+import 'package:bilite/models_new/sponsor_block/user_info.dart';
+import 'package:bilite/utils/storage_pref.dart';
+import 'package:bilite/utils/utils.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart' show kDebugMode;
 

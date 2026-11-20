@@ -1,4 +1,4 @@
-import 'package:PiliPure/utils/danmaku_utils.dart';
+import 'package:bilite/utils/danmaku_utils.dart';
 import 'package:flutter/services.dart'
     show LengthLimitingTextInputFormatter, FilteringTextInputFormatter;
 import 'package:get/get.dart';

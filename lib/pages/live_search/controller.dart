@@ -1,9 +1,9 @@
-import 'package:PiliPure/models/common/live/live_search_type.dart';
-import 'package:PiliPure/pages/live_search/child/controller.dart';
-import 'package:PiliPure/utils/extension/scroll_controller_ext.dart';
-import 'package:PiliPure/utils/id_utils.dart';
-import 'package:PiliPure/utils/page_utils.dart';
-import 'package:PiliPure/utils/utils.dart';
+import 'package:bilite/models/common/live/live_search_type.dart';
+import 'package:bilite/pages/live_search/child/controller.dart';
+import 'package:bilite/utils/extension/scroll_controller_ext.dart';
+import 'package:bilite/utils/id_utils.dart';
+import 'package:bilite/utils/page_utils.dart';
+import 'package:bilite/utils/utils.dart';
 import 'package:get/get.dart';
 import 'package:material_ui/material_ui.dart';
 

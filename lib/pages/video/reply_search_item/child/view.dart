@@ -1,12 +1,12 @@
-import 'package:PiliPure/common/widgets/flutter/refresh_indicator.dart';
-import 'package:PiliPure/common/widgets/loading_widget/http_error.dart';
-import 'package:PiliPure/grpc/bilibili/main/community/reply/v1.pb.dart'
+import 'package:bilite/common/widgets/flutter/refresh_indicator.dart';
+import 'package:bilite/common/widgets/loading_widget/http_error.dart';
+import 'package:bilite/grpc/bilibili/main/community/reply/v1.pb.dart'
     show SearchItem;
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/models/common/reply/reply_search_type.dart';
-import 'package:PiliPure/pages/video/reply_search_item/child/controller.dart';
-import 'package:PiliPure/pages/video/reply_search_item/child/widgets/item.dart';
-import 'package:PiliPure/utils/grid.dart';
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/models/common/reply/reply_search_type.dart';
+import 'package:bilite/pages/video/reply_search_item/child/controller.dart';
+import 'package:bilite/pages/video/reply_search_item/child/widgets/item.dart';
+import 'package:bilite/utils/grid.dart';
 import 'package:get/get.dart';
 import 'package:material_ui/material_ui.dart';
 

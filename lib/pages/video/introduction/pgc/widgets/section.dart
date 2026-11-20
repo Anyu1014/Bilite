@@ -1,19 +1,19 @@
 import 'dart:async' show StreamSubscription;
 
-import 'package:PiliPure/common/style.dart';
-import 'package:PiliPure/common/widgets/badge.dart';
-import 'package:PiliPure/common/widgets/image/network_img_layer.dart';
-import 'package:PiliPure/models_new/pgc/pgc_info_model/episode.dart';
-import 'package:PiliPure/models_new/pgc/pgc_info_model/section.dart';
-import 'package:PiliPure/models_new/video/video_detail/episode.dart'
+import 'package:bilite/common/style.dart';
+import 'package:bilite/common/widgets/badge.dart';
+import 'package:bilite/common/widgets/image/network_img_layer.dart';
+import 'package:bilite/models_new/pgc/pgc_info_model/episode.dart';
+import 'package:bilite/models_new/pgc/pgc_info_model/section.dart';
+import 'package:bilite/models_new/video/video_detail/episode.dart'
     hide EpisodeItem;
-import 'package:PiliPure/pages/video/introduction/pgc/controller.dart';
-import 'package:PiliPure/utils/accounts.dart';
-import 'package:PiliPure/utils/app_scheme.dart';
-import 'package:PiliPure/utils/duration_utils.dart';
-import 'package:PiliPure/utils/extension/iterable_ext.dart';
-import 'package:PiliPure/utils/extension/scroll_controller_ext.dart';
-import 'package:PiliPure/utils/scroll_offset_helper.dart';
+import 'package:bilite/pages/video/introduction/pgc/controller.dart';
+import 'package:bilite/utils/accounts.dart';
+import 'package:bilite/utils/app_scheme.dart';
+import 'package:bilite/utils/duration_utils.dart';
+import 'package:bilite/utils/extension/iterable_ext.dart';
+import 'package:bilite/utils/extension/scroll_controller_ext.dart';
+import 'package:bilite/utils/scroll_offset_helper.dart';
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 import 'package:material_ui/material_ui.dart';
 import 'package:super_sliver_list/super_sliver_list.dart';

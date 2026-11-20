@@ -1,9 +1,9 @@
-import 'package:PiliPure/grpc/bilibili/app/im/v1.pb.dart' hide SessionInfo;
-import 'package:PiliPure/grpc/bilibili/im/interfaces/v1.pb.dart';
-import 'package:PiliPure/grpc/bilibili/im/type.pb.dart';
-import 'package:PiliPure/grpc/grpc_req.dart';
-import 'package:PiliPure/grpc/url.dart';
-import 'package:PiliPure/http/loading_state.dart';
+import 'package:bilite/grpc/bilibili/app/im/v1.pb.dart' hide SessionInfo;
+import 'package:bilite/grpc/bilibili/im/interfaces/v1.pb.dart';
+import 'package:bilite/grpc/bilibili/im/type.pb.dart';
+import 'package:bilite/grpc/grpc_req.dart';
+import 'package:bilite/grpc/url.dart';
+import 'package:bilite/http/loading_state.dart';
 import 'package:fixnum/fixnum.dart';
 import 'package:protobuf/protobuf.dart' show PbMap;
 import 'package:uuid/v4.dart';

@@ -1,8 +1,8 @@
-import 'package:PiliPure/common/widgets/gesture/tap_gesture_recognizer.dart';
-import 'package:PiliPure/models_new/video/video_ai_conclusion/model_result.dart';
-import 'package:PiliPure/pages/common/slide/common_slide_page.dart';
-import 'package:PiliPure/pages/video/controller.dart';
-import 'package:PiliPure/utils/duration_utils.dart';
+import 'package:bilite/common/widgets/gesture/tap_gesture_recognizer.dart';
+import 'package:bilite/models_new/video/video_ai_conclusion/model_result.dart';
+import 'package:bilite/pages/common/slide/common_slide_page.dart';
+import 'package:bilite/pages/video/controller.dart';
+import 'package:bilite/utils/duration_utils.dart';
 import 'package:get/get.dart';
 import 'package:material_ui/material_ui.dart';
 

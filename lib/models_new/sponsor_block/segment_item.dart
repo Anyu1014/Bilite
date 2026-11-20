@@ -1,5 +1,5 @@
-import 'package:PiliPure/models/common/sponsor_block/segment_type.dart';
-import 'package:PiliPure/utils/extension/iterable_ext.dart';
+import 'package:bilite/models/common/sponsor_block/segment_type.dart';
+import 'package:bilite/utils/extension/iterable_ext.dart';
 import 'package:flutter/foundation.dart' show kDebugMode;
 
 class SegmentItemModel {

@@ -1,4 +1,4 @@
-import 'package:PiliPure/pages/later/child_view.dart';
+import 'package:bilite/pages/later/child_view.dart';
 import 'package:material_ui/material_ui.dart';
 
 enum LaterViewType {

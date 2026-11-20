@@ -1,6 +1,6 @@
-import 'package:PiliPure/models/common/badge_type.dart';
-import 'package:PiliPure/utils/extension/string_ext.dart';
-import 'package:PiliPure/utils/extension/theme_ext.dart';
+import 'package:bilite/models/common/badge_type.dart';
+import 'package:bilite/utils/extension/string_ext.dart';
+import 'package:bilite/utils/extension/theme_ext.dart';
 import 'package:material_ui/material_ui.dart';
 
 class PBadge extends StatelessWidget {

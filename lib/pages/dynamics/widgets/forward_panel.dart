@@ -1,10 +1,10 @@
-import 'package:PiliPure/common/widgets/image/image_save.dart';
-import 'package:PiliPure/models/dynamics/result.dart';
-import 'package:PiliPure/pages/dynamics/widgets/dyn_content.dart';
-import 'package:PiliPure/pages/dynamics/widgets/module_panel.dart';
-import 'package:PiliPure/utils/date_utils.dart';
-import 'package:PiliPure/utils/page_utils.dart';
-import 'package:PiliPure/utils/platform_utils.dart';
+import 'package:bilite/common/widgets/image/image_save.dart';
+import 'package:bilite/models/dynamics/result.dart';
+import 'package:bilite/pages/dynamics/widgets/dyn_content.dart';
+import 'package:bilite/pages/dynamics/widgets/module_panel.dart';
+import 'package:bilite/utils/date_utils.dart';
+import 'package:bilite/utils/page_utils.dart';
+import 'package:bilite/utils/platform_utils.dart';
 import 'package:get/get.dart';
 import 'package:material_ui/material_ui.dart';
 

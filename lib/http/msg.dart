@@ -1,22 +1,22 @@
 import 'dart:convert';
 
-import 'package:PiliPure/http/api.dart';
-import 'package:PiliPure/http/constants.dart';
-import 'package:PiliPure/http/init.dart';
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/models_new/msg/im_user_infos/datum.dart';
-import 'package:PiliPure/models_new/msg/msg_at/data.dart';
-import 'package:PiliPure/models_new/msg/msg_dnd/uid_setting.dart';
-import 'package:PiliPure/models_new/msg/msg_like/data.dart';
-import 'package:PiliPure/models_new/msg/msg_like_detail/data.dart';
-import 'package:PiliPure/models_new/msg/msg_reply/data.dart';
-import 'package:PiliPure/models_new/msg/msg_sys/data.dart';
-import 'package:PiliPure/models_new/msg/session_ss/data.dart';
-import 'package:PiliPure/models_new/msgfeed_unread/data.dart';
-import 'package:PiliPure/models_new/single_unread/data.dart';
-import 'package:PiliPure/models_new/upload_bfs/data.dart';
-import 'package:PiliPure/utils/accounts.dart';
-import 'package:PiliPure/utils/wbi_sign.dart';
+import 'package:bilite/http/api.dart';
+import 'package:bilite/http/constants.dart';
+import 'package:bilite/http/init.dart';
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/models_new/msg/im_user_infos/datum.dart';
+import 'package:bilite/models_new/msg/msg_at/data.dart';
+import 'package:bilite/models_new/msg/msg_dnd/uid_setting.dart';
+import 'package:bilite/models_new/msg/msg_like/data.dart';
+import 'package:bilite/models_new/msg/msg_like_detail/data.dart';
+import 'package:bilite/models_new/msg/msg_reply/data.dart';
+import 'package:bilite/models_new/msg/msg_sys/data.dart';
+import 'package:bilite/models_new/msg/session_ss/data.dart';
+import 'package:bilite/models_new/msgfeed_unread/data.dart';
+import 'package:bilite/models_new/single_unread/data.dart';
+import 'package:bilite/models_new/upload_bfs/data.dart';
+import 'package:bilite/utils/accounts.dart';
+import 'package:bilite/utils/wbi_sign.dart';
 import 'package:dio/dio.dart';
 
 abstract final class MsgHttp {

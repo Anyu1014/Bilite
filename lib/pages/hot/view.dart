@@ -1,19 +1,19 @@
-import 'package:PiliPure/common/widgets/flutter/refresh_indicator.dart';
-import 'package:PiliPure/common/widgets/image/network_img_layer.dart';
-import 'package:PiliPure/common/widgets/loading_widget/http_error.dart';
-import 'package:PiliPure/common/widgets/scaffold/simple_scaffold.dart';
-import 'package:PiliPure/common/widgets/video_card/video_card_h.dart';
-import 'package:PiliPure/common/widgets/view_safe_area.dart';
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/models/common/home_tab_type.dart';
-import 'package:PiliPure/models/model_hot_video_item.dart';
-import 'package:PiliPure/pages/home/controller.dart';
-import 'package:PiliPure/pages/hot/controller.dart';
-import 'package:PiliPure/pages/rank/view.dart';
-import 'package:PiliPure/utils/grid.dart';
-import 'package:PiliPure/utils/storage_pref.dart';
+import 'package:bilite/common/widgets/flutter/refresh_indicator.dart';
+import 'package:bilite/common/widgets/image/network_img_layer.dart';
+import 'package:bilite/common/widgets/loading_widget/http_error.dart';
+import 'package:bilite/common/widgets/scaffold/simple_scaffold.dart';
+import 'package:bilite/common/widgets/video_card/video_card_h.dart';
+import 'package:bilite/common/widgets/view_safe_area.dart';
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/models/common/home_tab_type.dart';
+import 'package:bilite/models/model_hot_video_item.dart';
+import 'package:bilite/pages/home/controller.dart';
+import 'package:bilite/pages/hot/controller.dart';
+import 'package:bilite/pages/rank/view.dart';
+import 'package:bilite/utils/grid.dart';
+import 'package:bilite/utils/storage_pref.dart';
 import 'package:get/get.dart';
-import 'package:PiliPure/common/widgets/home_header_inset.dart';
+import 'package:bilite/common/widgets/home_header_inset.dart';
 import 'package:material_ui/material_ui.dart';
 
 class HotPage extends StatefulWidget {
@@ -61,6 +61,7 @@ class _HotPageState extends State<HotPage>
   Widget build(BuildContext context) {
     super.build(context);
     return refreshIndicator(
+      topInset: HomeHeaderInset.of(context),
       onRefresh: controller.onRefresh,
       child: CustomScrollView(
         physics: const AlwaysScrollableScrollPhysics(),

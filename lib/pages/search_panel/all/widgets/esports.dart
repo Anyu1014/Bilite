@@ -1,5 +1,5 @@
-import 'package:PiliPure/models/search/search_esports.dart';
-import 'package:PiliPure/pages/match_info/widgets/match_info_item.dart';
+import 'package:bilite/models/search/search_esports.dart';
+import 'package:bilite/pages/match_info/widgets/match_info_item.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_navigation/src/extension_navigation.dart';
 import 'package:material_ui/material_ui.dart';

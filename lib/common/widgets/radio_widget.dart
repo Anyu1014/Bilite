@@ -1,4 +1,4 @@
-import 'package:PiliPure/utils/platform_utils.dart';
+import 'package:bilite/utils/platform_utils.dart';
 import 'package:material_ui/material_ui.dart';
 
 class RadioWidget<T> extends StatefulWidget {

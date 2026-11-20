@@ -1,4 +1,4 @@
-import 'package:PiliPure/models_new/space/space_archive/item.dart';
+import 'package:bilite/models_new/space/space_archive/item.dart';
 
 class Comic {
   int? count;

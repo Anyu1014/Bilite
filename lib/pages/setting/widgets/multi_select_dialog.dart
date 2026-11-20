@@ -1,5 +1,5 @@
 import 'package:get/get.dart';
-import 'package:PiliPure/common/widgets/glass.dart';
+import 'package:bilite/common/widgets/glass.dart';
 import 'package:material_ui/material_ui.dart';
 
 class MultiSelectDialog<T> extends StatefulWidget {

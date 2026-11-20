@@ -1,30 +1,31 @@
 import 'dart:async';
 
-import 'package:PiliPure/common/assets.dart';
-import 'package:PiliPure/common/style.dart';
-import 'package:PiliPure/common/widgets/flutter/list_tile.dart';
-import 'package:PiliPure/common/widgets/flutter/refresh_indicator.dart';
-import 'package:PiliPure/common/widgets/image/network_img_layer.dart';
-import 'package:PiliPure/common/widgets/player_bar.dart';
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/models/common/mine_tab_type.dart';
-import 'package:PiliPure/models/common/nav_bar_config.dart';
-import 'package:PiliPure/pages/common/common_page.dart';
-import 'package:PiliPure/pages/home/view.dart';
-import 'package:PiliPure/pages/login/controller.dart';
-import 'package:PiliPure/pages/main/controller.dart';
-import 'package:PiliPure/pages/mine/controller.dart';
-import 'package:PiliPure/pages/mine/widgets/fav_item.dart';
-import 'package:PiliPure/pages/mine/widgets/history_item.dart';
-import 'package:PiliPure/pages/mine/widgets/later_item.dart';
-import 'package:PiliPure/pages/mine/widgets/sub_item.dart';
-import 'package:PiliPure/pages/setting/models/style_settings.dart';
-import 'package:PiliPure/utils/bili_utils.dart';
-import 'package:PiliPure/utils/extension/get_ext.dart';
-import 'package:PiliPure/utils/extension/num_ext.dart';
-import 'package:PiliPure/utils/extension/theme_ext.dart';
-import 'package:PiliPure/utils/platform_utils.dart';
-import 'package:PiliPure/utils/storage.dart';
+import 'package:bilite/common/assets.dart';
+import 'package:bilite/common/style.dart';
+import 'package:bilite/common/widgets/flutter/list_tile.dart';
+import 'package:bilite/common/widgets/flutter/refresh_indicator.dart';
+import 'package:bilite/common/widgets/image/network_img_layer.dart';
+import 'package:bilite/common/widgets/player_bar.dart';
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/models/common/mine_tab_type.dart';
+import 'package:bilite/models/common/nav_bar_config.dart';
+import 'package:bilite/pages/common/common_page.dart';
+import 'package:bilite/pages/home/view.dart';
+import 'package:bilite/pages/login/controller.dart';
+import 'package:bilite/pages/main/controller.dart';
+import 'package:bilite/pages/mine/controller.dart';
+import 'package:bilite/pages/mine/widgets/fav_item.dart';
+import 'package:bilite/pages/mine/widgets/history_item.dart';
+import 'package:bilite/pages/mine/widgets/later_item.dart';
+import 'package:bilite/pages/mine/widgets/sub_item.dart';
+import 'package:bilite/pages/setting/models/style_settings.dart';
+import 'package:bilite/utils/bili_utils.dart';
+import 'package:bilite/utils/extension/get_ext.dart';
+import 'package:bilite/utils/extension/num_ext.dart';
+import 'package:bilite/utils/extension/theme_ext.dart';
+import 'package:bilite/utils/platform_utils.dart';
+import 'package:bilite/utils/storage.dart';
+import 'package:bilite/utils/storage_pref.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
@@ -77,13 +78,16 @@ class _MediaPageState extends CommonPageState<MinePage>
   @override
   Widget build(BuildContext context) {
     super.build(context);
-    final secondary = theme.colorScheme.secondary;
+    // 默认风格：板块图标蓝色、硬币/经验数值跟随旁边灰色文字
+    final defaultStyle = Pref.defaultThemeStyle && !Pref.dynamicColor;
+    final accent = Pref.dynamicColor
+        ? theme.colorScheme.primary
+        : Pref.themeColor;
+    final valueColor = defaultStyle ? theme.colorScheme.outline : accent;
+    final iconColor = defaultStyle ? const Color(0xFF279FD9) : accent;
     return Column(
       children: [
-        Padding(
-          padding: const .symmetric(vertical: 10),
-          child: _buildHeaderActions,
-        ),
+        _buildHeaderActions,
         Expanded(
           child: Material(
             type: .transparency,
@@ -94,8 +98,8 @@ class _MediaPageState extends CommonPageState<MinePage>
                   padding: const .only(bottom: 150),
                   physics: const AlwaysScrollableScrollPhysics(),
                   children: [
-                    _buildUserInfo(theme, secondary),
-                    _buildActions(secondary),
+                    _buildUserInfo(theme, valueColor, accent),
+                    _buildActions(iconColor),
                     for (final tab in controller.mineTabs)
                       switch (tab) {
                         .favorite => Obx(_buildFav),
@@ -113,7 +117,7 @@ class _MediaPageState extends CommonPageState<MinePage>
     );
   }
 
-  Widget _buildActions(Color primary) {
+  Widget _buildActions(Color iconColor) {
     return Row(
       mainAxisAlignment: .spaceEvenly,
       children: controller.list
@@ -131,7 +135,7 @@ class _MediaPageState extends CommonPageState<MinePage>
                       mainAxisSize: .min,
                       mainAxisAlignment: .center,
                       children: [
-                        Icon(e.icon, color: primary),
+                        Icon(e.icon, color: iconColor),
                         Text(
                           e.title,
                           style: const TextStyle(fontSize: 13),
@@ -238,7 +242,7 @@ class _MediaPageState extends CommonPageState<MinePage>
     );
   }
 
-  Widget _buildUserInfo(ThemeData theme, Color secondary) {
+  Widget _buildUserInfo(ThemeData theme, Color valueColor, Color accentColor) {
     final style = TextStyle(
       fontSize: theme.textTheme.titleMedium!.fontSize,
       fontWeight: FontWeight.bold,
@@ -253,7 +257,7 @@ class _MediaPageState extends CommonPageState<MinePage>
     final coinValStyle = TextStyle(
       fontSize: theme.textTheme.labelMedium!.fontSize,
       fontWeight: FontWeight.bold,
-      color: secondary,
+      color: valueColor,
     );
     return Obx(() {
       final userInfo = controller.userInfo.value;
@@ -377,7 +381,9 @@ class _MediaPageState extends CommonPageState<MinePage>
                           backgroundColor: theme.colorScheme.outline.withValues(
                             alpha: 0.4,
                           ),
-                          valueColor: AlwaysStoppedAnimation<Color>(secondary),
+                          valueColor: AlwaysStoppedAnimation<Color>(
+                            accentColor,
+                          ),
                           stopIndicatorColor: Colors.transparent,
                         ),
                       ),

@@ -1,13 +1,13 @@
-import 'package:PiliPure/http/fav.dart';
-import 'package:PiliPure/http/loading_state.dart';
-import 'package:PiliPure/models/common/fav_order_type.dart';
-import 'package:PiliPure/models/common/video/source_type.dart';
-import 'package:PiliPure/models_new/fav/fav_detail/data.dart';
-import 'package:PiliPure/models_new/fav/fav_detail/media.dart';
-import 'package:PiliPure/pages/common/multi_select/base.dart';
-import 'package:PiliPure/pages/common/search/common_search_controller.dart';
-import 'package:PiliPure/pages/fav_detail/controller.dart';
-import 'package:PiliPure/utils/page_utils.dart';
+import 'package:bilite/http/fav.dart';
+import 'package:bilite/http/loading_state.dart';
+import 'package:bilite/models/common/fav_order_type.dart';
+import 'package:bilite/models/common/video/source_type.dart';
+import 'package:bilite/models_new/fav/fav_detail/data.dart';
+import 'package:bilite/models_new/fav/fav_detail/media.dart';
+import 'package:bilite/pages/common/multi_select/base.dart';
+import 'package:bilite/pages/common/search/common_search_controller.dart';
+import 'package:bilite/pages/fav_detail/controller.dart';
+import 'package:bilite/utils/page_utils.dart';
 import 'package:get/get.dart';
 
 class FavSearchController

@@ -1,10 +1,10 @@
-import 'package:PiliPure/models_new/history/data.dart';
-import 'package:PiliPure/models_new/history/list.dart';
-import 'package:PiliPure/pages/common/search/common_search_page.dart';
-import 'package:PiliPure/pages/history/widgets/item.dart';
-import 'package:PiliPure/pages/history_search/controller.dart';
-import 'package:PiliPure/utils/grid.dart';
-import 'package:PiliPure/utils/utils.dart';
+import 'package:bilite/models_new/history/data.dart';
+import 'package:bilite/models_new/history/list.dart';
+import 'package:bilite/pages/common/search/common_search_page.dart';
+import 'package:bilite/pages/history/widgets/item.dart';
+import 'package:bilite/pages/history_search/controller.dart';
+import 'package:bilite/utils/grid.dart';
+import 'package:bilite/utils/utils.dart';
 import 'package:get/get.dart';
 import 'package:material_ui/material_ui.dart';
 

@@ -1,4 +1,4 @@
-import 'package:PiliPure/utils/parse_string.dart';
+import 'package:bilite/utils/parse_string.dart';
 
 class ReservationCardItem {
   int? sid;

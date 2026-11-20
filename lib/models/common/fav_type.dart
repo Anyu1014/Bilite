@@ -1,9 +1,9 @@
-import 'package:PiliPure/pages/fav/article/view.dart';
-import 'package:PiliPure/pages/fav/cheese/view.dart';
-import 'package:PiliPure/pages/fav/note/view.dart';
-import 'package:PiliPure/pages/fav/pgc/view.dart';
-import 'package:PiliPure/pages/fav/topic/view.dart';
-import 'package:PiliPure/pages/fav/video/view.dart';
+import 'package:bilite/pages/fav/article/view.dart';
+import 'package:bilite/pages/fav/cheese/view.dart';
+import 'package:bilite/pages/fav/note/view.dart';
+import 'package:bilite/pages/fav/pgc/view.dart';
+import 'package:bilite/pages/fav/topic/view.dart';
+import 'package:bilite/pages/fav/video/view.dart';
 import 'package:material_ui/material_ui.dart';
 
 enum FavTabType {

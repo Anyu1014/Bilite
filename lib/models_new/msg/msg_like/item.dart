@@ -1,5 +1,5 @@
-import 'package:PiliPure/models_new/msg/msg_like/content.dart';
-import 'package:PiliPure/models_new/msg/msg_like/user.dart';
+import 'package:bilite/models_new/msg/msg_like/content.dart';
+import 'package:bilite/models_new/msg/msg_like/user.dart';
 
 class MsgLikeItem {
   int? id;

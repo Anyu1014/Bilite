@@ -36,7 +36,7 @@ class _AboutPageState extends State<AboutPage> {
   /// 关于页显示的版本号（手写；只改这一处文本）
   static const currentVersion = '1.3';
 
-  /// 源码仓库地址（安装包在各版本分支的 dist/<版本>/ 下）
+  /// 源码仓库地址（安装包在各版本分支的 release/<版本>/ 下）
   static const repositoryUrl = 'https://github.com/Anyu1014/Bilite';
   static const repositoryName = 'Anyu1014/Bilite';
   RxString cacheSize = ''.obs;
